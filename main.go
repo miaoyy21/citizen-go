@@ -9,9 +9,9 @@ import (
 func main() {
 	log.Println("Process Started ...")
 
-	filename := "002"
+	filename := "009"
 	err := ffmpeg.Input(fmt.Sprintf("./%s.mp4", filename)).
-		Output(fmt.Sprintf("./%s.gif", filename), ffmpeg.KwArgs{"r": "12"}).
+		Output(fmt.Sprintf("./%s.gif", filename), ffmpeg.KwArgs{"s": "1280x720", "r": "12"}).
 		OverWriteOutput().ErrorToStdOut().Run()
 	if err != nil {
 		log.Fatalf("ERROR :: %s \n", err.Error())
