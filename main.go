@@ -8,7 +8,7 @@ import (
 	"strings"
 )
 
-func mp4ToGif(root string) error {
+func Mp4ToGif(root string) error {
 	return filepath.Walk(root, func(path string, info fs.FileInfo, err error) error {
 		if err != nil {
 			return err
@@ -26,7 +26,7 @@ func mp4ToGif(root string) error {
 
 func main() {
 	log.Println("Process Started ...")
-	if err := mp4ToGif("assets"); err != nil {
+	if err := Mp4ToGif("assets"); err != nil {
 		log.Fatalf("Fatal ERROR :: %s \n", err.Error())
 	}
 
