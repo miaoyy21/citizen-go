@@ -26,9 +26,9 @@ func Mp4ToGif(root string) error {
 
 func main() {
 	log.Println("Process Started ...")
-	if err := Mp4ToGif("assets"); err != nil {
-		log.Fatalf("Fatal ERROR :: %s \n", err.Error())
-	}
+	//if err := Mp4ToGif("assets"); err != nil {
+	//	log.Fatalf("Fatal ERROR :: %s \n", err.Error())
+	//}
 
 	log.Println("Process Finished ...")
 }
