@@ -59,16 +59,24 @@ func main() {
 	c2 := NewUint32Color(0xd8d8aaff)
 	c3 := NewUint32Color(0xb4b4ffff)
 
-	wImg := image.NewRGBA64(image.Rect(0, 0, w, h))
+	wImg := image.NewRGBA(image.Rect(0, 0, w, h))
 	for x := 0; x < w; x++ {
 		for y := 0; y < h; y++ {
 			c := img.At(x, y)
 
 			r0, g0, b0, a0 := c.RGBA()
 			if c1.Equal(c) || c2.Equal(c) || c3.Equal(c) {
+
+				//rr, gg, bb, aa := wImg.ColorModel().Convert(color.NRGBA{A: uint8(0)}).RGBA()
+				////rr, gg, bb, aa := color.NRGBA{A: uint8(0)}.RGBA()
+				//log.Printf("(%d,%d) => (%x,%x,%x,%x) \n", x, y, rr, gg, bb, aa)
+				//wImg.Set(x, y, color.RGBA{A: uint8(aa)})
+				//
 				v := wImg.ColorModel().Convert(color.NRGBA64{R: uint16(r0), G: uint16(g0), B: uint16(b0), A: uint16(0)})
 				rr, gg, bb, aa := v.RGBA()
 				wImg.Set(x, y, color.RGBA64{R: uint16(rr), G: uint16(gg), B: uint16(bb), A: uint16(aa)})
+
+				log.Printf("(%d,%d) => Continue ... \n", x, y)
 				continue
 			}
 
