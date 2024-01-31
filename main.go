@@ -4,6 +4,7 @@ import (
 	ffmpeg "github.com/u2takey/ffmpeg-go"
 	"image/color"
 	"image/gif"
+	"image/png"
 	"io/fs"
 	"log"
 	"os"
@@ -33,13 +34,13 @@ func main() {
 	//	log.Fatalf("Fatal ERROR :: %s \n", err.Error())
 	//}
 
-	file, err := os.Open("assets/001.gif")
+	in, err := os.Open("assets/001.gif")
 	if err != nil {
 		log.Fatalf("os.Open ERROR :: %s \n", err.Error())
 	}
-	defer file.Close()
+	defer in.Close()
 
-	g, err := gif.DecodeAll(file)
+	g, err := gif.DecodeAll(in)
 	if err != nil {
 		log.Fatalf("gif.Decode ERROR :: %s \n", err.Error())
 	}
@@ -53,22 +54,31 @@ func main() {
 	log.Printf("Frame Width => %d, Frame Height => %d \n", w, h)
 	log.Printf("Pix Size => %d, Palette Size => %d \n", len(img.Pix), len(img.Palette))
 
-	rgba1 := NewUintColor(0xb4b4aa, 0xff)
-	rgba2 := NewUintColor(0xd8d8aa, 0xff)
-	rgba3 := NewUintColor(0xb4b4ff, 0xff)
+	c1 := NewUint32Color(0xb4b4aaff)
+	c2 := NewUint32Color(0xd8d8aaff)
+	c3 := NewUint32Color(0xb4b4ffff)
 
+	//c0 := color.NRGBA{R: 255, G: 255, B: 255, A: 0}
 	for x := 0; x < w; x++ {
 		for y := 0; y < h; y++ {
-			rgba64 := img.At(x, y)
-
-			if rgba1.Equal(rgba64) || rgba2.Equal(rgba64) || rgba3.Equal(rgba64) {
+			c := img.At(x, y)
+			if c1.Equal(c) || c2.Equal(c) || c3.Equal(c) {
 				continue
 			}
 
-			r0, g0, b0, a0 := rgba64.RGBA()
-
+			r0, g0, b0, a0 := c.RGBA()
 			log.Printf("(%d,%d) => (%x,%x,%x,%x) \n", x, y, r0, g0, b0, a0)
 		}
+	}
+
+	out, err := os.Create("out.png")
+	if err != nil {
+		log.Fatalf("os.Create ERROR :: %s \n", err.Error())
+	}
+	defer out.Close()
+
+	if err := png.Encode(out, img); err != nil {
+		log.Fatalf("png.Encode ERROR :: %s \n", err.Error())
 	}
 
 	log.Println("Process Finished ...")
@@ -78,23 +88,15 @@ type Uint32Color struct {
 	rgba color.RGBA
 }
 
-func NewUintColor(rgb uint32, a uint8) Uint32Color {
-	if rgb >= 0xffffff {
-		log.Panicf("unexpect RGB Value %d \n", rgb)
-	}
-
-	log.Printf("G %x => %x \n", rgb, rgb&0x00ff00)
-	v := Uint32Color{
+func NewUint32Color(rgba uint32) Uint32Color {
+	return Uint32Color{
 		rgba: color.RGBA{
-			R: uint8(rgb / 0xffff),
-			G: uint8((rgb & 0x00ff00) / 0xff),
-			B: uint8(rgb % 0xffff00),
-			A: a,
+			R: uint8(rgba >> 24),
+			G: uint8((rgba << 8) >> 24),
+			B: uint8((rgba << 16) >> 24),
+			A: uint8(rgba << 24 >> 24),
 		},
 	}
-	log.Printf("%x %x {%x,%x,%x,%x} \n", rgb, a, v.rgba.R, v.rgba.G, v.rgba.B, v.rgba.A)
-
-	return v
 }
 
 func (c32 Uint32Color) Equal(c64 color.Color) bool {
