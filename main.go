@@ -2,6 +2,7 @@ package main
 
 import (
 	ffmpeg "github.com/u2takey/ffmpeg-go"
+	"image"
 	"image/color"
 	"image/gif"
 	"image/png"
@@ -42,7 +43,7 @@ func main() {
 
 	g, err := gif.DecodeAll(in)
 	if err != nil {
-		log.Fatalf("gif.Decode ERROR :: %s \n", err.Error())
+		log.Fatalf("gif.DecodeAll ERROR :: %s \n", err.Error())
 	}
 
 	log.Printf("Image Size => %d, Delay Size => %d, Loop Count => %d, Disposal Size => %d, Background Index => %#v \n", len(g.Image), len(g.Delay), g.LoopCount, len(g.Disposal), g.BackgroundIndex)
@@ -58,16 +59,24 @@ func main() {
 	c2 := NewUint32Color(0xd8d8aaff)
 	c3 := NewUint32Color(0xb4b4ffff)
 
-	//c0 := color.NRGBA{R: 255, G: 255, B: 255, A: 0}
+	wImg := image.NewRGBA64(image.Rect(0, 0, w, h))
 	for x := 0; x < w; x++ {
 		for y := 0; y < h; y++ {
 			c := img.At(x, y)
+
+			r0, g0, b0, a0 := c.RGBA()
 			if c1.Equal(c) || c2.Equal(c) || c3.Equal(c) {
+				v := wImg.ColorModel().Convert(color.NRGBA64{R: uint16(r0), G: uint16(g0), B: uint16(b0), A: uint16(0)})
+				rr, gg, bb, aa := v.RGBA()
+				wImg.Set(x, y, color.RGBA64{R: uint16(rr), G: uint16(gg), B: uint16(bb), A: uint16(aa)})
 				continue
 			}
 
-			r0, g0, b0, a0 := c.RGBA()
 			log.Printf("(%d,%d) => (%x,%x,%x,%x) \n", x, y, r0, g0, b0, a0)
+
+			v := wImg.ColorModel().Convert(color.NRGBA64{R: uint16(r0), G: uint16(g0), B: uint16(b0), A: uint16(a0)})
+			rr, gg, bb, aa := v.RGBA()
+			wImg.Set(x, y, color.RGBA64{R: uint16(rr), G: uint16(gg), B: uint16(bb), A: uint16(aa)})
 		}
 	}
 
@@ -77,7 +86,7 @@ func main() {
 	}
 	defer out.Close()
 
-	if err := png.Encode(out, img); err != nil {
+	if err := png.Encode(out, wImg); err != nil {
 		log.Fatalf("png.Encode ERROR :: %s \n", err.Error())
 	}
 
