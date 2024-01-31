@@ -55,9 +55,7 @@ func main() {
 	log.Printf("Frame Width => %d, Frame Height => %d \n", w, h)
 	log.Printf("Pix Size => %d, Palette Size => %d \n", len(img.Pix), len(img.Palette))
 
-	c1 := NewUint32Color(0xb4b4aaff)
-	c2 := NewUint32Color(0xd8d8aaff)
-	c3 := NewUint32Color(0xb4b4ffff)
+	filtered := NewUint32Color(0xb4b4aaff, 0xd8d8aaff, 0xb4b4ffff)
 
 	wImg := image.NewRGBA(image.Rect(0, 0, w, h))
 	//wImg := image.NewRGBA64(image.Rect(0, 0, w, h))
@@ -66,7 +64,7 @@ func main() {
 			c := img.At(x, y)
 
 			r0, g0, b0, a0 := c.RGBA()
-			if c1.Equal(c) || c2.Equal(c) || c3.Equal(c) {
+			if filtered.IsIn(c) {
 				wImg.Set(x, y, color.RGBA{A: uint8(0)})
 
 				//v := wImg.ColorModel().Convert(color.NRGBA64{R: uint16(r0), G: uint16(g0), B: uint16(b0), A: uint16(0)})
@@ -94,24 +92,30 @@ func main() {
 	log.Println("Process Finished ...")
 }
 
-type Uint32Color struct {
-	rgba color.RGBA
+type FilteredColor struct {
+	filtered map[uint32]struct{}
 }
 
-func NewUint32Color(rgba uint32) Uint32Color {
-	return Uint32Color{
-		rgba: color.RGBA{
-			R: uint8(rgba >> 24),
-			G: uint8((rgba << 8) >> 24),
-			B: uint8((rgba << 16) >> 24),
-			A: uint8(rgba << 24 >> 24),
-		},
+func NewUint32Color(rgba ...uint32) FilteredColor {
+	filtered := make(map[uint32]struct{}, len(rgba))
+	for _, c32 := range rgba {
+		//	R: V >> 24
+		//	G: V << 8 >> 24
+		//	B: V << 16 >> 24
+		//	A: V << 24 >> 24
+		filtered[c32] = struct{}{}
 	}
+
+	return FilteredColor{filtered: filtered}
 }
 
-func (c32 Uint32Color) Equal(c64 color.Color) bool {
+func (fc FilteredColor) IsIn(c64 color.Color) bool {
 	r1, g1, b1, a1 := c64.RGBA()
-	r0, g0, b0, a0 := c32.rgba.RGBA()
 
-	return r1 == r0 && g1 == g0 && b1 == b0 && a1 == a0
+	rgba := r1>>8<<24 | g1>>8<<16 | b1>>8<<8 | a1>>8
+	if _, ok := fc.filtered[rgba]; ok {
+		return true
+	}
+
+	return false
 }
