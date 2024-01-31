@@ -30,4 +30,9 @@ func Test(t *testing.T) {
 	for _, user := range users {
 		log.Fatalf("USER %#v\n", user)
 	}
+
+	rgb := 0xa1a2a3
+
+	log.Printf("1: %x \n", rgb<<8<<8)
+	log.Printf("2: %x \n", rgb)
 }
