@@ -73,10 +73,7 @@ func main() {
 			}
 
 			log.Printf("(%d,%d) => (%x,%x,%x,%x) \n", x, y, r0, g0, b0, a0)
-
-			v := wImg.ColorModel().Convert(color.NRGBA64{R: uint16(r0), G: uint16(g0), B: uint16(b0), A: uint16(a0)})
-			rr, gg, bb, aa := v.RGBA()
-			wImg.Set(x, y, color.RGBA64{R: uint16(rr), G: uint16(gg), B: uint16(bb), A: uint16(aa)})
+			wImg.Set(x, y, c)
 		}
 	}
 
