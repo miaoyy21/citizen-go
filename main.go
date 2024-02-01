@@ -55,7 +55,7 @@ func main() {
 	log.Printf("Frame Width => %d, Frame Height => %d \n", w, h)
 	log.Printf("Pix Size => %d, Palette Size => %d \n", len(img.Pix), len(img.Palette))
 
-	filtered := NewUint32Color(0xb4b4aaff, 0xd8d8aaff, 0xb4b4ffff)
+	skipped := NewSkippedColor(0xb4b4aaff, 0xd8d8aaff, 0xb4b4ffff)
 
 	wImg := image.NewRGBA(image.Rect(0, 0, w, h))
 	//wImg := image.NewRGBA64(image.Rect(0, 0, w, h))
@@ -63,18 +63,16 @@ func main() {
 		for y := 0; y < h; y++ {
 			c := img.At(x, y)
 
-			r0, g0, b0, a0 := c.RGBA()
-			if filtered.IsIn(c) {
-				wImg.Set(x, y, color.RGBA{A: uint8(0)})
+			//v := wImg.ColorModel().Convert(color.NRGBA64{R: uint16(r0), G: uint16(g0), B: uint16(b0), A: uint16(0)})
+			//rr, gg, bb, aa := v.RGBA()
+			//wImg.Set(x, y, color.RGBA64{R: uint16(rr), G: uint16(gg), B: uint16(bb), A: uint16(aa)})
 
-				//v := wImg.ColorModel().Convert(color.NRGBA64{R: uint16(r0), G: uint16(g0), B: uint16(b0), A: uint16(0)})
-				//rr, gg, bb, aa := v.RGBA()
-				//wImg.Set(x, y, color.RGBA64{R: uint16(rr), G: uint16(gg), B: uint16(bb), A: uint16(aa)})
+			if skipped.IsIn(c) {
+				wImg.Set(x, y, color.RGBA{A: uint8(0)})
 
 				continue
 			}
 
-			log.Printf("(%d,%d) => (%x,%x,%x,%x) \n", x, y, r0, g0, b0, a0)
 			wImg.Set(x, y, c)
 		}
 	}
@@ -92,28 +90,27 @@ func main() {
 	log.Println("Process Finished ...")
 }
 
-type FilteredColor struct {
-	filtered map[uint32]struct{}
-}
+type SkippedColor map[uint32]struct{}
 
-func NewUint32Color(rgba ...uint32) FilteredColor {
-	filtered := make(map[uint32]struct{}, len(rgba))
+func NewSkippedColor(rgba ...uint32) SkippedColor {
+	skipped := make(map[uint32]struct{}, len(rgba))
+
+	//	R: V >> 24
+	//	G: V << 8 >> 24
+	//	B: V << 16 >> 24
+	//	A: V << 24 >> 24
 	for _, c32 := range rgba {
-		//	R: V >> 24
-		//	G: V << 8 >> 24
-		//	B: V << 16 >> 24
-		//	A: V << 24 >> 24
-		filtered[c32] = struct{}{}
+		skipped[c32] = struct{}{}
 	}
 
-	return FilteredColor{filtered: filtered}
+	return skipped
 }
 
-func (fc FilteredColor) IsIn(c64 color.Color) bool {
+func (skipped SkippedColor) IsIn(c64 color.Color) bool {
 	r1, g1, b1, a1 := c64.RGBA()
 
 	rgba := r1>>8<<24 | g1>>8<<16 | b1>>8<<8 | a1>>8
-	if _, ok := fc.filtered[rgba]; ok {
+	if _, ok := skipped[rgba]; ok {
 		return true
 	}
 
