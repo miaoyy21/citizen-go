@@ -55,15 +55,26 @@ func main() {
 	log.Printf("Frame Width => %d, Frame Height => %d \n", w, h)
 	log.Printf("Pix Size => %d, Palette Size => %d \n", len(srcImg.Pix), len(srcImg.Palette))
 
-	replaced := NewReplacedColor(map[color.Color][]uint32{
-		color.RGBA{A: 0}: {0xb4b4aaff, 0xd8d8aaff, 0xb4b4ffff},
+	replaced := NewReplacedColor(map[color.RGBA][]uint32{
+		color.RGBA{A: 0}: {
+			0xb4b4aaff, 0xd8d8aaff, 0xb4b4ffff,
+			0x9090aaff, 0xd8d8ffff, 0xd8d8ffff,
+			0x909055ff, 0xb4b455ff, 0x6c6caaff,
+		},
 	})
 
 	dstImg := image.NewRGBA(image.Rect(0, 0, w, h))
 	for x := 0; x < w; x++ {
 		for y := 0; y < h; y++ {
 			src := srcImg.At(x, y)
-			dstImg.Set(x, y, replaced.Replace(src))
+
+			dst, ok := replaced.Replace(src)
+			if ok {
+				dstImg.Set(x, y, dst)
+				continue
+			}
+
+			dstImg.Set(x, y, dst)
 		}
 	}
 
@@ -80,10 +91,10 @@ func main() {
 	log.Println("Process Finished ...")
 }
 
-type ReplacedColor map[uint32]color.Color
+type ReplacedColor map[uint32]color.RGBA
 
-func NewReplacedColor(rgba map[color.Color][]uint32) ReplacedColor {
-	skipped := make(map[uint32]color.Color)
+func NewReplacedColor(rgba map[color.RGBA][]uint32) ReplacedColor {
+	skipped := make(map[uint32]color.RGBA)
 
 	//	R: V >> 24
 	//	G: V << 8 >> 24
@@ -98,13 +109,13 @@ func NewReplacedColor(rgba map[color.Color][]uint32) ReplacedColor {
 	return skipped
 }
 
-func (replaced ReplacedColor) Replace(src color.Color) color.Color {
+func (replaced ReplacedColor) Replace(src color.Color) (color.RGBA, bool) {
 	r, g, b, a := src.RGBA()
 
 	rgba := r>>8<<24 | g>>8<<16 | b>>8<<8 | a>>8
 	if dst, ok := replaced[rgba]; ok {
-		return dst
+		return dst, true
 	}
 
-	return src
+	return color.RGBA{R: uint8(r >> 8), G: uint8(g >> 8), B: uint8(b >> 8), A: uint8(a >> 8)}, false
 }
