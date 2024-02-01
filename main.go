@@ -80,67 +80,10 @@ func main() {
 	}
 
 	// 消除锯齿
-	for x := 1; x < w-1; x++ {
-		for y := 1; y < h-1; y++ {
-			src := dstImg.At(x, y)
-
-			_, _, _, a := src.RGBA()
-			if a == 0xffff {
-				dstImg.Set(x, y, color.Black)
-				continue
-			}
-
-			var sum int
-			for x0 := x - 1; x0 <= x+1; x0++ {
-				for y0 := y - 1; y0 <= y+1; y0++ {
-					if x0 == x && y0 == y {
-						continue
-					}
-
-					_, _, _, a0 := dstImg.At(x0, y0).RGBA()
-					if a0 == 0xffff {
-						sum += 1
-					}
-				}
-			}
-
-			if sum >= 5 {
-				dstImg.Set(x, y, color.Black)
-			}
-		}
-	}
+	clear1(dstImg)
 
 	// 消除噪音
-	for x := 1; x < w-1; x++ {
-		for y := 1; y < h-1; y++ {
-			src := dstImg.At(x, y)
-
-			_, _, _, a := src.RGBA()
-			if a != 0xffff {
-				continue
-			}
-
-			for i := 1; i <= 8; i++ {
-				var sum int
-				for x0 := x - i; x0 <= x+i; x0++ {
-					for y0 := y - i; y0 <= y+i; y0++ {
-						if x0 == x && y0 == y {
-							continue
-						}
-
-						_, _, _, a0 := dstImg.At(x0, y0).RGBA()
-						if a0 == 0xffff {
-							sum += 1
-						}
-					}
-				}
-
-				if sum <= int(math.Floor(0.25*float64(i*i*4))) {
-					dstImg.Set(x, y, color.RGBA{A: 0})
-				}
-			}
-		}
-	}
+	clear1(dstImg)
 
 	out, err := os.Create("out.png")
 	if err != nil {
@@ -182,4 +125,70 @@ func (replaced ReplacedColor) Replace(src color.Color) (color.RGBA, bool) {
 	}
 
 	return color.RGBA{R: uint8(r >> 8), G: uint8(g >> 8), B: uint8(b >> 8), A: uint8(a >> 8)}, false
+}
+
+func clear1(dstImg *image.RGBA) {
+	for x := 1; x < dstImg.Rect.Dx()-1; x++ {
+		for y := 1; y < dstImg.Rect.Dy()-1; y++ {
+			src := dstImg.At(x, y)
+
+			_, _, _, a := src.RGBA()
+			if a == 0xffff {
+				dstImg.Set(x, y, color.Black)
+				continue
+			}
+
+			var sum int
+			for x0 := x - 1; x0 <= x+1; x0++ {
+				for y0 := y - 1; y0 <= y+1; y0++ {
+					if x0 == x && y0 == y {
+						continue
+					}
+
+					_, _, _, a0 := dstImg.At(x0, y0).RGBA()
+					if a0 == 0xffff {
+						sum += 1
+					}
+				}
+			}
+
+			if sum >= 5 {
+				dstImg.Set(x, y, color.Black)
+			}
+		}
+	}
+}
+
+func clear2(dstImg *image.RGBA) {
+
+	for x := 1; x < dstImg.Rect.Dx()-1; x++ {
+		for y := 1; y < dstImg.Rect.Dy()-1; y++ {
+			src := dstImg.At(x, y)
+
+			_, _, _, a := src.RGBA()
+			if a != 0xffff {
+				continue
+			}
+
+			for i := 1; i <= 8; i++ {
+				var sum int
+				for x0 := x - i; x0 <= x+i; x0++ {
+					for y0 := y - i; y0 <= y+i; y0++ {
+						if x0 == x && y0 == y {
+							continue
+						}
+
+						_, _, _, a0 := dstImg.At(x0, y0).RGBA()
+						if a0 == 0xffff {
+							sum += 1
+						}
+					}
+				}
+
+				if sum <= int(math.Floor(0.25*float64(i*i*4))) {
+					dstImg.Set(x, y, color.RGBA{A: 0})
+				}
+			}
+		}
+	}
 }
