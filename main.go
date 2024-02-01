@@ -50,30 +50,20 @@ func main() {
 	log.Printf("Config Color Model => %#v \n", g.Config.ColorModel)
 	log.Printf("Config Width => %d, Config Height => %d\n", g.Config.Width, g.Config.Height)
 
-	img := g.Image[0]
-	w, h := img.Bounds().Dx(), img.Bounds().Dy()
+	srcImg := g.Image[0]
+	w, h := srcImg.Bounds().Dx(), srcImg.Bounds().Dy()
 	log.Printf("Frame Width => %d, Frame Height => %d \n", w, h)
-	log.Printf("Pix Size => %d, Palette Size => %d \n", len(img.Pix), len(img.Palette))
+	log.Printf("Pix Size => %d, Palette Size => %d \n", len(srcImg.Pix), len(srcImg.Palette))
 
-	skipped := NewSkippedColor(0xb4b4aaff, 0xd8d8aaff, 0xb4b4ffff)
+	replaced := NewReplacedColor(map[color.Color][]uint32{
+		color.RGBA{A: 0}: {0xb4b4aaff, 0xd8d8aaff, 0xb4b4ffff},
+	})
 
-	wImg := image.NewRGBA(image.Rect(0, 0, w, h))
-	//wImg := image.NewRGBA64(image.Rect(0, 0, w, h))
+	dstImg := image.NewRGBA(image.Rect(0, 0, w, h))
 	for x := 0; x < w; x++ {
 		for y := 0; y < h; y++ {
-			c := img.At(x, y)
-
-			//v := wImg.ColorModel().Convert(color.NRGBA64{R: uint16(r0), G: uint16(g0), B: uint16(b0), A: uint16(0)})
-			//rr, gg, bb, aa := v.RGBA()
-			//wImg.Set(x, y, color.RGBA64{R: uint16(rr), G: uint16(gg), B: uint16(bb), A: uint16(aa)})
-
-			if skipped.IsIn(c) {
-				wImg.Set(x, y, color.RGBA{A: uint8(0)})
-
-				continue
-			}
-
-			wImg.Set(x, y, c)
+			src := srcImg.At(x, y)
+			dstImg.Set(x, y, replaced.Replace(src))
 		}
 	}
 
@@ -83,36 +73,38 @@ func main() {
 	}
 	defer out.Close()
 
-	if err := png.Encode(out, wImg); err != nil {
+	if err := png.Encode(out, dstImg); err != nil {
 		log.Fatalf("png.Encode ERROR :: %s \n", err.Error())
 	}
 
 	log.Println("Process Finished ...")
 }
 
-type SkippedColor map[uint32]struct{}
+type ReplacedColor map[uint32]color.Color
 
-func NewSkippedColor(rgba ...uint32) SkippedColor {
-	skipped := make(map[uint32]struct{}, len(rgba))
+func NewReplacedColor(rgba map[color.Color][]uint32) ReplacedColor {
+	skipped := make(map[uint32]color.Color)
 
 	//	R: V >> 24
 	//	G: V << 8 >> 24
 	//	B: V << 16 >> 24
 	//	A: V << 24 >> 24
-	for _, c32 := range rgba {
-		skipped[c32] = struct{}{}
+	for c, c32s := range rgba {
+		for _, c32 := range c32s {
+			skipped[c32] = c
+		}
 	}
 
 	return skipped
 }
 
-func (skipped SkippedColor) IsIn(c64 color.Color) bool {
-	r1, g1, b1, a1 := c64.RGBA()
+func (replaced ReplacedColor) Replace(src color.Color) color.Color {
+	r, g, b, a := src.RGBA()
 
-	rgba := r1>>8<<24 | g1>>8<<16 | b1>>8<<8 | a1>>8
-	if _, ok := skipped[rgba]; ok {
-		return true
+	rgba := r>>8<<24 | g>>8<<16 | b>>8<<8 | a>>8
+	if dst, ok := replaced[rgba]; ok {
+		return dst
 	}
 
-	return false
+	return src
 }
