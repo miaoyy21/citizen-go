@@ -85,6 +85,7 @@ func main() {
 	// 消除噪音
 	clear1(dstImg)
 
+	// PNG格式输出到文件
 	out, err := os.Create("out.png")
 	if err != nil {
 		log.Fatalf("os.Create ERROR :: %s \n", err.Error())
