@@ -36,7 +36,7 @@ func main() {
 	//	log.Fatalf("Fatal ERROR :: %s \n", err.Error())
 	//}
 
-	in, err := os.Open("assets/004.gif")
+	in, err := os.Open("assets/001.gif")
 	if err != nil {
 		log.Fatalf("os.Open ERROR :: %s \n", err.Error())
 	}
