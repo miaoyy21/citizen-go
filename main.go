@@ -36,7 +36,7 @@ func main() {
 	//	log.Fatalf("Fatal ERROR :: %s \n", err.Error())
 	//}
 
-	in, err := os.Open("assets/001.gif")
+	in, err := os.Open("assets/004.gif")
 	if err != nil {
 		log.Fatalf("os.Open ERROR :: %s \n", err.Error())
 	}
@@ -51,7 +51,7 @@ func main() {
 	log.Printf("Config Color Model => %#v \n", g.Config.ColorModel)
 	log.Printf("Config Width => %d, Config Height => %d\n", g.Config.Width, g.Config.Height)
 
-	srcImg := g.Image[0]
+	srcImg := g.Image[20]
 	w, h := srcImg.Bounds().Dx(), srcImg.Bounds().Dy()
 	log.Printf("Frame Width => %d, Frame Height => %d \n", w, h)
 	log.Printf("Pix Size => %d, Palette Size => %d \n", len(srcImg.Pix), len(srcImg.Palette))
