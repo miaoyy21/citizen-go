@@ -83,7 +83,7 @@ func main() {
 	clear1(dstImg)
 
 	// 消除噪音
-	clear1(dstImg)
+	clear2(dstImg)
 
 	// PNG格式输出到文件
 	out, err := os.Create("out.png")
