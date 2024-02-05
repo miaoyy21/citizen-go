@@ -51,7 +51,7 @@ func main() {
 	log.Printf("Config Color Model => %#v \n", g.Config.ColorModel)
 	log.Printf("Config Width => %d, Config Height => %d\n", g.Config.Width, g.Config.Height)
 
-	srcImg := g.Image[0]
+	srcImg := g.Image[8]
 	w, h := srcImg.Bounds().Dx(), srcImg.Bounds().Dy()
 	log.Printf("Frame Width => %d, Frame Height => %d \n", w, h)
 	log.Printf("Pix Size => %d, Palette Size => %d \n", len(srcImg.Pix), len(srcImg.Palette))
