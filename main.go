@@ -22,7 +22,7 @@ func Mp4ToGif(root string) error {
 		}
 
 		return ffmpeg.Input(path).
-			Output(strings.ReplaceAll(path, ".mp4", ".gif"), ffmpeg.KwArgs{"s": "1280x720", "r": "12"}).
+			Output(strings.ReplaceAll(path, ".mp4", ".gif"), ffmpeg.KwArgs{"s": "320x240", "r": "12"}).
 			OverWriteOutput().ErrorToStdOut().Run()
 	})
 }
