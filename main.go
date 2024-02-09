@@ -17,12 +17,12 @@ func Mp4ToGif(root string) error {
 			return err
 		}
 
-		if !strings.EqualFold(filepath.Ext(path), ".mp4") {
+		if !strings.EqualFold(filepath.Ext(path), ".mov") {
 			return nil
 		}
 
 		return ffmpeg.Input(path).
-			Output(strings.ReplaceAll(path, ".mp4", ".gif"), ffmpeg.KwArgs{"s": "320x240", "r": "12"}).
+			Output(strings.ReplaceAll(path, ".mov", ".gif"), ffmpeg.KwArgs{"s": "320x240", "r": "12"}).
 			OverWriteOutput().ErrorToStdOut().Run()
 	})
 }
