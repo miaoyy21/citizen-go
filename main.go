@@ -21,8 +21,9 @@ func Mp4ToGif(root string) error {
 			return nil
 		}
 
+		// 1280*720 = 16:9 = 320*180
 		return ffmpeg.Input(path).
-			Output(strings.ReplaceAll(path, ".mp4", ".gif"), ffmpeg.KwArgs{"s": "320x240", "r": "12"}).
+			Output(strings.ReplaceAll(path, ".mp4", ".gif"), ffmpeg.KwArgs{"s": "320x180", "r": "12"}).
 			OverWriteOutput().ErrorToStdOut().Run()
 	})
 }
