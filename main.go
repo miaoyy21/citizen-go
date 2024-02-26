@@ -76,17 +76,16 @@ func Walk(path string, info fs.FileInfo, err error) error {
 
 	file, err := os.Open(path)
 	if err != nil {
-		return err
+		return fmt.Errorf("[%s] %s", path, err.Error())
 	}
 	defer file.Close()
 
 	img, err := png.Decode(file)
 	if err != nil {
-		return err
+		return fmt.Errorf("[%s] %s", path, err.Error())
 	}
 
 	bounds := img.Bounds()
-	log.Printf("文件名 %12s  尺寸 (W)%3d - (H)%-5d \n", info.Name(), bounds.Dx(), bounds.Dy())
 
 	//识别矩形框，锚点为左下角
 	animation := &Animation{
@@ -147,7 +146,7 @@ func Walk(path string, info fs.FileInfo, err error) error {
 			case 0xff00ffff:
 				animation.AttackFoot = append(animation.AttackFoot, rectangle)
 			default:
-				return fmt.Errorf("unrecognize color %x at local point (%d,%d)", rgba, dx, dy)
+				return fmt.Errorf("[%s] unrecognize color %x at local point (%d,%d)", path, rgba, dx, dy)
 
 			}
 
@@ -160,6 +159,11 @@ func Walk(path string, info fs.FileInfo, err error) error {
 		}
 	}
 
+	// 必须设置角色的身体碰撞框
+	if len(animation.ExposeBody)+len(animation.AttackBody) < 1 {
+		return fmt.Errorf("[%s] missing Setting Body's Collision", path)
+	}
+
 	// 角色是否在地面
 	animation.IsLand = isLand
 
@@ -168,7 +172,7 @@ func Walk(path string, info fs.FileInfo, err error) error {
 
 	// JSON
 	if err := json.NewEncoder(os.Stdout).Encode(animation); err != nil {
-		return err
+		return fmt.Errorf("[%s] %s", path, err.Error())
 	}
 
 	return errors.New("TODO :: only Read One File")
