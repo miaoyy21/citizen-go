@@ -1,194 +1,218 @@
 package main
 
 import (
-	ffmpeg "github.com/u2takey/ffmpeg-go"
+	"encoding/json"
+	"errors"
+	"fmt"
 	"image"
-	"image/color"
+	"image/png"
 	"io/fs"
 	"log"
 	"math"
+	"os"
 	"path/filepath"
 	"strings"
 )
 
-func Mp4ToGif(root string) error {
-	return filepath.Walk(root, func(path string, info fs.FileInfo, err error) error {
-		if err != nil {
-			return err
+type Animation struct {
+	Name   string
+	Width  int
+	Height int
+
+	IsLand   bool        // 是否在地面
+	Position image.Point // 角色所在的粗略中心位置
+
+	ExposeHead []image.Rectangle // 头（可被他人攻击）
+	ExposeBody []image.Rectangle // 体（可被他人攻击）
+	ExposeHand []image.Rectangle // 手（可被他人攻击）
+	ExposeFoot []image.Rectangle // 脚（可被他人攻击）
+
+	AttackHead []image.Rectangle // 头（可攻击他人）
+	AttackBody []image.Rectangle // 体（可攻击他人）
+	AttackHand []image.Rectangle // 手（可攻击他人）
+	AttackFoot []image.Rectangle // 脚（可攻击他人）
+}
+
+// 计算角色所在的粗略中心位置
+func (animation *Animation) setPosition() {
+	min, max := image.Point{X: 10000, Y: 10000}, image.Point{}
+
+	rects := make([]image.Rectangle, 0, len(animation.ExposeBody)+len(animation.AttackBody))
+	rects = append(rects, animation.ExposeBody...)
+	rects = append(rects, animation.AttackBody...)
+
+	for _, rect := range rects {
+		if rect.Min.X < min.X {
+			min.X = rect.Min.X
 		}
 
-		if !strings.EqualFold(filepath.Ext(path), ".mp4") {
-			return nil
+		if rect.Min.Y < min.Y {
+			min.Y = rect.Min.Y
 		}
 
-		// 1280*720 = 16:9 = 320*180
-		return ffmpeg.Input(path).
-			Output(strings.ReplaceAll(path, ".mp4", ".gif"), ffmpeg.KwArgs{"s": "320x180", "r": "12"}).
-			OverWriteOutput().ErrorToStdOut().Run()
-	})
+		if rect.Max.X > max.X {
+			max.X = rect.Max.X
+		}
+
+		if rect.Max.Y > max.Y {
+			max.Y = rect.Max.Y
+		}
+	}
+
+	animation.Position = image.Point{
+		X: int(math.Ceil(float64(min.X+max.X) / 2)),
+		Y: int(math.Ceil(float64(min.Y+max.Y) / 2)),
+	}
+}
+
+func Walk(path string, info fs.FileInfo, err error) error {
+	if err != nil {
+		return err
+	}
+
+	if info.IsDir() || !strings.HasSuffix(info.Name(), ".png") {
+		return nil
+	}
+
+	file, err := os.Open(path)
+	if err != nil {
+		return err
+	}
+	defer file.Close()
+
+	img, err := png.Decode(file)
+	if err != nil {
+		return err
+	}
+
+	bounds := img.Bounds()
+	log.Printf("文件名 %12s  尺寸 (W)%3d - (H)%-5d \n", info.Name(), bounds.Dx(), bounds.Dy())
+
+	//识别矩形框，锚点为左下角
+	animation := &Animation{
+		Name:   strings.Split(info.Name(), ".")[0],
+		Width:  bounds.Dx(),
+		Height: bounds.Dy(),
+
+		ExposeHead: make([]image.Rectangle, 0),
+		ExposeBody: make([]image.Rectangle, 0),
+		ExposeHand: make([]image.Rectangle, 0),
+		ExposeFoot: make([]image.Rectangle, 0),
+
+		AttackHead: make([]image.Rectangle, 0),
+		AttackBody: make([]image.Rectangle, 0),
+		AttackHand: make([]image.Rectangle, 0),
+		AttackFoot: make([]image.Rectangle, 0),
+	}
+
+	skipped, isLand := make(map[string]struct{}), false
+	for x := 0; x < bounds.Dx(); x++ {
+		for y := bounds.Dy(); y >= 0; y-- {
+			dx, dy := x, bounds.Dy()-1-y // 转换后的坐标系
+			r, g, b, a := img.At(x, y).RGBA()
+			if a == 0 {
+				continue
+			}
+
+			rgba := r>>8<<24 | g>>8<<16 | b>>8<<8 | a>>8
+			if rgba == 0x000000ff {
+				// 正常的地面距离底部5像素
+				if dy <= 7 {
+					isLand = true
+				}
+
+				continue
+			}
+
+			if _, ok := skipped[fmt.Sprintf("%d_%d", dx, dy)]; ok {
+				continue
+			}
+
+			rectangle := findRectangle(img, x, y, dx, dy, rgba)
+			switch rgba {
+			case 0x008000ff:
+				animation.ExposeHead = append(animation.ExposeHead, rectangle)
+			case 0x00ff00ff:
+				animation.ExposeBody = append(animation.ExposeBody, rectangle)
+			case 0x000080ff:
+				animation.ExposeHand = append(animation.ExposeHand, rectangle)
+			case 0x0000ffff:
+				animation.ExposeFoot = append(animation.ExposeFoot, rectangle)
+			case 0xff8000ff:
+				animation.AttackHead = append(animation.AttackHead, rectangle)
+			case 0xffff00ff:
+				animation.AttackBody = append(animation.AttackBody, rectangle)
+			case 0xff0080ff:
+				animation.AttackHand = append(animation.AttackHand, rectangle)
+			case 0xff00ffff:
+				animation.AttackFoot = append(animation.AttackFoot, rectangle)
+			default:
+				return fmt.Errorf("unrecognize color %x at local point (%d,%d)", rgba, dx, dy)
+
+			}
+
+			rectMin, rectMax := rectangle.Min, rectangle.Max
+			for x0 := rectMin.X; x0 <= rectMax.X; x0++ {
+				for y0 := rectMin.Y; y0 <= rectMax.Y; y0++ {
+					skipped[fmt.Sprintf("%d_%d", x0, y0)] = struct{}{}
+				}
+			}
+		}
+	}
+
+	// 角色是否在地面
+	animation.IsLand = isLand
+
+	// 粗略计算角色所在的中心位置
+	animation.setPosition()
+
+	// JSON
+	if err := json.NewEncoder(os.Stdout).Encode(animation); err != nil {
+		return err
+	}
+
+	return errors.New("TODO :: only Read One File")
+}
+
+// 以此点为初始点，向右（X轴）寻找最大坐标maxX，向上（Y轴）寻找最大坐标maxY
+func findRectangle(img image.Image, x, y, dx, dy int, rgba uint32) image.Rectangle {
+	min, max := image.Point{X: dx, Y: dy}, image.Point{X: dx, Y: dy}
+
+	// X轴寻找
+	for x0 := dx; x0 < img.Bounds().Dx(); x0++ {
+		r, g, b, a := img.At(x0, y).RGBA()
+		if a == 0 {
+			break
+		}
+
+		rgba0 := r>>8<<24 | g>>8<<16 | b>>8<<8 | a>>8
+		if rgba0 != rgba {
+			break
+		}
+
+		max.X = x0
+	}
+
+	// Y轴寻找
+	for y0 := dy; y0 < img.Bounds().Dy(); y0++ {
+		r, g, b, a := img.At(x, img.Bounds().Dy()-1-y0).RGBA()
+		if a == 0 {
+			break
+		}
+
+		rgba0 := r>>8<<24 | g>>8<<16 | b>>8<<8 | a>>8
+		if rgba0 != rgba {
+			break
+		}
+
+		max.Y = y0
+	}
+
+	return image.Rectangle{Min: min, Max: max}
 }
 
 func main() {
-	log.Println("Process Started ...")
-
-	if err := Mp4ToGif("assets"); err != nil {
-		log.Fatalf("Fatal ERROR :: %s \n", err.Error())
-	}
-
-	//in, err := os.Open("assets/001.gif")
-	//if err != nil {
-	//	log.Fatalf("os.Open ERROR :: %s \n", err.Error())
-	//}
-	//defer in.Close()
-	//
-	//g, err := gif.DecodeAll(in)
-	//if err != nil {
-	//	log.Fatalf("gif.DecodeAll ERROR :: %s \n", err.Error())
-	//}
-	//
-	//log.Printf("Image Size => %d, Delay Size => %d, Loop Count => %d, Disposal Size => %d, Background Index => %#v \n", len(g.Image), len(g.Delay), g.LoopCount, len(g.Disposal), g.BackgroundIndex)
-	//log.Printf("Config Color Model => %#v \n", g.Config.ColorModel)
-	//log.Printf("Config Width => %d, Config Height => %d\n", g.Config.Width, g.Config.Height)
-	//
-	//srcImg := g.Image[8]
-	//w, h := srcImg.Bounds().Dx(), srcImg.Bounds().Dy()
-	//log.Printf("Frame Width => %d, Frame Height => %d \n", w, h)
-	//log.Printf("Pix Size => %d, Palette Size => %d \n", len(srcImg.Pix), len(srcImg.Palette))
-	//
-	//replaced := NewReplacedColor(map[color.RGBA][]uint32{
-	//	color.RGBA{A: 0}: {
-	//		0xb4b4aaff, 0xd8d8aaff, 0xb4b4ffff,
-	//		0x9090aaff, 0xd8d8ffff, 0xd8d8ffff,
-	//		0x909055ff, 0xb4b455ff, 0x6c6caaff,
-	//	},
-	//})
-	//
-	//dstImg := image.NewRGBA(image.Rect(0, 0, w, h))
-	//for x := 0; x < w; x++ {
-	//	for y := 0; y < h; y++ {
-	//		src := srcImg.At(x, y)
-	//
-	//		dst, ok := replaced.Replace(src)
-	//		if ok {
-	//			dstImg.Set(x, y, dst)
-	//			continue
-	//		}
-	//
-	//		dstImg.Set(x, y, dst)
-	//	}
-	//}
-	//
-	//// 消除锯齿
-	//clear1(dstImg)
-	//
-	//// 消除噪音
-	//clear2(dstImg)
-	//
-	//// PNG格式输出到文件
-	//out, err := os.Create("out.png")
-	//if err != nil {
-	//	log.Fatalf("os.Create ERROR :: %s \n", err.Error())
-	//}
-	//defer out.Close()
-	//
-	//if err := png.Encode(out, dstImg); err != nil {
-	//	log.Fatalf("png.Encode ERROR :: %s \n", err.Error())
-	//}
-
-	log.Println("Process Finished ...")
-}
-
-type ReplacedColor map[uint32]color.RGBA
-
-func NewReplacedColor(rgba map[color.RGBA][]uint32) ReplacedColor {
-	skipped := make(map[uint32]color.RGBA)
-
-	//	R: V >> 24
-	//	G: V << 8 >> 24
-	//	B: V << 16 >> 24
-	//	A: V << 24 >> 24
-	for c, c32s := range rgba {
-		for _, c32 := range c32s {
-			skipped[c32] = c
-		}
-	}
-
-	return skipped
-}
-
-func (replaced ReplacedColor) Replace(src color.Color) (color.RGBA, bool) {
-	r, g, b, a := src.RGBA()
-
-	rgba := r>>8<<24 | g>>8<<16 | b>>8<<8 | a>>8
-	if dst, ok := replaced[rgba]; ok {
-		return dst, true
-	}
-
-	return color.RGBA{R: uint8(r >> 8), G: uint8(g >> 8), B: uint8(b >> 8), A: uint8(a >> 8)}, false
-}
-
-func clear1(dstImg *image.RGBA) {
-	for x := 1; x < dstImg.Rect.Dx()-1; x++ {
-		for y := 1; y < dstImg.Rect.Dy()-1; y++ {
-			src := dstImg.At(x, y)
-
-			_, _, _, a := src.RGBA()
-			if a == 0xffff {
-				dstImg.Set(x, y, color.Black)
-				continue
-			}
-
-			var sum int
-			for x0 := x - 1; x0 <= x+1; x0++ {
-				for y0 := y - 1; y0 <= y+1; y0++ {
-					if x0 == x && y0 == y {
-						continue
-					}
-
-					_, _, _, a0 := dstImg.At(x0, y0).RGBA()
-					if a0 == 0xffff {
-						sum += 1
-					}
-				}
-			}
-
-			if sum >= 5 {
-				dstImg.Set(x, y, color.Black)
-			}
-		}
-	}
-}
-
-func clear2(dstImg *image.RGBA) {
-
-	for x := 1; x < dstImg.Rect.Dx()-1; x++ {
-		for y := 1; y < dstImg.Rect.Dy()-1; y++ {
-			src := dstImg.At(x, y)
-
-			_, _, _, a := src.RGBA()
-			if a != 0xffff {
-				continue
-			}
-
-			for i := 1; i <= 8; i++ {
-				var sum int
-				for x0 := x - i; x0 <= x+i; x0++ {
-					for y0 := y - i; y0 <= y+i; y0++ {
-						if x0 == x && y0 == y {
-							continue
-						}
-
-						_, _, _, a0 := dstImg.At(x0, y0).RGBA()
-						if a0 == 0xffff {
-							sum += 1
-						}
-					}
-				}
-
-				if sum <= int(math.Floor(0.25*float64(i*i*4))) {
-					dstImg.Set(x, y, color.RGBA{A: 0})
-				}
-			}
-		}
+	if err := filepath.Walk("assets", Walk); err != nil {
+		log.Fatalf("filepath.Walk Fail :: %s \n", err.Error())
 	}
 }
