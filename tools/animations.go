@@ -224,6 +224,10 @@ func ParseAnimations() error {
 			return nil
 		}
 
+		if strings.HasPrefix(info.Name(), "stage") {
+			return nil
+		}
+
 		paths = append(paths, path)
 		return nil
 	}); err != nil {
