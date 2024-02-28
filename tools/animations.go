@@ -18,9 +18,10 @@ type Animation struct {
 	Width  int
 	Height int
 
-	Sequence int         // 帧顺序号，从1开始
-	IsLand   bool        // 是否在地面
-	Position image.Point // 角色所在的粗略中心位置
+	Sequence int             // 帧顺序号，从1开始
+	IsLand   bool            // 是否在地面
+	Position image.Point     // 角色所在的粗略中心位置
+	Size     image.Rectangle // 真实图片尺寸
 
 	ExposeHead []image.Rectangle // 头（可被他人攻击）
 	ExposeBody []image.Rectangle // 体（可被他人攻击）
@@ -33,13 +34,13 @@ type Animation struct {
 	AttackFoot []image.Rectangle // 脚（可攻击他人）
 }
 
-// 计算角色所在的粗略中心位置
-func (animation *Animation) setPosition() {
-	min, max := image.Point{X: 10000, Y: 10000}, image.Point{}
+func (animation *Animation) rectangle(rss ...[]image.Rectangle) image.Rectangle {
+	rects := make([]image.Rectangle, 0)
+	for _, rs := range rss {
+		rects = append(rects, rs...)
+	}
 
-	rects := make([]image.Rectangle, 0, len(animation.ExposeBody)+len(animation.AttackBody))
-	rects = append(rects, animation.ExposeBody...)
-	rects = append(rects, animation.AttackBody...)
+	min, max := image.Point{X: 10000, Y: 10000}, image.Point{}
 
 	for _, rect := range rects {
 		if rect.Min.X < min.X {
@@ -59,10 +60,7 @@ func (animation *Animation) setPosition() {
 		}
 	}
 
-	animation.Position = image.Point{
-		X: int(math.Ceil(float64(min.X+max.X) / 2)),
-		Y: int(math.Ceil(float64(min.Y+max.Y) / 2)),
-	}
+	return image.Rectangle{Min: min, Max: max}
 }
 
 func parseAnimation(path string) (*Animation, error) {
@@ -162,6 +160,12 @@ func parseAnimation(path string) (*Animation, error) {
 		}
 	}
 
+	// 计算真实图片尺寸
+	animation.Size = animation.rectangle(
+		animation.ExposeHead, animation.ExposeBody, animation.ExposeHand, animation.ExposeFoot,
+		animation.AttackHead, animation.AttackBody, animation.AttackHand, animation.AttackFoot,
+	)
+
 	// 必须设置角色的身体碰撞框
 	if len(animation.ExposeBody)+len(animation.AttackBody) < 1 {
 		return nil, fmt.Errorf("[%s] missing Setting Body's Collision", path)
@@ -171,7 +175,11 @@ func parseAnimation(path string) (*Animation, error) {
 	animation.IsLand = isLand
 
 	// 粗略计算角色所在的中心位置
-	animation.setPosition()
+	size := animation.rectangle(animation.ExposeBody, animation.AttackBody)
+	animation.Position = image.Point{
+		X: int(math.Ceil(float64(size.Min.X+size.Max.X) / 2)),
+		Y: int(math.Ceil(float64(size.Min.Y+size.Max.Y) / 2)),
+	}
 
 	return animation, nil
 }
