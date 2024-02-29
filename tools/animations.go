@@ -13,10 +13,10 @@ import (
 	"strings"
 )
 
-type Animation struct {
-	Name   string
-	Width  int
-	Height int
+type Frame struct {
+	Name   string `json:"-"`
+	Width  int    `json:"-"`
+	Height int    `json:"-"`
 
 	Sequence int             // 帧顺序号，从1开始
 	IsLand   bool            // 是否在地面
@@ -34,7 +34,7 @@ type Animation struct {
 	AttackFoot []image.Rectangle // 脚（可攻击他人）
 }
 
-func (animation *Animation) rectangle(rss ...[]image.Rectangle) image.Rectangle {
+func (animation *Frame) rectangle(rss ...[]image.Rectangle) image.Rectangle {
 	rects := make([]image.Rectangle, 0)
 	for _, rs := range rss {
 		rects = append(rects, rs...)
@@ -63,7 +63,7 @@ func (animation *Animation) rectangle(rss ...[]image.Rectangle) image.Rectangle 
 	return image.Rectangle{Min: min, Max: max}
 }
 
-func parseAnimation(path string) (*Animation, error) {
+func parseFrame(path string) (*Frame, error) {
 	file, err := os.Open(path)
 	if err != nil {
 		return nil, fmt.Errorf("[%s] %s", path, err.Error())
@@ -79,7 +79,7 @@ func parseAnimation(path string) (*Animation, error) {
 	n0 := strings.Split(filepath.Base(path), ".")[0]
 	n0s := strings.Split(n0, "_")
 	if len(n0s) != 2 {
-		return nil, fmt.Errorf("[%s] %s", path, "invalid animation file")
+		return nil, fmt.Errorf("[%s] %s", path, "invalid frame file")
 	}
 
 	seq, err := strconv.Atoi(n0s[1])
@@ -88,7 +88,7 @@ func parseAnimation(path string) (*Animation, error) {
 	}
 
 	//识别矩形框，锚点为左下角
-	animation := &Animation{
+	frame := &Frame{
 		Name:   n0s[0],
 		Width:  bounds.Dx(),
 		Height: bounds.Dy(),
@@ -131,21 +131,21 @@ func parseAnimation(path string) (*Animation, error) {
 			rectangle := findRectangle(img, x, y, dx, dy, rgba)
 			switch rgba {
 			case 0x008000ff:
-				animation.ExposeHead = append(animation.ExposeHead, rectangle)
+				frame.ExposeHead = append(frame.ExposeHead, rectangle)
 			case 0x00ff00ff:
-				animation.ExposeBody = append(animation.ExposeBody, rectangle)
+				frame.ExposeBody = append(frame.ExposeBody, rectangle)
 			case 0x000080ff:
-				animation.ExposeHand = append(animation.ExposeHand, rectangle)
+				frame.ExposeHand = append(frame.ExposeHand, rectangle)
 			case 0x0000ffff:
-				animation.ExposeFoot = append(animation.ExposeFoot, rectangle)
+				frame.ExposeFoot = append(frame.ExposeFoot, rectangle)
 			case 0xff8000ff:
-				animation.AttackHead = append(animation.AttackHead, rectangle)
+				frame.AttackHead = append(frame.AttackHead, rectangle)
 			case 0xffff00ff:
-				animation.AttackBody = append(animation.AttackBody, rectangle)
+				frame.AttackBody = append(frame.AttackBody, rectangle)
 			case 0xff0080ff:
-				animation.AttackHand = append(animation.AttackHand, rectangle)
+				frame.AttackHand = append(frame.AttackHand, rectangle)
 			case 0xff00ffff:
-				animation.AttackFoot = append(animation.AttackFoot, rectangle)
+				frame.AttackFoot = append(frame.AttackFoot, rectangle)
 			default:
 				//return nil, fmt.Errorf("[%s] unrecognize color %x at local point (%d,%d)", path, rgba, dx, dy)
 
@@ -161,27 +161,27 @@ func parseAnimation(path string) (*Animation, error) {
 	}
 
 	// 计算真实图片尺寸
-	animation.Size = animation.rectangle(
-		animation.ExposeHead, animation.ExposeBody, animation.ExposeHand, animation.ExposeFoot,
-		animation.AttackHead, animation.AttackBody, animation.AttackHand, animation.AttackFoot,
+	frame.Size = frame.rectangle(
+		frame.ExposeHead, frame.ExposeBody, frame.ExposeHand, frame.ExposeFoot,
+		frame.AttackHead, frame.AttackBody, frame.AttackHand, frame.AttackFoot,
 	)
 
 	// 必须设置角色的身体碰撞框
-	if len(animation.ExposeBody)+len(animation.AttackBody) < 1 {
+	if len(frame.ExposeBody)+len(frame.AttackBody) < 1 {
 		return nil, fmt.Errorf("[%s] missing Setting Body's Collision", path)
 	}
 
 	// 角色是否在地面
-	animation.IsLand = isLand
+	frame.IsLand = isLand
 
 	// 粗略计算角色所在的中心位置
-	size := animation.rectangle(animation.ExposeBody, animation.AttackBody)
-	animation.Position = image.Point{
+	size := frame.rectangle(frame.ExposeBody, frame.AttackBody)
+	frame.Position = image.Point{
 		X: int(math.Ceil(float64(size.Min.X+size.Max.X) / 2)),
 		Y: int(math.Ceil(float64(size.Min.Y+size.Max.Y) / 2)),
 	}
 
-	return animation, nil
+	return frame, nil
 }
 
 // 以此点为初始点，向右（X轴）寻找最大坐标maxX，向上（Y轴）寻找最大坐标maxY
@@ -221,6 +221,13 @@ func findRectangle(img image.Image, x, y, dx, dy int, rgba uint32) image.Rectang
 	return image.Rectangle{Min: min, Max: max}
 }
 
+type Animation struct {
+	Width  int
+	Height int
+
+	Frames []*Frame
+}
+
 func ParseAnimations() error {
 	paths := make([]string, 0)
 	if err := filepath.Walk("assets", func(path string, info fs.FileInfo, err error) error {
@@ -239,17 +246,34 @@ func ParseAnimations() error {
 		paths = append(paths, path)
 		return nil
 	}); err != nil {
-		return fmt.Errorf("filepath.parseAnimation Fail :: %s ", err.Error())
+		return fmt.Errorf("filepath.parseFrame Fail :: %s ", err.Error())
 	}
 
-	animations := make([]*Animation, 0, len(paths))
+	frames := make([]*Frame, 0, len(paths))
 	for _, path := range paths {
-		animation, err := parseAnimation(path)
+		animation, err := parseFrame(path)
 		if err != nil {
 			return err
 		}
 
-		animations = append(animations, animation)
+		frames = append(frames, animation)
+	}
+
+	// 合并帧为动画
+	animations := make(map[string]*Animation)
+	for _, frame := range frames {
+		animation, ok := animations[frame.Name]
+		if !ok {
+			animation = &Animation{
+				Width:  frame.Width,
+				Height: frame.Height,
+
+				Frames: make([]*Frame, 0),
+			}
+		}
+
+		animation.Frames = append(animation.Frames, frame)
+		animations[frame.Name] = animation
 	}
 
 	file, err := os.Create("assets/animations.json")
