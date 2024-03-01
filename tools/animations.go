@@ -9,6 +9,7 @@ import (
 	"math"
 	"os"
 	"path/filepath"
+	"sort"
 	"strconv"
 	"strings"
 )
@@ -273,6 +274,10 @@ func ParseAnimations() error {
 		}
 
 		animation.Frames = append(animation.Frames, frame)
+
+		sort.Slice(animation.Frames, func(i, j int) bool {
+			return animation.Frames[i].Sequence < animation.Frames[j].Sequence
+		})
 		animations[frame.Name] = animation
 	}
 
