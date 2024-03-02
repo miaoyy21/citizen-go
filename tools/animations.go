@@ -15,9 +15,9 @@ import (
 )
 
 type Frame struct {
-	Name   string `json:"-"`
-	Width  int    `json:"-"`
-	Height int    `json:"-"`
+	Name   string
+	Width  int `json:"-"`
+	Height int `json:"-"`
 
 	Sequence  int             // 帧顺序号，从1开始
 	IsLand    bool            // 是否在地面
