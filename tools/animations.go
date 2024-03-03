@@ -5,7 +5,6 @@ import (
 	"fmt"
 	"image"
 	"image/png"
-	"io"
 	"io/fs"
 	"log"
 	"math"
@@ -318,19 +317,9 @@ func ParseAnimations() error {
 		animation.Size = rectangle(sizes)
 	}
 
-	file, err := os.Create(filepath.Join(assets, "animations.json"))
-	if err != nil {
-		return err
-	}
-	defer file.Close()
-
-	// JSON
-	if err := json.NewEncoder(file).Encode(animations); err != nil {
-		return err
-	}
+	target := "/Users/miaojingyi/Documents/dev/flutter/citizen/assets"
 
 	// 清空文件夹目录
-	target := "/Users/miaojingyi/Documents/dev/flutter/citizen/assets"
 	if err := Clean(filepath.Join(target, "images")); err != nil {
 		return fmt.Errorf("clean() :: %s", err.Error())
 	}
@@ -344,16 +333,18 @@ func ParseAnimations() error {
 		return fmt.Errorf("remove() :: %s", err.Error())
 	}
 
-	newFile, err := os.Create(filepath.Join(target, "animations.json"))
+	file, err := os.Create(filepath.Join(target, "animations.json"))
 	if err != nil {
 		return err
 	}
-	defer newFile.Close()
+	defer file.Close()
 
-	if _, err := io.Copy(newFile, file); err != nil {
+	// JSON
+	if err := json.NewEncoder(file).Encode(animations); err != nil {
 		return err
 	}
 
-	log.Printf("%s Copyed to %s \n", file.Name(), newFile.Name())
+	log.Printf("%s Writed\n", file.Name())
+
 	return nil
 }
