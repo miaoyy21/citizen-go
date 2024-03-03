@@ -5,7 +5,9 @@ import (
 	"fmt"
 	"image"
 	"image/png"
+	"io"
 	"io/fs"
+	"log"
 	"math"
 	"os"
 	"path/filepath"
@@ -255,8 +257,9 @@ type Animation struct {
 }
 
 func ParseAnimations() error {
+	assets := "/Users/miaojingyi/Documents/dev/go/src/citizen/assets"
 	paths := make([]string, 0)
-	if err := filepath.Walk("assets", func(path string, info fs.FileInfo, err error) error {
+	if err := filepath.Walk(assets, func(path string, info fs.FileInfo, err error) error {
 		if err != nil {
 			return err
 		}
@@ -299,7 +302,6 @@ func ParseAnimations() error {
 		}
 
 		animation.Frames = append(animation.Frames, frame)
-
 		sort.Slice(animation.Frames, func(i, j int) bool {
 			return animation.Frames[i].Sequence < animation.Frames[j].Sequence
 		})
@@ -316,7 +318,7 @@ func ParseAnimations() error {
 		animation.Size = rectangle(sizes)
 	}
 
-	file, err := os.Create("assets/animations.json")
+	file, err := os.Create(filepath.Join(assets, "animations.json"))
 	if err != nil {
 		return err
 	}
@@ -327,5 +329,31 @@ func ParseAnimations() error {
 		return err
 	}
 
+	// 清空文件夹目录
+	target := "/Users/miaojingyi/Documents/dev/flutter/citizen/assets"
+	if err := Clean(filepath.Join(target, "images")); err != nil {
+		return fmt.Errorf("clean() :: %s", err.Error())
+	}
+
+	// 将每一帧拷贝到指定文件夹
+	if err := Copy(assets, filepath.Join(target, "images")); err != nil {
+		return fmt.Errorf("copy() :: %s", err.Error())
+	}
+
+	if err := os.Remove(filepath.Join(target, "animations.json")); err != nil {
+		return fmt.Errorf("remove() :: %s", err.Error())
+	}
+
+	newFile, err := os.Create(filepath.Join(target, "animations.json"))
+	if err != nil {
+		return err
+	}
+	defer newFile.Close()
+
+	if _, err := io.Copy(newFile, file); err != nil {
+		return err
+	}
+
+	log.Printf("%s Copyed to %s \n", file.Name(), newFile.Name())
 	return nil
 }
