@@ -121,7 +121,7 @@ func parseFrame(path string) (*Frame, error) {
 			rgba := r>>8<<24 | g>>8<<16 | b>>8<<8 | a>>8
 			if rgba == 0x000000ff {
 				// 正常的地面距离底部5像素
-				if dy <= 7 {
+				if dy <= 10 {
 					isLand = true
 				}
 
