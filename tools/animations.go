@@ -1,7 +1,6 @@
 package tools
 
 import (
-	"encoding/json"
 	"fmt"
 	"image"
 	"image/png"
@@ -10,7 +9,6 @@ import (
 	"math"
 	"os"
 	"path/filepath"
-	"sort"
 	"strconv"
 	"strings"
 )
@@ -252,96 +250,122 @@ type Animation struct {
 	Height int
 	Size   image.Rectangle // 尺寸
 
-	Frames []*Frame
+	LeftFrames  []*Frame
+	RightFrames []*Frame
 }
 
 func ParseAnimations(srcAssets, dstAssets string) error {
-	paths := make([]string, 0)
-	if err := filepath.Walk(srcAssets, func(path string, info fs.FileInfo, err error) error {
+	// 1.【碰撞层】：清空临时文件夹
+	if err := clean(filepath.Join(srcAssets, "temp")); err != nil {
+		return err
+	}
+	log.Printf("完成清空文件夹%q ... \n", filepath.Join(srcAssets, "temp"))
+
+	// 2.【碰撞层】：根据角色站位【只设计向右站位】，产生向右的图片
+	if err := filepath.Walk(filepath.Join(srcAssets, "collision"), func(path string, info fs.FileInfo, err error) error {
 		if err != nil {
 			return err
 		}
 
-		if info.IsDir() || !strings.HasSuffix(info.Name(), ".png") {
+		if !strings.HasSuffix(info.Name(), ".png") {
 			return nil
 		}
 
-		if strings.HasPrefix(info.Name(), "stage") {
-			return nil
+		if err := reverse(path, filepath.Join(srcAssets, "temp")); err != nil {
+			return err
 		}
-
-		paths = append(paths, path)
 		return nil
 	}); err != nil {
-		return fmt.Errorf("filepath.parseFrame Fail :: %s ", err.Error())
-	}
-
-	frames := make([]*Frame, 0, len(paths))
-	for _, path := range paths {
-		animation, err := parseFrame(path)
-		if err != nil {
-			return err
-		}
-
-		frames = append(frames, animation)
-	}
-
-	// 合并帧为动画
-	animations := make(map[string]*Animation)
-	for _, frame := range frames {
-		animation, ok := animations[frame.Name]
-		if !ok {
-			animation = &Animation{
-				Width:  frame.Width,
-				Height: frame.Height,
-
-				Frames: make([]*Frame, 0),
-			}
-		}
-
-		animation.Frames = append(animation.Frames, frame)
-		sort.Slice(animation.Frames, func(i, j int) bool {
-			return animation.Frames[i].Sequence < animation.Frames[j].Sequence
-		})
-		animations[frame.Name] = animation
-	}
-
-	// 计算整个动画尺寸
-	for _, animation := range animations {
-		sizes := make([]image.Rectangle, 0, len(animation.Frames))
-		for _, frame := range animation.Frames {
-			sizes = append(sizes, frame.StickSize)
-		}
-
-		animation.Size = rectangle(sizes)
-	}
-
-	// 清空文件夹目录
-	if err := Clean(filepath.Join(dstAssets, "images")); err != nil {
-		return fmt.Errorf("clean() :: %s", err.Error())
-	}
-
-	// 将每一帧拷贝到指定文件夹
-	if err := Copy(srcAssets, filepath.Join(dstAssets, "images")); err != nil {
-		return fmt.Errorf("copy() :: %s", err.Error())
-	}
-
-	if err := os.Remove(filepath.Join(dstAssets, "animations.json")); err != nil {
-		return fmt.Errorf("remove() :: %s", err.Error())
-	}
-
-	file, err := os.Create(filepath.Join(dstAssets, "animations.json"))
-	if err != nil {
 		return err
 	}
-	defer file.Close()
+	log.Printf("完成在文件夹%q，生成左右动画帧 ... \n", filepath.Join(srcAssets, "temp"))
 
-	// JSON
-	if err := json.NewEncoder(file).Encode(animations); err != nil {
-		return err
-	}
-
-	log.Printf("%s Writed\n", file.Name())
+	//paths := make([]string, 0)
+	//if err := filepath.Walk(srcAssets, func(path string, info fs.FileInfo, err error) error {
+	//	if err != nil {
+	//		return err
+	//	}
+	//
+	//	if info.IsDir() || !strings.HasSuffix(info.Name(), ".png") {
+	//		return nil
+	//	}
+	//
+	//	if strings.HasPrefix(info.Name(), "stage") {
+	//		return nil
+	//	}
+	//
+	//	paths = append(paths, path)
+	//	return nil
+	//}); err != nil {
+	//	return fmt.Errorf("filepath.parseFrame Fail :: %s ", err.Error())
+	//}
+	//
+	//frames := make([]*Frame, 0, len(paths))
+	//for _, path := range paths {
+	//	animation, err := parseFrame(path)
+	//	if err != nil {
+	//		return err
+	//	}
+	//
+	//	frames = append(frames, animation)
+	//}
+	//
+	//// 合并帧为动画
+	//animations := make(map[string]*Animation)
+	//for _, frame := range frames {
+	//	animation, ok := animations[frame.Name]
+	//	if !ok {
+	//		animation = &Animation{
+	//			Width:  frame.Width,
+	//			Height: frame.Height,
+	//
+	//			Frames: make([]*Frame, 0),
+	//		}
+	//	}
+	//
+	//	animation.Frames = append(animation.Frames, frame)
+	//	sort.Slice(animation.Frames, func(i, j int) bool {
+	//		return animation.Frames[i].Sequence < animation.Frames[j].Sequence
+	//	})
+	//	animations[frame.Name] = animation
+	//}
+	//
+	//// 计算整个动画尺寸
+	//for _, animation := range animations {
+	//	sizes := make([]image.Rectangle, 0, len(animation.Frames))
+	//	for _, frame := range animation.Frames {
+	//		sizes = append(sizes, frame.StickSize)
+	//	}
+	//
+	//	animation.Size = rectangle(sizes)
+	//}
+	//
+	//// 清空文件夹目录
+	//if err := Clean(filepath.Join(dstAssets, "images")); err != nil {
+	//	return fmt.Errorf("clean() :: %s", err.Error())
+	//}
+	//
+	//// 将每一帧拷贝到指定文件夹
+	//if err := CopyRoot(srcAssets, filepath.Join(dstAssets, "images")); err != nil {
+	//	return fmt.Errorf("copy() :: %s", err.Error())
+	//}
+	//
+	//if err := os.Remove(filepath.Join(dstAssets, "animations.json")); err != nil {
+	//	return fmt.Errorf("remove() :: %s", err.Error())
+	//}
+	//
+	//file, err := os.Create(filepath.Join(dstAssets, "animations.json"))
+	//if err != nil {
+	//	return err
+	//}
+	//defer file.Close()
+	//
+	//// JSON
+	//if err := json.NewEncoder(file).Encode(animations); err != nil {
+	//	return err
+	//}
+	//
+	//log.Printf("%s Writed\n", file.Name())
 
 	return nil
 }

@@ -9,8 +9,8 @@ import (
 	"strings"
 )
 
-func Copy(oRoot, tRoot string) error {
-	return filepath.Walk(oRoot, func(path string, info fs.FileInfo, err error) error {
+func CopyRoot(srcRoot, dstRoot string) error {
+	return filepath.Walk(srcRoot, func(path string, info fs.FileInfo, err error) error {
 		if info.IsDir() {
 			return nil
 		}
@@ -23,23 +23,31 @@ func Copy(oRoot, tRoot string) error {
 			return nil
 		}
 
-		oFile, err := os.Open(path)
-		if err != nil {
-			return err
-		}
-		defer oFile.Close()
-
-		tFile, err := os.Create(filepath.Join(tRoot, info.Name()))
-		if err != nil {
-			return err
-		}
-		defer tFile.Close()
-
-		if _, err := io.Copy(tFile, oFile); err != nil {
+		if err := CopyFile(path, filepath.Join(dstRoot, info.Name())); err != nil {
 			return err
 		}
 
 		log.Printf("%s Copyed \n", info.Name())
 		return nil
 	})
+}
+
+func CopyFile(srcFileName, dstFileName string) error {
+	srcFile, err := os.Open(srcFileName)
+	if err != nil {
+		return err
+	}
+	defer srcFile.Close()
+
+	dstFile, err := os.Create(dstFileName)
+	if err != nil {
+		return err
+	}
+	defer dstFile.Close()
+
+	if _, err := io.Copy(dstFile, srcFile); err != nil {
+		return err
+	}
+
+	return nil
 }
