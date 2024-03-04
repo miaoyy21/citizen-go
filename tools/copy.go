@@ -3,13 +3,12 @@ package tools
 import (
 	"io"
 	"io/fs"
-	"log"
 	"os"
 	"path/filepath"
 	"strings"
 )
 
-func CopyRoot(srcRoot, dstRoot string) error {
+func CopyDirectory(srcRoot, dstRoot string) error {
 	return filepath.Walk(srcRoot, func(path string, info fs.FileInfo, err error) error {
 		if info.IsDir() {
 			return nil
@@ -27,7 +26,6 @@ func CopyRoot(srcRoot, dstRoot string) error {
 			return err
 		}
 
-		log.Printf("%s Copyed \n", info.Name())
 		return nil
 	})
 }

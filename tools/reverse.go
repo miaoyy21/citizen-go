@@ -10,10 +10,10 @@ import (
 )
 
 // 根据原始文件，产生向左和向右的文件
-func reverse(originalFileName string, dstRoot string) error {
+func reverse(originalFileName string, symbol Symbol, dstRoot string) error {
 	fileName := filepath.Base(originalFileName)
-	leftFileName := filepath.Join(dstRoot, fmt.Sprintf("%s_%s", "1", fileName))
-	rightFileName := filepath.Join(dstRoot, fmt.Sprintf("%s_%s", "2", fileName))
+	leftFileName := filepath.Join(dstRoot, fmt.Sprintf("%s_%s_%s", string(symbol), DirectionLeft, fileName))
+	rightFileName := filepath.Join(dstRoot, fmt.Sprintf("%s_%s_%s", string(symbol), DirectionRight, fileName))
 
 	// 复制1份向右的文件
 	if err := CopyFile(originalFileName, rightFileName); err != nil {
