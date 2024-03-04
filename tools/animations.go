@@ -255,10 +255,9 @@ type Animation struct {
 	Frames []*Frame
 }
 
-func ParseAnimations() error {
-	assets := "/Users/miaojingyi/Documents/dev/go/src/citizen/assets"
+func ParseAnimations(srcAssets, dstAssets string) error {
 	paths := make([]string, 0)
-	if err := filepath.Walk(assets, func(path string, info fs.FileInfo, err error) error {
+	if err := filepath.Walk(srcAssets, func(path string, info fs.FileInfo, err error) error {
 		if err != nil {
 			return err
 		}
@@ -317,23 +316,21 @@ func ParseAnimations() error {
 		animation.Size = rectangle(sizes)
 	}
 
-	target := "/Users/miaojingyi/Documents/dev/flutter/citizen/assets"
-
 	// 清空文件夹目录
-	if err := Clean(filepath.Join(target, "images")); err != nil {
+	if err := Clean(filepath.Join(dstAssets, "images")); err != nil {
 		return fmt.Errorf("clean() :: %s", err.Error())
 	}
 
 	// 将每一帧拷贝到指定文件夹
-	if err := Copy(assets, filepath.Join(target, "images")); err != nil {
+	if err := Copy(srcAssets, filepath.Join(dstAssets, "images")); err != nil {
 		return fmt.Errorf("copy() :: %s", err.Error())
 	}
 
-	if err := os.Remove(filepath.Join(target, "animations.json")); err != nil {
+	if err := os.Remove(filepath.Join(dstAssets, "animations.json")); err != nil {
 		return fmt.Errorf("remove() :: %s", err.Error())
 	}
 
-	file, err := os.Create(filepath.Join(target, "animations.json"))
+	file, err := os.Create(filepath.Join(dstAssets, "animations.json"))
 	if err != nil {
 		return err
 	}
