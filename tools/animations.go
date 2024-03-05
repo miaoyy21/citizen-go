@@ -14,8 +14,8 @@ import (
 type Frame struct {
 	Name      string
 	Direction Direction
-	Width     int `json:"-"`
-	Height    int `json:"-"`
+	Width     int
+	Height    int
 
 	Sequence  int             // 帧顺序号，从1开始
 	IsLand    bool            // 是否在地面
@@ -204,6 +204,17 @@ func parseFrame(path string) (*Frame, error) {
 		X: int(math.Ceil(float64(size.Min.X+size.Max.X) / 2)),
 		Y: int(math.Ceil(float64(size.Min.Y+size.Max.Y) / 2)),
 	}
+
+	// 移除用于调整玩家位置的点
+	exposeBody := make([]image.Rectangle, 0)
+	for _, rect := range frame.ExposeBody {
+		if rect.Max.X-rect.Min.X <= 5 && rect.Max.Y-rect.Min.Y <= 5 {
+			continue
+		}
+
+		exposeBody = append(exposeBody, rect)
+	}
+	frame.ExposeBody = exposeBody
 
 	return frame, nil
 }
