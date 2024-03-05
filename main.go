@@ -11,5 +11,6 @@ func main() {
 	if err := tools.Run(srcAssets, dstAssets); err != nil {
 		log.Fatalf("%s", err.Error())
 	}
+
 	log.Println("自动化任务执行完成 ...")
 }
