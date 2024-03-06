@@ -103,6 +103,60 @@ func Run(srcAssets, dstAssets string) error {
 		}
 
 		animation.Size = rectangle(sizes)
+
+		//// 攻击帧信息
+		//attackFrames := make([]*AttackFrame, 0)
+		//attackType, start := AttackTypeInvalid, 0
+		//startPos, attackPos := image.Point{}, image.Point{}
+		//
+		//// 1. 连续的2个攻击序列中，至少要包含1个非攻击帧
+		//// 2. 一个攻击序列内，如果帧数大于等于4个，那么认为是强力攻击
+		//// 3. 根据角色的中心初始（攻击开始帧的前1帧）与结束位置判定攻击的垂直方向是向上还是向下
+		//// 4. 根据角色的攻击开始与结束位置
+		//// 5. 如果攻击帧仅有1帧，那么通过攻击位置和中心位置进行判定攻击方向
+		//for _, frame := range animation.RightFrames {
+		//	if len(frame.AttackHead) > 0 {
+		//		attackRect := rectangle(frame.AttackHead)
+		//		attackPos = image.Point{
+		//			X: int(math.Ceil(float64(attackRect.Min.X+attackRect.Max.X) / 2)),
+		//			Y: int(math.Ceil(float64(attackRect.Min.Y+attackRect.Max.Y) / 2)),
+		//		}
+		//
+		//		if attackType != AttackTypeHead {
+		//			// 新的攻击帧
+		//			attackType = AttackTypeHead
+		//			start = frame.Sequence
+		//			startPos = frame.Position
+		//
+		//		} else {
+		//			// 攻击帧位置偏移量来判定是否属于新的攻击帧
+		//			rectangle(frame.AttackHead)
+		//		}
+		//	}
+		//	if len(frame.AttackBody) > 0 {
+		//		attackRect := rectangle(frame.AttackHead)
+		//		attackPos = image.Point{
+		//			X: int(math.Ceil(float64(attackRect.Min.X+attackRect.Max.X) / 2)),
+		//			Y: int(math.Ceil(float64(attackRect.Min.Y+attackRect.Max.Y) / 2)),
+		//		}
+		//
+		//		if attackType != AttackTypeHead {
+		//			// 新的攻击帧
+		//			attackType = AttackTypeHead
+		//			start = frame.Sequence
+		//			startPos = frame.Position
+		//
+		//		} else {
+		//			// 攻击帧位置偏移量来判定是否属于新的攻击帧
+		//			rectangle(frame.AttackHead)
+		//		}
+		//	} else if start > 0 {
+		//		attackFrames = append(attackFrames, &AttackFrame{
+		//			Start: start,
+		//			End:   frame.Sequence - 1,
+		//		})
+		//	}
+		//}
 	}
 
 	// 5.【碰撞层】：拷贝animations.json文件

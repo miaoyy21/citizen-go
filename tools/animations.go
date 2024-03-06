@@ -33,9 +33,6 @@ type Frame struct {
 	AttackHand []image.Rectangle // 手（可攻击他人）
 	AttackFoot []image.Rectangle // 脚（可攻击他人）
 
-	//AttackStart image.Point // 攻击开始帧
-	//AttackEnd   image.Point // 攻击结束帧
-
 	Exclude image.Rectangle // 逻辑上暂时用不到，但是也是帧的内容
 }
 
@@ -153,10 +150,6 @@ func parseFrame(path string) (*Frame, error) {
 				frame.AttackHand = append(frame.AttackHand, rect)
 			case 0xff00ffff:
 				frame.AttackFoot = append(frame.AttackFoot, rect)
-			//case 0x008080ff:
-			//	frame.AttackStart = image.Pt(dx, dy)
-			//case 0x800080ff:
-			//	frame.AttackEnd = image.Pt(dx, dy)
 			default:
 				if dx < exclude.Min.X {
 					exclude.Min.X = dx
@@ -175,7 +168,6 @@ func parseFrame(path string) (*Frame, error) {
 				}
 
 				//return nil, fmt.Errorf("[%s] unrecognize color %x at local point (%d,%d)", path, rgba, dx, dy)
-
 			}
 
 			rectMin, rectMax := rect.Min, rect.Max
