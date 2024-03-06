@@ -20,6 +20,8 @@
 # Go workspace file
 go.work
 
-assets
+assets/collision
+assets/stick
+assets/temp
 *.mp4
 *.gif

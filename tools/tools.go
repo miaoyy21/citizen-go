@@ -2,6 +2,7 @@ package tools
 
 import (
 	"encoding/json"
+	"fmt"
 	"image"
 	"io/fs"
 	"log"
@@ -96,7 +97,8 @@ func Run(srcAssets, dstAssets string) error {
 	}
 
 	// 计算整个动画尺寸
-	for _, animation := range animations {
+	attackFrames := make(map[string][]*AttackFrame)
+	for name, animation := range animations {
 		sizes := make([]image.Rectangle, 0, len(animation.LeftFrames))
 		for _, frame := range animation.LeftFrames {
 			sizes = append(sizes, frame.StickSize)
@@ -104,59 +106,90 @@ func Run(srcAssets, dstAssets string) error {
 
 		animation.Size = rectangle(sizes)
 
-		//// 攻击帧信息
-		//attackFrames := make([]*AttackFrame, 0)
-		//attackType, start := AttackTypeInvalid, 0
-		//startPos, attackPos := image.Point{}, image.Point{}
-		//
-		//// 1. 连续的2个攻击序列中，至少要包含1个非攻击帧
-		//// 2. 一个攻击序列内，如果帧数大于等于4个，那么认为是强力攻击
-		//// 3. 根据角色的中心初始（攻击开始帧的前1帧）与结束位置判定攻击的垂直方向是向上还是向下
-		//// 4. 根据角色的攻击开始与结束位置
-		//// 5. 如果攻击帧仅有1帧，那么通过攻击位置和中心位置进行判定攻击方向
-		//for _, frame := range animation.RightFrames {
-		//	if len(frame.AttackHead) > 0 {
-		//		attackRect := rectangle(frame.AttackHead)
-		//		attackPos = image.Point{
-		//			X: int(math.Ceil(float64(attackRect.Min.X+attackRect.Max.X) / 2)),
-		//			Y: int(math.Ceil(float64(attackRect.Min.Y+attackRect.Max.Y) / 2)),
-		//		}
-		//
-		//		if attackType != AttackTypeHead {
-		//			// 新的攻击帧
-		//			attackType = AttackTypeHead
-		//			start = frame.Sequence
-		//			startPos = frame.Position
-		//
-		//		} else {
-		//			// 攻击帧位置偏移量来判定是否属于新的攻击帧
-		//			rectangle(frame.AttackHead)
-		//		}
-		//	}
-		//	if len(frame.AttackBody) > 0 {
-		//		attackRect := rectangle(frame.AttackHead)
-		//		attackPos = image.Point{
-		//			X: int(math.Ceil(float64(attackRect.Min.X+attackRect.Max.X) / 2)),
-		//			Y: int(math.Ceil(float64(attackRect.Min.Y+attackRect.Max.Y) / 2)),
-		//		}
-		//
-		//		if attackType != AttackTypeHead {
-		//			// 新的攻击帧
-		//			attackType = AttackTypeHead
-		//			start = frame.Sequence
-		//			startPos = frame.Position
-		//
-		//		} else {
-		//			// 攻击帧位置偏移量来判定是否属于新的攻击帧
-		//			rectangle(frame.AttackHead)
-		//		}
-		//	} else if start > 0 {
-		//		attackFrames = append(attackFrames, &AttackFrame{
-		//			Start: start,
-		//			End:   frame.Sequence - 1,
-		//		})
-		//	}
-		//}
+		// 合并攻击帧信息
+		attackFrames[name] = parseAttackFrames(animation)
+	}
+
+	// 4.5. 仅拷贝没有修改的攻击帧信息
+	for name, aFrames := range attackFrames {
+		fileName := filepath.Join(dstAssets, "attacks", fmt.Sprintf("%s.json", name))
+		file, err := os.Open(fileName)
+		if err != nil {
+			if os.IsNotExist(err) {
+				newFile, err := os.Create(fileName)
+				if err != nil {
+					return err
+				}
+
+				if err := json.NewEncoder(newFile).Encode(aFrames); err != nil {
+					newFile.Close()
+					return err
+				}
+
+				newFile.Close()
+				continue
+			}
+
+			return err
+		}
+
+		// 读取已发布的攻击帧信息
+		var oFrames []*AttackFrame
+		if err := json.NewDecoder(file).Decode(&oFrames); err != nil {
+			file.Close()
+			return err
+		}
+		file.Close()
+
+		// 是否手动维护攻击帧信息
+		isChange := false
+		for _, aFrame := range oFrames {
+			if aFrame.HSpeed != 0 || aFrame.HAccelerate != 0 || aFrame.VSpeed != 0 || aFrame.VAccelerate != 0 {
+				isChange = true
+				break
+			}
+		}
+
+		if isChange {
+			// 判定攻击帧信息是否变化
+			sFrame := make([]string, 0, len(aFrames))
+			for _, aFrame := range aFrames {
+				sFrame = append(sFrame, fmt.Sprintf("%d_%d_%s", aFrame.Start, aFrame.End, aFrame.AttackType))
+			}
+
+			tFrame := make([]string, 0, len(aFrames))
+			for _, aFrame := range oFrames {
+				tFrame = append(tFrame, fmt.Sprintf("%d_%d_%s", aFrame.Start, aFrame.End, aFrame.AttackType))
+			}
+
+			if strings.Join(sFrame, ",") != strings.Join(tFrame, ",") {
+				log.Printf("[%s] 修改动画帧引起攻击帧信息变更，最新攻击帧信息如下：\n", name)
+				if err := json.NewEncoder(os.Stdout).Encode(aFrames); err != nil {
+					return err
+				}
+			}
+		} else {
+			newFile, err := os.Create(fileName)
+			if err != nil {
+				return err
+			}
+
+			if err := json.NewEncoder(newFile).Encode(aFrames); err != nil {
+				newFile.Close()
+				return err
+			}
+
+			newFile.Close()
+		}
+	}
+
+	// 在本目录备份攻击帧信息
+	for name := range attackFrames {
+		srcFileName := filepath.Join(dstAssets, "attacks", fmt.Sprintf("%s.json", name))
+		dstFileName := filepath.Join(srcAssets, "attacks", fmt.Sprintf("%s.json", name))
+		if err := CopyFile(srcFileName, dstFileName); err != nil {
+			return err
+		}
 	}
 
 	// 5.【碰撞层】：拷贝animations.json文件
