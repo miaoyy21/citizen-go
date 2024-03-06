@@ -167,6 +167,7 @@ func Run(srcAssets, dstAssets string) error {
 				if err := json.NewEncoder(os.Stdout).Encode(aFrames); err != nil {
 					return err
 				}
+				log.Println()
 			}
 		} else {
 			newFile, err := os.Create(fileName)
