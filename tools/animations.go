@@ -33,6 +33,8 @@ type Frame struct {
 	AttackHand []image.Rectangle // 手（可攻击他人）
 	AttackFoot []image.Rectangle // 脚（可攻击他人）
 
+	AttackPoint image.Point // 攻击点
+
 	Exclude image.Rectangle // 逻辑上暂时用不到，但是也是帧的内容
 }
 
@@ -144,12 +146,36 @@ func parseFrame(path string) (*Frame, error) {
 				frame.ExposeFoot = append(frame.ExposeFoot, rect)
 			case 0xff8000ff:
 				frame.AttackHead = append(frame.AttackHead, rect)
+				if rect.Max.X-rect.Min.X == 7 && rect.Max.Y-rect.Min.Y == 7 {
+					frame.AttackPoint = image.Point{
+						X: (rect.Min.X + rect.Max.X) / 2,
+						Y: (rect.Min.Y + rect.Max.Y) / 2,
+					}
+				}
 			case 0xffff00ff:
 				frame.AttackBody = append(frame.AttackBody, rect)
+				if rect.Max.X-rect.Min.X == 7 && rect.Max.Y-rect.Min.Y == 7 {
+					frame.AttackPoint = image.Point{
+						X: (rect.Min.X + rect.Max.X) / 2,
+						Y: (rect.Min.Y + rect.Max.Y) / 2,
+					}
+				}
 			case 0xff0080ff:
 				frame.AttackHand = append(frame.AttackHand, rect)
+				if rect.Max.X-rect.Min.X == 7 && rect.Max.Y-rect.Min.Y == 7 {
+					frame.AttackPoint = image.Point{
+						X: (rect.Min.X + rect.Max.X) / 2,
+						Y: (rect.Min.Y + rect.Max.Y) / 2,
+					}
+				}
 			case 0xff00ffff:
 				frame.AttackFoot = append(frame.AttackFoot, rect)
+				if rect.Max.X-rect.Min.X == 7 && rect.Max.Y-rect.Min.Y == 7 {
+					frame.AttackPoint = image.Point{
+						X: (rect.Min.X + rect.Max.X) / 2,
+						Y: (rect.Min.Y + rect.Max.Y) / 2,
+					}
+				}
 			default:
 				if dx < exclude.Min.X {
 					exclude.Min.X = dx
