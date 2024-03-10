@@ -12,7 +12,9 @@ import (
 )
 
 type Frame struct {
-	Name      string
+	Name string
+
+	Symbol    Symbol
 	Direction Direction
 	Width     int
 	Height    int
@@ -28,14 +30,8 @@ type Frame struct {
 	ExposeHand []image.Rectangle // 手（可被他人攻击）
 	ExposeFoot []image.Rectangle // 脚（可被他人攻击）
 
-	AttackHead []image.Rectangle // 头（可攻击他人）
-	AttackBody []image.Rectangle // 体（可攻击他人）
 	AttackHand []image.Rectangle // 手（可攻击他人）
 	AttackFoot []image.Rectangle // 脚（可攻击他人）
-
-	AttackPoint image.Point // 攻击点
-
-	Exclude image.Rectangle // 逻辑上暂时用不到，但是也是帧的内容
 }
 
 func rectangle(rss ...[]image.Rectangle) image.Rectangle {
@@ -94,6 +90,7 @@ func parseFrame(path string) (*Frame, error) {
 	//识别矩形框，锚点为左下角
 	frame := &Frame{
 		Name:      n0s[2],
+		Symbol:    Symbol(n0s[0]),
 		Direction: Direction(n0s[1]),
 		Width:     bounds.Dx(),
 		Height:    bounds.Dy(),
@@ -104,14 +101,11 @@ func parseFrame(path string) (*Frame, error) {
 		ExposeHand: make([]image.Rectangle, 0),
 		ExposeFoot: make([]image.Rectangle, 0),
 
-		AttackHead: make([]image.Rectangle, 0),
-		AttackBody: make([]image.Rectangle, 0),
 		AttackHand: make([]image.Rectangle, 0),
 		AttackFoot: make([]image.Rectangle, 0),
 	}
 
 	skipped, isLand := make(map[string]struct{}), false
-	exclude := image.Rectangle{Min: image.Point{X: bounds.Dx(), Y: bounds.Dy()}, Max: image.Point{}}
 	for x := 0; x < bounds.Dx(); x++ {
 		for y := bounds.Dy(); y >= 0; y-- {
 			dx, dy := x, bounds.Dy()-1-y // 转换后的坐标系
@@ -144,56 +138,12 @@ func parseFrame(path string) (*Frame, error) {
 				frame.ExposeHand = append(frame.ExposeHand, rect)
 			case 0x0000ffff:
 				frame.ExposeFoot = append(frame.ExposeFoot, rect)
-			case 0xff8000ff:
-				frame.AttackHead = append(frame.AttackHead, rect)
-				if rect.Max.X-rect.Min.X == 7 && rect.Max.Y-rect.Min.Y == 7 {
-					frame.AttackPoint = image.Point{
-						X: (rect.Min.X + rect.Max.X) / 2,
-						Y: (rect.Min.Y + rect.Max.Y) / 2,
-					}
-				}
-			case 0xffff00ff:
-				frame.AttackBody = append(frame.AttackBody, rect)
-				if rect.Max.X-rect.Min.X == 7 && rect.Max.Y-rect.Min.Y == 7 {
-					frame.AttackPoint = image.Point{
-						X: (rect.Min.X + rect.Max.X) / 2,
-						Y: (rect.Min.Y + rect.Max.Y) / 2,
-					}
-				}
 			case 0xff0080ff:
 				frame.AttackHand = append(frame.AttackHand, rect)
-				if rect.Max.X-rect.Min.X == 7 && rect.Max.Y-rect.Min.Y == 7 {
-					frame.AttackPoint = image.Point{
-						X: (rect.Min.X + rect.Max.X) / 2,
-						Y: (rect.Min.Y + rect.Max.Y) / 2,
-					}
-				}
 			case 0xff00ffff:
 				frame.AttackFoot = append(frame.AttackFoot, rect)
-				if rect.Max.X-rect.Min.X == 7 && rect.Max.Y-rect.Min.Y == 7 {
-					frame.AttackPoint = image.Point{
-						X: (rect.Min.X + rect.Max.X) / 2,
-						Y: (rect.Min.Y + rect.Max.Y) / 2,
-					}
-				}
 			default:
-				if dx < exclude.Min.X {
-					exclude.Min.X = dx
-				}
-
-				if dx > exclude.Max.X {
-					exclude.Max.X = dx
-				}
-
-				if dy < exclude.Min.Y {
-					exclude.Min.Y = dy
-				}
-
-				if dy > exclude.Max.Y {
-					exclude.Max.Y = dy
-				}
-
-				//return nil, fmt.Errorf("[%s] unrecognize color %x at local point (%d,%d)", path, rgba, dx, dy)
+				return nil, fmt.Errorf("[%s] unrecognize color %x at local point (%d,%d)", path, rgba, dx, dy)
 			}
 
 			rectMin, rectMax := rect.Min, rect.Max
@@ -208,15 +158,14 @@ func parseFrame(path string) (*Frame, error) {
 	// 尺寸
 	frame.StickSize = rectangle(
 		frame.ExposeHead, frame.ExposeBody, frame.ExposeHand, frame.ExposeFoot,
-		frame.AttackHead, frame.AttackBody, frame.AttackHand, frame.AttackFoot,
+		frame.AttackHand, frame.AttackFoot,
 	)
 
 	// 其他
-	frame.Exclude = exclude
-	frame.Size = rectangle([]image.Rectangle{frame.StickSize, frame.Exclude})
+	frame.Size = rectangle([]image.Rectangle{frame.StickSize})
 
 	// 必须设置角色的身体碰撞框
-	if len(frame.ExposeBody)+len(frame.AttackBody) < 1 {
+	if frame.Symbol == SymbolSelf && len(frame.ExposeBody) < 1 {
 		return nil, fmt.Errorf("[%s] missing Setting Body's Collision", path)
 	}
 
@@ -224,7 +173,7 @@ func parseFrame(path string) (*Frame, error) {
 	frame.IsLand = isLand
 
 	// 粗略计算角色所在的中心位置
-	size := rectangle(frame.ExposeBody, frame.AttackBody)
+	size := rectangle(frame.ExposeBody)
 	frame.Position = image.Point{
 		X: int(math.Ceil(float64(size.Min.X+size.Max.X) / 2)),
 		Y: int(math.Ceil(float64(size.Min.Y+size.Max.Y) / 2)),
@@ -284,8 +233,10 @@ func findRectangle(img image.Image, x, y, dx, dy int, rgba uint32) image.Rectang
 type Animation struct {
 	Width  int
 	Height int
-	Size   image.Rectangle // 尺寸
 
-	LeftFrames  []*Frame
-	RightFrames []*Frame
+	LeftSelfFrames  []*Frame
+	LeftEnemyFrames []*Frame // 与角色的站位对应
+
+	RightSelfFrames  []*Frame
+	RightEnemyFrames []*Frame // 与角色的站位对应
 }

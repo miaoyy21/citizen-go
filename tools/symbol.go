@@ -3,13 +3,13 @@ package tools
 type Symbol string
 
 var (
-	SymbolCollision Symbol = "0"
-	SymbolStickMan  Symbol = "1"
+	SymbolEnemy Symbol = "enemy"
+	SymbolSelf  Symbol = "self"
 )
 
 type Direction string
 
 var (
-	DirectionLeft  Direction = "1"
-	DirectionRight Direction = "2"
+	DirectionLeft  Direction = "left"
+	DirectionRight Direction = "right"
 )

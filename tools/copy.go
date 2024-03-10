@@ -14,10 +14,6 @@ func CopyDirectory(srcRoot, dstRoot string) error {
 			return nil
 		}
 
-		if info.Name() == "animations.json" {
-			return nil
-		}
-
 		if !strings.HasSuffix(info.Name(), ".png") {
 			return nil
 		}

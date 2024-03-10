@@ -25,5 +25,5 @@ assets/temp
 *.gif
 *.zip
 /assets/enemy/
-/assets/role/
+/assets/self/
 /assets/stage/
