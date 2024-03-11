@@ -228,8 +228,9 @@ func findRectangle(img image.Image, x, y, dx, dy int, rgba uint32) image.Rectang
 }
 
 type Animation struct {
-	Width  int
-	Height int
+	Width    int
+	Height   int
+	Distance int
 
 	LeftSelfFrames  []*Frame
 	LeftEnemyFrames []*Frame // 与角色的站位对应

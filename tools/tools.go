@@ -152,6 +152,20 @@ func Run(srcAssets, dstAssets string) error {
 	for _, animation := range animations {
 		animation.LeftSelfFrames = parseStep(animation.LeftSelfFrames)
 		animation.RightSelfFrames = parseStep(animation.RightSelfFrames)
+
+		var start, end int
+		for _, frame := range animation.RightSelfFrames {
+			if frame.Step == StepStart {
+				start = frame.Position.X
+			}
+
+			if frame.Step == StepHit {
+				end = frame.Position.X
+				break
+			}
+		}
+
+		animation.Distance = end - start
 	}
 
 	// 7. 【文件拷贝】
