@@ -239,4 +239,6 @@ type Animation struct {
 
 	RightSelfFrames  []*Frame
 	RightEnemyFrames []*Frame // 与角色的站位对应
+
+	Files map[string]string
 }

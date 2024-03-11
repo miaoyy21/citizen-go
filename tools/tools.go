@@ -118,6 +118,8 @@ func Run(srcAssets, dstAssets string) error {
 				RightSelfFrames:  make([]*Frame, 0),
 				LeftEnemyFrames:  make([]*Frame, 0),
 				RightEnemyFrames: make([]*Frame, 0),
+
+				Files: make(map[string]string),
 			}
 		}
 
@@ -146,19 +148,7 @@ func Run(srcAssets, dstAssets string) error {
 		animations[frame.Name] = animation
 	}
 
-	// 7.【碰撞层】：拷贝animations.json文件
-	file, err := os.Create(filepath.Join(dstAssets, "animations.json"))
-	if err != nil {
-		return err
-	}
-	defer file.Close()
-
-	if err := json.NewEncoder(file).Encode(animations); err != nil {
-		return err
-	}
-	log.Printf("发布动画帧解析文件至%q ... \n", filepath.Join(dstAssets, "animations.json"))
-
-	// 8. 【文件拷贝】
+	// 7. 【文件拷贝】
 	for _, ds := range [][]string{
 		{"self", "cape"},
 		{"self", "effect"},
@@ -195,6 +185,9 @@ func Run(srcAssets, dstAssets string) error {
 				return err
 			}
 
+			animation := animations[strings.Split(filepath.Base(path), "_")[0]]
+
+			animation.Files[strings.Join(ds, "_")] = filepath.Join(ds...)
 			return nil
 		}); err != nil {
 			return err
@@ -210,6 +203,18 @@ func Run(srcAssets, dstAssets string) error {
 		}
 		log.Printf("发布动画帧%q至目标目录  ... \n", filepath.Join(ds...))
 	}
+
+	// 8.【碰撞层】：拷贝animations.json文件
+	file, err := os.Create(filepath.Join(dstAssets, "animations.json"))
+	if err != nil {
+		return err
+	}
+	defer file.Close()
+
+	if err := json.NewEncoder(file).Encode(animations); err != nil {
+		return err
+	}
+	log.Printf("发布动画帧解析文件至%q ... \n", filepath.Join(dstAssets, "animations.json"))
 
 	// 9. 拷贝empty.png文件
 	if err := CopyFile(filepath.Join(srcAssets, "empty.png"), filepath.Join(dstAssets, "images", "empty.png")); err != nil {
