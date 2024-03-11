@@ -148,6 +148,12 @@ func Run(srcAssets, dstAssets string) error {
 		animations[frame.Name] = animation
 	}
 
+	// 6. 7. 计算所处阶段
+	for _, animation := range animations {
+		animation.LeftSelfFrames = parseStep(animation.LeftSelfFrames)
+		animation.RightSelfFrames = parseStep(animation.RightSelfFrames)
+	}
+
 	// 7. 【文件拷贝】
 	for _, ds := range [][]string{
 		{"self", "cape"},

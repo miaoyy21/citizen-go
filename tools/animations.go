@@ -16,13 +16,13 @@ type Frame struct {
 
 	Symbol    Symbol
 	Direction Direction
+	Step      Step // 所处阶段
 	Width     int
 	Height    int
 
 	Sequence  int             // 帧顺序号，从1开始
 	IsLand    bool            // 是否在地面
 	Position  image.Point     // 角色所在的粗略中心位置
-	Size      image.Rectangle // 尺寸
 	StickSize image.Rectangle // 角色尺寸
 
 	ExposeHead []image.Rectangle // 头（可被他人攻击）
@@ -160,9 +160,6 @@ func parseFrame(path string) (*Frame, error) {
 		frame.ExposeHead, frame.ExposeBody, frame.ExposeHand, frame.ExposeFoot,
 		frame.AttackHand, frame.AttackFoot,
 	)
-
-	// 其他
-	frame.Size = rectangle([]image.Rectangle{frame.StickSize})
 
 	// 必须设置角色的身体碰撞框
 	if frame.Symbol == SymbolSelf && len(frame.ExposeBody) < 1 {
