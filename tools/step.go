@@ -1,7 +1,5 @@
 package tools
 
-import "image"
-
 type Step string
 
 var (
@@ -15,15 +13,15 @@ func parseStep(frames []*Frame) []*Frame {
 	newFrames := make([]*Frame, 0, len(frames))
 
 	step := 0
-	startPosition := image.Point{}
+	startX := 0
 	for index, frame := range frames {
 		if step == 0 {
 			step = 1
-			startPosition = frame.Position
+			startX = frame.Position.X
 		}
 
 		if step == 1 {
-			if frame.Position.Eq(startPosition) {
+			if frame.Position.X == startX {
 				frame.Step = StepStart
 			} else {
 				step = 2
