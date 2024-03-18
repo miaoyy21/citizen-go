@@ -22,22 +22,6 @@ func changeEffect(fileName string) error {
 	}
 	file.Close()
 
-	//colors := make(map[int]map[int]color.Color)
-	//bounds := image.Bounds()
-	//for x := 0; x < bounds.Dx(); x++ {
-	//	for y := 0; y < bounds.Dy(); y++ {
-	//		xColors, ok := colors[x]
-	//		if !ok {
-	//			xColors = make(map[int]color.Color)
-	//		}
-	//
-	//		r, g, b, a := leftImage.(*image.NRGBA).At(x, y).RGBA()
-	//		r0, g0, b0, a0 := uint8(r>>8), uint8(g>>8), uint8(b>>8), uint8(a>>8)
-	//		xColors[y] =
-	//		colors[x] = xColors
-	//	}
-	//}
-
 	bounds := newImage.Bounds()
 	for x := 0; x < bounds.Dx(); x++ {
 		for y := 0; y < bounds.Dy(); y++ {
@@ -54,7 +38,7 @@ func changeEffect(fileName string) error {
 		}
 	}
 
-	// 向左
+	// 文件重写
 	newFile, err := os.Create(fileName)
 	if err != nil {
 		return fmt.Errorf("changeEffect os.Create [%s] : %s", fileName, err.Error())
