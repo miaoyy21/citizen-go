@@ -11,6 +11,22 @@ import (
 )
 
 func Run(srcAssets, dstAssets string) error {
+	// 0. 修改特效的颜色
+	if err := filepath.Walk(filepath.Join(srcAssets, "self", "effect"), func(path string, info fs.FileInfo, err error) error {
+		if err != nil {
+			return err
+		}
+
+		if !strings.HasSuffix(info.Name(), ".png") {
+			return nil
+		}
+
+		return changeEffect(path)
+	}); err != nil {
+		return err
+	}
+	log.Printf("完成在文件夹%q，生成新的特效 ... \n", filepath.Join(srcAssets, "self", "effect"))
+
 	// 1. 清空临时文件夹
 	if err := clean(filepath.Join(srcAssets, "temp")); err != nil {
 		return err

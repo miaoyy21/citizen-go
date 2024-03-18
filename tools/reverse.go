@@ -23,7 +23,7 @@ func reverse(originalFileName string, symbol Symbol, dstRoot string) error {
 
 	rightFile, err := os.Open(rightFileName)
 	if err != nil {
-		return fmt.Errorf("reverse os.Create [%s] : %s", originalFileName, err.Error())
+		return fmt.Errorf("reverse os.Open [%s] : %s", originalFileName, err.Error())
 	}
 	defer rightFile.Close()
 
