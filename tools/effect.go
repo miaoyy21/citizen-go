@@ -36,6 +36,8 @@ func changeEffect(fileName string, effect Effect) error {
 
 			if effect == EffectRed {
 				newImage.(*image.NRGBA).Set(x, y, color.RGBA{R: rgb[0], G: rgb[1], B: rgb[2], A: a0})
+			} else if effect == EffectGreen {
+				newImage.(*image.NRGBA).Set(x, y, color.RGBA{R: rgb[2], G: rgb[0], B: rgb[1], A: a0})
 			} else if effect == EffectBlue {
 				newImage.(*image.NRGBA).Set(x, y, color.RGBA{R: rgb[2], G: rgb[1], B: rgb[0], A: a0})
 			}

@@ -17,6 +17,7 @@ var (
 type Effect string
 
 var (
-	EffectRed  Effect = "red"
-	EffectBlue Effect = "blue"
+	EffectRed   Effect = "red"
+	EffectGreen Effect = "green"
+	EffectBlue  Effect = "blue"
 )
