@@ -21,7 +21,7 @@ func Run(srcAssets, dstAssets string) error {
 			return nil
 		}
 
-		return changeEffect(path, EffectBlue)
+		return changeEffect(path, EffectRed)
 	}); err != nil {
 		return err
 	}
