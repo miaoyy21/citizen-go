@@ -9,7 +9,7 @@ import (
 	"sort"
 )
 
-func changeEffect(fileName string) error {
+func changeEffect(fileName string, effect Effect) error {
 	file, err := os.Open(fileName)
 	if err != nil {
 		return fmt.Errorf("changeEffect os.Open [%s] : %s", fileName, err.Error())
@@ -34,7 +34,11 @@ func changeEffect(fileName string) error {
 				return rgb[i] > rgb[j]
 			})
 
-			newImage.(*image.NRGBA).Set(x, y, color.RGBA{R: rgb[0], G: rgb[1], B: rgb[2], A: a0})
+			if effect == EffectRed {
+				newImage.(*image.NRGBA).Set(x, y, color.RGBA{R: rgb[0], G: rgb[1], B: rgb[2], A: a0})
+			} else if effect == EffectBlue {
+				newImage.(*image.NRGBA).Set(x, y, color.RGBA{R: rgb[2], G: rgb[1], B: rgb[0], A: a0})
+			}
 		}
 	}
 

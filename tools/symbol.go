@@ -13,3 +13,10 @@ var (
 	DirectionLeft  Direction = "left"
 	DirectionRight Direction = "right"
 )
+
+type Effect string
+
+var (
+	EffectRed  Effect = "red"
+	EffectBlue Effect = "blue"
+)
