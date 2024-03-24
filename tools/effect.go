@@ -34,12 +34,13 @@ func changeEffect(fileName string, effect Effect) error {
 				return rgb[i] > rgb[j]
 			})
 
+			v1, v2, v3 := rgb[0], rgb[1], rgb[2]
 			if effect == EffectRed {
-				newImage.(*image.NRGBA).Set(x, y, color.RGBA{R: rgb[0], G: rgb[1], B: rgb[2], A: a0})
+				newImage.(*image.NRGBA).Set(x, y, color.RGBA{R: v1, G: v3, B: v2, A: a0})
 			} else if effect == EffectGreen {
-				newImage.(*image.NRGBA).Set(x, y, color.RGBA{R: rgb[2], G: rgb[0], B: rgb[1], A: a0})
+				newImage.(*image.NRGBA).Set(x, y, color.RGBA{R: v2, G: v1, B: v3, A: a0})
 			} else if effect == EffectBlue {
-				newImage.(*image.NRGBA).Set(x, y, color.RGBA{R: rgb[2], G: rgb[1], B: rgb[0], A: a0})
+				newImage.(*image.NRGBA).Set(x, y, color.RGBA{R: v3, G: v2, B: v1, A: a0})
 			}
 		}
 	}

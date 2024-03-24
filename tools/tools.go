@@ -10,7 +10,7 @@ import (
 	"strings"
 )
 
-func Run(srcAssets, dstAssets string) error {
+func RunSkills(srcAssets, dstAssets string) error {
 	// 0. 修改特效的颜色
 	if err := filepath.Walk(filepath.Join(srcAssets, "self", "effect"), func(path string, info fs.FileInfo, err error) error {
 		if err != nil {
