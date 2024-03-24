@@ -24,6 +24,7 @@ assets/temp
 *.mp4
 *.gif
 *.zip
+/assets/audio/
 /assets/enemy/
 /assets/self/
 /assets/stage/
