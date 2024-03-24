@@ -7,6 +7,8 @@ var (
 	StepPrepare Step = "prepare"
 	StepHit     Step = "hit"
 	StepFinish  Step = "finish"
+
+	StepMixture Step = "mixture"
 )
 
 func parseStep(frames []*Frame) []*Frame {
