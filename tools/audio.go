@@ -26,7 +26,8 @@ func RunAudio(dstAssets string) error {
 			return err
 		}
 
-		if info.IsDir() {
+		ext := strings.ToLower(filepath.Ext(path))
+		if !strings.EqualFold(ext, ".wav") && !strings.EqualFold(ext, ".ogg") {
 			return nil
 		}
 
@@ -47,7 +48,7 @@ func RunAudio(dstAssets string) error {
 			return err
 		}
 
-		dir := filepath.Dir(fileName)
+		dir := strings.Split(fileName, "_")[0]
 		audio, ok := audios[dir]
 		if !ok {
 			audio = make([]Audio, 0)
