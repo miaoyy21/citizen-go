@@ -89,7 +89,7 @@ func ChangeDefinition(dstAssets string) error {
 
 					if a >= 0xffff*3/4 {
 						r, g, b, a = r5, g5, b5, a5
-					} else if a < 0xffff*1/4 {
+					} else if a < 0xffff*1/4 && a != 86 {
 						r, g, b, a = color.Transparent.RGBA()
 					}
 
