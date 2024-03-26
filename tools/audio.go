@@ -31,7 +31,7 @@ func RunAudio(srcAssets string) error {
 			return nil
 		}
 
-		fileName := strings.TrimLeft(path, filepath.Join(srcAssets, "audio"))
+		fileName := strings.TrimPrefix(path, filepath.Join(srcAssets, "audio"))
 
 		cmd := exec.Command("ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "default=noprint_wrappers=1:nokey=1", path)
 		if cmd.Err != nil {
