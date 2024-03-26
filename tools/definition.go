@@ -32,6 +32,7 @@ func ChangeDefinition(dstAssets string) error {
 	sort.Slice(dirs, func(i, j int) bool {
 		return dirs[i] < dirs[j]
 	})
+
 	for _, dir := range dirs {
 		shortName := strings.TrimPrefix(dir, filepath.Join(dstAssets, "images"))
 
@@ -39,6 +40,7 @@ func ChangeDefinition(dstAssets string) error {
 			continue
 		}
 
+		removes := make([]string, 0)
 		if err := filepath.Walk(dir, func(path string, info fs.FileInfo, err error) error {
 			if err != nil {
 				return err
@@ -62,7 +64,7 @@ func ChangeDefinition(dstAssets string) error {
 				return err
 			}
 
-			bounds := originalImage.Bounds()
+			bounds, isEmpty := originalImage.Bounds(), true
 			for x := 1; x < bounds.Dx()-1; x++ {
 				for y := 1; y < bounds.Dy()-1; y++ {
 
@@ -77,6 +79,11 @@ func ChangeDefinition(dstAssets string) error {
 					r7, g7, b7, a7 := originalImage.(*image.NRGBA).At(x-1, y+1).RGBA()
 					r8, g8, b8, a8 := originalImage.(*image.NRGBA).At(x, y+1).RGBA()
 					r9, g9, b9, a9 := originalImage.(*image.NRGBA).At(x+1, y+1).RGBA()
+
+					// 以透明度来区分是否为空图片
+					if a5 != 0 {
+						isEmpty = false
+					}
 
 					if (a5>>8 == 86) || (a5>>8 == 171) {
 						// 86 和 171 分别为残影的透明度
@@ -109,6 +116,11 @@ func ChangeDefinition(dstAssets string) error {
 				}
 			}
 
+			if isEmpty {
+				removes = append(removes, path)
+				return nil
+			}
+
 			newFile, err := os.Create(path)
 			if err != nil {
 				return fmt.Errorf("change Definition os.Create [%s] : %s", path, err.Error())
@@ -127,6 +139,14 @@ func ChangeDefinition(dstAssets string) error {
 			return err
 		}
 		log.Printf("完成在文件夹%q，生成图片消除锯齿处理 ... \n", shortName)
+
+		// 清除没有意义的空图片
+		//for _, path := range removes {
+		//	if err := os.Remove(path); err != nil {
+		//		return err
+		//	}
+		//}
+		//log.Printf("完成删除文件夹%q的空图片 ... \n", shortName)
 	}
 
 	return nil

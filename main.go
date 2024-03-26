@@ -10,9 +10,9 @@ func main() {
 	dstAssets := "/Users/miaojingyi/Documents/dev/flutter/citizen/assets"
 
 	// 解析动画文件
-	if err := tools.RunSkills(srcAssets, dstAssets); err != nil {
-		log.Fatalf("%s", err.Error())
-	}
+	//if err := tools.RunSkills(srcAssets, dstAssets); err != nil {
+	//	log.Fatalf("%s", err.Error())
+	//}
 
 	// 解析Audio资源文件的时长信息
 	//if err := tools.RunAudio(srcAssets); err != nil {
