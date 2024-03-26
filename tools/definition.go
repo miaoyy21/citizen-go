@@ -78,6 +78,11 @@ func ChangeDefinition(dstAssets string) error {
 					r8, g8, b8, a8 := originalImage.(*image.NRGBA).At(x, y+1).RGBA()
 					r9, g9, b9, a9 := originalImage.(*image.NRGBA).At(x+1, y+1).RGBA()
 
+					if (a5>>8 == 86) || (a5>>8 == 171) {
+						// 86 和 171 分别为残影的透明度
+						continue
+					}
+
 					a := (a1 + a2 + a3 + a4 + a5 + a6 + a7 + a8 + a9) / 9
 					if a == 0 {
 						continue
@@ -89,7 +94,7 @@ func ChangeDefinition(dstAssets string) error {
 
 					if a >= 0xffff*3/4 {
 						r, g, b, a = r5, g5, b5, a5
-					} else if a < 0xffff*1/4 && (a5 < 85 || a5 > 87) {
+					} else if a < 0xffff*1/4 {
 						r, g, b, a = color.Transparent.RGBA()
 					}
 
