@@ -98,7 +98,7 @@ func parseAudio(srcAssets string, dstAssets string) (map[string][]string, error)
 		}
 
 		ext := strings.ToLower(filepath.Ext(path))
-		if !strings.EqualFold(ext, ".wav") && !strings.EqualFold(ext, ".ogg") {
+		if !strings.EqualFold(ext, ".wav") {
 			return nil
 		}
 

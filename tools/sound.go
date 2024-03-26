@@ -28,6 +28,7 @@ type SoundOut struct {
 }
 
 func RunSounds(srcAssets string, dstAssets string) error {
+
 	sounds := make(map[string][]*Sound)
 	if err := filepath.Walk(filepath.Join(srcAssets, "sound"), func(path string, info fs.FileInfo, err error) error {
 		if err != nil {
