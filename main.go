@@ -25,9 +25,9 @@ func main() {
 	}
 
 	// 对图片进行高清处理
-	if err := tools.ChangeDefinition(dstAssets); err != nil {
-		log.Fatalf("%s", err.Error())
-	}
+	//if err := tools.ChangeDefinition(dstAssets); err != nil {
+	//	log.Fatalf("%s", err.Error())
+	//}
 
 	log.Println("自动化任务执行完成 ...")
 }
