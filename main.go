@@ -24,7 +24,7 @@ func main() {
 		log.Fatalf("%s", err.Error())
 	}
 
-	// 对图片进行高清处理
+	// 对图片进行抗锯齿处理
 	if err := tools.ChangeDefinition(dstAssets); err != nil {
 		log.Fatalf("%s", err.Error())
 	}
