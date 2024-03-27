@@ -90,10 +90,15 @@ func RunSounds(srcAssets string, dstAssets string) error {
 				start = s.Sequence
 			case SoundCategorySwingEnd:
 				size = s.Sequence - start + 1
-			case SoundCategoryBlowStart:
-				category = SoundCategoryOutBlow
+			case SoundCategoryHandStart:
+				category = SoundCategoryOutHand
 				start = s.Sequence
-			case SoundCategoryBlowEnd:
+			case SoundCategoryHandEnd:
+				size = s.Sequence - start + 1
+			case SoundCategoryFootStart:
+				category = SoundCategoryOutFoot
+				start = s.Sequence
+			case SoundCategoryFootEnd:
 				size = s.Sequence - start + 1
 			}
 
@@ -183,10 +188,16 @@ func parseSound(path string) (*Sound, error) {
 
 			switch rgba {
 			case 0x800000ff:
-				sound.Category = SoundCategoryBlowStart
+				sound.Category = SoundCategoryHandStart
 				return sound, nil
 			case 0xff0000ff:
-				sound.Category = SoundCategoryBlowEnd
+				sound.Category = SoundCategoryHandEnd
+				return sound, nil
+			case 0x800080ff:
+				sound.Category = SoundCategoryFootStart
+				return sound, nil
+			case 0xff00ffff:
+				sound.Category = SoundCategoryFootEnd
 				return sound, nil
 			case 0x008000ff:
 				sound.Category = SoundCategorySwingStart

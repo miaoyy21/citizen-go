@@ -25,8 +25,10 @@ var (
 type SoundCategory string
 
 var (
-	SoundCategoryBlowStart  SoundCategory = "BlowStart"
-	SoundCategoryBlowEnd    SoundCategory = "BlowEnd"
+	SoundCategoryHandStart  SoundCategory = "HandStart"
+	SoundCategoryHandEnd    SoundCategory = "HandEnd"
+	SoundCategoryFootStart  SoundCategory = "FootStart"
+	SoundCategoryFootEnd    SoundCategory = "FootEnd"
 	SoundCategorySwingStart SoundCategory = "SwingStart"
 	SoundCategorySwingEnd   SoundCategory = "SwingEnd"
 )
@@ -34,6 +36,7 @@ var (
 type SoundCategoryOut string
 
 var (
-	SoundCategoryOutBlow  SoundCategoryOut = "Blow"
+	SoundCategoryOutHand  SoundCategoryOut = "Hand"
+	SoundCategoryOutFoot  SoundCategoryOut = "Foot"
 	SoundCategoryOutSwing SoundCategoryOut = "Swing"
 )

@@ -105,7 +105,7 @@ func parseAudio(srcAssets string, dstAssets string) (map[string][]string, error)
 		fileName := filepath.Base(path)
 
 		n3s := strings.Split(strings.Split(fileName, ".")[0], "_")
-		if strings.HasPrefix(fileName, "Blow") || strings.HasPrefix(fileName, "Swing") {
+		if strings.HasPrefix(fileName, "Hand") || strings.HasPrefix(fileName, "Foot") || strings.HasPrefix(fileName, "Swing") {
 			n12 := fmt.Sprintf("%s_%s", n3s[0], n3s[1])
 			ss, ok := sounds[n12]
 			if !ok {
