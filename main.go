@@ -13,9 +13,9 @@ func main() {
 	//}
 
 	// 解析动画文件
-	//if err := tools.RunSkills(srcAssets, dstAssets); err != nil {
-	//	log.Fatalf("%s", err.Error())
-	//}
+	if err := tools.RunSkills(srcAssets, dstAssets); err != nil {
+		log.Fatalf("%s", err.Error())
+	}
 
 	// 将OGG文件转为WAV文件
 	//if err := tools.OggToWav(srcAssets); err != nil {
@@ -33,9 +33,9 @@ func main() {
 	}
 
 	// 对图片进行抗锯齿处理
-	if err := tools.ChangeDefinition(dstAssets); err != nil {
-		log.Fatalf("%s", err.Error())
-	}
+	//if err := tools.ChangeDefinition(dstAssets); err != nil {
+	//	log.Fatalf("%s", err.Error())
+	//}
 
 	log.Println("自动化任务执行完成 ...")
 }
