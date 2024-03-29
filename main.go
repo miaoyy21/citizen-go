@@ -8,9 +8,9 @@ import (
 func main() {
 	srcAssets := "/Users/miaojingyi/Documents/dev/go/src/citizen/assets"
 	dstAssets := "/Users/miaojingyi/Documents/dev/flutter/citizen/assets"
-	if err := tools.Mp4ToGif(srcAssets); err != nil {
-		log.Fatalf("%s \n", err.Error())
-	}
+	//if err := tools.Mp4ToGif(srcAssets); err != nil {
+	//	log.Fatalf("%s \n", err.Error())
+	//}
 
 	// 解析动画文件
 	//if err := tools.RunSkills(srcAssets, dstAssets); err != nil {
@@ -33,9 +33,9 @@ func main() {
 	}
 
 	// 对图片进行抗锯齿处理
-	//if err := tools.ChangeDefinition(dstAssets); err != nil {
-	//	log.Fatalf("%s", err.Error())
-	//}
+	if err := tools.ChangeDefinition(dstAssets); err != nil {
+		log.Fatalf("%s", err.Error())
+	}
 
 	log.Println("自动化任务执行完成 ...")
 }

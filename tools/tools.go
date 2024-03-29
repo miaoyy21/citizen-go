@@ -11,22 +11,6 @@ import (
 )
 
 func RunSkills(srcAssets, dstAssets string) error {
-	// 0. 修改特效的颜色
-	if err := filepath.Walk(filepath.Join(srcAssets, "self", "effect"), func(path string, info fs.FileInfo, err error) error {
-		if err != nil {
-			return err
-		}
-
-		if !strings.HasSuffix(info.Name(), ".png") {
-			return nil
-		}
-
-		return changeEffect(path, EffectRed)
-	}); err != nil {
-		return err
-	}
-	log.Printf("完成在文件夹%q，生成新的特效 ... \n", filepath.Join(srcAssets, "self", "effect"))
-
 	// 1. 清空临时文件夹
 	if err := clean(filepath.Join(srcAssets, "temp")); err != nil {
 		return err
@@ -42,6 +26,12 @@ func RunSkills(srcAssets, dstAssets string) error {
 		log.Printf("完成清空文件夹%q ... \n", filepath.Join(string(d), "enemy", "cape"))
 
 		// 1.2
+		if err := clean(filepath.Join(dstAssets, "images", string(d), "enemy", "effect")); err != nil {
+			return err
+		}
+		log.Printf("完成清空文件夹%q ... \n", filepath.Join(string(d), "enemy", "effect"))
+
+		// 1.3
 		if err := clean(filepath.Join(dstAssets, "images", string(d), "enemy", "stick")); err != nil {
 			return err
 		}
@@ -190,6 +180,7 @@ func RunSkills(srcAssets, dstAssets string) error {
 		{"self", "effect"},
 		{"self", "stick"},
 		{"enemy", "cape"},
+		{"enemy", "effect"},
 		{"enemy", "stick"},
 	} {
 		if err := clean(filepath.Join(srcAssets, "temp")); err != nil {
@@ -238,6 +229,32 @@ func RunSkills(srcAssets, dstAssets string) error {
 			return err
 		}
 		log.Printf("发布动画帧%q至目标目录  ... \n", filepath.Join(ds...))
+	}
+
+	// 7.8. 修改释放技能特效的颜色
+	for _, ds := range [][]string{
+		{"left", "self", "effect"},
+		{"right", "self", "effect"},
+	} {
+		dst := make([]string, 0, len(ds)+2)
+		dst = append(dst, dstAssets)
+		dst = append(dst, "images")
+		dst = append(dst, ds...)
+
+		if err := filepath.Walk(filepath.Join(dst...), func(path string, info fs.FileInfo, err error) error {
+			if err != nil {
+				return err
+			}
+
+			if !strings.HasSuffix(info.Name(), ".png") {
+				return nil
+			}
+
+			return changeEffect(path, EffectBlue)
+		}); err != nil {
+			return err
+		}
+		log.Printf("完成在文件夹%q，生成新的特效 ... \n", filepath.Join(dst...))
 	}
 
 	// 8.【碰撞层】：拷贝animations.json文件
