@@ -250,7 +250,7 @@ func RunSkills(srcAssets, dstAssets string) error {
 				return nil
 			}
 
-			return changeEffect(path, EffectGreen)
+			return changeEffect(path, EffectBlue)
 		}); err != nil {
 			return err
 		}
