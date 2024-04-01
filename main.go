@@ -8,7 +8,7 @@ import (
 func main() {
 	srcAssets := "/Users/miaojingyi/Documents/dev/go/src/citizen/assets"
 	dstAssets := "/Users/miaojingyi/Documents/dev/flutter/citizen/assets"
-	//if err := tools.Mp4ToGif(srcAssets); err != nil {
+	//if err := tools.Mp4SwfToGif(srcAssets); err != nil {
 	//	log.Fatalf("%s \n", err.Error())
 	//}
 
