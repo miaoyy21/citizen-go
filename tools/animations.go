@@ -149,6 +149,10 @@ func parseFrame(path string) (*Frame, error) {
 			rectMin, rectMax := rect.Min, rect.Max
 			for x0 := rectMin.X; x0 <= rectMax.X; x0++ {
 				for y0 := rectMin.Y; y0 <= rectMax.Y; y0++ {
+					if x > rectMin.X && x < rectMax.X && y > rectMin.Y && y < rectMax.Y {
+						continue
+					}
+					
 					skipped[fmt.Sprintf("%d_%d", x0, y0)] = struct{}{}
 				}
 			}
