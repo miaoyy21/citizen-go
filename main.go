@@ -12,11 +12,6 @@ func main() {
 	//	log.Fatalf("%s \n", err.Error())
 	//}
 
-	// 解析动画文件
-	if err := tools.RunSkills(srcAssets, dstAssets); err != nil {
-		log.Fatalf("%s", err.Error())
-	}
-
 	// 将OGG文件转为WAV文件
 	//if err := tools.OggToWav(srcAssets); err != nil {
 	//	log.Fatalf("%s", err.Error())
@@ -36,6 +31,11 @@ func main() {
 	//if err := tools.ChangeDefinition(dstAssets); err != nil {
 	//	log.Fatalf("%s", err.Error())
 	//}
+
+	// 解析动画文件
+	if err := tools.RunSkills(srcAssets, dstAssets); err != nil {
+		log.Fatalf("%s", err.Error())
+	}
 
 	log.Println("自动化任务执行完成 ...")
 }
