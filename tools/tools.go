@@ -185,7 +185,7 @@ func RunSkills(srcAssets, dstAssets string) error {
 				continue
 			}
 
-			if math.Abs(float64(frame.Position.Y-y0)) > 16 {
+			if math.Abs(float64(frame.Position.Y-y0)) > 24 {
 				animation.BreakPrepare = false
 				break
 			}
