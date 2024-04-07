@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"io/fs"
 	"log"
+	"math"
 	"os"
 	"path/filepath"
 	"sort"
@@ -120,6 +121,7 @@ func RunSkills(srcAssets, dstAssets string) error {
 				Width:  frame.Width,
 				Height: frame.Height,
 
+				BreakPrepare:     true,
 				LeftSelfFrames:   make([]*Frame, 0),
 				RightSelfFrames:  make([]*Frame, 0),
 				LeftEnemyFrames:  make([]*Frame, 0),
@@ -167,6 +169,24 @@ func RunSkills(srcAssets, dstAssets string) error {
 
 			if frame.Step == StepHit {
 				end = frame.Position.X
+				break
+			}
+		}
+
+		// 是否可以跳过准备阶段
+		var y0 int
+		for _, frame := range animation.RightSelfFrames {
+			if frame.Step != StepPrepare {
+				continue
+			}
+
+			if y0 == 0 {
+				y0 = animation.RightSelfFrames[0].Position.Y
+				continue
+			}
+
+			if math.Abs(float64(frame.Position.Y-y0)) > 16 {
+				animation.BreakPrepare = false
 				break
 			}
 		}

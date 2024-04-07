@@ -236,6 +236,8 @@ type Animation struct {
 	Height   int
 	Distance int
 
+	BreakPrepare bool
+
 	LeftSelfFrames  []*Frame
 	LeftEnemyFrames []*Frame // 与角色的站位对应
 
