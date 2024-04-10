@@ -1,5 +1,7 @@
 package conf
 
+import "fmt"
+
 type EquipLevel int
 
 var (
@@ -38,6 +40,18 @@ var (
 	EquipQuality5 EquipQuality = 5 // 神话【红】
 )
 
+type EquipColor int
+
+var (
+	EquipColorRed    EquipColor = 1 // 红色
+	EquipColorOrange EquipColor = 2 // 橙色
+	EquipColorYellow EquipColor = 3 // 黄色
+	EquipColorGreen  EquipColor = 4 // 绿色
+	EquipColorCyan   EquipColor = 5 // 青色
+	EquipColorBlue   EquipColor = 6 // 蓝色
+	EquipColorPurple EquipColor = 7 // 紫色
+)
+
 type Equip struct {
 	Id         int               `json:"id"`         // 模版ID
 	Name       Lang              `json:"name"`       // 装备名称【多语言】
@@ -46,8 +60,9 @@ type Equip struct {
 	Attributes map[Attribute]int `json:"attributes"` // 属性
 	Price      int               `json:"price"`      // 出售价格
 
-	QualityRate    map[EquipQuality]int    `json:"quality_rate"`     // 不同装备品质的概率 100*10000 = 100%
-	NaturalQtyRate map[EquipNaturalQty]int `json:"natural_qty_rate"` // 不同数量天然属性的概率 100*10000 = 100%
+	ColorRate      map[int]int `json:"color_rate"`       // 装备颜色的概率  100*10000 = 100%
+	QualityRate    map[int]int `json:"quality_rate"`     // 不同装备品质的概率 100*10000 = 100%
+	NaturalQtyRate map[int]int `json:"natural_qty_rate"` // 不同数量天然属性的概率 100*10000 = 100%
 }
 
 func NewEquips() []Equip {
@@ -60,15 +75,16 @@ func NewEquips() []Equip {
 			attributes[attr] = int(value * CoefficientValues.EquipAttributes[level])
 		}
 
+		// 装备颜色的概率
+		kvCfs := make(map[int]float64)
+		for k, v := range CoefficientValues.EquipColor {
+			kvCfs[int(k)] = v
+		}
+
 		// 不同品质的概率
 		kvQfs := make(map[int]float64)
 		for k, v := range CoefficientValues.EquipQuality[level] {
 			kvQfs[int(k)] = v
-		}
-
-		kvQs, qualityRate := float2int(kvQfs), make(map[EquipQuality]int)
-		for k, v := range kvQs {
-			qualityRate[EquipQuality(k)] = v
 		}
 
 		// 天然属性条数概率
@@ -77,20 +93,23 @@ func NewEquips() []Equip {
 			kvNfs[int(k)] = v
 		}
 
-		kvNs, naturalRate := float2int(kvNfs), make(map[EquipNaturalQty]int)
-		for k, v := range kvNs {
-			naturalRate[EquipNaturalQty(k)] = v
-		}
+		// 多语言
+		name := NewLang(
+			fmt.Sprintf("Lv.%d %s", level, "披风"),
+			fmt.Sprintf("Lv.%d %s", level, "披風"),
+			fmt.Sprintf("Lv.%d %s", level, "Cloak"),
+		)
 
 		equip := Equip{
 			Id:             1000 + int(level),
-			Name:           NewLang("披风", "披風", "Cloak"),
+			Name:           name,
 			Saleable:       true,
 			Level:          level,
 			Attributes:     attributes,
 			Price:          CoefficientValues.EquipPrice[level],
-			QualityRate:    qualityRate,
-			NaturalQtyRate: naturalRate,
+			ColorRate:      float2int(kvCfs),
+			QualityRate:    float2int(kvQfs),
+			NaturalQtyRate: float2int(kvNfs),
 		}
 
 		equips = append(equips, equip)

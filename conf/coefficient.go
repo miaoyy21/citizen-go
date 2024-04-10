@@ -6,6 +6,7 @@ type Coefficient struct {
 	Attributes      map[Attribute]float64                      // 每种属性的基数
 	EquipAttributes map[EquipLevel]float64                     // 装备等级对应的属性系数
 	EquipPrice      map[EquipLevel]int                         // 装备等级对应的基础售价
+	EquipColor      map[EquipColor]float64                     // 装备的颜色系数
 	EquipQuality    map[EquipLevel]map[EquipQuality]float64    // 装备等级对应的品质系数
 	EquipNatural    map[EquipLevel]map[EquipNaturalQty]float64 // 装备等级对应的天然属性系数
 }
@@ -40,6 +41,15 @@ var CoefficientValues = Coefficient{
 		EquipLevel40: int(13 * math.Pow(1.40, 4)),
 		EquipLevel50: int(14 * math.Pow(1.45, 5)),
 		EquipLevel60: int(15 * math.Pow(1.50, 6)),
+	},
+	EquipColor: map[EquipColor]float64{
+		EquipColorRed:    8,
+		EquipColorOrange: 1,
+		EquipColorYellow: 7,
+		EquipColorGreen:  9,
+		EquipColorCyan:   6,
+		EquipColorBlue:   10,
+		EquipColorPurple: 3,
 	},
 	EquipQuality: map[EquipLevel]map[EquipQuality]float64{
 		EquipLevel1: {
