@@ -2,8 +2,8 @@ package conf
 
 // Player 玩家创建时的配置表
 type Player struct {
-	Gold       int                   // 初始金币
-	Attributes map[Attribute]float64 // 初始属性
+	Gold       int                   `json:"gold"`       // 初始金币
+	Attributes map[Attribute]float64 `json:"attributes"` // 初始属性
 }
 
 func NewPlayer() Player {
