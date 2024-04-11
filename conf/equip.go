@@ -8,7 +8,7 @@ type Equip struct {
 	Saleable   bool              `json:"saleable"`   // 是否可出售
 	Level      EquipLevel        `json:"level"`      // 等级
 	Attributes map[Attribute]int `json:"attributes"` // 属性
-	Price      int               `json:"price"`      // 出售价格
+	Price      int               `json:"price"`      // 基础售价，实际售价 = 基础售价*装备品质*属性条数
 
 	ColorRate      map[int]int `json:"color_rate"`       // 装备颜色的概率  100*10000 = 100%
 	QualityRate    map[int]int `json:"quality_rate"`     // 不同装备品质的概率 100*10000 = 100%

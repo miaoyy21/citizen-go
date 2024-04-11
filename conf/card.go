@@ -6,12 +6,12 @@ import (
 )
 
 type Card struct {
-	Id        int       `json:"id"`
-	Name      Lang      `json:"name"`
-	Level     CardLevel `json:"level"`
-	Attribute Attribute `json:"attribute"`
-	Value     int       `json:"value"`
-	Price     int       `json:"price"`
+	Id        int       `json:"id"`        // 模版ID
+	Name      Lang      `json:"name"`      // 卡片名称【多语言】
+	Level     CardLevel `json:"level"`     // 等级
+	Attribute Attribute `json:"attribute"` // 属性
+	Value     int       `json:"value"`     // 属性值
+	Price     int       `json:"price"`     // 售价
 }
 
 func NewCards(language Language) []Card {
