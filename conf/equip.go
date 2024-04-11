@@ -5,7 +5,6 @@ import "fmt"
 type Equip struct {
 	Id         int               `json:"id"`         // 模版ID
 	Name       Lang              `json:"name"`       // 装备名称【多语言】
-	Saleable   bool              `json:"saleable"`   // 是否可出售
 	Level      EquipLevel        `json:"level"`      // 等级
 	Attributes map[Attribute]int `json:"attributes"` // 属性
 	Price      int               `json:"price"`      // 基础售价，实际售价 = 基础售价*装备品质*属性条数
@@ -53,7 +52,6 @@ func NewEquips() []Equip {
 		equip := Equip{
 			Id:             1000 + int(level),
 			Name:           name,
-			Saleable:       true,
 			Level:          level,
 			Attributes:     attributes,
 			Price:          CoefficientValues.EquipPrice[level],
