@@ -1,4 +1,42 @@
 {
+	"language": {
+		"zn_CN": {
+			"attribute_1": "生命",
+			"attribute_10": "闪避",
+			"attribute_2": "精力",
+			"attribute_3": "攻击",
+			"attribute_4": "防御",
+			"attribute_5": "破甲",
+			"attribute_6": "护甲",
+			"attribute_7": "暴击",
+			"attribute_8": "抗暴",
+			"attribute_9": "命中"
+		},
+		"zh_TW": {
+			"attribute_1": "生命",
+			"attribute_10": "閃避",
+			"attribute_2": "精力",
+			"attribute_3": "攻擊",
+			"attribute_4": "防禦",
+			"attribute_5": "破甲",
+			"attribute_6": "護甲",
+			"attribute_7": "暴擊",
+			"attribute_8": "抗暴",
+			"attribute_9": "命中"
+		},
+		"en_US": {
+			"attribute_1": "Health",
+			"attribute_10": "Evasion",
+			"attribute_2": "Energy",
+			"attribute_3": "Attack",
+			"attribute_4": "Defense",
+			"attribute_5": "Penetration",
+			"attribute_6": "Armor",
+			"attribute_7": "Critical Hit",
+			"attribute_8": "Critical Resistance",
+			"attribute_9": "Accuracy"
+		}
+	},
 	"player": {
 		"gold": 100,
 		"attributes": {
@@ -350,6 +388,1088 @@
 				"4": 3438,
 				"5": 331
 			}
+		}
+	],
+	"cards": [
+		{
+			"id": 1001,
+			"name": {
+				"zn_CN": "Lv.1 生命",
+				"zh_TW": "Lv.1 生命",
+				"en_US": "Lv.1 Health"
+			},
+			"level": 1,
+			"attribute": 1,
+			"value": 39,
+			"price": 24
+		},
+		{
+			"id": 1002,
+			"name": {
+				"zn_CN": "Lv.1 精力",
+				"zh_TW": "Lv.1 精力",
+				"en_US": "Lv.1 Energy"
+			},
+			"level": 1,
+			"attribute": 2,
+			"value": 9,
+			"price": 13
+		},
+		{
+			"id": 1003,
+			"name": {
+				"zn_CN": "Lv.1 攻击",
+				"zh_TW": "Lv.1 攻擊",
+				"en_US": "Lv.1 Attack"
+			},
+			"level": 1,
+			"attribute": 3,
+			"value": 7,
+			"price": 45
+		},
+		{
+			"id": 1004,
+			"name": {
+				"zn_CN": "Lv.1 防御",
+				"zh_TW": "Lv.1 防禦",
+				"en_US": "Lv.1 Defense"
+			},
+			"level": 1,
+			"attribute": 4,
+			"value": 3,
+			"price": 24
+		},
+		{
+			"id": 1005,
+			"name": {
+				"zn_CN": "Lv.1 破甲",
+				"zh_TW": "Lv.1 破甲",
+				"en_US": "Lv.1 Penetration"
+			},
+			"level": 1,
+			"attribute": 5,
+			"value": 3,
+			"price": 37
+		},
+		{
+			"id": 1006,
+			"name": {
+				"zn_CN": "Lv.1 护甲",
+				"zh_TW": "Lv.1 護甲",
+				"en_US": "Lv.1 Armor"
+			},
+			"level": 1,
+			"attribute": 6,
+			"value": 1,
+			"price": 18
+		},
+		{
+			"id": 1007,
+			"name": {
+				"zn_CN": "Lv.1 暴击",
+				"zh_TW": "Lv.1 暴擊",
+				"en_US": "Lv.1 Critical Hit"
+			},
+			"level": 1,
+			"attribute": 7,
+			"value": 149,
+			"price": 27
+		},
+		{
+			"id": 1008,
+			"name": {
+				"zn_CN": "Lv.1 抗暴",
+				"zh_TW": "Lv.1 抗暴",
+				"en_US": "Lv.1 Critical Resistance"
+			},
+			"level": 1,
+			"attribute": 8,
+			"value": 69,
+			"price": 15
+		},
+		{
+			"id": 1009,
+			"name": {
+				"zn_CN": "Lv.1 命中",
+				"zh_TW": "Lv.1 命中",
+				"en_US": "Lv.1 Accuracy"
+			},
+			"level": 1,
+			"attribute": 9,
+			"value": 199,
+			"price": 18
+		},
+		{
+			"id": 1010,
+			"name": {
+				"zn_CN": "Lv.1 闪避",
+				"zh_TW": "Lv.1 閃避",
+				"en_US": "Lv.1 Evasion"
+			},
+			"level": 1,
+			"attribute": 10,
+			"value": 99,
+			"price": 12
+		},
+		{
+			"id": 2001,
+			"name": {
+				"zn_CN": "Lv.2 生命",
+				"zh_TW": "Lv.2 生命",
+				"en_US": "Lv.2 Health"
+			},
+			"level": 2,
+			"attribute": 1,
+			"value": 80,
+			"price": 36
+		},
+		{
+			"id": 2002,
+			"name": {
+				"zn_CN": "Lv.2 精力",
+				"zh_TW": "Lv.2 精力",
+				"en_US": "Lv.2 Energy"
+			},
+			"level": 2,
+			"attribute": 2,
+			"value": 20,
+			"price": 20
+		},
+		{
+			"id": 2003,
+			"name": {
+				"zn_CN": "Lv.2 攻击",
+				"zh_TW": "Lv.2 攻擊",
+				"en_US": "Lv.2 Attack"
+			},
+			"level": 2,
+			"attribute": 3,
+			"value": 15,
+			"price": 67
+		},
+		{
+			"id": 2004,
+			"name": {
+				"zn_CN": "Lv.2 防御",
+				"zh_TW": "Lv.2 防禦",
+				"en_US": "Lv.2 Defense"
+			},
+			"level": 2,
+			"attribute": 4,
+			"value": 7,
+			"price": 36
+		},
+		{
+			"id": 2005,
+			"name": {
+				"zn_CN": "Lv.2 破甲",
+				"zh_TW": "Lv.2 破甲",
+				"en_US": "Lv.2 Penetration"
+			},
+			"level": 2,
+			"attribute": 5,
+			"value": 7,
+			"price": 56
+		},
+		{
+			"id": 2006,
+			"name": {
+				"zn_CN": "Lv.2 护甲",
+				"zh_TW": "Lv.2 護甲",
+				"en_US": "Lv.2 Armor"
+			},
+			"level": 2,
+			"attribute": 6,
+			"value": 3,
+			"price": 27
+		},
+		{
+			"id": 2007,
+			"name": {
+				"zn_CN": "Lv.2 暴击",
+				"zh_TW": "Lv.2 暴擊",
+				"en_US": "Lv.2 Critical Hit"
+			},
+			"level": 2,
+			"attribute": 7,
+			"value": 300,
+			"price": 40
+		},
+		{
+			"id": 2008,
+			"name": {
+				"zn_CN": "Lv.2 抗暴",
+				"zh_TW": "Lv.2 抗暴",
+				"en_US": "Lv.2 Critical Resistance"
+			},
+			"level": 2,
+			"attribute": 8,
+			"value": 140,
+			"price": 22
+		},
+		{
+			"id": 2009,
+			"name": {
+				"zn_CN": "Lv.2 命中",
+				"zh_TW": "Lv.2 命中",
+				"en_US": "Lv.2 Accuracy"
+			},
+			"level": 2,
+			"attribute": 9,
+			"value": 399,
+			"price": 27
+		},
+		{
+			"id": 2010,
+			"name": {
+				"zn_CN": "Lv.2 闪避",
+				"zh_TW": "Lv.2 閃避",
+				"en_US": "Lv.2 Evasion"
+			},
+			"level": 2,
+			"attribute": 10,
+			"value": 199,
+			"price": 18
+		},
+		{
+			"id": 3001,
+			"name": {
+				"zn_CN": "Lv.3 生命",
+				"zh_TW": "Lv.3 生命",
+				"en_US": "Lv.3 Health"
+			},
+			"level": 3,
+			"attribute": 1,
+			"value": 120,
+			"price": 54
+		},
+		{
+			"id": 3002,
+			"name": {
+				"zn_CN": "Lv.3 精力",
+				"zh_TW": "Lv.3 精力",
+				"en_US": "Lv.3 Energy"
+			},
+			"level": 3,
+			"attribute": 2,
+			"value": 30,
+			"price": 30
+		},
+		{
+			"id": 3003,
+			"name": {
+				"zn_CN": "Lv.3 攻击",
+				"zh_TW": "Lv.3 攻擊",
+				"en_US": "Lv.3 Attack"
+			},
+			"level": 3,
+			"attribute": 3,
+			"value": 24,
+			"price": 101
+		},
+		{
+			"id": 3004,
+			"name": {
+				"zn_CN": "Lv.3 防御",
+				"zh_TW": "Lv.3 防禦",
+				"en_US": "Lv.3 Defense"
+			},
+			"level": 3,
+			"attribute": 4,
+			"value": 12,
+			"price": 54
+		},
+		{
+			"id": 3005,
+			"name": {
+				"zn_CN": "Lv.3 破甲",
+				"zh_TW": "Lv.3 破甲",
+				"en_US": "Lv.3 Penetration"
+			},
+			"level": 3,
+			"attribute": 5,
+			"value": 12,
+			"price": 84
+		},
+		{
+			"id": 3006,
+			"name": {
+				"zn_CN": "Lv.3 护甲",
+				"zh_TW": "Lv.3 護甲",
+				"en_US": "Lv.3 Armor"
+			},
+			"level": 3,
+			"attribute": 6,
+			"value": 6,
+			"price": 40
+		},
+		{
+			"id": 3007,
+			"name": {
+				"zn_CN": "Lv.3 暴击",
+				"zh_TW": "Lv.3 暴擊",
+				"en_US": "Lv.3 Critical Hit"
+			},
+			"level": 3,
+			"attribute": 7,
+			"value": 450,
+			"price": 60
+		},
+		{
+			"id": 3008,
+			"name": {
+				"zn_CN": "Lv.3 抗暴",
+				"zh_TW": "Lv.3 抗暴",
+				"en_US": "Lv.3 Critical Resistance"
+			},
+			"level": 3,
+			"attribute": 8,
+			"value": 210,
+			"price": 33
+		},
+		{
+			"id": 3009,
+			"name": {
+				"zn_CN": "Lv.3 命中",
+				"zh_TW": "Lv.3 命中",
+				"en_US": "Lv.3 Accuracy"
+			},
+			"level": 3,
+			"attribute": 9,
+			"value": 600,
+			"price": 40
+		},
+		{
+			"id": 3010,
+			"name": {
+				"zn_CN": "Lv.3 闪避",
+				"zh_TW": "Lv.3 閃避",
+				"en_US": "Lv.3 Evasion"
+			},
+			"level": 3,
+			"attribute": 10,
+			"value": 300,
+			"price": 27
+		},
+		{
+			"id": 4001,
+			"name": {
+				"zn_CN": "Lv.4 生命",
+				"zh_TW": "Lv.4 生命",
+				"en_US": "Lv.4 Health"
+			},
+			"level": 4,
+			"attribute": 1,
+			"value": 160,
+			"price": 81
+		},
+		{
+			"id": 4002,
+			"name": {
+				"zn_CN": "Lv.4 精力",
+				"zh_TW": "Lv.4 精力",
+				"en_US": "Lv.4 Energy"
+			},
+			"level": 4,
+			"attribute": 2,
+			"value": 40,
+			"price": 45
+		},
+		{
+			"id": 4003,
+			"name": {
+				"zn_CN": "Lv.4 攻击",
+				"zh_TW": "Lv.4 攻擊",
+				"en_US": "Lv.4 Attack"
+			},
+			"level": 4,
+			"attribute": 3,
+			"value": 32,
+			"price": 151
+		},
+		{
+			"id": 4004,
+			"name": {
+				"zn_CN": "Lv.4 防御",
+				"zh_TW": "Lv.4 防禦",
+				"en_US": "Lv.4 Defense"
+			},
+			"level": 4,
+			"attribute": 4,
+			"value": 16,
+			"price": 81
+		},
+		{
+			"id": 4005,
+			"name": {
+				"zn_CN": "Lv.4 破甲",
+				"zh_TW": "Lv.4 破甲",
+				"en_US": "Lv.4 Penetration"
+			},
+			"level": 4,
+			"attribute": 5,
+			"value": 16,
+			"price": 126
+		},
+		{
+			"id": 4006,
+			"name": {
+				"zn_CN": "Lv.4 护甲",
+				"zh_TW": "Lv.4 護甲",
+				"en_US": "Lv.4 Armor"
+			},
+			"level": 4,
+			"attribute": 6,
+			"value": 8,
+			"price": 60
+		},
+		{
+			"id": 4007,
+			"name": {
+				"zn_CN": "Lv.4 暴击",
+				"zh_TW": "Lv.4 暴擊",
+				"en_US": "Lv.4 Critical Hit"
+			},
+			"level": 4,
+			"attribute": 7,
+			"value": 600,
+			"price": 91
+		},
+		{
+			"id": 4008,
+			"name": {
+				"zn_CN": "Lv.4 抗暴",
+				"zh_TW": "Lv.4 抗暴",
+				"en_US": "Lv.4 Critical Resistance"
+			},
+			"level": 4,
+			"attribute": 8,
+			"value": 280,
+			"price": 50
+		},
+		{
+			"id": 4009,
+			"name": {
+				"zn_CN": "Lv.4 命中",
+				"zh_TW": "Lv.4 命中",
+				"en_US": "Lv.4 Accuracy"
+			},
+			"level": 4,
+			"attribute": 9,
+			"value": 800,
+			"price": 60
+		},
+		{
+			"id": 4010,
+			"name": {
+				"zn_CN": "Lv.4 闪避",
+				"zh_TW": "Lv.4 閃避",
+				"en_US": "Lv.4 Evasion"
+			},
+			"level": 4,
+			"attribute": 10,
+			"value": 400,
+			"price": 40
+		},
+		{
+			"id": 5001,
+			"name": {
+				"zn_CN": "Lv.5 生命",
+				"zh_TW": "Lv.5 生命",
+				"en_US": "Lv.5 Health"
+			},
+			"level": 5,
+			"attribute": 1,
+			"value": 200,
+			"price": 121
+		},
+		{
+			"id": 5002,
+			"name": {
+				"zn_CN": "Lv.5 精力",
+				"zh_TW": "Lv.5 精力",
+				"en_US": "Lv.5 Energy"
+			},
+			"level": 5,
+			"attribute": 2,
+			"value": 50,
+			"price": 68
+		},
+		{
+			"id": 5003,
+			"name": {
+				"zn_CN": "Lv.5 攻击",
+				"zh_TW": "Lv.5 攻擊",
+				"en_US": "Lv.5 Attack"
+			},
+			"level": 5,
+			"attribute": 3,
+			"value": 40,
+			"price": 227
+		},
+		{
+			"id": 5004,
+			"name": {
+				"zn_CN": "Lv.5 防御",
+				"zh_TW": "Lv.5 防禦",
+				"en_US": "Lv.5 Defense"
+			},
+			"level": 5,
+			"attribute": 4,
+			"value": 20,
+			"price": 121
+		},
+		{
+			"id": 5005,
+			"name": {
+				"zn_CN": "Lv.5 破甲",
+				"zh_TW": "Lv.5 破甲",
+				"en_US": "Lv.5 Penetration"
+			},
+			"level": 5,
+			"attribute": 5,
+			"value": 20,
+			"price": 189
+		},
+		{
+			"id": 5006,
+			"name": {
+				"zn_CN": "Lv.5 护甲",
+				"zh_TW": "Lv.5 護甲",
+				"en_US": "Lv.5 Armor"
+			},
+			"level": 5,
+			"attribute": 6,
+			"value": 10,
+			"price": 91
+		},
+		{
+			"id": 5007,
+			"name": {
+				"zn_CN": "Lv.5 暴击",
+				"zh_TW": "Lv.5 暴擊",
+				"en_US": "Lv.5 Critical Hit"
+			},
+			"level": 5,
+			"attribute": 7,
+			"value": 750,
+			"price": 136
+		},
+		{
+			"id": 5008,
+			"name": {
+				"zn_CN": "Lv.5 抗暴",
+				"zh_TW": "Lv.5 抗暴",
+				"en_US": "Lv.5 Critical Resistance"
+			},
+			"level": 5,
+			"attribute": 8,
+			"value": 350,
+			"price": 75
+		},
+		{
+			"id": 5009,
+			"name": {
+				"zn_CN": "Lv.5 命中",
+				"zh_TW": "Lv.5 命中",
+				"en_US": "Lv.5 Accuracy"
+			},
+			"level": 5,
+			"attribute": 9,
+			"value": 1000,
+			"price": 91
+		},
+		{
+			"id": 5010,
+			"name": {
+				"zn_CN": "Lv.5 闪避",
+				"zh_TW": "Lv.5 閃避",
+				"en_US": "Lv.5 Evasion"
+			},
+			"level": 5,
+			"attribute": 10,
+			"value": 500,
+			"price": 60
+		},
+		{
+			"id": 6001,
+			"name": {
+				"zn_CN": "Lv.6 生命",
+				"zh_TW": "Lv.6 生命",
+				"en_US": "Lv.6 Health"
+			},
+			"level": 6,
+			"attribute": 1,
+			"value": 240,
+			"price": 182
+		},
+		{
+			"id": 6002,
+			"name": {
+				"zn_CN": "Lv.6 精力",
+				"zh_TW": "Lv.6 精力",
+				"en_US": "Lv.6 Energy"
+			},
+			"level": 6,
+			"attribute": 2,
+			"value": 60,
+			"price": 102
+		},
+		{
+			"id": 6003,
+			"name": {
+				"zn_CN": "Lv.6 攻击",
+				"zh_TW": "Lv.6 攻擊",
+				"en_US": "Lv.6 Attack"
+			},
+			"level": 6,
+			"attribute": 3,
+			"value": 48,
+			"price": 341
+		},
+		{
+			"id": 6004,
+			"name": {
+				"zn_CN": "Lv.6 防御",
+				"zh_TW": "Lv.6 防禦",
+				"en_US": "Lv.6 Defense"
+			},
+			"level": 6,
+			"attribute": 4,
+			"value": 24,
+			"price": 182
+		},
+		{
+			"id": 6005,
+			"name": {
+				"zn_CN": "Lv.6 破甲",
+				"zh_TW": "Lv.6 破甲",
+				"en_US": "Lv.6 Penetration"
+			},
+			"level": 6,
+			"attribute": 5,
+			"value": 24,
+			"price": 284
+		},
+		{
+			"id": 6006,
+			"name": {
+				"zn_CN": "Lv.6 护甲",
+				"zh_TW": "Lv.6 護甲",
+				"en_US": "Lv.6 Armor"
+			},
+			"level": 6,
+			"attribute": 6,
+			"value": 12,
+			"price": 136
+		},
+		{
+			"id": 6007,
+			"name": {
+				"zn_CN": "Lv.6 暴击",
+				"zh_TW": "Lv.6 暴擊",
+				"en_US": "Lv.6 Critical Hit"
+			},
+			"level": 6,
+			"attribute": 7,
+			"value": 900,
+			"price": 205
+		},
+		{
+			"id": 6008,
+			"name": {
+				"zn_CN": "Lv.6 抗暴",
+				"zh_TW": "Lv.6 抗暴",
+				"en_US": "Lv.6 Critical Resistance"
+			},
+			"level": 6,
+			"attribute": 8,
+			"value": 420,
+			"price": 113
+		},
+		{
+			"id": 6009,
+			"name": {
+				"zn_CN": "Lv.6 命中",
+				"zh_TW": "Lv.6 命中",
+				"en_US": "Lv.6 Accuracy"
+			},
+			"level": 6,
+			"attribute": 9,
+			"value": 1200,
+			"price": 136
+		},
+		{
+			"id": 6010,
+			"name": {
+				"zn_CN": "Lv.6 闪避",
+				"zh_TW": "Lv.6 閃避",
+				"en_US": "Lv.6 Evasion"
+			},
+			"level": 6,
+			"attribute": 10,
+			"value": 600,
+			"price": 91
+		},
+		{
+			"id": 7001,
+			"name": {
+				"zn_CN": "Lv.7 生命",
+				"zh_TW": "Lv.7 生命",
+				"en_US": "Lv.7 Health"
+			},
+			"level": 7,
+			"attribute": 1,
+			"value": 280,
+			"price": 273
+		},
+		{
+			"id": 7002,
+			"name": {
+				"zn_CN": "Lv.7 精力",
+				"zh_TW": "Lv.7 精力",
+				"en_US": "Lv.7 Energy"
+			},
+			"level": 7,
+			"attribute": 2,
+			"value": 70,
+			"price": 153
+		},
+		{
+			"id": 7003,
+			"name": {
+				"zn_CN": "Lv.7 攻击",
+				"zh_TW": "Lv.7 攻擊",
+				"en_US": "Lv.7 Attack"
+			},
+			"level": 7,
+			"attribute": 3,
+			"value": 56,
+			"price": 512
+		},
+		{
+			"id": 7004,
+			"name": {
+				"zn_CN": "Lv.7 防御",
+				"zh_TW": "Lv.7 防禦",
+				"en_US": "Lv.7 Defense"
+			},
+			"level": 7,
+			"attribute": 4,
+			"value": 28,
+			"price": 273
+		},
+		{
+			"id": 7005,
+			"name": {
+				"zn_CN": "Lv.7 破甲",
+				"zh_TW": "Lv.7 破甲",
+				"en_US": "Lv.7 Penetration"
+			},
+			"level": 7,
+			"attribute": 5,
+			"value": 28,
+			"price": 427
+		},
+		{
+			"id": 7006,
+			"name": {
+				"zn_CN": "Lv.7 护甲",
+				"zh_TW": "Lv.7 護甲",
+				"en_US": "Lv.7 Armor"
+			},
+			"level": 7,
+			"attribute": 6,
+			"value": 14,
+			"price": 205
+		},
+		{
+			"id": 7007,
+			"name": {
+				"zn_CN": "Lv.7 暴击",
+				"zh_TW": "Lv.7 暴擊",
+				"en_US": "Lv.7 Critical Hit"
+			},
+			"level": 7,
+			"attribute": 7,
+			"value": 1050,
+			"price": 307
+		},
+		{
+			"id": 7008,
+			"name": {
+				"zn_CN": "Lv.7 抗暴",
+				"zh_TW": "Lv.7 抗暴",
+				"en_US": "Lv.7 Critical Resistance"
+			},
+			"level": 7,
+			"attribute": 8,
+			"value": 490,
+			"price": 170
+		},
+		{
+			"id": 7009,
+			"name": {
+				"zn_CN": "Lv.7 命中",
+				"zh_TW": "Lv.7 命中",
+				"en_US": "Lv.7 Accuracy"
+			},
+			"level": 7,
+			"attribute": 9,
+			"value": 1400,
+			"price": 205
+		},
+		{
+			"id": 7010,
+			"name": {
+				"zn_CN": "Lv.7 闪避",
+				"zh_TW": "Lv.7 閃避",
+				"en_US": "Lv.7 Evasion"
+			},
+			"level": 7,
+			"attribute": 10,
+			"value": 700,
+			"price": 136
+		},
+		{
+			"id": 8001,
+			"name": {
+				"zn_CN": "Lv.8 生命",
+				"zh_TW": "Lv.8 生命",
+				"en_US": "Lv.8 Health"
+			},
+			"level": 8,
+			"attribute": 1,
+			"value": 320,
+			"price": 410
+		},
+		{
+			"id": 8002,
+			"name": {
+				"zn_CN": "Lv.8 精力",
+				"zh_TW": "Lv.8 精力",
+				"en_US": "Lv.8 Energy"
+			},
+			"level": 8,
+			"attribute": 2,
+			"value": 80,
+			"price": 230
+		},
+		{
+			"id": 8003,
+			"name": {
+				"zn_CN": "Lv.8 攻击",
+				"zh_TW": "Lv.8 攻擊",
+				"en_US": "Lv.8 Attack"
+			},
+			"level": 8,
+			"attribute": 3,
+			"value": 64,
+			"price": 768
+		},
+		{
+			"id": 8004,
+			"name": {
+				"zn_CN": "Lv.8 防御",
+				"zh_TW": "Lv.8 防禦",
+				"en_US": "Lv.8 Defense"
+			},
+			"level": 8,
+			"attribute": 4,
+			"value": 32,
+			"price": 410
+		},
+		{
+			"id": 8005,
+			"name": {
+				"zn_CN": "Lv.8 破甲",
+				"zh_TW": "Lv.8 破甲",
+				"en_US": "Lv.8 Penetration"
+			},
+			"level": 8,
+			"attribute": 5,
+			"value": 32,
+			"price": 640
+		},
+		{
+			"id": 8006,
+			"name": {
+				"zn_CN": "Lv.8 护甲",
+				"zh_TW": "Lv.8 護甲",
+				"en_US": "Lv.8 Armor"
+			},
+			"level": 8,
+			"attribute": 6,
+			"value": 16,
+			"price": 307
+		},
+		{
+			"id": 8007,
+			"name": {
+				"zn_CN": "Lv.8 暴击",
+				"zh_TW": "Lv.8 暴擊",
+				"en_US": "Lv.8 Critical Hit"
+			},
+			"level": 8,
+			"attribute": 7,
+			"value": 1200,
+			"price": 461
+		},
+		{
+			"id": 8008,
+			"name": {
+				"zn_CN": "Lv.8 抗暴",
+				"zh_TW": "Lv.8 抗暴",
+				"en_US": "Lv.8 Critical Resistance"
+			},
+			"level": 8,
+			"attribute": 8,
+			"value": 560,
+			"price": 256
+		},
+		{
+			"id": 8009,
+			"name": {
+				"zn_CN": "Lv.8 命中",
+				"zh_TW": "Lv.8 命中",
+				"en_US": "Lv.8 Accuracy"
+			},
+			"level": 8,
+			"attribute": 9,
+			"value": 1600,
+			"price": 307
+		},
+		{
+			"id": 8010,
+			"name": {
+				"zn_CN": "Lv.8 闪避",
+				"zh_TW": "Lv.8 閃避",
+				"en_US": "Lv.8 Evasion"
+			},
+			"level": 8,
+			"attribute": 10,
+			"value": 800,
+			"price": 205
+		},
+		{
+			"id": 9001,
+			"name": {
+				"zn_CN": "Lv.9 生命",
+				"zh_TW": "Lv.9 生命",
+				"en_US": "Lv.9 Health"
+			},
+			"level": 9,
+			"attribute": 1,
+			"value": 360,
+			"price": 615
+		},
+		{
+			"id": 9002,
+			"name": {
+				"zn_CN": "Lv.9 精力",
+				"zh_TW": "Lv.9 精力",
+				"en_US": "Lv.9 Energy"
+			},
+			"level": 9,
+			"attribute": 2,
+			"value": 90,
+			"price": 345
+		},
+		{
+			"id": 9003,
+			"name": {
+				"zn_CN": "Lv.9 攻击",
+				"zh_TW": "Lv.9 攻擊",
+				"en_US": "Lv.9 Attack"
+			},
+			"level": 9,
+			"attribute": 3,
+			"value": 72,
+			"price": 1153
+		},
+		{
+			"id": 9004,
+			"name": {
+				"zn_CN": "Lv.9 防御",
+				"zh_TW": "Lv.9 防禦",
+				"en_US": "Lv.9 Defense"
+			},
+			"level": 9,
+			"attribute": 4,
+			"value": 36,
+			"price": 615
+		},
+		{
+			"id": 9005,
+			"name": {
+				"zn_CN": "Lv.9 破甲",
+				"zh_TW": "Lv.9 破甲",
+				"en_US": "Lv.9 Penetration"
+			},
+			"level": 9,
+			"attribute": 5,
+			"value": 36,
+			"price": 961
+		},
+		{
+			"id": 9006,
+			"name": {
+				"zn_CN": "Lv.9 护甲",
+				"zh_TW": "Lv.9 護甲",
+				"en_US": "Lv.9 Armor"
+			},
+			"level": 9,
+			"attribute": 6,
+			"value": 18,
+			"price": 461
+		},
+		{
+			"id": 9007,
+			"name": {
+				"zn_CN": "Lv.9 暴击",
+				"zh_TW": "Lv.9 暴擊",
+				"en_US": "Lv.9 Critical Hit"
+			},
+			"level": 9,
+			"attribute": 7,
+			"value": 1350,
+			"price": 691
+		},
+		{
+			"id": 9008,
+			"name": {
+				"zn_CN": "Lv.9 抗暴",
+				"zh_TW": "Lv.9 抗暴",
+				"en_US": "Lv.9 Critical Resistance"
+			},
+			"level": 9,
+			"attribute": 8,
+			"value": 630,
+			"price": 384
+		},
+		{
+			"id": 9009,
+			"name": {
+				"zn_CN": "Lv.9 命中",
+				"zh_TW": "Lv.9 命中",
+				"en_US": "Lv.9 Accuracy"
+			},
+			"level": 9,
+			"attribute": 9,
+			"value": 1800,
+			"price": 461
+		},
+		{
+			"id": 9010,
+			"name": {
+				"zn_CN": "Lv.9 闪避",
+				"zh_TW": "Lv.9 閃避",
+				"en_US": "Lv.9 Evasion"
+			},
+			"level": 9,
+			"attribute": 10,
+			"value": 900,
+			"price": 307
 		}
 	]
 }

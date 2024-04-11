@@ -10,16 +10,16 @@ func NewPlayer() Player {
 	return Player{
 		Gold: 100,
 		Attributes: map[Attribute]float64{
-			Health:         100,
-			Energy:         50,
-			Attack:         10,
-			Defense:        5,
-			Penetration:    5,
-			Armor:          5,
-			Critical:       100,
-			ResistCritical: 100,
-			Accuracy:       10000,
-			ResistAccuracy: 200,
+			AttributeHealth:         100,
+			AttributeEnergy:         50,
+			AttributeAttack:         10,
+			AttributeDefense:        5,
+			AttributePenetration:    5,
+			AttributeArmor:          5,
+			AttributeCritical:       100,
+			AttributeResistCritical: 100,
+			AttributeAccuracy:       10000,
+			AttributeResistAccuracy: 200,
 		},
 	}
 }

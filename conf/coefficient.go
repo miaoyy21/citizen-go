@@ -3,26 +3,30 @@ package conf
 import "math"
 
 type Coefficient struct {
-	Attributes      map[Attribute]float64                      // 每种属性的基数
-	EquipAttributes map[EquipLevel]float64                     // 装备等级对应的属性系数
-	EquipPrice      map[EquipLevel]int                         // 装备等级对应的基础售价
-	EquipColor      map[EquipColor]float64                     // 装备的颜色系数
-	EquipQuality    map[EquipLevel]map[EquipQuality]float64    // 装备等级对应的品质系数
-	EquipNatural    map[EquipLevel]map[EquipNaturalQty]float64 // 装备等级对应的天然属性系数
+	Attributes         map[Attribute]float64                      // 每种属性的基数
+	EquipAttributes    map[EquipLevel]float64                     // 装备等级对应的属性系数
+	EquipPrice         map[EquipLevel]int                         // 装备等级对应的基础售价
+	EquipColor         map[EquipColor]float64                     // 装备的颜色系数
+	EquipQuality       map[EquipLevel]map[EquipQuality]float64    // 装备等级对应的品质系数
+	EquipNatural       map[EquipLevel]map[EquipNaturalQty]float64 // 装备等级对应的天然属性系数
+	CardAttributes     map[Attribute]float64                      // 卡片的属性，以Lv.5的属性卡为基准
+	CardAttributeSteps float64                                    // 卡片的属性衰减数值 公式：b + (x-5)*v*b
+	CardPrice          map[Attribute]float64                      // 每种属性卡的Lv.1售价
+	CardLevelPrice     float64                                    // 卡片每提升1级，增加的售价系数
 }
 
 var CoefficientValues = Coefficient{
 	Attributes: map[Attribute]float64{
-		Health:         25,
-		Energy:         5,
-		Attack:         4,
-		Defense:        2,
-		Penetration:    3,
-		Armor:          2,
-		Critical:       50,
-		ResistCritical: 25,
-		Accuracy:       50,
-		ResistAccuracy: 75,
+		AttributeHealth:         25,
+		AttributeEnergy:         5,
+		AttributeAttack:         4,
+		AttributeDefense:        2,
+		AttributePenetration:    3,
+		AttributeArmor:          2,
+		AttributeCritical:       50,
+		AttributeResistCritical: 25,
+		AttributeAccuracy:       50,
+		AttributeResistAccuracy: 75,
 	},
 	EquipAttributes: map[EquipLevel]float64{
 		EquipLevel1:  1.5 * math.Pow(1.25, 0),
@@ -167,6 +171,32 @@ var CoefficientValues = Coefficient{
 			EquipNaturalQty5: 3 * math.Pow(0.32, 5),
 		},
 	},
+	CardAttributes: map[Attribute]float64{
+		AttributeHealth:         200,
+		AttributeEnergy:         50,
+		AttributeAttack:         40,
+		AttributeDefense:        20,
+		AttributePenetration:    20,
+		AttributeArmor:          10,
+		AttributeCritical:       750,
+		AttributeResistCritical: 350,
+		AttributeAccuracy:       1000,
+		AttributeResistAccuracy: 500,
+	},
+	CardAttributeSteps: 0.2,
+	CardPrice: map[Attribute]float64{
+		AttributeHealth:         16,
+		AttributeEnergy:         9,
+		AttributeAttack:         30,
+		AttributeDefense:        16,
+		AttributePenetration:    25,
+		AttributeArmor:          12,
+		AttributeCritical:       18,
+		AttributeResistCritical: 10,
+		AttributeAccuracy:       12,
+		AttributeResistAccuracy: 8,
+	},
+	CardLevelPrice: 1.50,
 }
 
 func float2int(values map[int]float64) map[int]int {
