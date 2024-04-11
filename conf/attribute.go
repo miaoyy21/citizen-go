@@ -4,7 +4,7 @@ type Attribute int
 
 var (
 	AttributeHealth/* 1 生命上限 */ Attribute = 1
-	AttributeEnergy/* 2 精力上限 */ Attribute = 2
+	AttributeEnergy/* 2 精气上限 */ Attribute = 2
 
 	/*
 		当攻击值比防御值高时，相减后为实际攻击伤害；当攻击值比防御值低时，强制造成1点攻击伤害。

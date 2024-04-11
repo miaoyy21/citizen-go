@@ -1,6 +1,9 @@
 package conf
 
-import "math"
+import (
+	"fmt"
+	"math"
+)
 
 type Coefficient struct {
 	Attributes         map[Attribute]float64                      // 每种属性的基数
@@ -224,4 +227,14 @@ func float2int(values map[int]float64) map[int]int {
 
 	newValues[minKey] = 10000 - newSum
 	return newValues
+}
+
+func sliceI2S(values []int) []string {
+	ss := make([]string, 0, len(values))
+
+	for _, value := range values {
+		ss = append(ss, fmt.Sprintf("%d", value))
+	}
+
+	return ss
 }

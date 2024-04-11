@@ -11,14 +11,18 @@ type Configuration struct {
 }
 
 func New() Configuration {
-	language := NewLanguage()
-
-	return Configuration{
-		Language: language,
-		Player:   NewPlayer(),
-		Equips:   NewEquips(language),
-		Cards:    NewCards(language),
-		Props:    NewProps(language),
-		Mates:    NewMates(language),
+	conf := Configuration{
+		Language: NewLanguage(),
 	}
+
+	// 装备、卡片、道具、材料
+	conf.Equips = NewEquips(conf)
+	conf.Cards = NewCards(conf)
+	conf.Props = NewProps(conf)
+	conf.Mates = NewMates(conf)
+
+	// 玩家
+	conf.Player = NewPlayer(conf)
+
+	return conf
 }

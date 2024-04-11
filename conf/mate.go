@@ -21,9 +21,11 @@ type Mate struct {
 
 	/* 矿石合成 */
 	Next *MateNext `json:"next,omitempty"` // 可合成的矿石
+
+	birthQty int // 赠送玩家的数量
 }
 
-func NewMates(language Language) []Mate {
+func NewMates(conf Configuration) []Mate {
 	mates := make([]Mate, 0)
 
 	/****************************** 矿石 ******************************/
@@ -39,6 +41,7 @@ func NewMates(language Language) []Mate {
 			Gold: 50,
 			Rate: 8000,
 		},
+		birthQty: 3,
 	})
 	mates = append(mates, Mate{
 		Id:                1002,
@@ -71,6 +74,7 @@ func NewMates(language Language) []Mate {
 			Gold: 75,
 			Rate: 7500,
 		},
+		birthQty: 2,
 	})
 	mates = append(mates, Mate{
 		Id:                2002,
@@ -103,6 +107,7 @@ func NewMates(language Language) []Mate {
 			Gold: 100,
 			Rate: 6000,
 		},
+		birthQty: 1,
 	})
 	mates = append(mates, Mate{
 		Id:                3002,
@@ -175,21 +180,21 @@ func NewMates(language Language) []Mate {
 		Price:             1500,
 	})
 
-	preQtys := make(map[int]int)
+	pQty := make(map[int]int)
 	for _, mate := range mates {
 		if mate.Next != nil {
-			preQtys[mate.Next.Id] = mate.Next.Qty
+			pQty[mate.Next.Id] = mate.Next.Qty
 		}
 	}
 
 	// 设置道具名称和道具描述
 	newMates := make([]Mate, 0, len(mates))
 	for _, mate := range mates {
-		mate.Name = language.Get(fmt.Sprintf("mate_name_%d", mate.Id))
+		mate.Name = conf.Language.Get(fmt.Sprintf("mate_name_%d", mate.Id))
 
-		mate.Description = language.Get(fmt.Sprintf("mate_description_%d", mate.Id))
-		if qty, ok := preQtys[mate.Id]; ok {
-			mate.Description = language.Get(fmt.Sprintf("mate_description_%d", mate.Id), fmt.Sprintf("%d", qty))
+		mate.Description = conf.Language.Get(fmt.Sprintf("mate_description_%d", mate.Id))
+		if qty, ok := pQty[mate.Id]; ok {
+			mate.Description = conf.Language.Get(fmt.Sprintf("mate_description_%d", mate.Id), fmt.Sprintf("%d", qty))
 		}
 
 		newMates = append(newMates, mate)

@@ -10,9 +10,11 @@ type Equip struct {
 	ColorRate      map[int]int `json:"color_rate"`       // 装备颜色的概率  100*10000 = 100%
 	QualityRate    map[int]int `json:"quality_rate"`     // 不同装备品质的概率 100*10000 = 100%
 	NaturalQtyRate map[int]int `json:"natural_qty_rate"` // 不同数量天然属性的概率 100*10000 = 100%
+
+	birthQty int // 赠送玩家数量
 }
 
-func NewEquips(language Language) []Equip {
+func NewEquips(conf Configuration) []Equip {
 	equips := make([]Equip, 0, len(EquipLevels))
 
 	for _, level := range EquipLevels {
@@ -42,13 +44,18 @@ func NewEquips(language Language) []Equip {
 
 		equip := Equip{
 			Id:             1000 + int(level),
-			Name:           language.Get("equip_cape"),
+			Name:           conf.Language.Get("equip_cape"),
 			Level:          level,
 			Attributes:     attributes,
 			Price:          CoefficientValues.EquipPrice[level],
 			ColorRate:      float2int(kvCfs),
 			QualityRate:    float2int(kvQfs),
 			NaturalQtyRate: float2int(kvNfs),
+		}
+
+		// 是否赠送玩家
+		if level == EquipLevel1 {
+			equip.birthQty = 3
 		}
 
 		equips = append(equips, equip)

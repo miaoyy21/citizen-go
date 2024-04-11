@@ -13,9 +13,11 @@ type Card struct {
 
 	Attribute Attribute `json:"attribute"` // 属性
 	Value     int       `json:"value"`     // 属性值
+
+	birthQty int // 赠送玩家的数量
 }
 
-func NewCards(language Language) []Card {
+func NewCards(conf Configuration) []Card {
 	cards := make([]Card, 0)
 
 	for _, level := range CardLevels {
@@ -24,11 +26,16 @@ func NewCards(language Language) []Card {
 
 			card := Card{
 				Id:        int(level)*1000 + int(attribute),
-				Name:      language.Get(fmt.Sprintf("attribute_%d", attribute)),
+				Name:      conf.Language.Get(fmt.Sprintf("attribute_%d", attribute)),
 				Level:     level,
 				Attribute: attribute,
 				Value:     int(CoefficientValues.CardAttributes[attribute] + float64(level-5)*CoefficientValues.CardAttributes[attribute]*CoefficientValues.CardAttributeSteps),
 				Price:     int(price * math.Pow(CoefficientValues.CardLevelPrice, float64(level))),
+			}
+
+			// 是否赠送玩家
+			if card.Level == CardLevel1 {
+				card.birthQty = 1
 			}
 
 			cards = append(cards, card)

@@ -3,7 +3,7 @@
 		"zn_CN": {
 			"attribute_1": "生命",
 			"attribute_10": "闪避",
-			"attribute_2": "精力",
+			"attribute_2": "精气",
 			"attribute_3": "攻击",
 			"attribute_4": "防御",
 			"attribute_5": "破甲",
@@ -39,12 +39,24 @@
 			"mate_name_4002": "精金矿石",
 			"mate_name_4003": "金髓矿石",
 			"mate_name_9001": "七彩碎片",
-			"mate_name_9002": "七彩神石"
+			"mate_name_9002": "七彩神石",
+			"prop_description_1011": "使用后，立即回复{$1}点生命值。",
+			"prop_description_1012": "使用后，立即回复{$1}点生命值。",
+			"prop_description_1013": "使用后，立即回复{$1}点生命值。",
+			"prop_description_1021": "使用后，立即回复{$1}点精气值。",
+			"prop_description_1022": "使用后，立即回复{$1}点精气值。",
+			"prop_description_1023": "使用后，立即回复{$1}点精气值。",
+			"prop_name_1011": "（小）生命药水",
+			"prop_name_1012": "（中）生命药水",
+			"prop_name_1013": "（大）生命药水",
+			"prop_name_1021": "（小）精气补充剂",
+			"prop_name_1022": "（中）精气补充剂",
+			"prop_name_1023": "（大）精气补充剂"
 		},
 		"zh_TW": {
 			"attribute_1": "生命",
 			"attribute_10": "閃避",
-			"attribute_2": "精力",
+			"attribute_2": "精氣",
 			"attribute_3": "攻擊",
 			"attribute_4": "防禦",
 			"attribute_5": "破甲",
@@ -80,7 +92,19 @@
 			"mate_name_4002": "精金礦石",
 			"mate_name_4003": "金髓礦石",
 			"mate_name_9001": "七彩碎片",
-			"mate_name_9002": "七彩神石"
+			"mate_name_9002": "七彩神石",
+			"prop_description_1011": "使用後，立即恢復{$1}點生命值。",
+			"prop_description_1012": "使用後，立即恢復{$1}點生命值。",
+			"prop_description_1013": "使用後，立即恢復{$1}點生命值。",
+			"prop_description_1021": "使用後，立即恢復{$1}點精氣值。",
+			"prop_description_1022": "使用後，立即恢復{$1}點精氣值。",
+			"prop_description_1023": "使用後，立即恢復{$1}點精氣值。",
+			"prop_name_1011": "（小）生命藥水",
+			"prop_name_1012": "（中）生命藥水",
+			"prop_name_1013": "（大）生命藥水",
+			"prop_name_1021": "（小）精氣補充劑",
+			"prop_name_1022": "（中）精氣補充劑",
+			"prop_name_1023": "（大）精氣補充劑"
 		},
 		"en_US": {
 			"attribute_1": "Health",
@@ -121,7 +145,19 @@
 			"mate_name_4002": "Refined Gold Ore",
 			"mate_name_4003": "Gold Essence Ore",
 			"mate_name_9001": "Rainbow Fragment",
-			"mate_name_9002": "Rainbow Godstone"
+			"mate_name_9002": "Rainbow Godstone",
+			"prop_description_1011": "Upon use, immediately restores {$1} health points.",
+			"prop_description_1012": "Upon use, immediately restores {$1} health points.",
+			"prop_description_1013": "Upon use, immediately restores {$1} health points.",
+			"prop_description_1021": "Upon use, immediately restores {$1} energy points.",
+			"prop_description_1022": "Upon use, immediately restores {$1} energy points.",
+			"prop_description_1023": "Upon use, immediately restores {$1} energy points.",
+			"prop_name_1011": "(Small) Health Potion",
+			"prop_name_1012": "(Medium) Health Potion",
+			"prop_name_1013": "(Large) Health Potion",
+			"prop_name_1021": "(Small) Energy Supplement",
+			"prop_name_1022": "(Medium) Energy Supplement",
+			"prop_name_1023": "(Large) Energy Supplement"
 		}
 	},
 	"player": {
@@ -149,7 +185,148 @@
 			"7": 25,
 			"8": 20,
 			"9": 30
-		}
+		},
+		"equips": [
+			{
+				"id": 1001,
+				"color": 1,
+				"quality": 2,
+				"attributes": [
+					{
+						"is_natural": false,
+						"proto_id": 0,
+						"attribute": 0,
+						"value": 0
+					}
+				]
+			},
+			{
+				"id": 1001,
+				"color": 4,
+				"quality": 2,
+				"attributes": [
+					{
+						"is_natural": false,
+						"proto_id": 0,
+						"attribute": 0,
+						"value": 0
+					},
+					{
+						"is_natural": false,
+						"proto_id": 0,
+						"attribute": 0,
+						"value": 0
+					}
+				]
+			},
+			{
+				"id": 1001,
+				"color": 6,
+				"quality": 2,
+				"attributes": [
+					{
+						"is_natural": false,
+						"proto_id": 0,
+						"attribute": 0,
+						"value": 0
+					},
+					{
+						"is_natural": false,
+						"proto_id": 0,
+						"attribute": 0,
+						"value": 0
+					},
+					{
+						"is_natural": false,
+						"proto_id": 0,
+						"attribute": 0,
+						"value": 0
+					}
+				]
+			}
+		],
+		"cards": [
+			{
+				"id": 1001,
+				"qty": 1
+			},
+			{
+				"id": 1002,
+				"qty": 1
+			},
+			{
+				"id": 1003,
+				"qty": 1
+			},
+			{
+				"id": 1004,
+				"qty": 1
+			},
+			{
+				"id": 1005,
+				"qty": 1
+			},
+			{
+				"id": 1006,
+				"qty": 1
+			},
+			{
+				"id": 1007,
+				"qty": 1
+			},
+			{
+				"id": 1008,
+				"qty": 1
+			},
+			{
+				"id": 1009,
+				"qty": 1
+			},
+			{
+				"id": 1010,
+				"qty": 1
+			}
+		],
+		"props": [
+			{
+				"id": 1011,
+				"qty": 50
+			},
+			{
+				"id": 1012,
+				"qty": 30
+			},
+			{
+				"id": 1013,
+				"qty": 10
+			},
+			{
+				"id": 1021,
+				"qty": 40
+			},
+			{
+				"id": 1022,
+				"qty": 20
+			},
+			{
+				"id": 1023,
+				"qty": 10
+			}
+		],
+		"Mates": [
+			{
+				"id": 1001,
+				"qty": 3
+			},
+			{
+				"id": 2001,
+				"qty": 2
+			},
+			{
+				"id": 3001,
+				"qty": 1
+			}
+		]
 	},
 	"equips": [
 		{
@@ -498,8 +675,8 @@
 		{
 			"id": 1002,
 			"name": {
-				"zn_CN": "精力",
-				"zh_TW": "精力",
+				"zn_CN": "精气",
+				"zh_TW": "精氣",
 				"en_US": "Energy"
 			},
 			"level": 1,
@@ -618,8 +795,8 @@
 		{
 			"id": 2002,
 			"name": {
-				"zn_CN": "精力",
-				"zh_TW": "精力",
+				"zn_CN": "精气",
+				"zh_TW": "精氣",
 				"en_US": "Energy"
 			},
 			"level": 2,
@@ -738,8 +915,8 @@
 		{
 			"id": 3002,
 			"name": {
-				"zn_CN": "精力",
-				"zh_TW": "精力",
+				"zn_CN": "精气",
+				"zh_TW": "精氣",
 				"en_US": "Energy"
 			},
 			"level": 3,
@@ -858,8 +1035,8 @@
 		{
 			"id": 4002,
 			"name": {
-				"zn_CN": "精力",
-				"zh_TW": "精力",
+				"zn_CN": "精气",
+				"zh_TW": "精氣",
 				"en_US": "Energy"
 			},
 			"level": 4,
@@ -978,8 +1155,8 @@
 		{
 			"id": 5002,
 			"name": {
-				"zn_CN": "精力",
-				"zh_TW": "精力",
+				"zn_CN": "精气",
+				"zh_TW": "精氣",
 				"en_US": "Energy"
 			},
 			"level": 5,
@@ -1098,8 +1275,8 @@
 		{
 			"id": 6002,
 			"name": {
-				"zn_CN": "精力",
-				"zh_TW": "精力",
+				"zn_CN": "精气",
+				"zh_TW": "精氣",
 				"en_US": "Energy"
 			},
 			"level": 6,
@@ -1218,8 +1395,8 @@
 		{
 			"id": 7002,
 			"name": {
-				"zn_CN": "精力",
-				"zh_TW": "精力",
+				"zn_CN": "精气",
+				"zh_TW": "精氣",
 				"en_US": "Energy"
 			},
 			"level": 7,
@@ -1338,8 +1515,8 @@
 		{
 			"id": 8002,
 			"name": {
-				"zn_CN": "精力",
-				"zh_TW": "精力",
+				"zn_CN": "精气",
+				"zh_TW": "精氣",
 				"en_US": "Energy"
 			},
 			"level": 8,
@@ -1458,8 +1635,8 @@
 		{
 			"id": 9002,
 			"name": {
-				"zn_CN": "精力",
-				"zh_TW": "精力",
+				"zn_CN": "精气",
+				"zh_TW": "精氣",
 				"en_US": "Energy"
 			},
 			"level": 9,
@@ -1564,7 +1741,128 @@
 			"value": 900
 		}
 	],
-	"props": [],
+	"props": [
+		{
+			"id": 1011,
+			"name": {
+				"zn_CN": "（小）生命药水",
+				"zh_TW": "（小）生命藥水",
+				"en_US": "(Small) Health Potion"
+			},
+			"saleable": false,
+			"level": 1,
+			"description": {
+				"zn_CN": "使用后，立即回复100点生命值。",
+				"zh_TW": "使用後，立即恢復100點生命值。",
+				"en_US": "Upon use, immediately restores 100 health points."
+			},
+			"price": 0,
+			"effect": 1101,
+			"values": [
+				100
+			]
+		},
+		{
+			"id": 1012,
+			"name": {
+				"zn_CN": "（中）生命药水",
+				"zh_TW": "（中）生命藥水",
+				"en_US": "(Medium) Health Potion"
+			},
+			"saleable": false,
+			"level": 10,
+			"description": {
+				"zn_CN": "使用后，立即回复500点生命值。",
+				"zh_TW": "使用後，立即恢復500點生命值。",
+				"en_US": "Upon use, immediately restores 500 health points."
+			},
+			"price": 0,
+			"effect": 1101,
+			"values": [
+				500
+			]
+		},
+		{
+			"id": 1013,
+			"name": {
+				"zn_CN": "（大）生命药水",
+				"zh_TW": "（大）生命藥水",
+				"en_US": "(Large) Health Potion"
+			},
+			"saleable": false,
+			"level": 20,
+			"description": {
+				"zn_CN": "使用后，立即回复1000点生命值。",
+				"zh_TW": "使用後，立即恢復1000點生命值。",
+				"en_US": "Upon use, immediately restores 1000 health points."
+			},
+			"price": 0,
+			"effect": 1101,
+			"values": [
+				1000
+			]
+		},
+		{
+			"id": 1021,
+			"name": {
+				"zn_CN": "（小）精气补充剂",
+				"zh_TW": "（小）精氣補充劑",
+				"en_US": "(Small) Energy Supplement"
+			},
+			"saleable": false,
+			"level": 1,
+			"description": {
+				"zn_CN": "使用后，立即回复50点精气值。",
+				"zh_TW": "使用後，立即恢復50點精氣值。",
+				"en_US": "Upon use, immediately restores 50 energy points."
+			},
+			"price": 0,
+			"effect": 1201,
+			"values": [
+				50
+			]
+		},
+		{
+			"id": 1022,
+			"name": {
+				"zn_CN": "（中）精气补充剂",
+				"zh_TW": "（中）精氣補充劑",
+				"en_US": "(Medium) Energy Supplement"
+			},
+			"saleable": false,
+			"level": 10,
+			"description": {
+				"zn_CN": "使用后，立即回复250点精气值。",
+				"zh_TW": "使用後，立即恢復250點精氣值。",
+				"en_US": "Upon use, immediately restores 250 energy points."
+			},
+			"price": 0,
+			"effect": 1201,
+			"values": [
+				250
+			]
+		},
+		{
+			"id": 1023,
+			"name": {
+				"zn_CN": "（大）精气补充剂",
+				"zh_TW": "（大）精氣補充劑",
+				"en_US": "(Large) Energy Supplement"
+			},
+			"saleable": false,
+			"level": 20,
+			"description": {
+				"zn_CN": "使用后，立即回复500点精气值。",
+				"zh_TW": "使用後，立即恢復500點精氣值。",
+				"en_US": "Upon use, immediately restores 500 energy points."
+			},
+			"price": 0,
+			"effect": 1201,
+			"values": [
+				500
+			]
+		}
+	],
 	"mates": [
 		{
 			"id": 1001,

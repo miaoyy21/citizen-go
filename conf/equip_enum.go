@@ -50,3 +50,19 @@ var (
 	EquipColorBlue   EquipColor = 6 // 蓝色
 	EquipColorPurple EquipColor = 7 // 紫色
 )
+
+type EquipAttribute struct {
+	IsNatural bool `json:"is_natural"` // 是否天然
+
+	/*
+	   非天然属性时，代表镶嵌的卡片模版ID
+	   当卡片模版ID为0时，表示尚未镶嵌卡片；
+	   当卡片模版ID非0时，表示已镶嵌对应的卡片；
+	   不同的非天然属性，不允许镶嵌相同模版ID的卡片
+	*/
+	ProtoId int `json:"proto_id"` // 镶嵌的卡片模版ID
+
+	// 天然属性值
+	Attribute Attribute `json:"attribute"` // 属性
+	Value     int       `json:"value"`     // 数值
+}
