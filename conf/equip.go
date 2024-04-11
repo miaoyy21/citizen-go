@@ -1,7 +1,5 @@
 package conf
 
-import "fmt"
-
 type Equip struct {
 	Id         int               `json:"id"`         // 模版ID
 	Name       Lang              `json:"name"`       // 装备名称【多语言】
@@ -14,7 +12,7 @@ type Equip struct {
 	NaturalQtyRate map[int]int `json:"natural_qty_rate"` // 不同数量天然属性的概率 100*10000 = 100%
 }
 
-func NewEquips() []Equip {
+func NewEquips(language Language) []Equip {
 	equips := make([]Equip, 0, len(EquipLevels))
 
 	for _, level := range EquipLevels {
@@ -42,16 +40,9 @@ func NewEquips() []Equip {
 			kvNfs[int(k)] = v
 		}
 
-		// 多语言
-		name := NewLang(
-			fmt.Sprintf("Lv.%d %s", level, "披风"),
-			fmt.Sprintf("Lv.%d %s", level, "披風"),
-			fmt.Sprintf("Lv.%d %s", level, "Cloak"),
-		)
-
 		equip := Equip{
 			Id:             1000 + int(level),
-			Name:           name,
+			Name:           language.Get("equip_cape"),
 			Level:          level,
 			Attributes:     attributes,
 			Price:          CoefficientValues.EquipPrice[level],

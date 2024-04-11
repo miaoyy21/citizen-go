@@ -7,6 +7,7 @@ type Configuration struct {
 	Equips []Equip `json:"equips"`
 	Cards  []Card  `json:"cards"`
 	Props  []Prop  `json:"props"`
+	Mates  []Mate  `json:"mates"`
 }
 
 func New() Configuration {
@@ -15,8 +16,9 @@ func New() Configuration {
 	return Configuration{
 		Language: language,
 		Player:   NewPlayer(),
-		Equips:   NewEquips(),
+		Equips:   NewEquips(language),
 		Cards:    NewCards(language),
-		Props:    NewProps(),
+		Props:    NewProps(language),
+		Mates:    NewMates(language),
 	}
 }

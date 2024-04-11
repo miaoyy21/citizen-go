@@ -13,4 +13,11 @@ var (
 	PropEffectCritical      PropEffect = 2002 // 使用后增加暴击百分比，持续一段时间 10000 = 100%
 	PropEffectAccuracy      PropEffect = 2003 // 使用后增加命中百分比，持续一段时间 10000 = 100%
 
+	PropEffectPlayerColor PropEffect = 3001 // 使用后可修改角色颜色
+	PropEffectGold        PropEffect = 3011 // 使用后可增加金币
+	PropEffectExp         PropEffect = 3012 // 使用后可增加经验
+	PropEffectCard        PropEffect = 3021 // 使用后可获取一定数量的卡片
+	PropEffectProp        PropEffect = 3022 // 使用后可获取一定数量的道具
+	PropEffectMate        PropEffect = 3023 // 使用后可获取一定数量的材料
+
 )

@@ -1,1469 +1,1848 @@
 {
-	"language": {
-		"zn_CN": {
-			"attribute_1": "生命",
-			"attribute_10": "闪避",
-			"attribute_2": "精力",
-			"attribute_3": "攻击",
-			"attribute_4": "防御",
-			"attribute_5": "破甲",
-			"attribute_6": "护甲",
-			"attribute_7": "暴击",
-			"attribute_8": "抗暴",
-			"attribute_9": "命中"
-		},
-		"zh_TW": {
-			"attribute_1": "生命",
-			"attribute_10": "閃避",
-			"attribute_2": "精力",
-			"attribute_3": "攻擊",
-			"attribute_4": "防禦",
-			"attribute_5": "破甲",
-			"attribute_6": "護甲",
-			"attribute_7": "暴擊",
-			"attribute_8": "抗暴",
-			"attribute_9": "命中"
-		},
-		"en_US": {
-			"attribute_1": "Health",
-			"attribute_10": "Evasion",
-			"attribute_2": "Energy",
-			"attribute_3": "Attack",
-			"attribute_4": "Defense",
-			"attribute_5": "Penetration",
-			"attribute_6": "Armor",
-			"attribute_7": "Critical Hit",
-			"attribute_8": "Critical Resistance",
-			"attribute_9": "Accuracy"
-		}
-	},
-	"player": {
-		"gold": 100,
-		"attributes": {
-			"1": 100,
-			"10": 200,
-			"2": 50,
-			"3": 10,
-			"4": 5,
-			"5": 5,
-			"6": 5,
-			"7": 100,
-			"8": 100,
-			"9": 10000
-		}
-	},
-	"equips": [
-		{
-			"id": 1001,
-			"name": {
-				"zn_CN": "Lv.1 披风",
-				"zh_TW": "Lv.1 披風",
-				"en_US": "Lv.1 Cloak"
-			},
-			"level": 1,
-			"attributes": {
-				"1": 37,
-				"10": 112,
-				"2": 7,
-				"3": 6,
-				"4": 3,
-				"5": 4,
-				"6": 3,
-				"7": 75,
-				"8": 37,
-				"9": 75
-			},
-			"price": 10,
-			"color_rate": {
-				"1": 181818,
-				"2": 22727,
-				"3": 159090,
-				"4": 204545,
-				"5": 136363,
-				"6": 227272,
-				"7": 68185
-			},
-			"quality_rate": {
-				"0": 262810,
-				"1": 176818,
-				"2": 151113,
-				"3": 157615,
-				"4": 133272,
-				"5": 118372
-			},
-			"natural_qty_rate": {
-				"0": 461021,
-				"1": 246877,
-				"2": 137126,
-				"3": 78930,
-				"4": 47041,
-				"5": 29005
-			}
-		},
-		{
-			"id": 1010,
-			"name": {
-				"zn_CN": "Lv.10 披风",
-				"zh_TW": "Lv.10 披風",
-				"en_US": "Lv.10 Cloak"
-			},
-			"level": 10,
-			"attributes": {
-				"1": 46,
-				"10": 140,
-				"2": 9,
-				"3": 7,
-				"4": 3,
-				"5": 5,
-				"6": 3,
-				"7": 93,
-				"8": 46,
-				"9": 93
-			},
-			"price": 12,
-			"color_rate": {
-				"1": 181818,
-				"2": 22727,
-				"3": 159090,
-				"4": 204545,
-				"5": 136363,
-				"6": 227272,
-				"7": 68185
-			},
-			"quality_rate": {
-				"0": 355587,
-				"1": 199128,
-				"2": 136687,
-				"3": 111807,
-				"4": 106628,
-				"5": 90163
-			},
-			"natural_qty_rate": {
-				"0": 532003,
-				"1": 252701,
-				"2": 119700,
-				"3": 56525,
-				"4": 26600,
-				"5": 12471
-			}
-		},
-		{
-			"id": 1020,
-			"name": {
-				"zn_CN": "Lv.20 披风",
-				"zh_TW": "Lv.20 披風",
-				"en_US": "Lv.20 Cloak"
-			},
-			"level": 20,
-			"attributes": {
-				"1": 67,
-				"10": 202,
-				"2": 13,
-				"3": 10,
-				"4": 5,
-				"5": 8,
-				"6": 5,
-				"7": 135,
-				"8": 67,
-				"9": 135
-			},
-			"price": 18,
-			"color_rate": {
-				"1": 181818,
-				"2": 22727,
-				"3": 159090,
-				"4": 204545,
-				"5": 136363,
-				"6": 227272,
-				"7": 68185
-			},
-			"quality_rate": {
-				"0": 385684,
-				"1": 212126,
-				"2": 138846,
-				"3": 105918,
-				"4": 92602,
-				"5": 64824
-			},
-			"natural_qty_rate": {
-				"0": 552251,
-				"1": 257073,
-				"2": 114514,
-				"3": 48735,
-				"4": 19781,
-				"5": 7646
-			}
-		},
-		{
-			"id": 1030,
-			"name": {
-				"zn_CN": "Lv.30 披风",
-				"zh_TW": "Lv.30 披風",
-				"en_US": "Lv.30 Cloak"
-			},
-			"level": 30,
-			"attributes": {
-				"1": 104,
-				"10": 313,
-				"2": 20,
-				"3": 16,
-				"4": 8,
-				"5": 12,
-				"6": 8,
-				"7": 209,
-				"8": 104,
-				"9": 209
-			},
-			"price": 29,
-			"color_rate": {
-				"1": 181818,
-				"2": 22727,
-				"3": 159090,
-				"4": 204545,
-				"5": 136363,
-				"6": 227272,
-				"7": 68185
-			},
-			"quality_rate": {
-				"0": 417346,
-				"1": 225367,
-				"2": 140395,
-				"3": 99465,
-				"4": 79190,
-				"5": 38237
-			},
-			"natural_qty_rate": {
-				"0": 579473,
-				"1": 258735,
-				"2": 105609,
-				"3": 39161,
-				"4": 13099,
-				"5": 3923
-			}
-		},
-		{
-			"id": 1040,
-			"name": {
-				"zn_CN": "Lv.40 披风",
-				"zh_TW": "Lv.40 披風",
-				"en_US": "Lv.40 Cloak"
-			},
-			"level": 40,
-			"attributes": {
-				"1": 172,
-				"10": 518,
-				"2": 34,
-				"3": 27,
-				"4": 13,
-				"5": 20,
-				"6": 13,
-				"7": 345,
-				"8": 172,
-				"9": 345
-			},
-			"price": 49,
-			"color_rate": {
-				"1": 181818,
-				"2": 22727,
-				"3": 159090,
-				"4": 204545,
-				"5": 136363,
-				"6": 227272,
-				"7": 68185
-			},
-			"quality_rate": {
-				"0": 444086,
-				"1": 235365,
-				"2": 139265,
-				"3": 91205,
-				"4": 65619,
-				"5": 24460
-			},
-			"natural_qty_rate": {
-				"0": 601641,
-				"1": 254494,
-				"2": 97465,
-				"3": 33484,
-				"4": 10200,
-				"5": 2716
-			}
-		},
-		{
-			"id": 1050,
-			"name": {
-				"zn_CN": "Lv.50 披风",
-				"zh_TW": "Lv.50 披風",
-				"en_US": "Lv.50 Cloak"
-			},
-			"level": 50,
-			"attributes": {
-				"1": 304,
-				"10": 913,
-				"2": 60,
-				"3": 48,
-				"4": 24,
-				"5": 36,
-				"6": 24,
-				"7": 608,
-				"8": 304,
-				"9": 608
-			},
-			"price": 89,
-			"color_rate": {
-				"1": 181818,
-				"2": 22727,
-				"3": 159090,
-				"4": 204545,
-				"5": 136363,
-				"6": 227272,
-				"7": 68185
-			},
-			"quality_rate": {
-				"0": 467639,
-				"1": 243172,
-				"2": 136363,
-				"3": 82124,
-				"4": 52920,
-				"5": 17782
-			},
-			"natural_qty_rate": {
-				"0": 633082,
-				"1": 250700,
-				"2": 85136,
-				"3": 24316,
-				"4": 5700,
-				"5": 1066
-			}
-		},
-		{
-			"id": 1060,
-			"name": {
-				"zn_CN": "Lv.60 披风",
-				"zh_TW": "Lv.60 披風",
-				"en_US": "Lv.60 Cloak"
-			},
-			"level": 60,
-			"attributes": {
-				"1": 569,
-				"10": 1708,
-				"2": 113,
-				"3": 91,
-				"4": 45,
-				"5": 68,
-				"6": 45,
-				"7": 1139,
-				"8": 569,
-				"9": 1139
-			},
-			"price": 170,
-			"color_rate": {
-				"1": 181818,
-				"2": 22727,
-				"3": 159090,
-				"4": 204545,
-				"5": 136363,
-				"6": 227272,
-				"7": 68185
-			},
-			"quality_rate": {
-				"0": 488864,
-				"1": 249320,
-				"2": 132188,
-				"3": 72780,
-				"4": 41568,
-				"5": 15280
-			},
-			"natural_qty_rate": {
-				"0": 654619,
-				"1": 244827,
-				"2": 77029,
-				"3": 19756,
-				"4": 3438,
-				"5": 331
-			}
-		}
-	],
-	"cards": [
-		{
-			"id": 1001,
-			"name": {
-				"zn_CN": "Lv.1 生命",
-				"zh_TW": "Lv.1 生命",
-				"en_US": "Lv.1 Health"
-			},
-			"level": 1,
-			"attribute": 1,
-			"value": 39,
-			"price": 24
-		},
-		{
-			"id": 1002,
-			"name": {
-				"zn_CN": "Lv.1 精力",
-				"zh_TW": "Lv.1 精力",
-				"en_US": "Lv.1 Energy"
-			},
-			"level": 1,
-			"attribute": 2,
-			"value": 9,
-			"price": 13
-		},
-		{
-			"id": 1003,
-			"name": {
-				"zn_CN": "Lv.1 攻击",
-				"zh_TW": "Lv.1 攻擊",
-				"en_US": "Lv.1 Attack"
-			},
-			"level": 1,
-			"attribute": 3,
-			"value": 7,
-			"price": 45
-		},
-		{
-			"id": 1004,
-			"name": {
-				"zn_CN": "Lv.1 防御",
-				"zh_TW": "Lv.1 防禦",
-				"en_US": "Lv.1 Defense"
-			},
-			"level": 1,
-			"attribute": 4,
-			"value": 3,
-			"price": 24
-		},
-		{
-			"id": 1005,
-			"name": {
-				"zn_CN": "Lv.1 破甲",
-				"zh_TW": "Lv.1 破甲",
-				"en_US": "Lv.1 Penetration"
-			},
-			"level": 1,
-			"attribute": 5,
-			"value": 3,
-			"price": 37
-		},
-		{
-			"id": 1006,
-			"name": {
-				"zn_CN": "Lv.1 护甲",
-				"zh_TW": "Lv.1 護甲",
-				"en_US": "Lv.1 Armor"
-			},
-			"level": 1,
-			"attribute": 6,
-			"value": 1,
-			"price": 18
-		},
-		{
-			"id": 1007,
-			"name": {
-				"zn_CN": "Lv.1 暴击",
-				"zh_TW": "Lv.1 暴擊",
-				"en_US": "Lv.1 Critical Hit"
-			},
-			"level": 1,
-			"attribute": 7,
-			"value": 149,
-			"price": 27
-		},
-		{
-			"id": 1008,
-			"name": {
-				"zn_CN": "Lv.1 抗暴",
-				"zh_TW": "Lv.1 抗暴",
-				"en_US": "Lv.1 Critical Resistance"
-			},
-			"level": 1,
-			"attribute": 8,
-			"value": 69,
-			"price": 15
-		},
-		{
-			"id": 1009,
-			"name": {
-				"zn_CN": "Lv.1 命中",
-				"zh_TW": "Lv.1 命中",
-				"en_US": "Lv.1 Accuracy"
-			},
-			"level": 1,
-			"attribute": 9,
-			"value": 199,
-			"price": 18
-		},
-		{
-			"id": 1010,
-			"name": {
-				"zn_CN": "Lv.1 闪避",
-				"zh_TW": "Lv.1 閃避",
-				"en_US": "Lv.1 Evasion"
-			},
-			"level": 1,
-			"attribute": 10,
-			"value": 99,
-			"price": 12
-		},
-		{
-			"id": 2001,
-			"name": {
-				"zn_CN": "Lv.2 生命",
-				"zh_TW": "Lv.2 生命",
-				"en_US": "Lv.2 Health"
-			},
-			"level": 2,
-			"attribute": 1,
-			"value": 80,
-			"price": 36
-		},
-		{
-			"id": 2002,
-			"name": {
-				"zn_CN": "Lv.2 精力",
-				"zh_TW": "Lv.2 精力",
-				"en_US": "Lv.2 Energy"
-			},
-			"level": 2,
-			"attribute": 2,
-			"value": 20,
-			"price": 20
-		},
-		{
-			"id": 2003,
-			"name": {
-				"zn_CN": "Lv.2 攻击",
-				"zh_TW": "Lv.2 攻擊",
-				"en_US": "Lv.2 Attack"
-			},
-			"level": 2,
-			"attribute": 3,
-			"value": 15,
-			"price": 67
-		},
-		{
-			"id": 2004,
-			"name": {
-				"zn_CN": "Lv.2 防御",
-				"zh_TW": "Lv.2 防禦",
-				"en_US": "Lv.2 Defense"
-			},
-			"level": 2,
-			"attribute": 4,
-			"value": 7,
-			"price": 36
-		},
-		{
-			"id": 2005,
-			"name": {
-				"zn_CN": "Lv.2 破甲",
-				"zh_TW": "Lv.2 破甲",
-				"en_US": "Lv.2 Penetration"
-			},
-			"level": 2,
-			"attribute": 5,
-			"value": 7,
-			"price": 56
-		},
-		{
-			"id": 2006,
-			"name": {
-				"zn_CN": "Lv.2 护甲",
-				"zh_TW": "Lv.2 護甲",
-				"en_US": "Lv.2 Armor"
-			},
-			"level": 2,
-			"attribute": 6,
-			"value": 3,
-			"price": 27
-		},
-		{
-			"id": 2007,
-			"name": {
-				"zn_CN": "Lv.2 暴击",
-				"zh_TW": "Lv.2 暴擊",
-				"en_US": "Lv.2 Critical Hit"
-			},
-			"level": 2,
-			"attribute": 7,
-			"value": 300,
-			"price": 40
-		},
-		{
-			"id": 2008,
-			"name": {
-				"zn_CN": "Lv.2 抗暴",
-				"zh_TW": "Lv.2 抗暴",
-				"en_US": "Lv.2 Critical Resistance"
-			},
-			"level": 2,
-			"attribute": 8,
-			"value": 140,
-			"price": 22
-		},
-		{
-			"id": 2009,
-			"name": {
-				"zn_CN": "Lv.2 命中",
-				"zh_TW": "Lv.2 命中",
-				"en_US": "Lv.2 Accuracy"
-			},
-			"level": 2,
-			"attribute": 9,
-			"value": 399,
-			"price": 27
-		},
-		{
-			"id": 2010,
-			"name": {
-				"zn_CN": "Lv.2 闪避",
-				"zh_TW": "Lv.2 閃避",
-				"en_US": "Lv.2 Evasion"
-			},
-			"level": 2,
-			"attribute": 10,
-			"value": 199,
-			"price": 18
-		},
-		{
-			"id": 3001,
-			"name": {
-				"zn_CN": "Lv.3 生命",
-				"zh_TW": "Lv.3 生命",
-				"en_US": "Lv.3 Health"
-			},
-			"level": 3,
-			"attribute": 1,
-			"value": 120,
-			"price": 54
-		},
-		{
-			"id": 3002,
-			"name": {
-				"zn_CN": "Lv.3 精力",
-				"zh_TW": "Lv.3 精力",
-				"en_US": "Lv.3 Energy"
-			},
-			"level": 3,
-			"attribute": 2,
-			"value": 30,
-			"price": 30
-		},
-		{
-			"id": 3003,
-			"name": {
-				"zn_CN": "Lv.3 攻击",
-				"zh_TW": "Lv.3 攻擊",
-				"en_US": "Lv.3 Attack"
-			},
-			"level": 3,
-			"attribute": 3,
-			"value": 24,
-			"price": 101
-		},
-		{
-			"id": 3004,
-			"name": {
-				"zn_CN": "Lv.3 防御",
-				"zh_TW": "Lv.3 防禦",
-				"en_US": "Lv.3 Defense"
-			},
-			"level": 3,
-			"attribute": 4,
-			"value": 12,
-			"price": 54
-		},
-		{
-			"id": 3005,
-			"name": {
-				"zn_CN": "Lv.3 破甲",
-				"zh_TW": "Lv.3 破甲",
-				"en_US": "Lv.3 Penetration"
-			},
-			"level": 3,
-			"attribute": 5,
-			"value": 12,
-			"price": 84
-		},
-		{
-			"id": 3006,
-			"name": {
-				"zn_CN": "Lv.3 护甲",
-				"zh_TW": "Lv.3 護甲",
-				"en_US": "Lv.3 Armor"
-			},
-			"level": 3,
-			"attribute": 6,
-			"value": 6,
-			"price": 40
-		},
-		{
-			"id": 3007,
-			"name": {
-				"zn_CN": "Lv.3 暴击",
-				"zh_TW": "Lv.3 暴擊",
-				"en_US": "Lv.3 Critical Hit"
-			},
-			"level": 3,
-			"attribute": 7,
-			"value": 450,
-			"price": 60
-		},
-		{
-			"id": 3008,
-			"name": {
-				"zn_CN": "Lv.3 抗暴",
-				"zh_TW": "Lv.3 抗暴",
-				"en_US": "Lv.3 Critical Resistance"
-			},
-			"level": 3,
-			"attribute": 8,
-			"value": 210,
-			"price": 33
-		},
-		{
-			"id": 3009,
-			"name": {
-				"zn_CN": "Lv.3 命中",
-				"zh_TW": "Lv.3 命中",
-				"en_US": "Lv.3 Accuracy"
-			},
-			"level": 3,
-			"attribute": 9,
-			"value": 600,
-			"price": 40
-		},
-		{
-			"id": 3010,
-			"name": {
-				"zn_CN": "Lv.3 闪避",
-				"zh_TW": "Lv.3 閃避",
-				"en_US": "Lv.3 Evasion"
-			},
-			"level": 3,
-			"attribute": 10,
-			"value": 300,
-			"price": 27
-		},
-		{
-			"id": 4001,
-			"name": {
-				"zn_CN": "Lv.4 生命",
-				"zh_TW": "Lv.4 生命",
-				"en_US": "Lv.4 Health"
-			},
-			"level": 4,
-			"attribute": 1,
-			"value": 160,
-			"price": 81
-		},
-		{
-			"id": 4002,
-			"name": {
-				"zn_CN": "Lv.4 精力",
-				"zh_TW": "Lv.4 精力",
-				"en_US": "Lv.4 Energy"
-			},
-			"level": 4,
-			"attribute": 2,
-			"value": 40,
-			"price": 45
-		},
-		{
-			"id": 4003,
-			"name": {
-				"zn_CN": "Lv.4 攻击",
-				"zh_TW": "Lv.4 攻擊",
-				"en_US": "Lv.4 Attack"
-			},
-			"level": 4,
-			"attribute": 3,
-			"value": 32,
-			"price": 151
-		},
-		{
-			"id": 4004,
-			"name": {
-				"zn_CN": "Lv.4 防御",
-				"zh_TW": "Lv.4 防禦",
-				"en_US": "Lv.4 Defense"
-			},
-			"level": 4,
-			"attribute": 4,
-			"value": 16,
-			"price": 81
-		},
-		{
-			"id": 4005,
-			"name": {
-				"zn_CN": "Lv.4 破甲",
-				"zh_TW": "Lv.4 破甲",
-				"en_US": "Lv.4 Penetration"
-			},
-			"level": 4,
-			"attribute": 5,
-			"value": 16,
-			"price": 126
-		},
-		{
-			"id": 4006,
-			"name": {
-				"zn_CN": "Lv.4 护甲",
-				"zh_TW": "Lv.4 護甲",
-				"en_US": "Lv.4 Armor"
-			},
-			"level": 4,
-			"attribute": 6,
-			"value": 8,
-			"price": 60
-		},
-		{
-			"id": 4007,
-			"name": {
-				"zn_CN": "Lv.4 暴击",
-				"zh_TW": "Lv.4 暴擊",
-				"en_US": "Lv.4 Critical Hit"
-			},
-			"level": 4,
-			"attribute": 7,
-			"value": 600,
-			"price": 91
-		},
-		{
-			"id": 4008,
-			"name": {
-				"zn_CN": "Lv.4 抗暴",
-				"zh_TW": "Lv.4 抗暴",
-				"en_US": "Lv.4 Critical Resistance"
-			},
-			"level": 4,
-			"attribute": 8,
-			"value": 280,
-			"price": 50
-		},
-		{
-			"id": 4009,
-			"name": {
-				"zn_CN": "Lv.4 命中",
-				"zh_TW": "Lv.4 命中",
-				"en_US": "Lv.4 Accuracy"
-			},
-			"level": 4,
-			"attribute": 9,
-			"value": 800,
-			"price": 60
-		},
-		{
-			"id": 4010,
-			"name": {
-				"zn_CN": "Lv.4 闪避",
-				"zh_TW": "Lv.4 閃避",
-				"en_US": "Lv.4 Evasion"
-			},
-			"level": 4,
-			"attribute": 10,
-			"value": 400,
-			"price": 40
-		},
-		{
-			"id": 5001,
-			"name": {
-				"zn_CN": "Lv.5 生命",
-				"zh_TW": "Lv.5 生命",
-				"en_US": "Lv.5 Health"
-			},
-			"level": 5,
-			"attribute": 1,
-			"value": 200,
-			"price": 121
-		},
-		{
-			"id": 5002,
-			"name": {
-				"zn_CN": "Lv.5 精力",
-				"zh_TW": "Lv.5 精力",
-				"en_US": "Lv.5 Energy"
-			},
-			"level": 5,
-			"attribute": 2,
-			"value": 50,
-			"price": 68
-		},
-		{
-			"id": 5003,
-			"name": {
-				"zn_CN": "Lv.5 攻击",
-				"zh_TW": "Lv.5 攻擊",
-				"en_US": "Lv.5 Attack"
-			},
-			"level": 5,
-			"attribute": 3,
-			"value": 40,
-			"price": 227
-		},
-		{
-			"id": 5004,
-			"name": {
-				"zn_CN": "Lv.5 防御",
-				"zh_TW": "Lv.5 防禦",
-				"en_US": "Lv.5 Defense"
-			},
-			"level": 5,
-			"attribute": 4,
-			"value": 20,
-			"price": 121
-		},
-		{
-			"id": 5005,
-			"name": {
-				"zn_CN": "Lv.5 破甲",
-				"zh_TW": "Lv.5 破甲",
-				"en_US": "Lv.5 Penetration"
-			},
-			"level": 5,
-			"attribute": 5,
-			"value": 20,
-			"price": 189
-		},
-		{
-			"id": 5006,
-			"name": {
-				"zn_CN": "Lv.5 护甲",
-				"zh_TW": "Lv.5 護甲",
-				"en_US": "Lv.5 Armor"
-			},
-			"level": 5,
-			"attribute": 6,
-			"value": 10,
-			"price": 91
-		},
-		{
-			"id": 5007,
-			"name": {
-				"zn_CN": "Lv.5 暴击",
-				"zh_TW": "Lv.5 暴擊",
-				"en_US": "Lv.5 Critical Hit"
-			},
-			"level": 5,
-			"attribute": 7,
-			"value": 750,
-			"price": 136
-		},
-		{
-			"id": 5008,
-			"name": {
-				"zn_CN": "Lv.5 抗暴",
-				"zh_TW": "Lv.5 抗暴",
-				"en_US": "Lv.5 Critical Resistance"
-			},
-			"level": 5,
-			"attribute": 8,
-			"value": 350,
-			"price": 75
-		},
-		{
-			"id": 5009,
-			"name": {
-				"zn_CN": "Lv.5 命中",
-				"zh_TW": "Lv.5 命中",
-				"en_US": "Lv.5 Accuracy"
-			},
-			"level": 5,
-			"attribute": 9,
-			"value": 1000,
-			"price": 91
-		},
-		{
-			"id": 5010,
-			"name": {
-				"zn_CN": "Lv.5 闪避",
-				"zh_TW": "Lv.5 閃避",
-				"en_US": "Lv.5 Evasion"
-			},
-			"level": 5,
-			"attribute": 10,
-			"value": 500,
-			"price": 60
-		},
-		{
-			"id": 6001,
-			"name": {
-				"zn_CN": "Lv.6 生命",
-				"zh_TW": "Lv.6 生命",
-				"en_US": "Lv.6 Health"
-			},
-			"level": 6,
-			"attribute": 1,
-			"value": 240,
-			"price": 182
-		},
-		{
-			"id": 6002,
-			"name": {
-				"zn_CN": "Lv.6 精力",
-				"zh_TW": "Lv.6 精力",
-				"en_US": "Lv.6 Energy"
-			},
-			"level": 6,
-			"attribute": 2,
-			"value": 60,
-			"price": 102
-		},
-		{
-			"id": 6003,
-			"name": {
-				"zn_CN": "Lv.6 攻击",
-				"zh_TW": "Lv.6 攻擊",
-				"en_US": "Lv.6 Attack"
-			},
-			"level": 6,
-			"attribute": 3,
-			"value": 48,
-			"price": 341
-		},
-		{
-			"id": 6004,
-			"name": {
-				"zn_CN": "Lv.6 防御",
-				"zh_TW": "Lv.6 防禦",
-				"en_US": "Lv.6 Defense"
-			},
-			"level": 6,
-			"attribute": 4,
-			"value": 24,
-			"price": 182
-		},
-		{
-			"id": 6005,
-			"name": {
-				"zn_CN": "Lv.6 破甲",
-				"zh_TW": "Lv.6 破甲",
-				"en_US": "Lv.6 Penetration"
-			},
-			"level": 6,
-			"attribute": 5,
-			"value": 24,
-			"price": 284
-		},
-		{
-			"id": 6006,
-			"name": {
-				"zn_CN": "Lv.6 护甲",
-				"zh_TW": "Lv.6 護甲",
-				"en_US": "Lv.6 Armor"
-			},
-			"level": 6,
-			"attribute": 6,
-			"value": 12,
-			"price": 136
-		},
-		{
-			"id": 6007,
-			"name": {
-				"zn_CN": "Lv.6 暴击",
-				"zh_TW": "Lv.6 暴擊",
-				"en_US": "Lv.6 Critical Hit"
-			},
-			"level": 6,
-			"attribute": 7,
-			"value": 900,
-			"price": 205
-		},
-		{
-			"id": 6008,
-			"name": {
-				"zn_CN": "Lv.6 抗暴",
-				"zh_TW": "Lv.6 抗暴",
-				"en_US": "Lv.6 Critical Resistance"
-			},
-			"level": 6,
-			"attribute": 8,
-			"value": 420,
-			"price": 113
-		},
-		{
-			"id": 6009,
-			"name": {
-				"zn_CN": "Lv.6 命中",
-				"zh_TW": "Lv.6 命中",
-				"en_US": "Lv.6 Accuracy"
-			},
-			"level": 6,
-			"attribute": 9,
-			"value": 1200,
-			"price": 136
-		},
-		{
-			"id": 6010,
-			"name": {
-				"zn_CN": "Lv.6 闪避",
-				"zh_TW": "Lv.6 閃避",
-				"en_US": "Lv.6 Evasion"
-			},
-			"level": 6,
-			"attribute": 10,
-			"value": 600,
-			"price": 91
-		},
-		{
-			"id": 7001,
-			"name": {
-				"zn_CN": "Lv.7 生命",
-				"zh_TW": "Lv.7 生命",
-				"en_US": "Lv.7 Health"
-			},
-			"level": 7,
-			"attribute": 1,
-			"value": 280,
-			"price": 273
-		},
-		{
-			"id": 7002,
-			"name": {
-				"zn_CN": "Lv.7 精力",
-				"zh_TW": "Lv.7 精力",
-				"en_US": "Lv.7 Energy"
-			},
-			"level": 7,
-			"attribute": 2,
-			"value": 70,
-			"price": 153
-		},
-		{
-			"id": 7003,
-			"name": {
-				"zn_CN": "Lv.7 攻击",
-				"zh_TW": "Lv.7 攻擊",
-				"en_US": "Lv.7 Attack"
-			},
-			"level": 7,
-			"attribute": 3,
-			"value": 56,
-			"price": 512
-		},
-		{
-			"id": 7004,
-			"name": {
-				"zn_CN": "Lv.7 防御",
-				"zh_TW": "Lv.7 防禦",
-				"en_US": "Lv.7 Defense"
-			},
-			"level": 7,
-			"attribute": 4,
-			"value": 28,
-			"price": 273
-		},
-		{
-			"id": 7005,
-			"name": {
-				"zn_CN": "Lv.7 破甲",
-				"zh_TW": "Lv.7 破甲",
-				"en_US": "Lv.7 Penetration"
-			},
-			"level": 7,
-			"attribute": 5,
-			"value": 28,
-			"price": 427
-		},
-		{
-			"id": 7006,
-			"name": {
-				"zn_CN": "Lv.7 护甲",
-				"zh_TW": "Lv.7 護甲",
-				"en_US": "Lv.7 Armor"
-			},
-			"level": 7,
-			"attribute": 6,
-			"value": 14,
-			"price": 205
-		},
-		{
-			"id": 7007,
-			"name": {
-				"zn_CN": "Lv.7 暴击",
-				"zh_TW": "Lv.7 暴擊",
-				"en_US": "Lv.7 Critical Hit"
-			},
-			"level": 7,
-			"attribute": 7,
-			"value": 1050,
-			"price": 307
-		},
-		{
-			"id": 7008,
-			"name": {
-				"zn_CN": "Lv.7 抗暴",
-				"zh_TW": "Lv.7 抗暴",
-				"en_US": "Lv.7 Critical Resistance"
-			},
-			"level": 7,
-			"attribute": 8,
-			"value": 490,
-			"price": 170
-		},
-		{
-			"id": 7009,
-			"name": {
-				"zn_CN": "Lv.7 命中",
-				"zh_TW": "Lv.7 命中",
-				"en_US": "Lv.7 Accuracy"
-			},
-			"level": 7,
-			"attribute": 9,
-			"value": 1400,
-			"price": 205
-		},
-		{
-			"id": 7010,
-			"name": {
-				"zn_CN": "Lv.7 闪避",
-				"zh_TW": "Lv.7 閃避",
-				"en_US": "Lv.7 Evasion"
-			},
-			"level": 7,
-			"attribute": 10,
-			"value": 700,
-			"price": 136
-		},
-		{
-			"id": 8001,
-			"name": {
-				"zn_CN": "Lv.8 生命",
-				"zh_TW": "Lv.8 生命",
-				"en_US": "Lv.8 Health"
-			},
-			"level": 8,
-			"attribute": 1,
-			"value": 320,
-			"price": 410
-		},
-		{
-			"id": 8002,
-			"name": {
-				"zn_CN": "Lv.8 精力",
-				"zh_TW": "Lv.8 精力",
-				"en_US": "Lv.8 Energy"
-			},
-			"level": 8,
-			"attribute": 2,
-			"value": 80,
-			"price": 230
-		},
-		{
-			"id": 8003,
-			"name": {
-				"zn_CN": "Lv.8 攻击",
-				"zh_TW": "Lv.8 攻擊",
-				"en_US": "Lv.8 Attack"
-			},
-			"level": 8,
-			"attribute": 3,
-			"value": 64,
-			"price": 768
-		},
-		{
-			"id": 8004,
-			"name": {
-				"zn_CN": "Lv.8 防御",
-				"zh_TW": "Lv.8 防禦",
-				"en_US": "Lv.8 Defense"
-			},
-			"level": 8,
-			"attribute": 4,
-			"value": 32,
-			"price": 410
-		},
-		{
-			"id": 8005,
-			"name": {
-				"zn_CN": "Lv.8 破甲",
-				"zh_TW": "Lv.8 破甲",
-				"en_US": "Lv.8 Penetration"
-			},
-			"level": 8,
-			"attribute": 5,
-			"value": 32,
-			"price": 640
-		},
-		{
-			"id": 8006,
-			"name": {
-				"zn_CN": "Lv.8 护甲",
-				"zh_TW": "Lv.8 護甲",
-				"en_US": "Lv.8 Armor"
-			},
-			"level": 8,
-			"attribute": 6,
-			"value": 16,
-			"price": 307
-		},
-		{
-			"id": 8007,
-			"name": {
-				"zn_CN": "Lv.8 暴击",
-				"zh_TW": "Lv.8 暴擊",
-				"en_US": "Lv.8 Critical Hit"
-			},
-			"level": 8,
-			"attribute": 7,
-			"value": 1200,
-			"price": 461
-		},
-		{
-			"id": 8008,
-			"name": {
-				"zn_CN": "Lv.8 抗暴",
-				"zh_TW": "Lv.8 抗暴",
-				"en_US": "Lv.8 Critical Resistance"
-			},
-			"level": 8,
-			"attribute": 8,
-			"value": 560,
-			"price": 256
-		},
-		{
-			"id": 8009,
-			"name": {
-				"zn_CN": "Lv.8 命中",
-				"zh_TW": "Lv.8 命中",
-				"en_US": "Lv.8 Accuracy"
-			},
-			"level": 8,
-			"attribute": 9,
-			"value": 1600,
-			"price": 307
-		},
-		{
-			"id": 8010,
-			"name": {
-				"zn_CN": "Lv.8 闪避",
-				"zh_TW": "Lv.8 閃避",
-				"en_US": "Lv.8 Evasion"
-			},
-			"level": 8,
-			"attribute": 10,
-			"value": 800,
-			"price": 205
-		},
-		{
-			"id": 9001,
-			"name": {
-				"zn_CN": "Lv.9 生命",
-				"zh_TW": "Lv.9 生命",
-				"en_US": "Lv.9 Health"
-			},
-			"level": 9,
-			"attribute": 1,
-			"value": 360,
-			"price": 615
-		},
-		{
-			"id": 9002,
-			"name": {
-				"zn_CN": "Lv.9 精力",
-				"zh_TW": "Lv.9 精力",
-				"en_US": "Lv.9 Energy"
-			},
-			"level": 9,
-			"attribute": 2,
-			"value": 90,
-			"price": 345
-		},
-		{
-			"id": 9003,
-			"name": {
-				"zn_CN": "Lv.9 攻击",
-				"zh_TW": "Lv.9 攻擊",
-				"en_US": "Lv.9 Attack"
-			},
-			"level": 9,
-			"attribute": 3,
-			"value": 72,
-			"price": 1153
-		},
-		{
-			"id": 9004,
-			"name": {
-				"zn_CN": "Lv.9 防御",
-				"zh_TW": "Lv.9 防禦",
-				"en_US": "Lv.9 Defense"
-			},
-			"level": 9,
-			"attribute": 4,
-			"value": 36,
-			"price": 615
-		},
-		{
-			"id": 9005,
-			"name": {
-				"zn_CN": "Lv.9 破甲",
-				"zh_TW": "Lv.9 破甲",
-				"en_US": "Lv.9 Penetration"
-			},
-			"level": 9,
-			"attribute": 5,
-			"value": 36,
-			"price": 961
-		},
-		{
-			"id": 9006,
-			"name": {
-				"zn_CN": "Lv.9 护甲",
-				"zh_TW": "Lv.9 護甲",
-				"en_US": "Lv.9 Armor"
-			},
-			"level": 9,
-			"attribute": 6,
-			"value": 18,
-			"price": 461
-		},
-		{
-			"id": 9007,
-			"name": {
-				"zn_CN": "Lv.9 暴击",
-				"zh_TW": "Lv.9 暴擊",
-				"en_US": "Lv.9 Critical Hit"
-			},
-			"level": 9,
-			"attribute": 7,
-			"value": 1350,
-			"price": 691
-		},
-		{
-			"id": 9008,
-			"name": {
-				"zn_CN": "Lv.9 抗暴",
-				"zh_TW": "Lv.9 抗暴",
-				"en_US": "Lv.9 Critical Resistance"
-			},
-			"level": 9,
-			"attribute": 8,
-			"value": 630,
-			"price": 384
-		},
-		{
-			"id": 9009,
-			"name": {
-				"zn_CN": "Lv.9 命中",
-				"zh_TW": "Lv.9 命中",
-				"en_US": "Lv.9 Accuracy"
-			},
-			"level": 9,
-			"attribute": 9,
-			"value": 1800,
-			"price": 461
-		},
-		{
-			"id": 9010,
-			"name": {
-				"zn_CN": "Lv.9 闪避",
-				"zh_TW": "Lv.9 閃避",
-				"en_US": "Lv.9 Evasion"
-			},
-			"level": 9,
-			"attribute": 10,
-			"value": 900,
-			"price": 307
-		}
-	],
-	"props": []
+  "language": {
+    "zn_CN": {
+      "attribute_1": "生命",
+      "attribute_10": "闪避",
+      "attribute_2": "精力",
+      "attribute_3": "攻击",
+      "attribute_4": "防御",
+      "attribute_5": "破甲",
+      "attribute_6": "护甲",
+      "attribute_7": "暴击",
+      "attribute_8": "抗暴",
+      "attribute_9": "命中",
+      "equip_cape": "披风",
+      "mate_description_1001": "一种用于装备加工的常见原矿。",
+      "mate_description_1002": "常用于装备加工的半成品矿，可由{$1}个铁矿石合成。",
+      "mate_description_1003": "常用于装备加工或打孔的成品矿，可由{$1}个玄铁合成。",
+      "mate_description_2001": "一种用于装备加工的普通原矿。",
+      "mate_description_2002": "常用于装备加工的半成品矿，可由{$1}个铜矿石合成。",
+      "mate_description_2003": "常用于装备加工或打孔的成品矿，可由{$1}个赤铜合成。",
+      "mate_description_3001": "一种用于装备加工的稀有原矿。",
+      "mate_description_3002": "常用于装备加工的半成品矿，可由{$1}个银矿石合成。",
+      "mate_description_3003": "常用于装备加工或打孔的成品矿，可由{$1}个白银合成。",
+      "mate_description_4001": "一种用于装备加工的珍贵原矿。",
+      "mate_description_4002": "常用于装备加工的半成品矿，可由{$1}个金矿石合成。",
+      "mate_description_4003": "常用于装备加工或打孔的成品矿，可由{$1}个精金矿石合成。",
+      "mate_description_9001": "相传女娲补天遗落人间的极其稀有碎片，一种用于装备加工或打孔的。",
+      "mate_description_9002": "在装备加工或打孔时，即使不幸失败，也不会损坏原有装备。此等神物极难获取，可由{$1}个七彩碎片合成。",
+      "mate_name_1001": "铁矿石",
+      "mate_name_1002": "玄铁",
+      "mate_name_1003": "寒铁",
+      "mate_name_2001": "铜矿石",
+      "mate_name_2002": "赤铜",
+      "mate_name_2003": "火铜",
+      "mate_name_3001": "银矿石",
+      "mate_name_3002": "白银",
+      "mate_name_3003": "秘银",
+      "mate_name_4001": "金矿石",
+      "mate_name_4002": "精金矿石",
+      "mate_name_4003": "金髓矿石",
+      "mate_name_9001": "七彩碎片",
+      "mate_name_9002": "七彩神石"
+    },
+    "zh_TW": {
+      "attribute_1": "生命",
+      "attribute_10": "閃避",
+      "attribute_2": "精力",
+      "attribute_3": "攻擊",
+      "attribute_4": "防禦",
+      "attribute_5": "破甲",
+      "attribute_6": "護甲",
+      "attribute_7": "暴擊",
+      "attribute_8": "抗暴",
+      "attribute_9": "命中",
+      "equip_cape": "披風",
+      "mate_description_1001": "一種用於裝備加工的常見原礦。",
+      "mate_description_1002": "常用於裝備加工的半成品礦，可由{$1}個鐵礦石合成。",
+      "mate_description_1003": "常用於裝備加工或打孔的成品礦，可由{$1}個玄鐵合成。",
+      "mate_description_2001": "一種用於裝備加工的普通原礦。",
+      "mate_description_2002": "常用於裝備加工的半成品礦，可由{$1}個銅礦石合成。",
+      "mate_description_2003": "常用於裝備加工或打孔的成品礦，可由{$1}個赤銅合成。",
+      "mate_description_3001": "一種用於裝備加工的稀有原礦。",
+      "mate_description_3002": "常用於裝備加工的半成品礦，可由{$1}個銀礦石合成。",
+      "mate_description_3003": "常用於裝備加工或打孔的成品礦，可由{$1}個白銀合成。",
+      "mate_description_4001": "一種用於裝備加工的珍貴原礦。",
+      "mate_description_4002": "常用於裝備加工的半成品礦，可由{$1}個金礦石合成。",
+      "mate_description_4003": "常用於裝備加工或打孔的成品礦，可由{$1}個精金礦石合成。",
+      "mate_description_9001": "相傳女娲補天遺落人間的極其稀有碎片，一種用於裝備加工或打孔的。",
+      "mate_description_9002": "在裝備加工或打孔時，即使不幸失敗，也不會損壞原有裝備。此等神物極難獲取，可由{$1}個七彩碎片合成。",
+      "mate_name_1001": "鐵礦石",
+      "mate_name_1002": "玄鐵",
+      "mate_name_1003": "寒鐵",
+      "mate_name_2001": "銅礦石",
+      "mate_name_2002": "赤銅",
+      "mate_name_2003": "火銅",
+      "mate_name_3001": "銀礦石",
+      "mate_name_3002": "白銀",
+      "mate_name_3003": "秘銀",
+      "mate_name_4001": "金礦石",
+      "mate_name_4002": "精金礦石",
+      "mate_name_4003": "金髓礦石",
+      "mate_name_9001": "七彩碎片",
+      "mate_name_9002": "七彩神石"
+    },
+    "en_US": {
+      "attribute_1": "Health",
+      "attribute_10": "Evasion",
+      "attribute_2": "Energy",
+      "attribute_3": "Attack",
+      "attribute_4": "Defense",
+      "attribute_5": "Penetration",
+      "attribute_6": "Armor",
+      "attribute_7": "Critical Hit",
+      "attribute_8": "Critical Resistance",
+      "attribute_9": "Accuracy",
+      "equip_cape": "Cloak",
+      "mate_description_1001": "A common raw material used for equipment crafting.",
+      "mate_description_1002": "A semi-finished ore commonly used for equipment crafting, can be synthesized from {$1} Iron Ores.",
+      "mate_description_1003": "A finished ore commonly used for equipment crafting or perforation, can be synthesized from {$1} Mysterious Irons.",
+      "mate_description_2001": "A common raw material used for equipment crafting.",
+      "mate_description_2002": "A semi-finished ore commonly used for equipment crafting, can be synthesized from {$1} Copper Ores.",
+      "mate_description_2003": "A finished ore commonly used for equipment crafting or perforation, can be synthesized from {$1} Red Coppers.",
+      "mate_description_3001": "A rare raw material used for equipment crafting.",
+      "mate_description_3002": "A semi-finished ore commonly used for equipment crafting, can be synthesized from {$1} Silver Ores.",
+      "mate_description_3003": "A finished ore commonly used for equipment crafting or perforation, can be synthesized from {$1} Silvers.",
+      "mate_description_4001": "A precious raw material used for equipment crafting.",
+      "mate_description_4002": "A semi-finished ore commonly used for equipment crafting, can be synthesized from {$1} Gold Ores.",
+      "mate_description_4003": "A finished ore commonly used for equipment crafting or perforation, can be synthesized from {$1} Refined Gold Ores.",
+      "mate_description_9001": "An extremely rare fragment rumored to be dropped by Nüwa when she mended the sky, used for equipment crafting or perforation.",
+      "mate_description_9002": "Even if the equipment crafting or perforation fails, the original equipment will not be damaged. These divine items are extremely difficult to obtain and can be synthesized from {$1} Rainbow Fragments.",
+      "mate_name_1001": "Iron Ore",
+      "mate_name_1002": "Mysterious Iron",
+      "mate_name_1003": "Frigid Iron",
+      "mate_name_2001": "Copper Ore",
+      "mate_name_2002": "Red Copper",
+      "mate_name_2003": "Fire Copper",
+      "mate_name_3001": "Silver Ore",
+      "mate_name_3002": "Silver",
+      "mate_name_3003": "Mithril",
+      "mate_name_4001": "Gold Ore",
+      "mate_name_4002": "Refined Gold Ore",
+      "mate_name_4003": "Gold Essence Ore",
+      "mate_name_9001": "Rainbow Fragment",
+      "mate_name_9002": "Rainbow Godstone"
+    }
+  },
+  "player": {
+    "gold": 100,
+    "attributes": {
+      "1": 100,
+      "10": 200,
+      "2": 50,
+      "3": 10,
+      "4": 5,
+      "5": 5,
+      "6": 5,
+      "7": 100,
+      "8": 100,
+      "9": 10000
+    },
+    "grow": {
+      "1": 20,
+      "10": 10,
+      "2": 8,
+      "3": 3,
+      "4": 2,
+      "5": 4,
+      "6": 2,
+      "7": 25,
+      "8": 20,
+      "9": 30
+    }
+  },
+  "equips": [
+    {
+      "id": 1001,
+      "name": {
+        "zn_CN": "披风",
+        "zh_TW": "披風",
+        "en_US": "Cloak"
+      },
+      "level": 1,
+      "attributes": {
+        "1": 37,
+        "10": 112,
+        "2": 7,
+        "3": 6,
+        "4": 3,
+        "5": 4,
+        "6": 3,
+        "7": 75,
+        "8": 37,
+        "9": 75
+      },
+      "price": 10,
+      "color_rate": {
+        "1": 1822,
+        "2": 227,
+        "3": 1590,
+        "4": 2045,
+        "5": 1363,
+        "6": 2272,
+        "7": 681
+      },
+      "quality_rate": {
+        "0": 2630,
+        "1": 1768,
+        "2": 1511,
+        "3": 1576,
+        "4": 1332,
+        "5": 1183
+      },
+      "natural_qty_rate": {
+        "0": 4612,
+        "1": 2468,
+        "2": 1371,
+        "3": 789,
+        "4": 470,
+        "5": 290
+      }
+    },
+    {
+      "id": 1010,
+      "name": {
+        "zn_CN": "披风",
+        "zh_TW": "披風",
+        "en_US": "Cloak"
+      },
+      "level": 10,
+      "attributes": {
+        "1": 46,
+        "10": 140,
+        "2": 9,
+        "3": 7,
+        "4": 3,
+        "5": 5,
+        "6": 3,
+        "7": 93,
+        "8": 46,
+        "9": 93
+      },
+      "price": 12,
+      "color_rate": {
+        "1": 1822,
+        "2": 227,
+        "3": 1590,
+        "4": 2045,
+        "5": 1363,
+        "6": 2272,
+        "7": 681
+      },
+      "quality_rate": {
+        "0": 3558,
+        "1": 1991,
+        "2": 1366,
+        "3": 1118,
+        "4": 1066,
+        "5": 901
+      },
+      "natural_qty_rate": {
+        "0": 5321,
+        "1": 2527,
+        "2": 1197,
+        "3": 565,
+        "4": 266,
+        "5": 124
+      }
+    },
+    {
+      "id": 1020,
+      "name": {
+        "zn_CN": "披风",
+        "zh_TW": "披風",
+        "en_US": "Cloak"
+      },
+      "level": 20,
+      "attributes": {
+        "1": 67,
+        "10": 202,
+        "2": 13,
+        "3": 10,
+        "4": 5,
+        "5": 8,
+        "6": 5,
+        "7": 135,
+        "8": 67,
+        "9": 135
+      },
+      "price": 18,
+      "color_rate": {
+        "1": 1822,
+        "2": 227,
+        "3": 1590,
+        "4": 2045,
+        "5": 1363,
+        "6": 2272,
+        "7": 681
+      },
+      "quality_rate": {
+        "0": 3858,
+        "1": 2121,
+        "2": 1388,
+        "3": 1059,
+        "4": 926,
+        "5": 648
+      },
+      "natural_qty_rate": {
+        "0": 5525,
+        "1": 2570,
+        "2": 1145,
+        "3": 487,
+        "4": 197,
+        "5": 76
+      }
+    },
+    {
+      "id": 1030,
+      "name": {
+        "zn_CN": "披风",
+        "zh_TW": "披風",
+        "en_US": "Cloak"
+      },
+      "level": 30,
+      "attributes": {
+        "1": 104,
+        "10": 313,
+        "2": 20,
+        "3": 16,
+        "4": 8,
+        "5": 12,
+        "6": 8,
+        "7": 209,
+        "8": 104,
+        "9": 209
+      },
+      "price": 29,
+      "color_rate": {
+        "1": 1822,
+        "2": 227,
+        "3": 1590,
+        "4": 2045,
+        "5": 1363,
+        "6": 2272,
+        "7": 681
+      },
+      "quality_rate": {
+        "0": 4177,
+        "1": 2253,
+        "2": 1403,
+        "3": 994,
+        "4": 791,
+        "5": 382
+      },
+      "natural_qty_rate": {
+        "0": 5797,
+        "1": 2587,
+        "2": 1056,
+        "3": 391,
+        "4": 130,
+        "5": 39
+      }
+    },
+    {
+      "id": 1040,
+      "name": {
+        "zn_CN": "披风",
+        "zh_TW": "披風",
+        "en_US": "Cloak"
+      },
+      "level": 40,
+      "attributes": {
+        "1": 172,
+        "10": 518,
+        "2": 34,
+        "3": 27,
+        "4": 13,
+        "5": 20,
+        "6": 13,
+        "7": 345,
+        "8": 172,
+        "9": 345
+      },
+      "price": 49,
+      "color_rate": {
+        "1": 1822,
+        "2": 227,
+        "3": 1590,
+        "4": 2045,
+        "5": 1363,
+        "6": 2272,
+        "7": 681
+      },
+      "quality_rate": {
+        "0": 4443,
+        "1": 2353,
+        "2": 1392,
+        "3": 912,
+        "4": 656,
+        "5": 244
+      },
+      "natural_qty_rate": {
+        "0": 6019,
+        "1": 2544,
+        "2": 974,
+        "3": 334,
+        "4": 102,
+        "5": 27
+      }
+    },
+    {
+      "id": 1050,
+      "name": {
+        "zn_CN": "披风",
+        "zh_TW": "披風",
+        "en_US": "Cloak"
+      },
+      "level": 50,
+      "attributes": {
+        "1": 304,
+        "10": 913,
+        "2": 60,
+        "3": 48,
+        "4": 24,
+        "5": 36,
+        "6": 24,
+        "7": 608,
+        "8": 304,
+        "9": 608
+      },
+      "price": 89,
+      "color_rate": {
+        "1": 1822,
+        "2": 227,
+        "3": 1590,
+        "4": 2045,
+        "5": 1363,
+        "6": 2272,
+        "7": 681
+      },
+      "quality_rate": {
+        "0": 4679,
+        "1": 2431,
+        "2": 1363,
+        "3": 821,
+        "4": 529,
+        "5": 177
+      },
+      "natural_qty_rate": {
+        "0": 6332,
+        "1": 2507,
+        "2": 851,
+        "3": 243,
+        "4": 57,
+        "5": 10
+      }
+    },
+    {
+      "id": 1060,
+      "name": {
+        "zn_CN": "披风",
+        "zh_TW": "披風",
+        "en_US": "Cloak"
+      },
+      "level": 60,
+      "attributes": {
+        "1": 569,
+        "10": 1708,
+        "2": 113,
+        "3": 91,
+        "4": 45,
+        "5": 68,
+        "6": 45,
+        "7": 1139,
+        "8": 569,
+        "9": 1139
+      },
+      "price": 170,
+      "color_rate": {
+        "1": 1822,
+        "2": 227,
+        "3": 1590,
+        "4": 2045,
+        "5": 1363,
+        "6": 2272,
+        "7": 681
+      },
+      "quality_rate": {
+        "0": 4892,
+        "1": 2493,
+        "2": 1321,
+        "3": 727,
+        "4": 415,
+        "5": 152
+      },
+      "natural_qty_rate": {
+        "0": 6548,
+        "1": 2448,
+        "2": 770,
+        "3": 197,
+        "4": 34,
+        "5": 3
+      }
+    }
+  ],
+  "cards": [
+    {
+      "id": 1001,
+      "name": {
+        "zn_CN": "生命",
+        "zh_TW": "生命",
+        "en_US": "Health"
+      },
+      "level": 1,
+      "price": 24,
+      "attribute": 1,
+      "value": 39
+    },
+    {
+      "id": 1002,
+      "name": {
+        "zn_CN": "精力",
+        "zh_TW": "精力",
+        "en_US": "Energy"
+      },
+      "level": 1,
+      "price": 13,
+      "attribute": 2,
+      "value": 9
+    },
+    {
+      "id": 1003,
+      "name": {
+        "zn_CN": "攻击",
+        "zh_TW": "攻擊",
+        "en_US": "Attack"
+      },
+      "level": 1,
+      "price": 45,
+      "attribute": 3,
+      "value": 7
+    },
+    {
+      "id": 1004,
+      "name": {
+        "zn_CN": "防御",
+        "zh_TW": "防禦",
+        "en_US": "Defense"
+      },
+      "level": 1,
+      "price": 24,
+      "attribute": 4,
+      "value": 3
+    },
+    {
+      "id": 1005,
+      "name": {
+        "zn_CN": "破甲",
+        "zh_TW": "破甲",
+        "en_US": "Penetration"
+      },
+      "level": 1,
+      "price": 37,
+      "attribute": 5,
+      "value": 3
+    },
+    {
+      "id": 1006,
+      "name": {
+        "zn_CN": "护甲",
+        "zh_TW": "護甲",
+        "en_US": "Armor"
+      },
+      "level": 1,
+      "price": 18,
+      "attribute": 6,
+      "value": 1
+    },
+    {
+      "id": 1007,
+      "name": {
+        "zn_CN": "暴击",
+        "zh_TW": "暴擊",
+        "en_US": "Critical Hit"
+      },
+      "level": 1,
+      "price": 27,
+      "attribute": 7,
+      "value": 149
+    },
+    {
+      "id": 1008,
+      "name": {
+        "zn_CN": "抗暴",
+        "zh_TW": "抗暴",
+        "en_US": "Critical Resistance"
+      },
+      "level": 1,
+      "price": 15,
+      "attribute": 8,
+      "value": 69
+    },
+    {
+      "id": 1009,
+      "name": {
+        "zn_CN": "命中",
+        "zh_TW": "命中",
+        "en_US": "Accuracy"
+      },
+      "level": 1,
+      "price": 18,
+      "attribute": 9,
+      "value": 199
+    },
+    {
+      "id": 1010,
+      "name": {
+        "zn_CN": "闪避",
+        "zh_TW": "閃避",
+        "en_US": "Evasion"
+      },
+      "level": 1,
+      "price": 12,
+      "attribute": 10,
+      "value": 99
+    },
+    {
+      "id": 2001,
+      "name": {
+        "zn_CN": "生命",
+        "zh_TW": "生命",
+        "en_US": "Health"
+      },
+      "level": 2,
+      "price": 36,
+      "attribute": 1,
+      "value": 80
+    },
+    {
+      "id": 2002,
+      "name": {
+        "zn_CN": "精力",
+        "zh_TW": "精力",
+        "en_US": "Energy"
+      },
+      "level": 2,
+      "price": 20,
+      "attribute": 2,
+      "value": 20
+    },
+    {
+      "id": 2003,
+      "name": {
+        "zn_CN": "攻击",
+        "zh_TW": "攻擊",
+        "en_US": "Attack"
+      },
+      "level": 2,
+      "price": 67,
+      "attribute": 3,
+      "value": 15
+    },
+    {
+      "id": 2004,
+      "name": {
+        "zn_CN": "防御",
+        "zh_TW": "防禦",
+        "en_US": "Defense"
+      },
+      "level": 2,
+      "price": 36,
+      "attribute": 4,
+      "value": 7
+    },
+    {
+      "id": 2005,
+      "name": {
+        "zn_CN": "破甲",
+        "zh_TW": "破甲",
+        "en_US": "Penetration"
+      },
+      "level": 2,
+      "price": 56,
+      "attribute": 5,
+      "value": 7
+    },
+    {
+      "id": 2006,
+      "name": {
+        "zn_CN": "护甲",
+        "zh_TW": "護甲",
+        "en_US": "Armor"
+      },
+      "level": 2,
+      "price": 27,
+      "attribute": 6,
+      "value": 3
+    },
+    {
+      "id": 2007,
+      "name": {
+        "zn_CN": "暴击",
+        "zh_TW": "暴擊",
+        "en_US": "Critical Hit"
+      },
+      "level": 2,
+      "price": 40,
+      "attribute": 7,
+      "value": 300
+    },
+    {
+      "id": 2008,
+      "name": {
+        "zn_CN": "抗暴",
+        "zh_TW": "抗暴",
+        "en_US": "Critical Resistance"
+      },
+      "level": 2,
+      "price": 22,
+      "attribute": 8,
+      "value": 140
+    },
+    {
+      "id": 2009,
+      "name": {
+        "zn_CN": "命中",
+        "zh_TW": "命中",
+        "en_US": "Accuracy"
+      },
+      "level": 2,
+      "price": 27,
+      "attribute": 9,
+      "value": 399
+    },
+    {
+      "id": 2010,
+      "name": {
+        "zn_CN": "闪避",
+        "zh_TW": "閃避",
+        "en_US": "Evasion"
+      },
+      "level": 2,
+      "price": 18,
+      "attribute": 10,
+      "value": 199
+    },
+    {
+      "id": 3001,
+      "name": {
+        "zn_CN": "生命",
+        "zh_TW": "生命",
+        "en_US": "Health"
+      },
+      "level": 3,
+      "price": 54,
+      "attribute": 1,
+      "value": 120
+    },
+    {
+      "id": 3002,
+      "name": {
+        "zn_CN": "精力",
+        "zh_TW": "精力",
+        "en_US": "Energy"
+      },
+      "level": 3,
+      "price": 30,
+      "attribute": 2,
+      "value": 30
+    },
+    {
+      "id": 3003,
+      "name": {
+        "zn_CN": "攻击",
+        "zh_TW": "攻擊",
+        "en_US": "Attack"
+      },
+      "level": 3,
+      "price": 101,
+      "attribute": 3,
+      "value": 24
+    },
+    {
+      "id": 3004,
+      "name": {
+        "zn_CN": "防御",
+        "zh_TW": "防禦",
+        "en_US": "Defense"
+      },
+      "level": 3,
+      "price": 54,
+      "attribute": 4,
+      "value": 12
+    },
+    {
+      "id": 3005,
+      "name": {
+        "zn_CN": "破甲",
+        "zh_TW": "破甲",
+        "en_US": "Penetration"
+      },
+      "level": 3,
+      "price": 84,
+      "attribute": 5,
+      "value": 12
+    },
+    {
+      "id": 3006,
+      "name": {
+        "zn_CN": "护甲",
+        "zh_TW": "護甲",
+        "en_US": "Armor"
+      },
+      "level": 3,
+      "price": 40,
+      "attribute": 6,
+      "value": 6
+    },
+    {
+      "id": 3007,
+      "name": {
+        "zn_CN": "暴击",
+        "zh_TW": "暴擊",
+        "en_US": "Critical Hit"
+      },
+      "level": 3,
+      "price": 60,
+      "attribute": 7,
+      "value": 450
+    },
+    {
+      "id": 3008,
+      "name": {
+        "zn_CN": "抗暴",
+        "zh_TW": "抗暴",
+        "en_US": "Critical Resistance"
+      },
+      "level": 3,
+      "price": 33,
+      "attribute": 8,
+      "value": 210
+    },
+    {
+      "id": 3009,
+      "name": {
+        "zn_CN": "命中",
+        "zh_TW": "命中",
+        "en_US": "Accuracy"
+      },
+      "level": 3,
+      "price": 40,
+      "attribute": 9,
+      "value": 600
+    },
+    {
+      "id": 3010,
+      "name": {
+        "zn_CN": "闪避",
+        "zh_TW": "閃避",
+        "en_US": "Evasion"
+      },
+      "level": 3,
+      "price": 27,
+      "attribute": 10,
+      "value": 300
+    },
+    {
+      "id": 4001,
+      "name": {
+        "zn_CN": "生命",
+        "zh_TW": "生命",
+        "en_US": "Health"
+      },
+      "level": 4,
+      "price": 81,
+      "attribute": 1,
+      "value": 160
+    },
+    {
+      "id": 4002,
+      "name": {
+        "zn_CN": "精力",
+        "zh_TW": "精力",
+        "en_US": "Energy"
+      },
+      "level": 4,
+      "price": 45,
+      "attribute": 2,
+      "value": 40
+    },
+    {
+      "id": 4003,
+      "name": {
+        "zn_CN": "攻击",
+        "zh_TW": "攻擊",
+        "en_US": "Attack"
+      },
+      "level": 4,
+      "price": 151,
+      "attribute": 3,
+      "value": 32
+    },
+    {
+      "id": 4004,
+      "name": {
+        "zn_CN": "防御",
+        "zh_TW": "防禦",
+        "en_US": "Defense"
+      },
+      "level": 4,
+      "price": 81,
+      "attribute": 4,
+      "value": 16
+    },
+    {
+      "id": 4005,
+      "name": {
+        "zn_CN": "破甲",
+        "zh_TW": "破甲",
+        "en_US": "Penetration"
+      },
+      "level": 4,
+      "price": 126,
+      "attribute": 5,
+      "value": 16
+    },
+    {
+      "id": 4006,
+      "name": {
+        "zn_CN": "护甲",
+        "zh_TW": "護甲",
+        "en_US": "Armor"
+      },
+      "level": 4,
+      "price": 60,
+      "attribute": 6,
+      "value": 8
+    },
+    {
+      "id": 4007,
+      "name": {
+        "zn_CN": "暴击",
+        "zh_TW": "暴擊",
+        "en_US": "Critical Hit"
+      },
+      "level": 4,
+      "price": 91,
+      "attribute": 7,
+      "value": 600
+    },
+    {
+      "id": 4008,
+      "name": {
+        "zn_CN": "抗暴",
+        "zh_TW": "抗暴",
+        "en_US": "Critical Resistance"
+      },
+      "level": 4,
+      "price": 50,
+      "attribute": 8,
+      "value": 280
+    },
+    {
+      "id": 4009,
+      "name": {
+        "zn_CN": "命中",
+        "zh_TW": "命中",
+        "en_US": "Accuracy"
+      },
+      "level": 4,
+      "price": 60,
+      "attribute": 9,
+      "value": 800
+    },
+    {
+      "id": 4010,
+      "name": {
+        "zn_CN": "闪避",
+        "zh_TW": "閃避",
+        "en_US": "Evasion"
+      },
+      "level": 4,
+      "price": 40,
+      "attribute": 10,
+      "value": 400
+    },
+    {
+      "id": 5001,
+      "name": {
+        "zn_CN": "生命",
+        "zh_TW": "生命",
+        "en_US": "Health"
+      },
+      "level": 5,
+      "price": 121,
+      "attribute": 1,
+      "value": 200
+    },
+    {
+      "id": 5002,
+      "name": {
+        "zn_CN": "精力",
+        "zh_TW": "精力",
+        "en_US": "Energy"
+      },
+      "level": 5,
+      "price": 68,
+      "attribute": 2,
+      "value": 50
+    },
+    {
+      "id": 5003,
+      "name": {
+        "zn_CN": "攻击",
+        "zh_TW": "攻擊",
+        "en_US": "Attack"
+      },
+      "level": 5,
+      "price": 227,
+      "attribute": 3,
+      "value": 40
+    },
+    {
+      "id": 5004,
+      "name": {
+        "zn_CN": "防御",
+        "zh_TW": "防禦",
+        "en_US": "Defense"
+      },
+      "level": 5,
+      "price": 121,
+      "attribute": 4,
+      "value": 20
+    },
+    {
+      "id": 5005,
+      "name": {
+        "zn_CN": "破甲",
+        "zh_TW": "破甲",
+        "en_US": "Penetration"
+      },
+      "level": 5,
+      "price": 189,
+      "attribute": 5,
+      "value": 20
+    },
+    {
+      "id": 5006,
+      "name": {
+        "zn_CN": "护甲",
+        "zh_TW": "護甲",
+        "en_US": "Armor"
+      },
+      "level": 5,
+      "price": 91,
+      "attribute": 6,
+      "value": 10
+    },
+    {
+      "id": 5007,
+      "name": {
+        "zn_CN": "暴击",
+        "zh_TW": "暴擊",
+        "en_US": "Critical Hit"
+      },
+      "level": 5,
+      "price": 136,
+      "attribute": 7,
+      "value": 750
+    },
+    {
+      "id": 5008,
+      "name": {
+        "zn_CN": "抗暴",
+        "zh_TW": "抗暴",
+        "en_US": "Critical Resistance"
+      },
+      "level": 5,
+      "price": 75,
+      "attribute": 8,
+      "value": 350
+    },
+    {
+      "id": 5009,
+      "name": {
+        "zn_CN": "命中",
+        "zh_TW": "命中",
+        "en_US": "Accuracy"
+      },
+      "level": 5,
+      "price": 91,
+      "attribute": 9,
+      "value": 1000
+    },
+    {
+      "id": 5010,
+      "name": {
+        "zn_CN": "闪避",
+        "zh_TW": "閃避",
+        "en_US": "Evasion"
+      },
+      "level": 5,
+      "price": 60,
+      "attribute": 10,
+      "value": 500
+    },
+    {
+      "id": 6001,
+      "name": {
+        "zn_CN": "生命",
+        "zh_TW": "生命",
+        "en_US": "Health"
+      },
+      "level": 6,
+      "price": 182,
+      "attribute": 1,
+      "value": 240
+    },
+    {
+      "id": 6002,
+      "name": {
+        "zn_CN": "精力",
+        "zh_TW": "精力",
+        "en_US": "Energy"
+      },
+      "level": 6,
+      "price": 102,
+      "attribute": 2,
+      "value": 60
+    },
+    {
+      "id": 6003,
+      "name": {
+        "zn_CN": "攻击",
+        "zh_TW": "攻擊",
+        "en_US": "Attack"
+      },
+      "level": 6,
+      "price": 341,
+      "attribute": 3,
+      "value": 48
+    },
+    {
+      "id": 6004,
+      "name": {
+        "zn_CN": "防御",
+        "zh_TW": "防禦",
+        "en_US": "Defense"
+      },
+      "level": 6,
+      "price": 182,
+      "attribute": 4,
+      "value": 24
+    },
+    {
+      "id": 6005,
+      "name": {
+        "zn_CN": "破甲",
+        "zh_TW": "破甲",
+        "en_US": "Penetration"
+      },
+      "level": 6,
+      "price": 284,
+      "attribute": 5,
+      "value": 24
+    },
+    {
+      "id": 6006,
+      "name": {
+        "zn_CN": "护甲",
+        "zh_TW": "護甲",
+        "en_US": "Armor"
+      },
+      "level": 6,
+      "price": 136,
+      "attribute": 6,
+      "value": 12
+    },
+    {
+      "id": 6007,
+      "name": {
+        "zn_CN": "暴击",
+        "zh_TW": "暴擊",
+        "en_US": "Critical Hit"
+      },
+      "level": 6,
+      "price": 205,
+      "attribute": 7,
+      "value": 900
+    },
+    {
+      "id": 6008,
+      "name": {
+        "zn_CN": "抗暴",
+        "zh_TW": "抗暴",
+        "en_US": "Critical Resistance"
+      },
+      "level": 6,
+      "price": 113,
+      "attribute": 8,
+      "value": 420
+    },
+    {
+      "id": 6009,
+      "name": {
+        "zn_CN": "命中",
+        "zh_TW": "命中",
+        "en_US": "Accuracy"
+      },
+      "level": 6,
+      "price": 136,
+      "attribute": 9,
+      "value": 1200
+    },
+    {
+      "id": 6010,
+      "name": {
+        "zn_CN": "闪避",
+        "zh_TW": "閃避",
+        "en_US": "Evasion"
+      },
+      "level": 6,
+      "price": 91,
+      "attribute": 10,
+      "value": 600
+    },
+    {
+      "id": 7001,
+      "name": {
+        "zn_CN": "生命",
+        "zh_TW": "生命",
+        "en_US": "Health"
+      },
+      "level": 7,
+      "price": 273,
+      "attribute": 1,
+      "value": 280
+    },
+    {
+      "id": 7002,
+      "name": {
+        "zn_CN": "精力",
+        "zh_TW": "精力",
+        "en_US": "Energy"
+      },
+      "level": 7,
+      "price": 153,
+      "attribute": 2,
+      "value": 70
+    },
+    {
+      "id": 7003,
+      "name": {
+        "zn_CN": "攻击",
+        "zh_TW": "攻擊",
+        "en_US": "Attack"
+      },
+      "level": 7,
+      "price": 512,
+      "attribute": 3,
+      "value": 56
+    },
+    {
+      "id": 7004,
+      "name": {
+        "zn_CN": "防御",
+        "zh_TW": "防禦",
+        "en_US": "Defense"
+      },
+      "level": 7,
+      "price": 273,
+      "attribute": 4,
+      "value": 28
+    },
+    {
+      "id": 7005,
+      "name": {
+        "zn_CN": "破甲",
+        "zh_TW": "破甲",
+        "en_US": "Penetration"
+      },
+      "level": 7,
+      "price": 427,
+      "attribute": 5,
+      "value": 28
+    },
+    {
+      "id": 7006,
+      "name": {
+        "zn_CN": "护甲",
+        "zh_TW": "護甲",
+        "en_US": "Armor"
+      },
+      "level": 7,
+      "price": 205,
+      "attribute": 6,
+      "value": 14
+    },
+    {
+      "id": 7007,
+      "name": {
+        "zn_CN": "暴击",
+        "zh_TW": "暴擊",
+        "en_US": "Critical Hit"
+      },
+      "level": 7,
+      "price": 307,
+      "attribute": 7,
+      "value": 1050
+    },
+    {
+      "id": 7008,
+      "name": {
+        "zn_CN": "抗暴",
+        "zh_TW": "抗暴",
+        "en_US": "Critical Resistance"
+      },
+      "level": 7,
+      "price": 170,
+      "attribute": 8,
+      "value": 490
+    },
+    {
+      "id": 7009,
+      "name": {
+        "zn_CN": "命中",
+        "zh_TW": "命中",
+        "en_US": "Accuracy"
+      },
+      "level": 7,
+      "price": 205,
+      "attribute": 9,
+      "value": 1400
+    },
+    {
+      "id": 7010,
+      "name": {
+        "zn_CN": "闪避",
+        "zh_TW": "閃避",
+        "en_US": "Evasion"
+      },
+      "level": 7,
+      "price": 136,
+      "attribute": 10,
+      "value": 700
+    },
+    {
+      "id": 8001,
+      "name": {
+        "zn_CN": "生命",
+        "zh_TW": "生命",
+        "en_US": "Health"
+      },
+      "level": 8,
+      "price": 410,
+      "attribute": 1,
+      "value": 320
+    },
+    {
+      "id": 8002,
+      "name": {
+        "zn_CN": "精力",
+        "zh_TW": "精力",
+        "en_US": "Energy"
+      },
+      "level": 8,
+      "price": 230,
+      "attribute": 2,
+      "value": 80
+    },
+    {
+      "id": 8003,
+      "name": {
+        "zn_CN": "攻击",
+        "zh_TW": "攻擊",
+        "en_US": "Attack"
+      },
+      "level": 8,
+      "price": 768,
+      "attribute": 3,
+      "value": 64
+    },
+    {
+      "id": 8004,
+      "name": {
+        "zn_CN": "防御",
+        "zh_TW": "防禦",
+        "en_US": "Defense"
+      },
+      "level": 8,
+      "price": 410,
+      "attribute": 4,
+      "value": 32
+    },
+    {
+      "id": 8005,
+      "name": {
+        "zn_CN": "破甲",
+        "zh_TW": "破甲",
+        "en_US": "Penetration"
+      },
+      "level": 8,
+      "price": 640,
+      "attribute": 5,
+      "value": 32
+    },
+    {
+      "id": 8006,
+      "name": {
+        "zn_CN": "护甲",
+        "zh_TW": "護甲",
+        "en_US": "Armor"
+      },
+      "level": 8,
+      "price": 307,
+      "attribute": 6,
+      "value": 16
+    },
+    {
+      "id": 8007,
+      "name": {
+        "zn_CN": "暴击",
+        "zh_TW": "暴擊",
+        "en_US": "Critical Hit"
+      },
+      "level": 8,
+      "price": 461,
+      "attribute": 7,
+      "value": 1200
+    },
+    {
+      "id": 8008,
+      "name": {
+        "zn_CN": "抗暴",
+        "zh_TW": "抗暴",
+        "en_US": "Critical Resistance"
+      },
+      "level": 8,
+      "price": 256,
+      "attribute": 8,
+      "value": 560
+    },
+    {
+      "id": 8009,
+      "name": {
+        "zn_CN": "命中",
+        "zh_TW": "命中",
+        "en_US": "Accuracy"
+      },
+      "level": 8,
+      "price": 307,
+      "attribute": 9,
+      "value": 1600
+    },
+    {
+      "id": 8010,
+      "name": {
+        "zn_CN": "闪避",
+        "zh_TW": "閃避",
+        "en_US": "Evasion"
+      },
+      "level": 8,
+      "price": 205,
+      "attribute": 10,
+      "value": 800
+    },
+    {
+      "id": 9001,
+      "name": {
+        "zn_CN": "生命",
+        "zh_TW": "生命",
+        "en_US": "Health"
+      },
+      "level": 9,
+      "price": 615,
+      "attribute": 1,
+      "value": 360
+    },
+    {
+      "id": 9002,
+      "name": {
+        "zn_CN": "精力",
+        "zh_TW": "精力",
+        "en_US": "Energy"
+      },
+      "level": 9,
+      "price": 345,
+      "attribute": 2,
+      "value": 90
+    },
+    {
+      "id": 9003,
+      "name": {
+        "zn_CN": "攻击",
+        "zh_TW": "攻擊",
+        "en_US": "Attack"
+      },
+      "level": 9,
+      "price": 1153,
+      "attribute": 3,
+      "value": 72
+    },
+    {
+      "id": 9004,
+      "name": {
+        "zn_CN": "防御",
+        "zh_TW": "防禦",
+        "en_US": "Defense"
+      },
+      "level": 9,
+      "price": 615,
+      "attribute": 4,
+      "value": 36
+    },
+    {
+      "id": 9005,
+      "name": {
+        "zn_CN": "破甲",
+        "zh_TW": "破甲",
+        "en_US": "Penetration"
+      },
+      "level": 9,
+      "price": 961,
+      "attribute": 5,
+      "value": 36
+    },
+    {
+      "id": 9006,
+      "name": {
+        "zn_CN": "护甲",
+        "zh_TW": "護甲",
+        "en_US": "Armor"
+      },
+      "level": 9,
+      "price": 461,
+      "attribute": 6,
+      "value": 18
+    },
+    {
+      "id": 9007,
+      "name": {
+        "zn_CN": "暴击",
+        "zh_TW": "暴擊",
+        "en_US": "Critical Hit"
+      },
+      "level": 9,
+      "price": 691,
+      "attribute": 7,
+      "value": 1350
+    },
+    {
+      "id": 9008,
+      "name": {
+        "zn_CN": "抗暴",
+        "zh_TW": "抗暴",
+        "en_US": "Critical Resistance"
+      },
+      "level": 9,
+      "price": 384,
+      "attribute": 8,
+      "value": 630
+    },
+    {
+      "id": 9009,
+      "name": {
+        "zn_CN": "命中",
+        "zh_TW": "命中",
+        "en_US": "Accuracy"
+      },
+      "level": 9,
+      "price": 461,
+      "attribute": 9,
+      "value": 1800
+    },
+    {
+      "id": 9010,
+      "name": {
+        "zn_CN": "闪避",
+        "zh_TW": "閃避",
+        "en_US": "Evasion"
+      },
+      "level": 9,
+      "price": 307,
+      "attribute": 10,
+      "value": 900
+    }
+  ],
+  "props": [],
+  "mates": [
+    {
+      "id": 1001,
+      "name": {
+        "zn_CN": "铁矿石",
+        "zh_TW": "鐵礦石",
+        "en_US": "Iron Ore"
+      },
+      "category": 11,
+      "is_colorful_mineral": false,
+      "description": {
+        "zn_CN": "一种用于装备加工的常见原矿。",
+        "zh_TW": "一種用於裝備加工的常見原礦。",
+        "en_US": "A common raw material used for equipment crafting."
+      },
+      "price": 10,
+      "next": {
+        "id": 1002,
+        "qty": 5,
+        "gold": 50,
+        "rate": 8000
+      }
+    },
+    {
+      "id": 1002,
+      "name": {
+        "zn_CN": "玄铁",
+        "zh_TW": "玄鐵",
+        "en_US": "Mysterious Iron"
+      },
+      "category": 12,
+      "is_colorful_mineral": false,
+      "description": {
+        "zn_CN": "常用于装备加工的半成品矿，可由5个铁矿石合成。",
+        "zh_TW": "常用於裝備加工的半成品礦，可由5個鐵礦石合成。",
+        "en_US": "A semi-finished ore commonly used for equipment crafting, can be synthesized from 5 Iron Ores."
+      },
+      "price": 20,
+      "next": {
+        "id": 1003,
+        "qty": 3,
+        "gold": 150,
+        "rate": 6000
+      }
+    },
+    {
+      "id": 1003,
+      "name": {
+        "zn_CN": "寒铁",
+        "zh_TW": "寒鐵",
+        "en_US": "Frigid Iron"
+      },
+      "category": 13,
+      "is_colorful_mineral": false,
+      "description": {
+        "zn_CN": "常用于装备加工或打孔的成品矿，可由3个玄铁合成。",
+        "zh_TW": "常用於裝備加工或打孔的成品礦，可由3個玄鐵合成。",
+        "en_US": "A finished ore commonly used for equipment crafting or perforation, can be synthesized from 3 Mysterious Irons."
+      },
+      "price": 40
+    },
+    {
+      "id": 2001,
+      "name": {
+        "zn_CN": "铜矿石",
+        "zh_TW": "銅礦石",
+        "en_US": "Copper Ore"
+      },
+      "category": 11,
+      "is_colorful_mineral": false,
+      "description": {
+        "zn_CN": "一种用于装备加工的普通原矿。",
+        "zh_TW": "一種用於裝備加工的普通原礦。",
+        "en_US": "A common raw material used for equipment crafting."
+      },
+      "price": 20,
+      "next": {
+        "id": 2002,
+        "qty": 5,
+        "gold": 75,
+        "rate": 7500
+      }
+    },
+    {
+      "id": 2002,
+      "name": {
+        "zn_CN": "赤铜",
+        "zh_TW": "赤銅",
+        "en_US": "Red Copper"
+      },
+      "category": 12,
+      "is_colorful_mineral": false,
+      "description": {
+        "zn_CN": "常用于装备加工的半成品矿，可由5个铜矿石合成。",
+        "zh_TW": "常用於裝備加工的半成品礦，可由5個銅礦石合成。",
+        "en_US": "A semi-finished ore commonly used for equipment crafting, can be synthesized from 5 Copper Ores."
+      },
+      "price": 45,
+      "next": {
+        "id": 2003,
+        "qty": 3,
+        "gold": 225,
+        "rate": 5500
+      }
+    },
+    {
+      "id": 2003,
+      "name": {
+        "zn_CN": "火铜",
+        "zh_TW": "火銅",
+        "en_US": "Fire Copper"
+      },
+      "category": 13,
+      "is_colorful_mineral": false,
+      "description": {
+        "zn_CN": "常用于装备加工或打孔的成品矿，可由3个赤铜合成。",
+        "zh_TW": "常用於裝備加工或打孔的成品礦，可由3個赤銅合成。",
+        "en_US": "A finished ore commonly used for equipment crafting or perforation, can be synthesized from 3 Red Coppers."
+      },
+      "price": 100
+    },
+    {
+      "id": 3001,
+      "name": {
+        "zn_CN": "银矿石",
+        "zh_TW": "銀礦石",
+        "en_US": "Silver Ore"
+      },
+      "category": 11,
+      "is_colorful_mineral": false,
+      "description": {
+        "zn_CN": "一种用于装备加工的稀有原矿。",
+        "zh_TW": "一種用於裝備加工的稀有原礦。",
+        "en_US": "A rare raw material used for equipment crafting."
+      },
+      "price": 35,
+      "next": {
+        "id": 3002,
+        "qty": 5,
+        "gold": 100,
+        "rate": 6000
+      }
+    },
+    {
+      "id": 3002,
+      "name": {
+        "zn_CN": "白银",
+        "zh_TW": "白銀",
+        "en_US": "Silver"
+      },
+      "category": 12,
+      "is_colorful_mineral": false,
+      "description": {
+        "zn_CN": "常用于装备加工的半成品矿，可由5个银矿石合成。",
+        "zh_TW": "常用於裝備加工的半成品礦，可由5個銀礦石合成。",
+        "en_US": "A semi-finished ore commonly used for equipment crafting, can be synthesized from 5 Silver Ores."
+      },
+      "price": 80,
+      "next": {
+        "id": 3003,
+        "qty": 3,
+        "gold": 300,
+        "rate": 4000
+      }
+    },
+    {
+      "id": 3003,
+      "name": {
+        "zn_CN": "秘银",
+        "zh_TW": "秘銀",
+        "en_US": "Mithril"
+      },
+      "category": 13,
+      "is_colorful_mineral": false,
+      "description": {
+        "zn_CN": "常用于装备加工或打孔的成品矿，可由3个白银合成。",
+        "zh_TW": "常用於裝備加工或打孔的成品礦，可由3個白銀合成。",
+        "en_US": "A finished ore commonly used for equipment crafting or perforation, can be synthesized from 3 Silvers."
+      },
+      "price": 200
+    },
+    {
+      "id": 4001,
+      "name": {
+        "zn_CN": "金矿石",
+        "zh_TW": "金礦石",
+        "en_US": "Gold Ore"
+      },
+      "category": 11,
+      "is_colorful_mineral": false,
+      "description": {
+        "zn_CN": "一种用于装备加工的珍贵原矿。",
+        "zh_TW": "一種用於裝備加工的珍貴原礦。",
+        "en_US": "A precious raw material used for equipment crafting."
+      },
+      "price": 50,
+      "next": {
+        "id": 4002,
+        "qty": 5,
+        "gold": 125,
+        "rate": 5000
+      }
+    },
+    {
+      "id": 4002,
+      "name": {
+        "zn_CN": "精金矿石",
+        "zh_TW": "精金礦石",
+        "en_US": "Refined Gold Ore"
+      },
+      "category": 12,
+      "is_colorful_mineral": false,
+      "description": {
+        "zn_CN": "常用于装备加工的半成品矿，可由5个金矿石合成。",
+        "zh_TW": "常用於裝備加工的半成品礦，可由5個金礦石合成。",
+        "en_US": "A semi-finished ore commonly used for equipment crafting, can be synthesized from 5 Gold Ores."
+      },
+      "price": 200,
+      "next": {
+        "id": 4003,
+        "qty": 3,
+        "gold": 375,
+        "rate": 3000
+      }
+    },
+    {
+      "id": 4003,
+      "name": {
+        "zn_CN": "金髓矿石",
+        "zh_TW": "金髓礦石",
+        "en_US": "Gold Essence Ore"
+      },
+      "category": 13,
+      "is_colorful_mineral": false,
+      "description": {
+        "zn_CN": "常用于装备加工或打孔的成品矿，可由3个精金矿石合成。",
+        "zh_TW": "常用於裝備加工或打孔的成品礦，可由3個精金礦石合成。",
+        "en_US": "A finished ore commonly used for equipment crafting or perforation, can be synthesized from 3 Refined Gold Ores."
+      },
+      "price": 900
+    },
+    {
+      "id": 9001,
+      "name": {
+        "zn_CN": "七彩碎片",
+        "zh_TW": "七彩碎片",
+        "en_US": "Rainbow Fragment"
+      },
+      "category": 11,
+      "is_colorful_mineral": false,
+      "description": {
+        "zn_CN": "相传女娲补天遗落人间的极其稀有碎片，一种用于装备加工或打孔的。",
+        "zh_TW": "相傳女娲補天遺落人間的極其稀有碎片，一種用於裝備加工或打孔的。",
+        "en_US": "An extremely rare fragment rumored to be dropped by Nüwa when she mended the sky, used for equipment crafting or perforation."
+      },
+      "price": 250,
+      "next": {
+        "id": 9002,
+        "qty": 30,
+        "gold": 1250,
+        "rate": 9000
+      }
+    },
+    {
+      "id": 9002,
+      "name": {
+        "zn_CN": "七彩神石",
+        "zh_TW": "七彩神石",
+        "en_US": "Rainbow Godstone"
+      },
+      "category": 13,
+      "is_colorful_mineral": true,
+      "description": {
+        "zn_CN": "在装备加工或打孔时，即使不幸失败，也不会损坏原有装备。此等神物极难获取，可由30个七彩碎片合成。",
+        "zh_TW": "在裝備加工或打孔時，即使不幸失敗，也不會損壞原有裝備。此等神物極難獲取，可由30個七彩碎片合成。",
+        "en_US": "Even if the equipment crafting or perforation fails, the original equipment will not be damaged. These divine items are extremely difficult to obtain and can be synthesized from 30 Rainbow Fragments."
+      },
+      "price": 1500
+    }
+  ]
 }

@@ -201,11 +201,11 @@ var CoefficientValues = Coefficient{
 
 func float2int(values map[int]float64) map[int]int {
 	var sum float64
-	var maxKey int
+	var minKey = 999999
 
 	for key, value := range values {
-		if key > maxKey {
-			maxKey = key
+		if key < minKey {
+			minKey = key
 		}
 
 		sum = sum + value
@@ -213,15 +213,15 @@ func float2int(values map[int]float64) map[int]int {
 
 	newValues, newSum := make(map[int]int), 0
 	for key, value := range values {
-		if key == maxKey {
+		if key == minKey {
 			continue
 		}
 
-		newValue := int(math.Floor(value * 1000000.0 / sum))
+		newValue := int(math.Floor(value * 10000.0 / sum))
 		newValues[key] = newValue
 		newSum = newSum + newValue
 	}
 
-	newValues[maxKey] = 1000000 - newSum
+	newValues[minKey] = 10000 - newSum
 	return newValues
 }
