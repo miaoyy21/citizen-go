@@ -24,8 +24,8 @@
 			"mate_description_4001": "一种用于装备加工的珍贵原矿。",
 			"mate_description_4002": "常用于装备加工的半成品矿，可由{$1}个金矿石合成。",
 			"mate_description_4003": "常用于装备加工或打孔的成品矿，可由{$1}个精金矿石合成。",
-			"mate_description_9001": "相传女娲补天遗落人间的极其稀有碎片，一种用于装备加工或打孔的。",
-			"mate_description_9002": "在装备加工或打孔时，即使不幸失败，也不会损坏原有装备。此等神物极难获取，可由{$1}个七彩碎片合成。",
+			"mate_description_9001": "极其稀有的天外异石碎片，闪烁着紫色的光芒，一种用于装备加工或打孔的。",
+			"mate_description_9002": "在装备加工或打孔时，即使不幸失败，也不会损坏原有装备。此等神物极难获取，可由{$1}个天外异石碎片合成。",
 			"mate_name_1001": "铁矿石",
 			"mate_name_1002": "玄铁",
 			"mate_name_1003": "寒铁",
@@ -38,8 +38,8 @@
 			"mate_name_4001": "金矿石",
 			"mate_name_4002": "精金矿石",
 			"mate_name_4003": "金髓矿石",
-			"mate_name_9001": "七彩碎片",
-			"mate_name_9002": "七彩神石",
+			"mate_name_9001": "天外异石碎片",
+			"mate_name_9002": "天外神石",
 			"prop_description_1011": "使用后，立即回复{$1}点生命值。",
 			"prop_description_1012": "使用后，立即回复{$1}点生命值。",
 			"prop_description_1013": "使用后，立即回复{$1}点生命值。",
@@ -83,8 +83,8 @@
 			"mate_description_4001": "一種用於裝備加工的珍貴原礦。",
 			"mate_description_4002": "常用於裝備加工的半成品礦，可由{$1}個金礦石合成。",
 			"mate_description_4003": "常用於裝備加工或打孔的成品礦，可由{$1}個精金礦石合成。",
-			"mate_description_9001": "相傳女娲補天遺落人間的極其稀有碎片，一種用於裝備加工或打孔的。",
-			"mate_description_9002": "在裝備加工或打孔時，即使不幸失敗，也不會損壞原有裝備。此等神物極難獲取，可由{$1}個七彩碎片合成。",
+			"mate_description_9001": "極其稀有的天外異石碎片，閃爍著紫色的光芒，一種用於裝備加工或打孔的。",
+			"mate_description_9002": "在裝備加工或打孔時，即使不幸失敗，也不會損壞原有裝備。此等神物極難獲取，可由{$1}個天外異石碎片合成。",
 			"mate_name_1001": "鐵礦石",
 			"mate_name_1002": "玄鐵",
 			"mate_name_1003": "寒鐵",
@@ -97,8 +97,8 @@
 			"mate_name_4001": "金礦石",
 			"mate_name_4002": "精金礦石",
 			"mate_name_4003": "金髓礦石",
-			"mate_name_9001": "七彩碎片",
-			"mate_name_9002": "七彩神石",
+			"mate_name_9001": "天外異石碎片",
+			"mate_name_9002": "天外神石",
 			"prop_description_1011": "使用後，立即恢復{$1}點生命值。",
 			"prop_description_1012": "使用後，立即恢復{$1}點生命值。",
 			"prop_description_1013": "使用後，立即恢復{$1}點生命值。",
@@ -142,8 +142,8 @@
 			"mate_description_4001": "A precious raw material used for equipment crafting.",
 			"mate_description_4002": "A semi-finished ore commonly used for equipment crafting, can be synthesized from {$1} Gold Ores.",
 			"mate_description_4003": "A finished ore commonly used for equipment crafting or perforation, can be synthesized from {$1} Refined Gold Ores.",
-			"mate_description_9001": "An extremely rare fragment rumored to be dropped by Nüwa when she mended the sky, used for equipment crafting or perforation.",
-			"mate_description_9002": "Even if the equipment crafting or perforation fails, the original equipment will not be damaged. These divine items are extremely difficult to obtain and can be synthesized from {$1} Rainbow Fragments.",
+			"mate_description_9001": "Extremely rare exotic stone fragments that shimmer with a purple light, used for equipment crafting or perforation.",
+			"mate_description_9002": "Even in the unfortunate event of failure during equipment crafting or perforation, the original equipment will not be damaged. Such divine artifacts are extremely difficult to obtain and can be synthesized from {$1} exotic stone fragments.",
 			"mate_name_1001": "Iron Ore",
 			"mate_name_1002": "Mysterious Iron",
 			"mate_name_1003": "Frigid Iron",
@@ -156,8 +156,8 @@
 			"mate_name_4001": "Gold Ore",
 			"mate_name_4002": "Refined Gold Ore",
 			"mate_name_4003": "Gold Essence Ore",
-			"mate_name_9001": "Rainbow Fragment",
-			"mate_name_9002": "Rainbow Godstone",
+			"mate_name_9001": "Exotic Stone Fragments",
+			"mate_name_9002": "Exotic Divine Stone",
 			"prop_description_1011": "Upon use, immediately restores {$1} health points.",
 			"prop_description_1012": "Upon use, immediately restores {$1} health points.",
 			"prop_description_1013": "Upon use, immediately restores {$1} health points.",
@@ -2197,16 +2197,16 @@
 		{
 			"id": 9001,
 			"name": {
-				"zn_CN": "七彩碎片",
-				"zh_TW": "七彩碎片",
-				"en_US": "Rainbow Fragment"
+				"zn_CN": "天外异石碎片",
+				"zh_TW": "天外異石碎片",
+				"en_US": "Exotic Stone Fragments"
 			},
 			"category": 11,
 			"is_colorful_mineral": false,
 			"description": {
-				"zn_CN": "相传女娲补天遗落人间的极其稀有碎片，一种用于装备加工或打孔的。",
-				"zh_TW": "相傳女娲補天遺落人間的極其稀有碎片，一種用於裝備加工或打孔的。",
-				"en_US": "An extremely rare fragment rumored to be dropped by Nüwa when she mended the sky, used for equipment crafting or perforation."
+				"zn_CN": "极其稀有的天外异石碎片，闪烁着紫色的光芒，一种用于装备加工或打孔的。",
+				"zh_TW": "極其稀有的天外異石碎片，閃爍著紫色的光芒，一種用於裝備加工或打孔的。",
+				"en_US": "Extremely rare exotic stone fragments that shimmer with a purple light, used for equipment crafting or perforation."
 			},
 			"price": 250,
 			"next": {
@@ -2219,16 +2219,16 @@
 		{
 			"id": 9002,
 			"name": {
-				"zn_CN": "七彩神石",
-				"zh_TW": "七彩神石",
-				"en_US": "Rainbow Godstone"
+				"zn_CN": "天外神石",
+				"zh_TW": "天外神石",
+				"en_US": "Exotic Divine Stone"
 			},
 			"category": 13,
 			"is_colorful_mineral": true,
 			"description": {
-				"zn_CN": "在装备加工或打孔时，即使不幸失败，也不会损坏原有装备。此等神物极难获取，可由30个七彩碎片合成。",
-				"zh_TW": "在裝備加工或打孔時，即使不幸失敗，也不會損壞原有裝備。此等神物極難獲取，可由30個七彩碎片合成。",
-				"en_US": "Even if the equipment crafting or perforation fails, the original equipment will not be damaged. These divine items are extremely difficult to obtain and can be synthesized from 30 Rainbow Fragments."
+				"zn_CN": "在装备加工或打孔时，即使不幸失败，也不会损坏原有装备。此等神物极难获取，可由30个天外异石碎片合成。",
+				"zh_TW": "在裝備加工或打孔時，即使不幸失敗，也不會損壞原有裝備。此等神物極難獲取，可由30個天外異石碎片合成。",
+				"en_US": "Even in the unfortunate event of failure during equipment crafting or perforation, the original equipment will not be damaged. Such divine artifacts are extremely difficult to obtain and can be synthesized from 30 exotic stone fragments."
 			},
 			"price": 1500
 		}

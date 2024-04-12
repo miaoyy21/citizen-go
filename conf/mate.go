@@ -160,7 +160,7 @@ func NewMates(conf Configuration) []Mate {
 		Price:             900,
 	})
 
-	// 七彩碎片、七彩神石（加工或打孔失败后仅消耗材料，不会失去装备）
+	// 天外异石碎片、天外神石（加工或打孔失败后仅消耗材料，不会失去装备）
 	mates = append(mates, Mate{
 		Id:                9001,
 		Category:          MateCategoryMineralOriginal,
