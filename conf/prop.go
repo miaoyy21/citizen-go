@@ -54,6 +54,23 @@ func NewProps(conf Configuration) []Prop {
 		birthQty: 10,
 	})
 
+	// 金币大礼包
+	props = append(props, Prop{
+		Id: 1091, Saleable: false, Level: 10,
+		Effect: PropEffectGold, Values: []int{5000},
+		birthQty: 1,
+	})
+	props = append(props, Prop{
+		Id: 1092, Saleable: false, Level: 30,
+		Effect: PropEffectGold, Values: []int{20000},
+		birthQty: 1,
+	})
+	props = append(props, Prop{
+		Id: 1093, Saleable: false, Level: 60,
+		Effect: PropEffectGold, Values: []int{100000},
+		birthQty: 1,
+	})
+
 	/******************************  可交易的道具  ******************************/
 
 	// 设置道具名称和道具描述
