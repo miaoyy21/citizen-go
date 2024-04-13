@@ -40,24 +40,116 @@
 			"mate_name_4003": "金髓矿石",
 			"mate_name_9001": "天外异石碎片",
 			"mate_name_9002": "天外神石",
-			"prop_description_1011": "使用后，立即回复{$1}点生命值。",
-			"prop_description_1012": "使用后，立即回复{$1}点生命值。",
-			"prop_description_1013": "使用后，立即回复{$1}点生命值。",
-			"prop_description_1021": "使用后，立即回复{$1}点精气值。",
-			"prop_description_1022": "使用后，立即回复{$1}点精气值。",
-			"prop_description_1023": "使用后，立即回复{$1}点精气值。",
-			"prop_description_1091": "打开后，可获得{$1}金币。",
-			"prop_description_1092": "打开后，可获得{$1}金币。",
-			"prop_description_1093": "打开后，可获得{$1}金币。",
-			"prop_name_1011": "（小）生命药水",
-			"prop_name_1012": "（中）生命药水",
-			"prop_name_1013": "（大）生命药水",
-			"prop_name_1021": "（小）精气补充剂",
-			"prop_name_1022": "（中）精气补充剂",
-			"prop_name_1023": "（大）精气补充剂",
-			"prop_name_1091": "10级金币大礼包",
-			"prop_name_1092": "30级金币大礼包",
-			"prop_name_1093": "60级金币大礼包"
+			"prop_description_1011": "服用后，立即恢复 +{$1}生命值。",
+			"prop_description_1012": "服用后，立即恢复 +{$1}生命值。",
+			"prop_description_1013": "服用后，立即恢复 +{$1}生命值。",
+			"prop_description_1021": "服用后，立即恢复 +{$1}精气值。",
+			"prop_description_1022": "服用后，立即恢复 +{$1}精气值。",
+			"prop_description_1023": "服用后，立即恢复 +{$1}精气值。",
+			"prop_description_1131": "打开后，可获得{$1}金币。",
+			"prop_description_1132": "打开后，可获得{$1}金币。",
+			"prop_description_1133": "打开后，可获得{$1}金币。",
+			"prop_description_2011": "服用后，立即恢复 +{$1}生命值。",
+			"prop_description_2012": "服用后，立即恢复 +{$1}生命值。",
+			"prop_description_2013": "服用后，立即恢复 +{$1}生命值。",
+			"prop_description_2021": "服用后，立即恢复 +{$1}精气值。",
+			"prop_description_2022": "服用后，立即恢复 +{$1}精气值。",
+			"prop_description_2023": "服用后，立即恢复 +{$1}精气值。",
+			"prop_description_2031": "食用后，立即恢复 +{$1}生命值。",
+			"prop_description_2032": "食用后，立即恢复 +{$1}生命值。",
+			"prop_description_2033": "食用后，立即恢复 +{$1}生命值。",
+			"prop_description_2034": "食用后，立即恢复 +{$1}生命值。",
+			"prop_description_2035": "食用后，立即恢复 +{$1}生命值。",
+			"prop_description_2041": "食用后，立即恢复生命上限的{$1}。",
+			"prop_description_2042": "食用后，立即恢复生命上限的{$1}。",
+			"prop_description_2043": "食用后，立即恢复生命上限的{$1}。",
+			"prop_description_2044": "食用后，立即恢复生命上限的{$1}。",
+			"prop_description_2051": "食用后，立即恢复 +{$1}精气值。",
+			"prop_description_2052": "食用后，立即恢复 +{$1}精气值。",
+			"prop_description_2053": "食用后，立即恢复 +{$1}精气值。",
+			"prop_description_2054": "食用后，立即恢复 +{$1}精气值。",
+			"prop_description_2055": "食用后，立即恢复 +{$1}精气值。",
+			"prop_description_2061": "食用后，立即恢复精气上限的{$1}。",
+			"prop_description_2062": "食用后，立即恢复精气上限的{$1}。",
+			"prop_description_2063": "食用后，立即恢复精气上限的{$1}。",
+			"prop_description_2064": "食用后，立即恢复精气上限的{$1}。",
+			"prop_description_2071": "食用后，增加 +{$1}攻击力，持续{$2}秒。",
+			"prop_description_2072": "食用后，增加 +{$1}攻击力，持续{$2}秒。",
+			"prop_description_2073": "食用后，增加 +{$1}攻击力，持续{$2}秒。",
+			"prop_description_2074": "食用后，增加 +{$1}攻击力，持续{$2}秒。",
+			"prop_description_2081": "饮用后，增加攻击力的{$1}，持续($2}秒。",
+			"prop_description_2082": "饮用后，增加攻击力的{$1}，持续{$2}秒。",
+			"prop_description_2083": "饮用后，增加攻击力的{$1}，持续{$2}秒。",
+			"prop_description_2084": "饮用后，增加攻击力的{$1}，持续{$2}秒。",
+			"prop_description_2091": "食用后，提升吸收受到伤害至{$1}，持续{$2}秒。",
+			"prop_description_2092": "食用后，提升吸收受到伤害至{$1}，持续{$2}秒。",
+			"prop_description_2093": "食用后，提升吸收受到伤害至{$1}，持续{$2}秒。",
+			"prop_description_2094": "食用后，提升吸收受到伤害至{$1}，持续{$2}秒。",
+			"prop_description_2101": "食用后，提升暴击率至{$1}，持续{$2}秒。",
+			"prop_description_2102": "食用后，提升暴击率至{$1}，持续{$2}秒。",
+			"prop_description_2103": "食用后，提升暴击率至{$1}，持续{$2}秒。",
+			"prop_description_2104": "食用后，提升暴击率至{$1}，持续{$2}秒。",
+			"prop_description_2111": "食用后，增加 +{$1}命中率，持续{$2}秒。",
+			"prop_description_2112": "食用后，增加 +{$1}命中率，持续{$2}秒。",
+			"prop_description_2113": "食用后，增加 +{$1}命中率，持续{$2}秒。",
+			"prop_description_2114": "食用后，增加 +{$1}命中率，持续{$2}秒。",
+			"prop_description_2121": "使用后，可修改玩家角色名称",
+			"prop_description_2122": "使用后，可重新选择玩家角色颜色",
+			"prop_name_1011": "（小）强力生命药水",
+			"prop_name_1012": "（中）强力生命药水",
+			"prop_name_1013": "（大）强力生命药水",
+			"prop_name_1021": "（小）强力精气补充剂",
+			"prop_name_1022": "（中）强力精气补充剂",
+			"prop_name_1023": "（大）强力精气补充剂",
+			"prop_name_1131": "10级金币大礼包",
+			"prop_name_1132": "30级金币大礼包",
+			"prop_name_1133": "60级金币大礼包",
+			"prop_name_2011": "（小）生命药水",
+			"prop_name_2012": "（中）生命药水",
+			"prop_name_2013": "（大）生命药水",
+			"prop_name_2021": "（小）精气补充剂",
+			"prop_name_2022": "（中）精气补充剂",
+			"prop_name_2023": "（大）精气补充剂",
+			"prop_name_2031": "辣椒",
+			"prop_name_2032": "荔枝",
+			"prop_name_2033": "苹果",
+			"prop_name_2034": "西红柿",
+			"prop_name_2035": "草莓",
+			"prop_name_2041": "奥尔良烤鸡腿",
+			"prop_name_2042": "德国烤猪肘",
+			"prop_name_2043": "A5级和牛肉",
+			"prop_name_2044": "北京烤鸭",
+			"prop_name_2051": "大蒜",
+			"prop_name_2052": "胡萝卜",
+			"prop_name_2053": "南瓜",
+			"prop_name_2054": "香蕉",
+			"prop_name_2055": "橘子",
+			"prop_name_2061": "辛辣的大葱",
+			"prop_name_2062": "脆嫩的西兰花",
+			"prop_name_2063": "鲜嫩的黄瓜",
+			"prop_name_2064": "香甜的玉米",
+			"prop_name_2071": "糖果",
+			"prop_name_2072": "棒棒糖",
+			"prop_name_2073": "雪糕",
+			"prop_name_2074": "冰激淋",
+			"prop_name_2081": "香浓的咖啡",
+			"prop_name_2082": "凉爽的冰沙",
+			"prop_name_2083": "酸甜的果汁",
+			"prop_name_2084": "热柠檬红茶",
+			"prop_name_2091": "【白】蘑菇",
+			"prop_name_2092": "【褐】蘑菇",
+			"prop_name_2093": "【红】蘑菇",
+			"prop_name_2094": "【紫】蘑菇",
+			"prop_name_2101": "蓝鳍金枪鱼",
+			"prop_name_2102": "红鲷鱼",
+			"prop_name_2103": "棕鳕鱼",
+			"prop_name_2104": "紫鳍鲷",
+			"prop_name_2111": "【褐】甜甜圈",
+			"prop_name_2112": "【粉】甜甜圈",
+			"prop_name_2113": "【褐】奶油蛋糕",
+			"prop_name_2114": "【粉】奶油蛋糕",
+			"prop_name_2121": "改名笔",
+			"prop_name_2122": "七彩笔"
 		},
 		"zh_TW": {
 			"attribute_1": "生命",
@@ -99,24 +191,116 @@
 			"mate_name_4003": "金髓礦石",
 			"mate_name_9001": "天外異石碎片",
 			"mate_name_9002": "天外神石",
-			"prop_description_1011": "使用後，立即恢復{$1}點生命值。",
-			"prop_description_1012": "使用後，立即恢復{$1}點生命值。",
-			"prop_description_1013": "使用後，立即恢復{$1}點生命值。",
-			"prop_description_1021": "使用後，立即恢復{$1}點精氣值。",
-			"prop_description_1022": "使用後，立即恢復{$1}點精氣值。",
-			"prop_description_1023": "使用後，立即恢復{$1}點精氣值。",
-			"prop_description_1091": "打開後，可獲得{$1}金幣。",
-			"prop_description_1092": "打開後，可獲得{$1}金幣。",
-			"prop_description_1093": "打開後，可獲得{$1}金幣。",
-			"prop_name_1011": "（小）生命藥水",
-			"prop_name_1012": "（中）生命藥水",
-			"prop_name_1013": "（大）生命藥水",
-			"prop_name_1021": "（小）精氣補充劑",
-			"prop_name_1022": "（中）精氣補充劑",
-			"prop_name_1023": "（大）精氣補充劑",
-			"prop_name_1091": "10級金幣大禮包",
-			"prop_name_1092": "30級金幣大禮包",
-			"prop_name_1093": "60級金幣大禮包"
+			"prop_description_1011": "服用後，立即恢復 +{$1}生命值。",
+			"prop_description_1012": "服用後，立即恢復 +{$1}生命值。",
+			"prop_description_1013": "服用後，立即恢復 +{$1}生命值。",
+			"prop_description_1021": "服用後，立即恢復 +{$1}精氣值。",
+			"prop_description_1022": "服用後，立即恢復 +{$1}精氣值。",
+			"prop_description_1023": "服用後，立即恢復 +{$1}精氣值。",
+			"prop_description_1131": "打開後，可獲得{$1}金幣。",
+			"prop_description_1132": "打開後，可獲得{$1}金幣。",
+			"prop_description_1133": "打開後，可獲得{$1}金幣。",
+			"prop_description_2011": "服用後，立即恢復 +{$1}生命值。",
+			"prop_description_2012": "服用後，立即恢復 +{$1}生命值。",
+			"prop_description_2013": "服用後，立即恢復 +{$1}生命值。",
+			"prop_description_2021": "服用後，立即恢復 +{$1}精氣值。",
+			"prop_description_2022": "服用後，立即恢復 +{$1}精氣值。",
+			"prop_description_2023": "服用後，立即恢復 +{$1}精氣值。",
+			"prop_description_2031": "食用後，立即恢復 +{$1}生命值。",
+			"prop_description_2032": "食用後，立即恢復 +{$1}生命值。",
+			"prop_description_2033": "食用後，立即恢復 +{$1}生命值。",
+			"prop_description_2034": "食用後，立即恢復 +{$1}生命值。",
+			"prop_description_2035": "食用後，立即恢復 +{$1}生命值。",
+			"prop_description_2041": "食用後，立即恢復生命上限的{$1}。",
+			"prop_description_2042": "食用後，立即恢復生命上限的{$1}。",
+			"prop_description_2043": "食用後，立即恢復生命上限的{$1}。",
+			"prop_description_2044": "食用後，立即恢復生命上限的{$1}。",
+			"prop_description_2051": "食用後，立即恢復 +{$1}精氣值。",
+			"prop_description_2052": "食用後，立即恢復 +{$1}精氣值。",
+			"prop_description_2053": "食用後，立即恢復 +{$1}精氣值。",
+			"prop_description_2054": "食用後，立即恢復 +{$1}精氣值。",
+			"prop_description_2055": "食用後，立即恢復 +{$1}精氣值。",
+			"prop_description_2061": "食用後，立即恢復精氣上限的{$1}。",
+			"prop_description_2062": "食用後，立即恢復精氣上限的{$1}。",
+			"prop_description_2063": "食用後，立即恢復精氣上限的{$1}。",
+			"prop_description_2064": "食用後，立即恢復精氣上限的{$1}。",
+			"prop_description_2071": "食用後，增加 +{$1}攻擊力，持續{$2}秒。",
+			"prop_description_2072": "食用後，增加 +{$1}攻擊力，持續{$2}秒。",
+			"prop_description_2073": "食用後，增加 +{$1}攻擊力，持續{$2}秒。",
+			"prop_description_2074": "食用後，增加 +{$1}攻擊力，持續{$2}秒。",
+			"prop_description_2081": "飲用後，增加攻擊力的{$1}，持續($2}秒。",
+			"prop_description_2082": "飲用後，增加攻擊力的{$1}，持續{$2}秒。",
+			"prop_description_2083": "飲用後，增加攻擊力的{$1}，持續{$2}秒。",
+			"prop_description_2084": "飲用後，增加攻擊力的{$1}，持續{$2}秒。",
+			"prop_description_2091": "食用後，提升吸收受到傷害至{$1}，持續{$2}秒。",
+			"prop_description_2092": "食用後，提升吸收受到傷害至{$1}，持續{$2}秒。",
+			"prop_description_2093": "食用後，提升吸收受到傷害至{$1}，持續{$2}秒。",
+			"prop_description_2094": "食用後，提升吸收受到傷害至{$1}，持續{$2}秒。",
+			"prop_description_2101": "食用後，提升暴擊率至{$1}，持續{$2}秒。",
+			"prop_description_2102": "食用後，提升暴擊率至{$1}，持續{$2}秒。",
+			"prop_description_2103": "食用後，提升暴擊率至{$1}，持續{$2}秒。",
+			"prop_description_2104": "食用後，提升暴擊率至{$1}，持續{$2}秒。",
+			"prop_description_2111": "食用後，增加 +{$1}命中率，持續{$2}秒。",
+			"prop_description_2112": "食用後，增加 +{$1}命中率，持續{$2}秒。",
+			"prop_description_2113": "食用後，增加 +{$1}命中率，持續{$2}秒。",
+			"prop_description_2114": "食用後，增加 +{$1}命中率，持續{$2}秒。",
+			"prop_description_2121": "使用後，可修改玩家角色名稱",
+			"prop_description_2122": "使用後，可重新選擇玩家角色顏色",
+			"prop_name_1011": "（小）強力生命藥水",
+			"prop_name_1012": "（中）強力生命藥水",
+			"prop_name_1013": "（大）強力生命藥水",
+			"prop_name_1021": "（小）強力精氣補充劑",
+			"prop_name_1022": "（中）強力精氣補充劑",
+			"prop_name_1023": "（大）強力精氣補充劑",
+			"prop_name_1131": "10級金幣大禮包",
+			"prop_name_1132": "30級金幣大禮包",
+			"prop_name_1133": "60級金幣大禮包",
+			"prop_name_2011": "（小）生命藥水",
+			"prop_name_2012": "（中）生命藥水",
+			"prop_name_2013": "（大）生命藥水",
+			"prop_name_2021": "（小）精氣補充劑",
+			"prop_name_2022": "（中）精氣補充劑",
+			"prop_name_2023": "（大）精氣補充劑",
+			"prop_name_2031": "辣椒",
+			"prop_name_2032": "荔枝",
+			"prop_name_2033": "蘋果",
+			"prop_name_2034": "西紅柿",
+			"prop_name_2035": "草莓",
+			"prop_name_2041": "奧爾良烤雞腿",
+			"prop_name_2042": "德國烤豬肘",
+			"prop_name_2043": "A5級和牛肉",
+			"prop_name_2044": "北京烤鴨",
+			"prop_name_2051": "大蒜",
+			"prop_name_2052": "胡蘿蔔",
+			"prop_name_2053": "南瓜",
+			"prop_name_2054": "香蕉",
+			"prop_name_2055": "橘子",
+			"prop_name_2061": "辛辣的大蔥",
+			"prop_name_2062": "脆嫩的西蘭花",
+			"prop_name_2063": "鮮嫩的黃瓜",
+			"prop_name_2064": "香甜的玉米",
+			"prop_name_2071": "糖果",
+			"prop_name_2072": "棒棒糖",
+			"prop_name_2073": "雪糕",
+			"prop_name_2074": "冰淇淋",
+			"prop_name_2081": "香濃的咖啡",
+			"prop_name_2082": "涼爽的冰沙",
+			"prop_name_2083": "酸甜的果汁",
+			"prop_name_2084": "熱檸檬紅茶",
+			"prop_name_2091": "【白】蘑菇",
+			"prop_name_2092": "【褐】蘑菇",
+			"prop_name_2093": "【紅】蘑菇",
+			"prop_name_2094": "【紫】蘑菇",
+			"prop_name_2101": "藍鰭金槍魚",
+			"prop_name_2102": "紅鯛魚",
+			"prop_name_2103": "棕鱈魚",
+			"prop_name_2104": "紫鰭鯛",
+			"prop_name_2111": "【褐】甜甜圈",
+			"prop_name_2112": "【粉】甜甜圈",
+			"prop_name_2113": "【褐】奶油蛋糕",
+			"prop_name_2114": "【粉】奶油蛋糕",
+			"prop_name_2121": "改名筆",
+			"prop_name_2122": "七彩筆"
 		},
 		"en_US": {
 			"attribute_1": "Health",
@@ -158,24 +342,116 @@
 			"mate_name_4003": "Gold Essence Ore",
 			"mate_name_9001": "Exotic Stone Fragments",
 			"mate_name_9002": "Exotic Divine Stone",
-			"prop_description_1011": "Upon use, immediately restores {$1} health points.",
-			"prop_description_1012": "Upon use, immediately restores {$1} health points.",
-			"prop_description_1013": "Upon use, immediately restores {$1} health points.",
-			"prop_description_1021": "Upon use, immediately restores {$1} energy points.",
-			"prop_description_1022": "Upon use, immediately restores {$1} energy points.",
-			"prop_description_1023": "Upon use, immediately restores {$1} energy points.",
-			"prop_description_1091": "Upon opening, you will receive {$1} gold coins.",
-			"prop_description_1092": "Upon opening, you will receive {$1} gold coins.",
-			"prop_description_1093": "Upon opening, you will receive {$1} gold coins.",
-			"prop_name_1011": "(Small) Health Potion",
-			"prop_name_1012": "(Medium) Health Potion",
-			"prop_name_1013": "(Large) Health Potion",
-			"prop_name_1021": "(Small) Energy Supplement",
-			"prop_name_1022": "(Medium) Energy Supplement",
-			"prop_name_1023": "(Large) Energy Supplement",
-			"prop_name_1091": "Level 10 Gold Coin Grand Gift Pack",
-			"prop_name_1092": "Level 30 Gold Coin Grand Gift Pack",
-			"prop_name_1093": "Level 60 Gold Coin Grand Gift Pack"
+			"prop_description_1011": "Upon consumption, immediately restores +{$1} HP.",
+			"prop_description_1012": "Upon consumption, immediately restores +{$1} HP.",
+			"prop_description_1013": "Upon consumption, immediately restores +{$1} HP.",
+			"prop_description_1021": "Upon consumption, immediately restores +{$1} MP.",
+			"prop_description_1022": "Upon consumption, immediately restores +{$1} MP.",
+			"prop_description_1023": "Upon consumption, immediately restores +{$1} MP.",
+			"prop_description_1131": "Upon opening, receive {$1} gold coins.",
+			"prop_description_1132": "Upon opening, receive {$1} gold coins.",
+			"prop_description_1133": "Upon opening, receive {$1} gold coins.",
+			"prop_description_2011": "Upon consumption, immediately restores +{$1} HP.",
+			"prop_description_2012": "Upon consumption, immediately restores +{$1} HP.",
+			"prop_description_2013": "Upon consumption, immediately restores +{$1} HP.",
+			"prop_description_2021": "Upon consumption, immediately restores +{$1} MP.",
+			"prop_description_2022": "Upon consumption, immediately restores +{$1} MP.",
+			"prop_description_2023": "Upon consumption, immediately restores +{$1} MP.",
+			"prop_description_2031": "Upon consumption, immediately restores +{$1} HP.",
+			"prop_description_2032": "Upon consumption, immediately restores +{$1} HP.",
+			"prop_description_2033": "Upon consumption, immediately restores +{$1} HP.",
+			"prop_description_2034": "Upon consumption, immediately restores +{$1} HP.",
+			"prop_description_2035": "Upon consumption, immediately restores +{$1} HP.",
+			"prop_description_2041": "Upon consumption, immediately restores {$1} of max HP.",
+			"prop_description_2042": "Upon consumption, immediately restores {$1} of max HP.",
+			"prop_description_2043": "Upon consumption, immediately restores {$1} of max HP.",
+			"prop_description_2044": "Upon consumption, immediately restores {$1} of max HP.",
+			"prop_description_2051": "Upon consumption, immediately restores +{$1} MP.",
+			"prop_description_2052": "Upon consumption, immediately restores +{$1} MP.",
+			"prop_description_2053": "Upon consumption, immediately restores +{$1} MP.",
+			"prop_description_2054": "Upon consumption, immediately restores +{$1} MP.",
+			"prop_description_2055": "Upon consumption, immediately restores +{$1} MP.",
+			"prop_description_2061": "Upon consumption, immediately restores {$1} of max MP.",
+			"prop_description_2062": "Upon consumption, immediately restores {$1} of max MP.",
+			"prop_description_2063": "Upon consumption, immediately restores {$1} of max MP.",
+			"prop_description_2064": "Upon consumption, immediately restores {$1} of max MP.",
+			"prop_description_2071": "Upon consumption, increases +{$1} Attack Power for {$2} seconds.",
+			"prop_description_2072": "Upon consumption, increases +{$1} Attack Power for {$2} seconds.",
+			"prop_description_2073": "Upon consumption, increases +{$1} Attack Power for {$2} seconds.",
+			"prop_description_2074": "Upon consumption, increases +{$1} Attack Power for {$2} seconds.",
+			"prop_description_2081": "Upon consumption, increases Attack Power by {$1} for {$2} seconds.",
+			"prop_description_2082": "Upon consumption, increases Attack Power by {$1} for {$2} seconds.",
+			"prop_description_2083": "Upon consumption, increases Attack Power by {$1} for {$2} seconds.",
+			"prop_description_2084": "Upon consumption, increases Attack Power by {$1} for {$2} seconds.",
+			"prop_description_2091": "Upon consumption, increases damage absorption to {$1} for {$2} seconds.",
+			"prop_description_2092": "Upon consumption, increases damage absorption to {$1} for {$2} seconds.",
+			"prop_description_2093": "Upon consumption, increases damage absorption to {$1} for {$2} seconds.",
+			"prop_description_2094": "Upon consumption, increases damage absorption to {$1} for {$2} seconds.",
+			"prop_description_2101": "Upon consumption, increases critical hit rate to {$1} for {$2} seconds.",
+			"prop_description_2102": "Upon consumption, increases critical hit rate to {$1} for {$2} seconds.",
+			"prop_description_2103": "Upon consumption, increases critical hit rate to {$1} for {$2} seconds.",
+			"prop_description_2104": "Upon consumption, increases critical hit rate to {$1} for {$2} seconds.",
+			"prop_description_2111": "Upon consumption, increases +{$1} Accuracy Rate for {$2} seconds.",
+			"prop_description_2112": "Upon consumption, increases +{$1} Accuracy Rate for {$2} seconds.",
+			"prop_description_2113": "Upon consumption, increases +{$1} Accuracy Rate for {$2} seconds.",
+			"prop_description_2114": "Upon consumption, increases +{$1} Accuracy Rate for {$2} seconds.",
+			"prop_description_2121": "Upon use, allows modification of player character name.",
+			"prop_description_2122": "Upon use, allows re-selection of player character color.",
+			"prop_name_1011": "(Small) Strong Life Potion",
+			"prop_name_1012": "(Medium) Strong Life Potion",
+			"prop_name_1013": "(Large) Strong Life Potion",
+			"prop_name_1021": "(Small) Strong Spirit Elixir",
+			"prop_name_1022": "(Medium) Strong Spirit Elixir",
+			"prop_name_1023": "(Large) Strong Spirit Elixir",
+			"prop_name_1131": "Level 10 Gold Gift Pack",
+			"prop_name_1132": "Level 30 Gold Gift Pack",
+			"prop_name_1133": "Level 60 Gold Gift Pack",
+			"prop_name_2011": "(Small) Life Potion",
+			"prop_name_2012": "(Medium) Life Potion",
+			"prop_name_2013": "(Large) Life Potion",
+			"prop_name_2021": "(Small) Spirit Elixir",
+			"prop_name_2022": "(Medium) Spirit Elixir",
+			"prop_name_2023": "(Large) Spirit Elixir",
+			"prop_name_2031": "Chili",
+			"prop_name_2032": "Lychee",
+			"prop_name_2033": "Apple",
+			"prop_name_2034": "Tomato",
+			"prop_name_2035": "Strawberry",
+			"prop_name_2041": "Orleans Grilled Chicken Leg",
+			"prop_name_2042": "German Roast Pork Knuckle",
+			"prop_name_2043": "A5 Wagyu Beef",
+			"prop_name_2044": "Beijing Roast Duck",
+			"prop_name_2051": "Garlic",
+			"prop_name_2052": "Carrot",
+			"prop_name_2053": "Pumpkin",
+			"prop_name_2054": "Banana",
+			"prop_name_2055": "Orange",
+			"prop_name_2061": "Spicy Spring Onion",
+			"prop_name_2062": "Crisp Broccoli",
+			"prop_name_2063": "Fresh Cucumber",
+			"prop_name_2064": "Sweet Corn",
+			"prop_name_2071": "Candy",
+			"prop_name_2072": "Lollipop",
+			"prop_name_2073": "Ice Cream",
+			"prop_name_2074": "Ice Cream",
+			"prop_name_2081": "Rich Coffee",
+			"prop_name_2082": "Cool Ice Smoothie",
+			"prop_name_2083": "Sweet and Sour Juice",
+			"prop_name_2084": "Hot Lemon Red Tea",
+			"prop_name_2091": "[White] Mushroom",
+			"prop_name_2092": "[Brown] Mushroom",
+			"prop_name_2093": "[Red] Mushroom",
+			"prop_name_2094": "[Purple] Mushroom",
+			"prop_name_2101": "Bluefin Tuna",
+			"prop_name_2102": "Red Snapper",
+			"prop_name_2103": "Brown Cod",
+			"prop_name_2104": "Purple Fin Damsel",
+			"prop_name_2111": "[Brown] Donut",
+			"prop_name_2112": "[Pink] Donut",
+			"prop_name_2113": "[Brown] Cream Cake",
+			"prop_name_2114": "[Pink] Cream Cake",
+			"prop_name_2121": "Name Change Pen",
+			"prop_name_2122": "Rainbow Pen"
 		}
 	},
 	"player": {
@@ -331,15 +607,15 @@
 				"qty": 10
 			},
 			{
-				"id": 1091,
+				"id": 1131,
 				"qty": 1
 			},
 			{
-				"id": 1092,
+				"id": 1132,
 				"qty": 1
 			},
 			{
-				"id": 1093,
+				"id": 1133,
 				"qty": 1
 			}
 		],
@@ -698,6 +974,7 @@
 				"en_US": "Health"
 			},
 			"level": 1,
+			"assets": "1_1",
 			"price": 24,
 			"attribute": 1,
 			"value": 39
@@ -710,6 +987,7 @@
 				"en_US": "Energy"
 			},
 			"level": 1,
+			"assets": "2_1",
 			"price": 13,
 			"attribute": 2,
 			"value": 9
@@ -722,6 +1000,7 @@
 				"en_US": "Attack"
 			},
 			"level": 1,
+			"assets": "3_1",
 			"price": 45,
 			"attribute": 3,
 			"value": 7
@@ -734,6 +1013,7 @@
 				"en_US": "Defense"
 			},
 			"level": 1,
+			"assets": "4_1",
 			"price": 24,
 			"attribute": 4,
 			"value": 3
@@ -746,6 +1026,7 @@
 				"en_US": "Penetration"
 			},
 			"level": 1,
+			"assets": "5_1",
 			"price": 37,
 			"attribute": 5,
 			"value": 3
@@ -758,6 +1039,7 @@
 				"en_US": "Armor"
 			},
 			"level": 1,
+			"assets": "6_1",
 			"price": 18,
 			"attribute": 6,
 			"value": 1
@@ -770,6 +1052,7 @@
 				"en_US": "Critical Hit"
 			},
 			"level": 1,
+			"assets": "7_1",
 			"price": 27,
 			"attribute": 7,
 			"value": 149
@@ -782,6 +1065,7 @@
 				"en_US": "Critical Resistance"
 			},
 			"level": 1,
+			"assets": "8_1",
 			"price": 15,
 			"attribute": 8,
 			"value": 69
@@ -794,6 +1078,7 @@
 				"en_US": "Accuracy"
 			},
 			"level": 1,
+			"assets": "9_1",
 			"price": 18,
 			"attribute": 9,
 			"value": 199
@@ -806,6 +1091,7 @@
 				"en_US": "Evasion"
 			},
 			"level": 1,
+			"assets": "10_1",
 			"price": 12,
 			"attribute": 10,
 			"value": 99
@@ -818,6 +1104,7 @@
 				"en_US": "Health"
 			},
 			"level": 2,
+			"assets": "1_2",
 			"price": 36,
 			"attribute": 1,
 			"value": 80
@@ -830,6 +1117,7 @@
 				"en_US": "Energy"
 			},
 			"level": 2,
+			"assets": "2_2",
 			"price": 20,
 			"attribute": 2,
 			"value": 20
@@ -842,6 +1130,7 @@
 				"en_US": "Attack"
 			},
 			"level": 2,
+			"assets": "3_2",
 			"price": 67,
 			"attribute": 3,
 			"value": 15
@@ -854,6 +1143,7 @@
 				"en_US": "Defense"
 			},
 			"level": 2,
+			"assets": "4_2",
 			"price": 36,
 			"attribute": 4,
 			"value": 7
@@ -866,6 +1156,7 @@
 				"en_US": "Penetration"
 			},
 			"level": 2,
+			"assets": "5_2",
 			"price": 56,
 			"attribute": 5,
 			"value": 7
@@ -878,6 +1169,7 @@
 				"en_US": "Armor"
 			},
 			"level": 2,
+			"assets": "6_2",
 			"price": 27,
 			"attribute": 6,
 			"value": 3
@@ -890,6 +1182,7 @@
 				"en_US": "Critical Hit"
 			},
 			"level": 2,
+			"assets": "7_2",
 			"price": 40,
 			"attribute": 7,
 			"value": 300
@@ -902,6 +1195,7 @@
 				"en_US": "Critical Resistance"
 			},
 			"level": 2,
+			"assets": "8_2",
 			"price": 22,
 			"attribute": 8,
 			"value": 140
@@ -914,6 +1208,7 @@
 				"en_US": "Accuracy"
 			},
 			"level": 2,
+			"assets": "9_2",
 			"price": 27,
 			"attribute": 9,
 			"value": 399
@@ -926,6 +1221,7 @@
 				"en_US": "Evasion"
 			},
 			"level": 2,
+			"assets": "10_2",
 			"price": 18,
 			"attribute": 10,
 			"value": 199
@@ -938,6 +1234,7 @@
 				"en_US": "Health"
 			},
 			"level": 3,
+			"assets": "1_3",
 			"price": 54,
 			"attribute": 1,
 			"value": 120
@@ -950,6 +1247,7 @@
 				"en_US": "Energy"
 			},
 			"level": 3,
+			"assets": "2_3",
 			"price": 30,
 			"attribute": 2,
 			"value": 30
@@ -962,6 +1260,7 @@
 				"en_US": "Attack"
 			},
 			"level": 3,
+			"assets": "3_3",
 			"price": 101,
 			"attribute": 3,
 			"value": 24
@@ -974,6 +1273,7 @@
 				"en_US": "Defense"
 			},
 			"level": 3,
+			"assets": "4_3",
 			"price": 54,
 			"attribute": 4,
 			"value": 12
@@ -986,6 +1286,7 @@
 				"en_US": "Penetration"
 			},
 			"level": 3,
+			"assets": "5_3",
 			"price": 84,
 			"attribute": 5,
 			"value": 12
@@ -998,6 +1299,7 @@
 				"en_US": "Armor"
 			},
 			"level": 3,
+			"assets": "6_3",
 			"price": 40,
 			"attribute": 6,
 			"value": 6
@@ -1010,6 +1312,7 @@
 				"en_US": "Critical Hit"
 			},
 			"level": 3,
+			"assets": "7_3",
 			"price": 60,
 			"attribute": 7,
 			"value": 450
@@ -1022,6 +1325,7 @@
 				"en_US": "Critical Resistance"
 			},
 			"level": 3,
+			"assets": "8_3",
 			"price": 33,
 			"attribute": 8,
 			"value": 210
@@ -1034,6 +1338,7 @@
 				"en_US": "Accuracy"
 			},
 			"level": 3,
+			"assets": "9_3",
 			"price": 40,
 			"attribute": 9,
 			"value": 600
@@ -1046,6 +1351,7 @@
 				"en_US": "Evasion"
 			},
 			"level": 3,
+			"assets": "10_3",
 			"price": 27,
 			"attribute": 10,
 			"value": 300
@@ -1058,6 +1364,7 @@
 				"en_US": "Health"
 			},
 			"level": 4,
+			"assets": "1_4",
 			"price": 81,
 			"attribute": 1,
 			"value": 160
@@ -1070,6 +1377,7 @@
 				"en_US": "Energy"
 			},
 			"level": 4,
+			"assets": "2_4",
 			"price": 45,
 			"attribute": 2,
 			"value": 40
@@ -1082,6 +1390,7 @@
 				"en_US": "Attack"
 			},
 			"level": 4,
+			"assets": "3_4",
 			"price": 151,
 			"attribute": 3,
 			"value": 32
@@ -1094,6 +1403,7 @@
 				"en_US": "Defense"
 			},
 			"level": 4,
+			"assets": "4_4",
 			"price": 81,
 			"attribute": 4,
 			"value": 16
@@ -1106,6 +1416,7 @@
 				"en_US": "Penetration"
 			},
 			"level": 4,
+			"assets": "5_4",
 			"price": 126,
 			"attribute": 5,
 			"value": 16
@@ -1118,6 +1429,7 @@
 				"en_US": "Armor"
 			},
 			"level": 4,
+			"assets": "6_4",
 			"price": 60,
 			"attribute": 6,
 			"value": 8
@@ -1130,6 +1442,7 @@
 				"en_US": "Critical Hit"
 			},
 			"level": 4,
+			"assets": "7_4",
 			"price": 91,
 			"attribute": 7,
 			"value": 600
@@ -1142,6 +1455,7 @@
 				"en_US": "Critical Resistance"
 			},
 			"level": 4,
+			"assets": "8_4",
 			"price": 50,
 			"attribute": 8,
 			"value": 280
@@ -1154,6 +1468,7 @@
 				"en_US": "Accuracy"
 			},
 			"level": 4,
+			"assets": "9_4",
 			"price": 60,
 			"attribute": 9,
 			"value": 800
@@ -1166,6 +1481,7 @@
 				"en_US": "Evasion"
 			},
 			"level": 4,
+			"assets": "10_4",
 			"price": 40,
 			"attribute": 10,
 			"value": 400
@@ -1178,6 +1494,7 @@
 				"en_US": "Health"
 			},
 			"level": 5,
+			"assets": "1_5",
 			"price": 121,
 			"attribute": 1,
 			"value": 200
@@ -1190,6 +1507,7 @@
 				"en_US": "Energy"
 			},
 			"level": 5,
+			"assets": "2_5",
 			"price": 68,
 			"attribute": 2,
 			"value": 50
@@ -1202,6 +1520,7 @@
 				"en_US": "Attack"
 			},
 			"level": 5,
+			"assets": "3_5",
 			"price": 227,
 			"attribute": 3,
 			"value": 40
@@ -1214,6 +1533,7 @@
 				"en_US": "Defense"
 			},
 			"level": 5,
+			"assets": "4_5",
 			"price": 121,
 			"attribute": 4,
 			"value": 20
@@ -1226,6 +1546,7 @@
 				"en_US": "Penetration"
 			},
 			"level": 5,
+			"assets": "5_5",
 			"price": 189,
 			"attribute": 5,
 			"value": 20
@@ -1238,6 +1559,7 @@
 				"en_US": "Armor"
 			},
 			"level": 5,
+			"assets": "6_5",
 			"price": 91,
 			"attribute": 6,
 			"value": 10
@@ -1250,6 +1572,7 @@
 				"en_US": "Critical Hit"
 			},
 			"level": 5,
+			"assets": "7_5",
 			"price": 136,
 			"attribute": 7,
 			"value": 750
@@ -1262,6 +1585,7 @@
 				"en_US": "Critical Resistance"
 			},
 			"level": 5,
+			"assets": "8_5",
 			"price": 75,
 			"attribute": 8,
 			"value": 350
@@ -1274,6 +1598,7 @@
 				"en_US": "Accuracy"
 			},
 			"level": 5,
+			"assets": "9_5",
 			"price": 91,
 			"attribute": 9,
 			"value": 1000
@@ -1286,6 +1611,7 @@
 				"en_US": "Evasion"
 			},
 			"level": 5,
+			"assets": "10_5",
 			"price": 60,
 			"attribute": 10,
 			"value": 500
@@ -1298,6 +1624,7 @@
 				"en_US": "Health"
 			},
 			"level": 6,
+			"assets": "1_6",
 			"price": 182,
 			"attribute": 1,
 			"value": 240
@@ -1310,6 +1637,7 @@
 				"en_US": "Energy"
 			},
 			"level": 6,
+			"assets": "2_6",
 			"price": 102,
 			"attribute": 2,
 			"value": 60
@@ -1322,6 +1650,7 @@
 				"en_US": "Attack"
 			},
 			"level": 6,
+			"assets": "3_6",
 			"price": 341,
 			"attribute": 3,
 			"value": 48
@@ -1334,6 +1663,7 @@
 				"en_US": "Defense"
 			},
 			"level": 6,
+			"assets": "4_6",
 			"price": 182,
 			"attribute": 4,
 			"value": 24
@@ -1346,6 +1676,7 @@
 				"en_US": "Penetration"
 			},
 			"level": 6,
+			"assets": "5_6",
 			"price": 284,
 			"attribute": 5,
 			"value": 24
@@ -1358,6 +1689,7 @@
 				"en_US": "Armor"
 			},
 			"level": 6,
+			"assets": "6_6",
 			"price": 136,
 			"attribute": 6,
 			"value": 12
@@ -1370,6 +1702,7 @@
 				"en_US": "Critical Hit"
 			},
 			"level": 6,
+			"assets": "7_6",
 			"price": 205,
 			"attribute": 7,
 			"value": 900
@@ -1382,6 +1715,7 @@
 				"en_US": "Critical Resistance"
 			},
 			"level": 6,
+			"assets": "8_6",
 			"price": 113,
 			"attribute": 8,
 			"value": 420
@@ -1394,6 +1728,7 @@
 				"en_US": "Accuracy"
 			},
 			"level": 6,
+			"assets": "9_6",
 			"price": 136,
 			"attribute": 9,
 			"value": 1200
@@ -1406,6 +1741,7 @@
 				"en_US": "Evasion"
 			},
 			"level": 6,
+			"assets": "10_6",
 			"price": 91,
 			"attribute": 10,
 			"value": 600
@@ -1418,6 +1754,7 @@
 				"en_US": "Health"
 			},
 			"level": 7,
+			"assets": "1_7",
 			"price": 273,
 			"attribute": 1,
 			"value": 280
@@ -1430,6 +1767,7 @@
 				"en_US": "Energy"
 			},
 			"level": 7,
+			"assets": "2_7",
 			"price": 153,
 			"attribute": 2,
 			"value": 70
@@ -1442,6 +1780,7 @@
 				"en_US": "Attack"
 			},
 			"level": 7,
+			"assets": "3_7",
 			"price": 512,
 			"attribute": 3,
 			"value": 56
@@ -1454,6 +1793,7 @@
 				"en_US": "Defense"
 			},
 			"level": 7,
+			"assets": "4_7",
 			"price": 273,
 			"attribute": 4,
 			"value": 28
@@ -1466,6 +1806,7 @@
 				"en_US": "Penetration"
 			},
 			"level": 7,
+			"assets": "5_7",
 			"price": 427,
 			"attribute": 5,
 			"value": 28
@@ -1478,6 +1819,7 @@
 				"en_US": "Armor"
 			},
 			"level": 7,
+			"assets": "6_7",
 			"price": 205,
 			"attribute": 6,
 			"value": 14
@@ -1490,6 +1832,7 @@
 				"en_US": "Critical Hit"
 			},
 			"level": 7,
+			"assets": "7_7",
 			"price": 307,
 			"attribute": 7,
 			"value": 1050
@@ -1502,6 +1845,7 @@
 				"en_US": "Critical Resistance"
 			},
 			"level": 7,
+			"assets": "8_7",
 			"price": 170,
 			"attribute": 8,
 			"value": 490
@@ -1514,6 +1858,7 @@
 				"en_US": "Accuracy"
 			},
 			"level": 7,
+			"assets": "9_7",
 			"price": 205,
 			"attribute": 9,
 			"value": 1400
@@ -1526,6 +1871,7 @@
 				"en_US": "Evasion"
 			},
 			"level": 7,
+			"assets": "10_7",
 			"price": 136,
 			"attribute": 10,
 			"value": 700
@@ -1538,6 +1884,7 @@
 				"en_US": "Health"
 			},
 			"level": 8,
+			"assets": "1_8",
 			"price": 410,
 			"attribute": 1,
 			"value": 320
@@ -1550,6 +1897,7 @@
 				"en_US": "Energy"
 			},
 			"level": 8,
+			"assets": "2_8",
 			"price": 230,
 			"attribute": 2,
 			"value": 80
@@ -1562,6 +1910,7 @@
 				"en_US": "Attack"
 			},
 			"level": 8,
+			"assets": "3_8",
 			"price": 768,
 			"attribute": 3,
 			"value": 64
@@ -1574,6 +1923,7 @@
 				"en_US": "Defense"
 			},
 			"level": 8,
+			"assets": "4_8",
 			"price": 410,
 			"attribute": 4,
 			"value": 32
@@ -1586,6 +1936,7 @@
 				"en_US": "Penetration"
 			},
 			"level": 8,
+			"assets": "5_8",
 			"price": 640,
 			"attribute": 5,
 			"value": 32
@@ -1598,6 +1949,7 @@
 				"en_US": "Armor"
 			},
 			"level": 8,
+			"assets": "6_8",
 			"price": 307,
 			"attribute": 6,
 			"value": 16
@@ -1610,6 +1962,7 @@
 				"en_US": "Critical Hit"
 			},
 			"level": 8,
+			"assets": "7_8",
 			"price": 461,
 			"attribute": 7,
 			"value": 1200
@@ -1622,6 +1975,7 @@
 				"en_US": "Critical Resistance"
 			},
 			"level": 8,
+			"assets": "8_8",
 			"price": 256,
 			"attribute": 8,
 			"value": 560
@@ -1634,6 +1988,7 @@
 				"en_US": "Accuracy"
 			},
 			"level": 8,
+			"assets": "9_8",
 			"price": 307,
 			"attribute": 9,
 			"value": 1600
@@ -1646,6 +2001,7 @@
 				"en_US": "Evasion"
 			},
 			"level": 8,
+			"assets": "10_8",
 			"price": 205,
 			"attribute": 10,
 			"value": 800
@@ -1658,6 +2014,7 @@
 				"en_US": "Health"
 			},
 			"level": 9,
+			"assets": "1_9",
 			"price": 615,
 			"attribute": 1,
 			"value": 360
@@ -1670,6 +2027,7 @@
 				"en_US": "Energy"
 			},
 			"level": 9,
+			"assets": "2_9",
 			"price": 345,
 			"attribute": 2,
 			"value": 90
@@ -1682,6 +2040,7 @@
 				"en_US": "Attack"
 			},
 			"level": 9,
+			"assets": "3_9",
 			"price": 1153,
 			"attribute": 3,
 			"value": 72
@@ -1694,6 +2053,7 @@
 				"en_US": "Defense"
 			},
 			"level": 9,
+			"assets": "4_9",
 			"price": 615,
 			"attribute": 4,
 			"value": 36
@@ -1706,6 +2066,7 @@
 				"en_US": "Penetration"
 			},
 			"level": 9,
+			"assets": "5_9",
 			"price": 961,
 			"attribute": 5,
 			"value": 36
@@ -1718,6 +2079,7 @@
 				"en_US": "Armor"
 			},
 			"level": 9,
+			"assets": "6_9",
 			"price": 461,
 			"attribute": 6,
 			"value": 18
@@ -1730,6 +2092,7 @@
 				"en_US": "Critical Hit"
 			},
 			"level": 9,
+			"assets": "7_9",
 			"price": 691,
 			"attribute": 7,
 			"value": 1350
@@ -1742,6 +2105,7 @@
 				"en_US": "Critical Resistance"
 			},
 			"level": 9,
+			"assets": "8_9",
 			"price": 384,
 			"attribute": 8,
 			"value": 630
@@ -1754,6 +2118,7 @@
 				"en_US": "Accuracy"
 			},
 			"level": 9,
+			"assets": "9_9",
 			"price": 461,
 			"attribute": 9,
 			"value": 1800
@@ -1766,6 +2131,7 @@
 				"en_US": "Evasion"
 			},
 			"level": 9,
+			"assets": "10_9",
 			"price": 307,
 			"attribute": 10,
 			"value": 900
@@ -1775,17 +2141,18 @@
 		{
 			"id": 1011,
 			"name": {
-				"zn_CN": "（小）生命药水",
-				"zh_TW": "（小）生命藥水",
-				"en_US": "(Small) Health Potion"
+				"zn_CN": "（小）强力生命药水",
+				"zh_TW": "（小）強力生命藥水",
+				"en_US": "(Small) Strong Life Potion"
 			},
 			"saleable": false,
 			"level": 1,
 			"description": {
-				"zn_CN": "使用后，立即回复100点生命值。",
-				"zh_TW": "使用後，立即恢復100點生命值。",
-				"en_US": "Upon use, immediately restores 100 health points."
+				"zn_CN": "服用后，立即恢复 +100生命值。",
+				"zh_TW": "服用後，立即恢復 +100生命值。",
+				"en_US": "Upon consumption, immediately restores +100 HP."
 			},
+			"assets": "1_1",
 			"price": 0,
 			"effect": 1101,
 			"values": [
@@ -1795,17 +2162,18 @@
 		{
 			"id": 1012,
 			"name": {
-				"zn_CN": "（中）生命药水",
-				"zh_TW": "（中）生命藥水",
-				"en_US": "(Medium) Health Potion"
+				"zn_CN": "（中）强力生命药水",
+				"zh_TW": "（中）強力生命藥水",
+				"en_US": "(Medium) Strong Life Potion"
 			},
 			"saleable": false,
 			"level": 10,
 			"description": {
-				"zn_CN": "使用后，立即回复500点生命值。",
-				"zh_TW": "使用後，立即恢復500點生命值。",
-				"en_US": "Upon use, immediately restores 500 health points."
+				"zn_CN": "服用后，立即恢复 +500生命值。",
+				"zh_TW": "服用後，立即恢復 +500生命值。",
+				"en_US": "Upon consumption, immediately restores +500 HP."
 			},
+			"assets": "1_2",
 			"price": 0,
 			"effect": 1101,
 			"values": [
@@ -1815,37 +2183,39 @@
 		{
 			"id": 1013,
 			"name": {
-				"zn_CN": "（大）生命药水",
-				"zh_TW": "（大）生命藥水",
-				"en_US": "(Large) Health Potion"
+				"zn_CN": "（大）强力生命药水",
+				"zh_TW": "（大）強力生命藥水",
+				"en_US": "(Large) Strong Life Potion"
 			},
 			"saleable": false,
 			"level": 20,
 			"description": {
-				"zn_CN": "使用后，立即回复1000点生命值。",
-				"zh_TW": "使用後，立即恢復1000點生命值。",
-				"en_US": "Upon use, immediately restores 1000 health points."
+				"zn_CN": "服用后，立即恢复 +1250生命值。",
+				"zh_TW": "服用後，立即恢復 +1250生命值。",
+				"en_US": "Upon consumption, immediately restores +1250 HP."
 			},
+			"assets": "1_3",
 			"price": 0,
 			"effect": 1101,
 			"values": [
-				1000
+				1250
 			]
 		},
 		{
 			"id": 1021,
 			"name": {
-				"zn_CN": "（小）精气补充剂",
-				"zh_TW": "（小）精氣補充劑",
-				"en_US": "(Small) Energy Supplement"
+				"zn_CN": "（小）强力精气补充剂",
+				"zh_TW": "（小）強力精氣補充劑",
+				"en_US": "(Small) Strong Spirit Elixir"
 			},
 			"saleable": false,
 			"level": 1,
 			"description": {
-				"zn_CN": "使用后，立即回复50点精气值。",
-				"zh_TW": "使用後，立即恢復50點精氣值。",
-				"en_US": "Upon use, immediately restores 50 energy points."
+				"zn_CN": "服用后，立即恢复 +50精气值。",
+				"zh_TW": "服用後，立即恢復 +50精氣值。",
+				"en_US": "Upon consumption, immediately restores +50 MP."
 			},
+			"assets": "2_1",
 			"price": 0,
 			"effect": 1201,
 			"values": [
@@ -1855,17 +2225,18 @@
 		{
 			"id": 1022,
 			"name": {
-				"zn_CN": "（中）精气补充剂",
-				"zh_TW": "（中）精氣補充劑",
-				"en_US": "(Medium) Energy Supplement"
+				"zn_CN": "（中）强力精气补充剂",
+				"zh_TW": "（中）強力精氣補充劑",
+				"en_US": "(Medium) Strong Spirit Elixir"
 			},
 			"saleable": false,
 			"level": 10,
 			"description": {
-				"zn_CN": "使用后，立即回复250点精气值。",
-				"zh_TW": "使用後，立即恢復250點精氣值。",
-				"en_US": "Upon use, immediately restores 250 energy points."
+				"zn_CN": "服用后，立即恢复 +250精气值。",
+				"zh_TW": "服用後，立即恢復 +250精氣值。",
+				"en_US": "Upon consumption, immediately restores +250 MP."
 			},
+			"assets": "2_2",
 			"price": 0,
 			"effect": 1201,
 			"values": [
@@ -1875,82 +2246,1068 @@
 		{
 			"id": 1023,
 			"name": {
-				"zn_CN": "（大）精气补充剂",
-				"zh_TW": "（大）精氣補充劑",
-				"en_US": "(Large) Energy Supplement"
+				"zn_CN": "（大）强力精气补充剂",
+				"zh_TW": "（大）強力精氣補充劑",
+				"en_US": "(Large) Strong Spirit Elixir"
 			},
 			"saleable": false,
 			"level": 20,
 			"description": {
-				"zn_CN": "使用后，立即回复500点精气值。",
-				"zh_TW": "使用後，立即恢復500點精氣值。",
-				"en_US": "Upon use, immediately restores 500 energy points."
+				"zn_CN": "服用后，立即恢复 +750精气值。",
+				"zh_TW": "服用後，立即恢復 +750精氣值。",
+				"en_US": "Upon consumption, immediately restores +750 MP."
 			},
+			"assets": "2_3",
 			"price": 0,
+			"effect": 1201,
+			"values": [
+				750
+			]
+		},
+		{
+			"id": 1131,
+			"name": {
+				"zn_CN": "10级金币大礼包",
+				"zh_TW": "10級金幣大禮包",
+				"en_US": "Level 10 Gold Gift Pack"
+			},
+			"saleable": false,
+			"level": 10,
+			"description": {
+				"zn_CN": "打开后，可获得10000金币。",
+				"zh_TW": "打開後，可獲得10000金幣。",
+				"en_US": "Upon opening, receive 10000 gold coins."
+			},
+			"assets": "13_1",
+			"price": 0,
+			"effect": 3201,
+			"values": [
+				10000
+			]
+		},
+		{
+			"id": 1132,
+			"name": {
+				"zn_CN": "30级金币大礼包",
+				"zh_TW": "30級金幣大禮包",
+				"en_US": "Level 30 Gold Gift Pack"
+			},
+			"saleable": false,
+			"level": 30,
+			"description": {
+				"zn_CN": "打开后，可获得50000金币。",
+				"zh_TW": "打開後，可獲得50000金幣。",
+				"en_US": "Upon opening, receive 50000 gold coins."
+			},
+			"assets": "13_2",
+			"price": 0,
+			"effect": 3201,
+			"values": [
+				50000
+			]
+		},
+		{
+			"id": 1133,
+			"name": {
+				"zn_CN": "60级金币大礼包",
+				"zh_TW": "60級金幣大禮包",
+				"en_US": "Level 60 Gold Gift Pack"
+			},
+			"saleable": false,
+			"level": 60,
+			"description": {
+				"zn_CN": "打开后，可获得250000金币。",
+				"zh_TW": "打開後，可獲得250000金幣。",
+				"en_US": "Upon opening, receive 250000 gold coins."
+			},
+			"assets": "13_3",
+			"price": 0,
+			"effect": 3201,
+			"values": [
+				250000
+			]
+		},
+		{
+			"id": 2011,
+			"name": {
+				"zn_CN": "（小）生命药水",
+				"zh_TW": "（小）生命藥水",
+				"en_US": "(Small) Life Potion"
+			},
+			"saleable": true,
+			"level": 1,
+			"description": {
+				"zn_CN": "服用后，立即恢复 +50生命值。",
+				"zh_TW": "服用後，立即恢復 +50生命值。",
+				"en_US": "Upon consumption, immediately restores +50 HP."
+			},
+			"assets": "1_1",
+			"price": 4,
+			"effect": 1101,
+			"values": [
+				50
+			]
+		},
+		{
+			"id": 2012,
+			"name": {
+				"zn_CN": "（中）生命药水",
+				"zh_TW": "（中）生命藥水",
+				"en_US": "(Medium) Life Potion"
+			},
+			"saleable": true,
+			"level": 1,
+			"description": {
+				"zn_CN": "服用后，立即恢复 +150生命值。",
+				"zh_TW": "服用後，立即恢復 +150生命值。",
+				"en_US": "Upon consumption, immediately restores +150 HP."
+			},
+			"assets": "1_2",
+			"price": 10,
+			"effect": 1101,
+			"values": [
+				150
+			]
+		},
+		{
+			"id": 2013,
+			"name": {
+				"zn_CN": "（大）生命药水",
+				"zh_TW": "（大）生命藥水",
+				"en_US": "(Large) Life Potion"
+			},
+			"saleable": true,
+			"level": 1,
+			"description": {
+				"zn_CN": "服用后，立即恢复 +375生命值。",
+				"zh_TW": "服用後，立即恢復 +375生命值。",
+				"en_US": "Upon consumption, immediately restores +375 HP."
+			},
+			"assets": "1_3",
+			"price": 25,
+			"effect": 1101,
+			"values": [
+				375
+			]
+		},
+		{
+			"id": 2021,
+			"name": {
+				"zn_CN": "（小）精气补充剂",
+				"zh_TW": "（小）精氣補充劑",
+				"en_US": "(Small) Spirit Elixir"
+			},
+			"saleable": true,
+			"level": 1,
+			"description": {
+				"zn_CN": "服用后，立即恢复 +25精气值。",
+				"zh_TW": "服用後，立即恢復 +25精氣值。",
+				"en_US": "Upon consumption, immediately restores +25 MP."
+			},
+			"assets": "2_1",
+			"price": 3,
+			"effect": 1201,
+			"values": [
+				25
+			]
+		},
+		{
+			"id": 2022,
+			"name": {
+				"zn_CN": "（中）精气补充剂",
+				"zh_TW": "（中）精氣補充劑",
+				"en_US": "(Medium) Spirit Elixir"
+			},
+			"saleable": true,
+			"level": 1,
+			"description": {
+				"zn_CN": "服用后，立即恢复 +75精气值。",
+				"zh_TW": "服用後，立即恢復 +75精氣值。",
+				"en_US": "Upon consumption, immediately restores +75 MP."
+			},
+			"assets": "2_2",
+			"price": 8,
+			"effect": 1201,
+			"values": [
+				75
+			]
+		},
+		{
+			"id": 2023,
+			"name": {
+				"zn_CN": "（大）精气补充剂",
+				"zh_TW": "（大）精氣補充劑",
+				"en_US": "(Large) Spirit Elixir"
+			},
+			"saleable": true,
+			"level": 1,
+			"description": {
+				"zn_CN": "服用后，立即恢复 +175精气值。",
+				"zh_TW": "服用後，立即恢復 +175精氣值。",
+				"en_US": "Upon consumption, immediately restores +175 MP."
+			},
+			"assets": "2_3",
+			"price": 20,
+			"effect": 1201,
+			"values": [
+				175
+			]
+		},
+		{
+			"id": 2031,
+			"name": {
+				"zn_CN": "辣椒",
+				"zh_TW": "辣椒",
+				"en_US": "Chili"
+			},
+			"saleable": true,
+			"level": 1,
+			"description": {
+				"zn_CN": "食用后，立即恢复 +80生命值。",
+				"zh_TW": "食用後，立即恢復 +80生命值。",
+				"en_US": "Upon consumption, immediately restores +80 HP."
+			},
+			"assets": "3_1",
+			"price": 8,
+			"effect": 1101,
+			"values": [
+				80
+			]
+		},
+		{
+			"id": 2032,
+			"name": {
+				"zn_CN": "荔枝",
+				"zh_TW": "荔枝",
+				"en_US": "Lychee"
+			},
+			"saleable": true,
+			"level": 1,
+			"description": {
+				"zn_CN": "食用后，立即恢复 +200生命值。",
+				"zh_TW": "食用後，立即恢復 +200生命值。",
+				"en_US": "Upon consumption, immediately restores +200 HP."
+			},
+			"assets": "3_2",
+			"price": 25,
+			"effect": 1101,
+			"values": [
+				200
+			]
+		},
+		{
+			"id": 2033,
+			"name": {
+				"zn_CN": "苹果",
+				"zh_TW": "蘋果",
+				"en_US": "Apple"
+			},
+			"saleable": true,
+			"level": 1,
+			"description": {
+				"zn_CN": "食用后，立即恢复 +450生命值。",
+				"zh_TW": "食用後，立即恢復 +450生命值。",
+				"en_US": "Upon consumption, immediately restores +450 HP."
+			},
+			"assets": "3_3",
+			"price": 75,
+			"effect": 1101,
+			"values": [
+				450
+			]
+		},
+		{
+			"id": 2034,
+			"name": {
+				"zn_CN": "西红柿",
+				"zh_TW": "西紅柿",
+				"en_US": "Tomato"
+			},
+			"saleable": true,
+			"level": 1,
+			"description": {
+				"zn_CN": "食用后，立即恢复 +1000生命值。",
+				"zh_TW": "食用後，立即恢復 +1000生命值。",
+				"en_US": "Upon consumption, immediately restores +1000 HP."
+			},
+			"assets": "3_4",
+			"price": 200,
+			"effect": 1101,
+			"values": [
+				1000
+			]
+		},
+		{
+			"id": 2035,
+			"name": {
+				"zn_CN": "草莓",
+				"zh_TW": "草莓",
+				"en_US": "Strawberry"
+			},
+			"saleable": true,
+			"level": 1,
+			"description": {
+				"zn_CN": "食用后，立即恢复 +2500生命值。",
+				"zh_TW": "食用後，立即恢復 +2500生命值。",
+				"en_US": "Upon consumption, immediately restores +2500 HP."
+			},
+			"assets": "3_5",
+			"price": 750,
+			"effect": 1101,
+			"values": [
+				2500
+			]
+		},
+		{
+			"id": 2041,
+			"name": {
+				"zn_CN": "奥尔良烤鸡腿",
+				"zh_TW": "奧爾良烤雞腿",
+				"en_US": "Orleans Grilled Chicken Leg"
+			},
+			"saleable": true,
+			"level": 1,
+			"description": {
+				"zn_CN": "食用后，立即恢复生命上限的2500。",
+				"zh_TW": "食用後，立即恢復生命上限的2500。",
+				"en_US": "Upon consumption, immediately restores 2500 of max HP."
+			},
+			"assets": "4_1",
+			"price": 100,
+			"effect": 1102,
+			"values": [
+				2500
+			]
+		},
+		{
+			"id": 2042,
+			"name": {
+				"zn_CN": "德国烤猪肘",
+				"zh_TW": "德國烤豬肘",
+				"en_US": "German Roast Pork Knuckle"
+			},
+			"saleable": true,
+			"level": 1,
+			"description": {
+				"zn_CN": "食用后，立即恢复生命上限的5000。",
+				"zh_TW": "食用後，立即恢復生命上限的5000。",
+				"en_US": "Upon consumption, immediately restores 5000 of max HP."
+			},
+			"assets": "4_2",
+			"price": 300,
+			"effect": 1102,
+			"values": [
+				5000
+			]
+		},
+		{
+			"id": 2043,
+			"name": {
+				"zn_CN": "A5级和牛肉",
+				"zh_TW": "A5級和牛肉",
+				"en_US": "A5 Wagyu Beef"
+			},
+			"saleable": true,
+			"level": 1,
+			"description": {
+				"zn_CN": "食用后，立即恢复生命上限的7500。",
+				"zh_TW": "食用後，立即恢復生命上限的7500。",
+				"en_US": "Upon consumption, immediately restores 7500 of max HP."
+			},
+			"assets": "4_3",
+			"price": 750,
+			"effect": 1102,
+			"values": [
+				7500
+			]
+		},
+		{
+			"id": 2044,
+			"name": {
+				"zn_CN": "北京烤鸭",
+				"zh_TW": "北京烤鴨",
+				"en_US": "Beijing Roast Duck"
+			},
+			"saleable": true,
+			"level": 1,
+			"description": {
+				"zn_CN": "食用后，立即恢复生命上限的10000。",
+				"zh_TW": "食用後，立即恢復生命上限的10000。",
+				"en_US": "Upon consumption, immediately restores 10000 of max HP."
+			},
+			"assets": "4_4",
+			"price": 2000,
+			"effect": 1102,
+			"values": [
+				10000
+			]
+		},
+		{
+			"id": 2051,
+			"name": {
+				"zn_CN": "大蒜",
+				"zh_TW": "大蒜",
+				"en_US": "Garlic"
+			},
+			"saleable": true,
+			"level": 1,
+			"description": {
+				"zn_CN": "食用后，立即恢复 +40精气值。",
+				"zh_TW": "食用後，立即恢復 +40精氣值。",
+				"en_US": "Upon consumption, immediately restores +40 MP."
+			},
+			"assets": "5_1",
+			"price": 5,
+			"effect": 1201,
+			"values": [
+				40
+			]
+		},
+		{
+			"id": 2052,
+			"name": {
+				"zn_CN": "胡萝卜",
+				"zh_TW": "胡蘿蔔",
+				"en_US": "Carrot"
+			},
+			"saleable": true,
+			"level": 1,
+			"description": {
+				"zn_CN": "食用后，立即恢复 +100精气值。",
+				"zh_TW": "食用後，立即恢復 +100精氣值。",
+				"en_US": "Upon consumption, immediately restores +100 MP."
+			},
+			"assets": "5_2",
+			"price": 15,
+			"effect": 1201,
+			"values": [
+				100
+			]
+		},
+		{
+			"id": 2053,
+			"name": {
+				"zn_CN": "南瓜",
+				"zh_TW": "南瓜",
+				"en_US": "Pumpkin"
+			},
+			"saleable": true,
+			"level": 1,
+			"description": {
+				"zn_CN": "食用后，立即恢复 +225精气值。",
+				"zh_TW": "食用後，立即恢復 +225精氣值。",
+				"en_US": "Upon consumption, immediately restores +225 MP."
+			},
+			"assets": "5_3",
+			"price": 30,
+			"effect": 1201,
+			"values": [
+				225
+			]
+		},
+		{
+			"id": 2054,
+			"name": {
+				"zn_CN": "香蕉",
+				"zh_TW": "香蕉",
+				"en_US": "Banana"
+			},
+			"saleable": true,
+			"level": 1,
+			"description": {
+				"zn_CN": "食用后，立即恢复 +500精气值。",
+				"zh_TW": "食用後，立即恢復 +500精氣值。",
+				"en_US": "Upon consumption, immediately restores +500 MP."
+			},
+			"assets": "5_4",
+			"price": 100,
 			"effect": 1201,
 			"values": [
 				500
 			]
 		},
 		{
-			"id": 1091,
+			"id": 2055,
 			"name": {
-				"zn_CN": "10级金币大礼包",
-				"zh_TW": "10級金幣大禮包",
-				"en_US": "Level 10 Gold Coin Grand Gift Pack"
+				"zn_CN": "橘子",
+				"zh_TW": "橘子",
+				"en_US": "Orange"
 			},
-			"saleable": false,
-			"level": 10,
+			"saleable": true,
+			"level": 1,
 			"description": {
-				"zn_CN": "打开后，可获得5000金币。",
-				"zh_TW": "打開後，可獲得5000金幣。",
-				"en_US": "Upon opening, you will receive 5000 gold coins."
+				"zn_CN": "食用后，立即恢复 +1250精气值。",
+				"zh_TW": "食用後，立即恢復 +1250精氣值。",
+				"en_US": "Upon consumption, immediately restores +1250 MP."
 			},
-			"price": 0,
-			"effect": 3201,
+			"assets": "5_5",
+			"price": 400,
+			"effect": 1201,
+			"values": [
+				1250
+			]
+		},
+		{
+			"id": 2061,
+			"name": {
+				"zn_CN": "辛辣的大葱",
+				"zh_TW": "辛辣的大蔥",
+				"en_US": "Spicy Spring Onion"
+			},
+			"saleable": true,
+			"level": 1,
+			"description": {
+				"zn_CN": "食用后，立即恢复精气上限的2500。",
+				"zh_TW": "食用後，立即恢復精氣上限的2500。",
+				"en_US": "Upon consumption, immediately restores 2500 of max MP."
+			},
+			"assets": "6_1",
+			"price": 60,
+			"effect": 1202,
+			"values": [
+				2500
+			]
+		},
+		{
+			"id": 2062,
+			"name": {
+				"zn_CN": "脆嫩的西兰花",
+				"zh_TW": "脆嫩的西蘭花",
+				"en_US": "Crisp Broccoli"
+			},
+			"saleable": true,
+			"level": 1,
+			"description": {
+				"zn_CN": "食用后，立即恢复精气上限的5000。",
+				"zh_TW": "食用後，立即恢復精氣上限的5000。",
+				"en_US": "Upon consumption, immediately restores 5000 of max MP."
+			},
+			"assets": "6_2",
+			"price": 200,
+			"effect": 1202,
 			"values": [
 				5000
 			]
 		},
 		{
-			"id": 1092,
+			"id": 2063,
 			"name": {
-				"zn_CN": "30级金币大礼包",
-				"zh_TW": "30級金幣大禮包",
-				"en_US": "Level 30 Gold Coin Grand Gift Pack"
+				"zn_CN": "鲜嫩的黄瓜",
+				"zh_TW": "鮮嫩的黃瓜",
+				"en_US": "Fresh Cucumber"
 			},
-			"saleable": false,
-			"level": 30,
+			"saleable": true,
+			"level": 1,
 			"description": {
-				"zn_CN": "打开后，可获得20000金币。",
-				"zh_TW": "打開後，可獲得20000金幣。",
-				"en_US": "Upon opening, you will receive 20000 gold coins."
+				"zn_CN": "食用后，立即恢复精气上限的7500。",
+				"zh_TW": "食用後，立即恢復精氣上限的7500。",
+				"en_US": "Upon consumption, immediately restores 7500 of max MP."
 			},
-			"price": 0,
-			"effect": 3201,
+			"assets": "6_3",
+			"price": 500,
+			"effect": 1202,
 			"values": [
-				20000
+				7500
 			]
 		},
 		{
-			"id": 1093,
+			"id": 2064,
 			"name": {
-				"zn_CN": "60级金币大礼包",
-				"zh_TW": "60級金幣大禮包",
-				"en_US": "Level 60 Gold Coin Grand Gift Pack"
+				"zn_CN": "香甜的玉米",
+				"zh_TW": "香甜的玉米",
+				"en_US": "Sweet Corn"
 			},
-			"saleable": false,
-			"level": 60,
+			"saleable": true,
+			"level": 1,
 			"description": {
-				"zn_CN": "打开后，可获得100000金币。",
-				"zh_TW": "打開後，可獲得100000金幣。",
-				"en_US": "Upon opening, you will receive 100000 gold coins."
+				"zn_CN": "食用后，立即恢复精气上限的10000。",
+				"zh_TW": "食用後，立即恢復精氣上限的10000。",
+				"en_US": "Upon consumption, immediately restores 10000 of max MP."
 			},
-			"price": 0,
-			"effect": 3201,
+			"assets": "6_4",
+			"price": 1200,
+			"effect": 1202,
 			"values": [
-				100000
+				10000
 			]
+		},
+		{
+			"id": 2071,
+			"name": {
+				"zn_CN": "糖果",
+				"zh_TW": "糖果",
+				"en_US": "Candy"
+			},
+			"saleable": true,
+			"level": 1,
+			"description": {
+				"zn_CN": "食用后，增加 +50攻击力，持续60秒。",
+				"zh_TW": "食用後，增加 +50攻擊力，持續60秒。",
+				"en_US": "Upon consumption, increases +50 Attack Power for 60 seconds."
+			},
+			"assets": "7_1",
+			"price": 75,
+			"effect": 1301,
+			"values": [
+				50,
+				60
+			]
+		},
+		{
+			"id": 2072,
+			"name": {
+				"zn_CN": "棒棒糖",
+				"zh_TW": "棒棒糖",
+				"en_US": "Lollipop"
+			},
+			"saleable": true,
+			"level": 1,
+			"description": {
+				"zn_CN": "食用后，增加 +80攻击力，持续60秒。",
+				"zh_TW": "食用後，增加 +80攻擊力，持續60秒。",
+				"en_US": "Upon consumption, increases +80 Attack Power for 60 seconds."
+			},
+			"assets": "7_2",
+			"price": 225,
+			"effect": 1301,
+			"values": [
+				80,
+				60
+			]
+		},
+		{
+			"id": 2073,
+			"name": {
+				"zn_CN": "雪糕",
+				"zh_TW": "雪糕",
+				"en_US": "Ice Cream"
+			},
+			"saleable": true,
+			"level": 1,
+			"description": {
+				"zn_CN": "食用后，增加 +150攻击力，持续60秒。",
+				"zh_TW": "食用後，增加 +150攻擊力，持續60秒。",
+				"en_US": "Upon consumption, increases +150 Attack Power for 60 seconds."
+			},
+			"assets": "7_3",
+			"price": 600,
+			"effect": 1301,
+			"values": [
+				150,
+				60
+			]
+		},
+		{
+			"id": 2074,
+			"name": {
+				"zn_CN": "冰激淋",
+				"zh_TW": "冰淇淋",
+				"en_US": "Ice Cream"
+			},
+			"saleable": true,
+			"level": 1,
+			"description": {
+				"zn_CN": "食用后，增加 +250攻击力，持续60秒。",
+				"zh_TW": "食用後，增加 +250攻擊力，持續60秒。",
+				"en_US": "Upon consumption, increases +250 Attack Power for 60 seconds."
+			},
+			"assets": "7_4",
+			"price": 1500,
+			"effect": 1301,
+			"values": [
+				250,
+				60
+			]
+		},
+		{
+			"id": 2081,
+			"name": {
+				"zn_CN": "香浓的咖啡",
+				"zh_TW": "香濃的咖啡",
+				"en_US": "Rich Coffee"
+			},
+			"saleable": true,
+			"level": 1,
+			"description": {
+				"zn_CN": "饮用后，增加攻击力的50.00%，持续($2}秒。",
+				"zh_TW": "飲用後，增加攻擊力的50.00%，持續($2}秒。",
+				"en_US": "Upon consumption, increases Attack Power by 50.00% for 90 seconds."
+			},
+			"assets": "8_1",
+			"price": 200,
+			"effect": 1302,
+			"values": [
+				5000,
+				90
+			]
+		},
+		{
+			"id": 2082,
+			"name": {
+				"zn_CN": "凉爽的冰沙",
+				"zh_TW": "涼爽的冰沙",
+				"en_US": "Cool Ice Smoothie"
+			},
+			"saleable": true,
+			"level": 1,
+			"description": {
+				"zn_CN": "饮用后，增加攻击力的100.00%，持续90秒。",
+				"zh_TW": "飲用後，增加攻擊力的100.00%，持續90秒。",
+				"en_US": "Upon consumption, increases Attack Power by 100.00% for 90 seconds."
+			},
+			"assets": "8_2",
+			"price": 800,
+			"effect": 1302,
+			"values": [
+				10000,
+				90
+			]
+		},
+		{
+			"id": 2083,
+			"name": {
+				"zn_CN": "酸甜的果汁",
+				"zh_TW": "酸甜的果汁",
+				"en_US": "Sweet and Sour Juice"
+			},
+			"saleable": true,
+			"level": 1,
+			"description": {
+				"zn_CN": "饮用后，增加攻击力的200.00%，持续90秒。",
+				"zh_TW": "飲用後，增加攻擊力的200.00%，持續90秒。",
+				"en_US": "Upon consumption, increases Attack Power by 200.00% for 90 seconds."
+			},
+			"assets": "8_3",
+			"price": 3500,
+			"effect": 1302,
+			"values": [
+				20000,
+				90
+			]
+		},
+		{
+			"id": 2084,
+			"name": {
+				"zn_CN": "热柠檬红茶",
+				"zh_TW": "熱檸檬紅茶",
+				"en_US": "Hot Lemon Red Tea"
+			},
+			"saleable": true,
+			"level": 1,
+			"description": {
+				"zn_CN": "饮用后，增加攻击力的300.00%，持续90秒。",
+				"zh_TW": "飲用後，增加攻擊力的300.00%，持續90秒。",
+				"en_US": "Upon consumption, increases Attack Power by 300.00% for 90 seconds."
+			},
+			"assets": "8_4",
+			"price": 15000,
+			"effect": 1302,
+			"values": [
+				30000,
+				90
+			]
+		},
+		{
+			"id": 2091,
+			"name": {
+				"zn_CN": "【白】蘑菇",
+				"zh_TW": "【白】蘑菇",
+				"en_US": "[White] Mushroom"
+			},
+			"saleable": true,
+			"level": 1,
+			"description": {
+				"zn_CN": "食用后，提升吸收受到伤害至25.00%，持续30秒。",
+				"zh_TW": "食用後，提升吸收受到傷害至25.00%，持續30秒。",
+				"en_US": "Upon consumption, increases damage absorption to 25.00% for 30 seconds."
+			},
+			"assets": "9_1",
+			"price": 150,
+			"effect": 2101,
+			"values": [
+				2500,
+				30
+			]
+		},
+		{
+			"id": 2092,
+			"name": {
+				"zn_CN": "【褐】蘑菇",
+				"zh_TW": "【褐】蘑菇",
+				"en_US": "[Brown] Mushroom"
+			},
+			"saleable": true,
+			"level": 1,
+			"description": {
+				"zn_CN": "食用后，提升吸收受到伤害至50.00%，持续30秒。",
+				"zh_TW": "食用後，提升吸收受到傷害至50.00%，持續30秒。",
+				"en_US": "Upon consumption, increases damage absorption to 50.00% for 30 seconds."
+			},
+			"assets": "9_2",
+			"price": 500,
+			"effect": 2101,
+			"values": [
+				5000,
+				30
+			]
+		},
+		{
+			"id": 2093,
+			"name": {
+				"zn_CN": "【红】蘑菇",
+				"zh_TW": "【紅】蘑菇",
+				"en_US": "[Red] Mushroom"
+			},
+			"saleable": true,
+			"level": 1,
+			"description": {
+				"zn_CN": "食用后，提升吸收受到伤害至75.00%，持续30秒。",
+				"zh_TW": "食用後，提升吸收受到傷害至75.00%，持續30秒。",
+				"en_US": "Upon consumption, increases damage absorption to 75.00% for 30 seconds."
+			},
+			"assets": "9_3",
+			"price": 2500,
+			"effect": 2101,
+			"values": [
+				7500,
+				30
+			]
+		},
+		{
+			"id": 2094,
+			"name": {
+				"zn_CN": "【紫】蘑菇",
+				"zh_TW": "【紫】蘑菇",
+				"en_US": "[Purple] Mushroom"
+			},
+			"saleable": true,
+			"level": 1,
+			"description": {
+				"zn_CN": "食用后，提升吸收受到伤害至100.00%，持续30秒。",
+				"zh_TW": "食用後，提升吸收受到傷害至100.00%，持續30秒。",
+				"en_US": "Upon consumption, increases damage absorption to 100.00% for 30 seconds."
+			},
+			"assets": "9_4",
+			"price": 10000,
+			"effect": 2101,
+			"values": [
+				10000,
+				30
+			]
+		},
+		{
+			"id": 2101,
+			"name": {
+				"zn_CN": "蓝鳍金枪鱼",
+				"zh_TW": "藍鰭金槍魚",
+				"en_US": "Bluefin Tuna"
+			},
+			"saleable": true,
+			"level": 1,
+			"description": {
+				"zn_CN": "食用后，提升暴击率至25.00%，持续45秒。",
+				"zh_TW": "食用後，提升暴擊率至25.00%，持續45秒。",
+				"en_US": "Upon consumption, increases critical hit rate to 25.00% for 45 seconds."
+			},
+			"assets": "10_1",
+			"price": 200,
+			"effect": 2102,
+			"values": [
+				2500,
+				45
+			]
+		},
+		{
+			"id": 2102,
+			"name": {
+				"zn_CN": "红鲷鱼",
+				"zh_TW": "紅鯛魚",
+				"en_US": "Red Snapper"
+			},
+			"saleable": true,
+			"level": 1,
+			"description": {
+				"zn_CN": "食用后，提升暴击率至50.00%，持续45秒。",
+				"zh_TW": "食用後，提升暴擊率至50.00%，持續45秒。",
+				"en_US": "Upon consumption, increases critical hit rate to 50.00% for 45 seconds."
+			},
+			"assets": "10_2",
+			"price": 800,
+			"effect": 2102,
+			"values": [
+				5000,
+				45
+			]
+		},
+		{
+			"id": 2103,
+			"name": {
+				"zn_CN": "棕鳕鱼",
+				"zh_TW": "棕鱈魚",
+				"en_US": "Brown Cod"
+			},
+			"saleable": true,
+			"level": 1,
+			"description": {
+				"zn_CN": "食用后，提升暴击率至75.00%，持续45秒。",
+				"zh_TW": "食用後，提升暴擊率至75.00%，持續45秒。",
+				"en_US": "Upon consumption, increases critical hit rate to 75.00% for 45 seconds."
+			},
+			"assets": "10_3",
+			"price": 3500,
+			"effect": 2102,
+			"values": [
+				7500,
+				45
+			]
+		},
+		{
+			"id": 2104,
+			"name": {
+				"zn_CN": "紫鳍鲷",
+				"zh_TW": "紫鰭鯛",
+				"en_US": "Purple Fin Damsel"
+			},
+			"saleable": true,
+			"level": 1,
+			"description": {
+				"zn_CN": "食用后，提升暴击率至100.00%，持续45秒。",
+				"zh_TW": "食用後，提升暴擊率至100.00%，持續45秒。",
+				"en_US": "Upon consumption, increases critical hit rate to 100.00% for 45 seconds."
+			},
+			"assets": "10_4",
+			"price": 15000,
+			"effect": 2102,
+			"values": [
+				10000,
+				45
+			]
+		},
+		{
+			"id": 2111,
+			"name": {
+				"zn_CN": "【褐】甜甜圈",
+				"zh_TW": "【褐】甜甜圈",
+				"en_US": "[Brown] Donut"
+			},
+			"saleable": true,
+			"level": 1,
+			"description": {
+				"zn_CN": "食用后，增加 +25.00%命中率，持续75秒。",
+				"zh_TW": "食用後，增加 +25.00%命中率，持續75秒。",
+				"en_US": "Upon consumption, increases +25.00% Accuracy Rate for 75 seconds."
+			},
+			"assets": "11_1",
+			"price": 100,
+			"effect": 2103,
+			"values": [
+				2500,
+				75
+			]
+		},
+		{
+			"id": 2112,
+			"name": {
+				"zn_CN": "【粉】甜甜圈",
+				"zh_TW": "【粉】甜甜圈",
+				"en_US": "[Pink] Donut"
+			},
+			"saleable": true,
+			"level": 1,
+			"description": {
+				"zn_CN": "食用后，增加 +50.00%命中率，持续75秒。",
+				"zh_TW": "食用後，增加 +50.00%命中率，持續75秒。",
+				"en_US": "Upon consumption, increases +50.00% Accuracy Rate for 75 seconds."
+			},
+			"assets": "11_2",
+			"price": 300,
+			"effect": 2103,
+			"values": [
+				5000,
+				75
+			]
+		},
+		{
+			"id": 2113,
+			"name": {
+				"zn_CN": "【褐】奶油蛋糕",
+				"zh_TW": "【褐】奶油蛋糕",
+				"en_US": "[Brown] Cream Cake"
+			},
+			"saleable": true,
+			"level": 1,
+			"description": {
+				"zn_CN": "食用后，增加 +75.00%命中率，持续75秒。",
+				"zh_TW": "食用後，增加 +75.00%命中率，持續75秒。",
+				"en_US": "Upon consumption, increases +75.00% Accuracy Rate for 75 seconds."
+			},
+			"assets": "11_3",
+			"price": 1000,
+			"effect": 2103,
+			"values": [
+				7500,
+				75
+			]
+		},
+		{
+			"id": 2114,
+			"name": {
+				"zn_CN": "【粉】奶油蛋糕",
+				"zh_TW": "【粉】奶油蛋糕",
+				"en_US": "[Pink] Cream Cake"
+			},
+			"saleable": true,
+			"level": 1,
+			"description": {
+				"zn_CN": "食用后，增加 +100.00%命中率，持续75秒。",
+				"zh_TW": "食用後，增加 +100.00%命中率，持續75秒。",
+				"en_US": "Upon consumption, increases +100.00% Accuracy Rate for 75 seconds."
+			},
+			"assets": "11_4",
+			"price": 5000,
+			"effect": 2103,
+			"values": [
+				10000,
+				75
+			]
+		},
+		{
+			"id": 2121,
+			"name": {
+				"zn_CN": "改名笔",
+				"zh_TW": "改名筆",
+				"en_US": "Name Change Pen"
+			},
+			"saleable": true,
+			"level": 1,
+			"description": {
+				"zn_CN": "使用后，可修改玩家角色名称",
+				"zh_TW": "使用後，可修改玩家角色名稱",
+				"en_US": "Upon use, allows modification of player character name."
+			},
+			"assets": "12_1",
+			"price": 25000,
+			"effect": 3101,
+			"values": []
+		},
+		{
+			"id": 2122,
+			"name": {
+				"zn_CN": "七彩笔",
+				"zh_TW": "七彩筆",
+				"en_US": "Rainbow Pen"
+			},
+			"saleable": true,
+			"level": 1,
+			"description": {
+				"zn_CN": "使用后，可重新选择玩家角色颜色",
+				"zh_TW": "使用後，可重新選擇玩家角色顏色",
+				"en_US": "Upon use, allows re-selection of player character color."
+			},
+			"assets": "12_2",
+			"price": 20000,
+			"effect": 3102,
+			"values": []
 		}
 	],
 	"mates": [
@@ -1968,6 +3325,7 @@
 				"zh_TW": "一種用於裝備加工的常見原礦。",
 				"en_US": "A common raw material used for equipment crafting."
 			},
+			"assets": "",
 			"price": 10,
 			"next": {
 				"id": 1002,
@@ -1990,6 +3348,7 @@
 				"zh_TW": "常用於裝備加工的半成品礦，可由5個鐵礦石合成。",
 				"en_US": "A semi-finished ore commonly used for equipment crafting, can be synthesized from 5 Iron Ores."
 			},
+			"assets": "",
 			"price": 20,
 			"next": {
 				"id": 1003,
@@ -2012,6 +3371,7 @@
 				"zh_TW": "常用於裝備加工或打孔的成品礦，可由3個玄鐵合成。",
 				"en_US": "A finished ore commonly used for equipment crafting or perforation, can be synthesized from 3 Mysterious Irons."
 			},
+			"assets": "",
 			"price": 40
 		},
 		{
@@ -2028,6 +3388,7 @@
 				"zh_TW": "一種用於裝備加工的普通原礦。",
 				"en_US": "A common raw material used for equipment crafting."
 			},
+			"assets": "",
 			"price": 20,
 			"next": {
 				"id": 2002,
@@ -2050,6 +3411,7 @@
 				"zh_TW": "常用於裝備加工的半成品礦，可由5個銅礦石合成。",
 				"en_US": "A semi-finished ore commonly used for equipment crafting, can be synthesized from 5 Copper Ores."
 			},
+			"assets": "",
 			"price": 45,
 			"next": {
 				"id": 2003,
@@ -2072,6 +3434,7 @@
 				"zh_TW": "常用於裝備加工或打孔的成品礦，可由3個赤銅合成。",
 				"en_US": "A finished ore commonly used for equipment crafting or perforation, can be synthesized from 3 Red Coppers."
 			},
+			"assets": "",
 			"price": 100
 		},
 		{
@@ -2088,6 +3451,7 @@
 				"zh_TW": "一種用於裝備加工的稀有原礦。",
 				"en_US": "A rare raw material used for equipment crafting."
 			},
+			"assets": "",
 			"price": 35,
 			"next": {
 				"id": 3002,
@@ -2110,6 +3474,7 @@
 				"zh_TW": "常用於裝備加工的半成品礦，可由5個銀礦石合成。",
 				"en_US": "A semi-finished ore commonly used for equipment crafting, can be synthesized from 5 Silver Ores."
 			},
+			"assets": "",
 			"price": 80,
 			"next": {
 				"id": 3003,
@@ -2132,6 +3497,7 @@
 				"zh_TW": "常用於裝備加工或打孔的成品礦，可由3個白銀合成。",
 				"en_US": "A finished ore commonly used for equipment crafting or perforation, can be synthesized from 3 Silvers."
 			},
+			"assets": "",
 			"price": 200
 		},
 		{
@@ -2148,6 +3514,7 @@
 				"zh_TW": "一種用於裝備加工的珍貴原礦。",
 				"en_US": "A precious raw material used for equipment crafting."
 			},
+			"assets": "",
 			"price": 50,
 			"next": {
 				"id": 4002,
@@ -2170,6 +3537,7 @@
 				"zh_TW": "常用於裝備加工的半成品礦，可由5個金礦石合成。",
 				"en_US": "A semi-finished ore commonly used for equipment crafting, can be synthesized from 5 Gold Ores."
 			},
+			"assets": "",
 			"price": 200,
 			"next": {
 				"id": 4003,
@@ -2192,6 +3560,7 @@
 				"zh_TW": "常用於裝備加工或打孔的成品礦，可由3個精金礦石合成。",
 				"en_US": "A finished ore commonly used for equipment crafting or perforation, can be synthesized from 3 Refined Gold Ores."
 			},
+			"assets": "",
 			"price": 900
 		},
 		{
@@ -2208,6 +3577,7 @@
 				"zh_TW": "極其稀有的天外異石碎片，閃爍著紫色的光芒，一種用於裝備加工或打孔的。",
 				"en_US": "Extremely rare exotic stone fragments that shimmer with a purple light, used for equipment crafting or perforation."
 			},
+			"assets": "",
 			"price": 250,
 			"next": {
 				"id": 9002,
@@ -2230,6 +3600,7 @@
 				"zh_TW": "在裝備加工或打孔時，即使不幸失敗，也不會損壞原有裝備。此等神物極難獲取，可由30個天外異石碎片合成。",
 				"en_US": "Even in the unfortunate event of failure during equipment crafting or perforation, the original equipment will not be damaged. Such divine artifacts are extremely difficult to obtain and can be synthesized from 30 exotic stone fragments."
 			},
+			"assets": "",
 			"price": 1500
 		}
 	]

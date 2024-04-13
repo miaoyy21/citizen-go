@@ -6,10 +6,11 @@ import (
 )
 
 type Card struct {
-	Id    int       `json:"id"`    // 模版ID
-	Name  Lang      `json:"name"`  // 卡片名称【多语言】
-	Level CardLevel `json:"level"` // 等级
-	Price int       `json:"price"` // 售价
+	Id     int       `json:"id"`     // 模版ID
+	Name   Lang      `json:"name"`   // 卡片名称【多语言】
+	Level  CardLevel `json:"level"`  // 等级
+	Assets string    `json:"assets"` // 贴图资源ID
+	Price  int       `json:"price"`  // 售价
 
 	Attribute Attribute `json:"attribute"` // 属性
 	Value     int       `json:"value"`     // 属性值
@@ -30,6 +31,7 @@ func NewCards(conf Configuration) []Card {
 				Level:     level,
 				Attribute: attribute,
 				Value:     int(CoefficientValues.CardAttributes[attribute] + float64(level-5)*CoefficientValues.CardAttributes[attribute]*CoefficientValues.CardAttributeSteps),
+				Assets:    fmt.Sprintf("%d_%d", attribute, level),
 				Price:     int(price * math.Pow(CoefficientValues.CardLevelPrice, float64(level))),
 			}
 

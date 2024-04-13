@@ -238,3 +238,17 @@ func sliceI2S(values []int) []string {
 
 	return ss
 }
+
+func sliceP2S(values []int) []string {
+	ss := make([]string, 0, len(values))
+
+	for index, value := range values {
+		if index == 0 {
+			ss = append(ss, fmt.Sprintf("%.2f%%", float64(value)/100.0))
+		} else {
+			ss = append(ss, fmt.Sprintf("%d", value))
+		}
+	}
+
+	return ss
+}

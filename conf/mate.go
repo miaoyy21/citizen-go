@@ -17,6 +17,7 @@ type Mate struct {
 	Category          MateCategory `json:"category"`            // 分类
 	IsColorfulMineral bool         `json:"is_colorful_mineral"` // 是否为七彩神石【特殊用途】
 	Description       Lang         `json:"description"`         // 描述
+	Assets            string       `json:"assets"`              // 贴图资源ID
 	Price             int          `json:"price"`               // 售价
 
 	/* 矿石合成 */
