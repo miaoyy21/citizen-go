@@ -454,6 +454,15 @@
 			"prop_name_2122": "Rainbow Pen"
 		}
 	},
+	"equip_assets": {
+		"1": "1_1",
+		"2": "1_2",
+		"3": "1_3",
+		"4": "1_4",
+		"5": "1_5",
+		"6": "1_6",
+		"7": "1_7"
+	},
 	"player": {
 		"gold": 100,
 		"attributes": {
@@ -3325,7 +3334,7 @@
 				"zh_TW": "一種用於裝備加工的常見原礦。",
 				"en_US": "A common raw material used for equipment crafting."
 			},
-			"assets": "",
+			"assets": "1_1",
 			"price": 10,
 			"next": {
 				"id": 1002,
@@ -3348,7 +3357,7 @@
 				"zh_TW": "常用於裝備加工的半成品礦，可由5個鐵礦石合成。",
 				"en_US": "A semi-finished ore commonly used for equipment crafting, can be synthesized from 5 Iron Ores."
 			},
-			"assets": "",
+			"assets": "1_2",
 			"price": 20,
 			"next": {
 				"id": 1003,
@@ -3371,7 +3380,7 @@
 				"zh_TW": "常用於裝備加工或打孔的成品礦，可由3個玄鐵合成。",
 				"en_US": "A finished ore commonly used for equipment crafting or perforation, can be synthesized from 3 Mysterious Irons."
 			},
-			"assets": "",
+			"assets": "1_3",
 			"price": 40
 		},
 		{
@@ -3388,7 +3397,7 @@
 				"zh_TW": "一種用於裝備加工的普通原礦。",
 				"en_US": "A common raw material used for equipment crafting."
 			},
-			"assets": "",
+			"assets": "2_1",
 			"price": 20,
 			"next": {
 				"id": 2002,
@@ -3411,7 +3420,7 @@
 				"zh_TW": "常用於裝備加工的半成品礦，可由5個銅礦石合成。",
 				"en_US": "A semi-finished ore commonly used for equipment crafting, can be synthesized from 5 Copper Ores."
 			},
-			"assets": "",
+			"assets": "2_2",
 			"price": 45,
 			"next": {
 				"id": 2003,
@@ -3434,7 +3443,7 @@
 				"zh_TW": "常用於裝備加工或打孔的成品礦，可由3個赤銅合成。",
 				"en_US": "A finished ore commonly used for equipment crafting or perforation, can be synthesized from 3 Red Coppers."
 			},
-			"assets": "",
+			"assets": "2_3",
 			"price": 100
 		},
 		{
@@ -3451,7 +3460,7 @@
 				"zh_TW": "一種用於裝備加工的稀有原礦。",
 				"en_US": "A rare raw material used for equipment crafting."
 			},
-			"assets": "",
+			"assets": "3_1",
 			"price": 35,
 			"next": {
 				"id": 3002,
@@ -3474,7 +3483,7 @@
 				"zh_TW": "常用於裝備加工的半成品礦，可由5個銀礦石合成。",
 				"en_US": "A semi-finished ore commonly used for equipment crafting, can be synthesized from 5 Silver Ores."
 			},
-			"assets": "",
+			"assets": "3_2",
 			"price": 80,
 			"next": {
 				"id": 3003,
@@ -3497,7 +3506,7 @@
 				"zh_TW": "常用於裝備加工或打孔的成品礦，可由3個白銀合成。",
 				"en_US": "A finished ore commonly used for equipment crafting or perforation, can be synthesized from 3 Silvers."
 			},
-			"assets": "",
+			"assets": "3_3",
 			"price": 200
 		},
 		{
@@ -3514,7 +3523,7 @@
 				"zh_TW": "一種用於裝備加工的珍貴原礦。",
 				"en_US": "A precious raw material used for equipment crafting."
 			},
-			"assets": "",
+			"assets": "4_1",
 			"price": 50,
 			"next": {
 				"id": 4002,
@@ -3537,7 +3546,7 @@
 				"zh_TW": "常用於裝備加工的半成品礦，可由5個金礦石合成。",
 				"en_US": "A semi-finished ore commonly used for equipment crafting, can be synthesized from 5 Gold Ores."
 			},
-			"assets": "",
+			"assets": "4_2",
 			"price": 200,
 			"next": {
 				"id": 4003,
@@ -3560,7 +3569,7 @@
 				"zh_TW": "常用於裝備加工或打孔的成品礦，可由3個精金礦石合成。",
 				"en_US": "A finished ore commonly used for equipment crafting or perforation, can be synthesized from 3 Refined Gold Ores."
 			},
-			"assets": "",
+			"assets": "4_3",
 			"price": 900
 		},
 		{
@@ -3577,7 +3586,7 @@
 				"zh_TW": "極其稀有的天外異石碎片，閃爍著紫色的光芒，一種用於裝備加工或打孔的。",
 				"en_US": "Extremely rare exotic stone fragments that shimmer with a purple light, used for equipment crafting or perforation."
 			},
-			"assets": "",
+			"assets": "5_1",
 			"price": 250,
 			"next": {
 				"id": 9002,
@@ -3600,7 +3609,7 @@
 				"zh_TW": "在裝備加工或打孔時，即使不幸失敗，也不會損壞原有裝備。此等神物極難獲取，可由30個天外異石碎片合成。",
 				"en_US": "Even in the unfortunate event of failure during equipment crafting or perforation, the original equipment will not be damaged. Such divine artifacts are extremely difficult to obtain and can be synthesized from 30 exotic stone fragments."
 			},
-			"assets": "",
+			"assets": "5_2",
 			"price": 1500
 		}
 	]

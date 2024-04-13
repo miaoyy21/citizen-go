@@ -1,7 +1,8 @@
 package conf
 
 type Configuration struct {
-	Language Language `json:"language"`
+	Language    Language              `json:"language"`
+	EquipAssets map[EquipColor]string `json:"equip_assets"`
 
 	Player Player  `json:"player"`
 	Equips []Equip `json:"equips"`
@@ -13,6 +14,15 @@ type Configuration struct {
 func New() Configuration {
 	conf := Configuration{
 		Language: NewLanguage(),
+		EquipAssets: map[EquipColor]string{
+			EquipColorRed:    "1_1",
+			EquipColorOrange: "1_2",
+			EquipColorYellow: "1_3",
+			EquipColorGreen:  "1_4",
+			EquipColorCyan:   "1_5",
+			EquipColorBlue:   "1_6",
+			EquipColorPurple: "1_7",
+		},
 	}
 
 	// 装备、卡片、道具、材料
