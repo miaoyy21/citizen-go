@@ -11,7 +11,7 @@ type Proto struct {
 	Mates  []Mate  `json:"mates"`
 }
 
-func New() Proto {
+func newProto() Proto {
 	conf := Proto{
 		Language: NewLanguage(),
 		EquipAssets: map[EquipColor]string{

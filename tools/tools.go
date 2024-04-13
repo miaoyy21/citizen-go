@@ -1,6 +1,7 @@
 package tools
 
 import (
+	"citizen/lib"
 	"encoding/json"
 	"io/fs"
 	"log"
@@ -13,7 +14,7 @@ import (
 
 func RunSkills(srcAssets, dstAssets string) error {
 	// 1. 清空临时文件夹
-	if err := clean(filepath.Join(srcAssets, "temp")); err != nil {
+	if err := lib.Clean(filepath.Join(srcAssets, "temp")); err != nil {
 		return err
 	}
 	log.Printf("完成清空文件夹%q ... \n", filepath.Join(srcAssets, "temp"))
@@ -21,37 +22,37 @@ func RunSkills(srcAssets, dstAssets string) error {
 	// 2. 清空目标文件夹目录
 	for _, d := range []Direction{DirectionLeft, DirectionRight} {
 		// 1.1
-		if err := clean(filepath.Join(dstAssets, "images", string(d), "enemy", "cape")); err != nil {
+		if err := lib.Clean(filepath.Join(dstAssets, "images", string(d), "enemy", "cape")); err != nil {
 			return err
 		}
 		log.Printf("完成清空文件夹%q ... \n", filepath.Join(string(d), "enemy", "cape"))
 
 		// 1.2
-		if err := clean(filepath.Join(dstAssets, "images", string(d), "enemy", "effect")); err != nil {
+		if err := lib.Clean(filepath.Join(dstAssets, "images", string(d), "enemy", "effect")); err != nil {
 			return err
 		}
 		log.Printf("完成清空文件夹%q ... \n", filepath.Join(string(d), "enemy", "effect"))
 
 		// 1.3
-		if err := clean(filepath.Join(dstAssets, "images", string(d), "enemy", "stick")); err != nil {
+		if err := lib.Clean(filepath.Join(dstAssets, "images", string(d), "enemy", "stick")); err != nil {
 			return err
 		}
 		log.Printf("完成清空文件夹%q ... \n", filepath.Join(string(d), "enemy", "stick"))
 
 		// 2.1
-		if err := clean(filepath.Join(dstAssets, "images", string(d), "self", "cape")); err != nil {
+		if err := lib.Clean(filepath.Join(dstAssets, "images", string(d), "self", "cape")); err != nil {
 			return err
 		}
 		log.Printf("完成清空文件夹%q ... \n", filepath.Join(string(d), "self", "cape"))
 
 		// 2.2
-		if err := clean(filepath.Join(dstAssets, "images", string(d), "self", "effect")); err != nil {
+		if err := lib.Clean(filepath.Join(dstAssets, "images", string(d), "self", "effect")); err != nil {
 			return err
 		}
 		log.Printf("完成清空文件夹%q ... \n", filepath.Join(string(d), "self", "effect"))
 
 		// 2.3
-		if err := clean(filepath.Join(dstAssets, "images", string(d), "self", "stick")); err != nil {
+		if err := lib.Clean(filepath.Join(dstAssets, "images", string(d), "self", "stick")); err != nil {
 			return err
 		}
 		log.Printf("完成清空文件夹%q ... \n", filepath.Join(string(d), "self", "stick"))
@@ -203,7 +204,7 @@ func RunSkills(srcAssets, dstAssets string) error {
 		{"enemy", "effect"},
 		{"enemy", "stick"},
 	} {
-		if err := clean(filepath.Join(srcAssets, "temp")); err != nil {
+		if err := lib.Clean(filepath.Join(srcAssets, "temp")); err != nil {
 			return err
 		}
 		log.Printf("完成清空文件夹%q ... \n", filepath.Join(srcAssets, "temp"))
@@ -211,7 +212,7 @@ func RunSkills(srcAssets, dstAssets string) error {
 		src := make([]string, 0)
 		src = append(src, srcAssets)
 		src = append(src, ds...)
-		if err := CopyDirectory(filepath.Join(src...), filepath.Join(srcAssets, "temp")); err != nil {
+		if err := lib.CopyDirectory(filepath.Join(src...), filepath.Join(srcAssets, "temp")); err != nil {
 			return err
 		}
 
@@ -245,7 +246,7 @@ func RunSkills(srcAssets, dstAssets string) error {
 		dstRight = append(dstRight, "images", "right")
 		dstRight = append(dstRight, ds...)
 
-		if err := CopyDirectory(filepath.Join(src...), filepath.Join(dstRight...)); err != nil {
+		if err := lib.CopyDirectory(filepath.Join(src...), filepath.Join(dstRight...)); err != nil {
 			return err
 		}
 		log.Printf("发布动画帧%q至目标目录  ... \n", filepath.Join(ds...))
@@ -290,13 +291,13 @@ func RunSkills(srcAssets, dstAssets string) error {
 	log.Printf("发布动画帧解析文件至%q ... \n", filepath.Join(dstAssets, "animations.json"))
 
 	// 9. 拷贝empty.png文件
-	if err := CopyFile(filepath.Join(srcAssets, "empty.png"), filepath.Join(dstAssets, "images", "empty.png")); err != nil {
+	if err := lib.CopyFile(filepath.Join(srcAssets, "empty.png"), filepath.Join(dstAssets, "images", "empty.png")); err != nil {
 		return err
 	}
 	log.Printf("发布空图文件至%q ... \n", filepath.Join(dstAssets, "images", "empty.png"))
 
 	// 10. 拷贝地图文件
-	if err := CopyDirectory(filepath.Join(srcAssets, "stage"), filepath.Join(dstAssets, "images")); err != nil {
+	if err := lib.CopyDirectory(filepath.Join(srcAssets, "stage"), filepath.Join(dstAssets, "images")); err != nil {
 		return err
 	}
 	log.Printf("发布所有地图文件至目录%q ... \n", filepath.Join(dstAssets, "images"))

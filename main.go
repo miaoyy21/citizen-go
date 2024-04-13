@@ -3,7 +3,6 @@ package main
 import (
 	"citizen/proto"
 	"citizen/tools"
-	"encoding/json"
 	"log"
 	"os"
 	"path/filepath"
@@ -66,18 +65,8 @@ func generate(srcAssets, dstAssets string) {
 }
 
 func loadProto(srcAssets, dstAssets string) {
-
-	file, err := os.Create(filepath.Join(srcAssets, "proto.json"))
-	if err != nil {
-		log.Fatalf("%s", err.Error())
-	}
-	defer file.Close()
-
-	encode := json.NewEncoder(file)
-	encode.SetIndent("", "\t")
-	if err := encode.Encode(proto.New()); err != nil {
+	if err := proto.Load(srcAssets, dstAssets); err != nil {
 		log.Fatalf("%s", err.Error())
 	}
 
-	tools.CopyFile(filepath.Join(srcAssets, "proto.json"), filepath.Join(dstAssets, "proto.json"))
 }

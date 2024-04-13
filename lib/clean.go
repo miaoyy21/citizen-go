@@ -1,4 +1,4 @@
-package tools
+package lib
 
 import (
 	"io/fs"
@@ -6,7 +6,7 @@ import (
 	"path/filepath"
 )
 
-func clean(root string) error {
+func Clean(root string) error {
 	return filepath.Walk(root, func(path string, info fs.FileInfo, err error) error {
 		if err != nil {
 			return err

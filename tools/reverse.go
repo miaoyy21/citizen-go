@@ -1,6 +1,7 @@
 package tools
 
 import (
+	"citizen/lib"
 	"fmt"
 	"image"
 	"image/color"
@@ -17,7 +18,7 @@ func reverse(originalFileName string, symbol Symbol, dstRoot string) error {
 	rightFileName := filepath.Join(dstRoot, fmt.Sprintf("%s_%s_%s", string(symbol), DirectionRight, fileName))
 
 	// 复制1份向右的文件
-	if err := CopyFile(originalFileName, rightFileName); err != nil {
+	if err := lib.CopyFile(originalFileName, rightFileName); err != nil {
 		return fmt.Errorf("reverse CopyFile [%s] : %s", originalFileName, err.Error())
 	}
 

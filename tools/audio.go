@@ -2,6 +2,7 @@ package tools
 
 import (
 	"bytes"
+	"citizen/lib"
 	"fmt"
 	"io/fs"
 	"log"
@@ -86,7 +87,7 @@ func parseAudio(srcAssets string, dstAssets string) (map[string][]string, error)
 	sounds := make(map[string][]string)
 
 	// 2. 清空目标文件夹
-	if err := clean(filepath.Join(dstAssets, "audio")); err != nil {
+	if err := lib.Clean(filepath.Join(dstAssets, "audio")); err != nil {
 		return nil, err
 	}
 	log.Printf("完成清空文件夹%q ... \n", filepath.Join(dstAssets, "audio"))
@@ -116,7 +117,7 @@ func parseAudio(srcAssets string, dstAssets string) (map[string][]string, error)
 			sounds[n12] = ss
 		}
 
-		if err := CopyFile(path, filepath.Join(dstAssets, "audio", info.Name())); err != nil {
+		if err := lib.CopyFile(path, filepath.Join(dstAssets, "audio", info.Name())); err != nil {
 			return err
 		}
 
