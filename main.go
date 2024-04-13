@@ -27,7 +27,7 @@ func main() {
 
 	// 加载配置模版
 	loadProto(srcAssets, dstAssets)
-	
+
 	log.Println("自动化任务执行完成 ...")
 }
 
