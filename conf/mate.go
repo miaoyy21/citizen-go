@@ -32,10 +32,10 @@ func NewMates(conf Configuration) []Mate {
 	/****************************** 矿石 ******************************/
 	// 铁矿石、玄铁、寒铁
 	mates = append(mates, Mate{
-		Id:                1001,
-		Category:          MateCategoryMineralOriginal,
-		IsColorfulMineral: false,
-		Price:             10,
+		Id:       1001,
+		Category: MateCategoryMineralOriginal,
+		Assets:   "1_1",
+		Price:    10,
 		Next: &MateNext{
 			Id:   1002,
 			Qty:  5,
@@ -45,10 +45,10 @@ func NewMates(conf Configuration) []Mate {
 		birthQty: 3,
 	})
 	mates = append(mates, Mate{
-		Id:                1002,
-		Category:          MateCategoryMineralSemi,
-		IsColorfulMineral: false,
-		Price:             20,
+		Id:       1002,
+		Category: MateCategoryMineralSemi,
+		Assets:   "1_2",
+		Price:    20,
 		Next: &MateNext{
 			Id:   1003,
 			Qty:  3,
@@ -57,18 +57,18 @@ func NewMates(conf Configuration) []Mate {
 		},
 	})
 	mates = append(mates, Mate{
-		Id:                1003,
-		Category:          MateCategoryMineralFinished,
-		IsColorfulMineral: false,
-		Price:             40,
+		Id:       1003,
+		Category: MateCategoryMineralFinished,
+		Assets:   "1_3",
+		Price:    40,
 	})
 
 	// 铜矿石、赤铜、火铜
 	mates = append(mates, Mate{
-		Id:                2001,
-		Category:          MateCategoryMineralOriginal,
-		IsColorfulMineral: false,
-		Price:             20,
+		Id:       2001,
+		Category: MateCategoryMineralOriginal,
+		Assets:   "2_1",
+		Price:    20,
 		Next: &MateNext{
 			Id:   2002,
 			Qty:  5,
@@ -78,10 +78,10 @@ func NewMates(conf Configuration) []Mate {
 		birthQty: 2,
 	})
 	mates = append(mates, Mate{
-		Id:                2002,
-		Category:          MateCategoryMineralSemi,
-		IsColorfulMineral: false,
-		Price:             45,
+		Id:       2002,
+		Category: MateCategoryMineralSemi,
+		Assets:   "2_2",
+		Price:    45,
 		Next: &MateNext{
 			Id:   2003,
 			Qty:  3,
@@ -90,18 +90,18 @@ func NewMates(conf Configuration) []Mate {
 		},
 	})
 	mates = append(mates, Mate{
-		Id:                2003,
-		Category:          MateCategoryMineralFinished,
-		IsColorfulMineral: false,
-		Price:             100,
+		Id:       2003,
+		Category: MateCategoryMineralFinished,
+		Assets:   "2_3",
+		Price:    100,
 	})
 
 	// 银矿石、白银、秘银
 	mates = append(mates, Mate{
-		Id:                3001,
-		Category:          MateCategoryMineralOriginal,
-		IsColorfulMineral: false,
-		Price:             35,
+		Id:       3001,
+		Category: MateCategoryMineralOriginal,
+		Assets:   "3_1",
+		Price:    35,
 		Next: &MateNext{
 			Id:   3002,
 			Qty:  5,
@@ -111,10 +111,10 @@ func NewMates(conf Configuration) []Mate {
 		birthQty: 1,
 	})
 	mates = append(mates, Mate{
-		Id:                3002,
-		Category:          MateCategoryMineralSemi,
-		IsColorfulMineral: false,
-		Price:             80,
+		Id:       3002,
+		Category: MateCategoryMineralSemi,
+		Assets:   "3_2",
+		Price:    80,
 		Next: &MateNext{
 			Id:   3003,
 			Qty:  3,
@@ -123,18 +123,18 @@ func NewMates(conf Configuration) []Mate {
 		},
 	})
 	mates = append(mates, Mate{
-		Id:                3003,
-		Category:          MateCategoryMineralFinished,
-		IsColorfulMineral: false,
-		Price:             200,
+		Id:       3003,
+		Category: MateCategoryMineralFinished,
+		Assets:   "3_3",
+		Price:    200,
 	})
 
 	// 金矿石、精金矿石、金髓矿石
 	mates = append(mates, Mate{
-		Id:                4001,
-		Category:          MateCategoryMineralOriginal,
-		IsColorfulMineral: false,
-		Price:             50,
+		Id:       4001,
+		Category: MateCategoryMineralOriginal,
+		Assets:   "4_1",
+		Price:    50,
 		Next: &MateNext{
 			Id:   4002,
 			Qty:  5,
@@ -143,10 +143,10 @@ func NewMates(conf Configuration) []Mate {
 		},
 	})
 	mates = append(mates, Mate{
-		Id:                4002,
-		Category:          MateCategoryMineralSemi,
-		IsColorfulMineral: false,
-		Price:             200,
+		Id:       4002,
+		Category: MateCategoryMineralSemi,
+		Assets:   "4_2",
+		Price:    200,
 		Next: &MateNext{
 			Id:   4003,
 			Qty:  3,
@@ -155,18 +155,18 @@ func NewMates(conf Configuration) []Mate {
 		},
 	})
 	mates = append(mates, Mate{
-		Id:                4003,
-		Category:          MateCategoryMineralFinished,
-		IsColorfulMineral: false,
-		Price:             900,
+		Id:       4003,
+		Category: MateCategoryMineralFinished,
+		Assets:   "4_3",
+		Price:    900,
 	})
 
 	// 天外异石碎片、天外神石（加工或打孔失败后仅消耗材料，不会失去装备）
 	mates = append(mates, Mate{
-		Id:                9001,
-		Category:          MateCategoryMineralOriginal,
-		IsColorfulMineral: false,
-		Price:             250,
+		Id:       9001,
+		Category: MateCategoryMineralOriginal,
+		Assets:   "5_1",
+		Price:    250,
 		Next: &MateNext{
 			Id:   9002,
 			Qty:  30,
@@ -178,6 +178,7 @@ func NewMates(conf Configuration) []Mate {
 		Id:                9002,
 		Category:          MateCategoryMineralFinished,
 		IsColorfulMineral: true,
+		Assets:            "5_2",
 		Price:             1500,
 	})
 
