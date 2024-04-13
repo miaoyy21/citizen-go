@@ -23,7 +23,7 @@ func NewProps(conf Configuration) []Prop {
 	props := make([]Prop, 0)
 
 	/****************************** 不可交易的道具 ******************************/
-	// （小）强力生命药水、（中）强力生命药水、（大）强力生命药水
+	// 【不可交易】1.1 ~ 1.3 （小）强力生命药水、（中）强力生命药水、（大）强力生命药水
 	props = append(props, Prop{
 		Id: 1011, Saleable: false, Level: 1,
 		Effect: PropEffectHealth, Values: []int{100},
@@ -40,7 +40,7 @@ func NewProps(conf Configuration) []Prop {
 		birthQty: 10,
 	})
 
-	// （小）强力精气补充剂、（中）强力精气补充剂、（大）强力精气补充剂
+	// 【不可交易】2.1 ~ 2.3 （小）强力精气补充剂、（中）强力精气补充剂、（大）强力精气补充剂
 	props = append(props, Prop{
 		Id: 1021, Saleable: false, Level: 1,
 		Effect: PropEffectEnergy, Values: []int{50},
@@ -57,7 +57,7 @@ func NewProps(conf Configuration) []Prop {
 		birthQty: 10,
 	})
 
-	// 金币大礼包
+	// 【不可交易】13.1 ~ 13.3 金币大礼包
 	props = append(props, Prop{
 		Id: 1131, Saleable: false, Level: 10,
 		Effect: PropEffectGold, Values: []int{10000},
@@ -75,31 +75,31 @@ func NewProps(conf Configuration) []Prop {
 	})
 
 	/******************************  可交易的道具  ******************************/
-	// 【可交易】1.1 ~ 1.3 （小）生命药水、（中）生命药水、（大）生命药水
+	// 【可交易】1.4 ~ 1.6 （小）生命药水、（中）生命药水、（大）生命药水
 	props = append(props, Prop{
-		Id: 2011, Saleable: true, Level: 1, Price: 4,
+		Id: 2014, Saleable: true, Level: 1, Price: 4,
 		Effect: PropEffectHealth, Values: []int{50},
 	})
 	props = append(props, Prop{
-		Id: 2012, Saleable: true, Level: 1, Price: 10,
+		Id: 2015, Saleable: true, Level: 1, Price: 10,
 		Effect: PropEffectHealth, Values: []int{150},
 	})
 	props = append(props, Prop{
-		Id: 2013, Saleable: true, Level: 1, Price: 25,
+		Id: 2016, Saleable: true, Level: 1, Price: 25,
 		Effect: PropEffectHealth, Values: []int{375},
 	})
 
-	// 【可交易】2.1 ~ 2.3 （小）精气补充剂、（中）精气补充剂、（大）精气补充剂
+	// 【可交易】2.4 ~ 2.6 （小）精气补充剂、（中）精气补充剂、（大）精气补充剂
 	props = append(props, Prop{
-		Id: 2021, Saleable: true, Level: 1, Price: 3,
+		Id: 2024, Saleable: true, Level: 1, Price: 3,
 		Effect: PropEffectEnergy, Values: []int{25},
 	})
 	props = append(props, Prop{
-		Id: 2022, Saleable: true, Level: 1, Price: 8,
+		Id: 2025, Saleable: true, Level: 1, Price: 8,
 		Effect: PropEffectEnergy, Values: []int{75},
 	})
 	props = append(props, Prop{
-		Id: 2023, Saleable: true, Level: 1, Price: 20,
+		Id: 2026, Saleable: true, Level: 1, Price: 20,
 		Effect: PropEffectEnergy, Values: []int{175},
 	})
 

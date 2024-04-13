@@ -49,12 +49,12 @@
 			"prop_description_1131": "打开后，可获得{$1}金币。",
 			"prop_description_1132": "打开后，可获得{$1}金币。",
 			"prop_description_1133": "打开后，可获得{$1}金币。",
-			"prop_description_2011": "服用后，立即恢复 +{$1}生命值。",
-			"prop_description_2012": "服用后，立即恢复 +{$1}生命值。",
-			"prop_description_2013": "服用后，立即恢复 +{$1}生命值。",
-			"prop_description_2021": "服用后，立即恢复 +{$1}精气值。",
-			"prop_description_2022": "服用后，立即恢复 +{$1}精气值。",
-			"prop_description_2023": "服用后，立即恢复 +{$1}精气值。",
+			"prop_description_2014": "服用后，立即恢复 +{$1}生命值。",
+			"prop_description_2015": "服用后，立即恢复 +{$1}生命值。",
+			"prop_description_2016": "服用后，立即恢复 +{$1}生命值。",
+			"prop_description_2024": "服用后，立即恢复 +{$1}精气值。",
+			"prop_description_2025": "服用后，立即恢复 +{$1}精气值。",
+			"prop_description_2026": "服用后，立即恢复 +{$1}精气值。",
 			"prop_description_2031": "食用后，立即恢复 +{$1}生命值。",
 			"prop_description_2032": "食用后，立即恢复 +{$1}生命值。",
 			"prop_description_2033": "食用后，立即恢复 +{$1}生命值。",
@@ -104,12 +104,12 @@
 			"prop_name_1131": "10级金币大礼包",
 			"prop_name_1132": "30级金币大礼包",
 			"prop_name_1133": "60级金币大礼包",
-			"prop_name_2011": "（小）生命药水",
-			"prop_name_2012": "（中）生命药水",
-			"prop_name_2013": "（大）生命药水",
-			"prop_name_2021": "（小）精气补充剂",
-			"prop_name_2022": "（中）精气补充剂",
-			"prop_name_2023": "（大）精气补充剂",
+			"prop_name_2014": "（小）生命药水",
+			"prop_name_2015": "（中）生命药水",
+			"prop_name_2016": "（大）生命药水",
+			"prop_name_2024": "（小）精气补充剂",
+			"prop_name_2025": "（中）精气补充剂",
+			"prop_name_2026": "（大）精气补充剂",
 			"prop_name_2031": "辣椒",
 			"prop_name_2032": "荔枝",
 			"prop_name_2033": "苹果",
@@ -200,12 +200,12 @@
 			"prop_description_1131": "打開後，可獲得{$1}金幣。",
 			"prop_description_1132": "打開後，可獲得{$1}金幣。",
 			"prop_description_1133": "打開後，可獲得{$1}金幣。",
-			"prop_description_2011": "服用後，立即恢復 +{$1}生命值。",
-			"prop_description_2012": "服用後，立即恢復 +{$1}生命值。",
-			"prop_description_2013": "服用後，立即恢復 +{$1}生命值。",
-			"prop_description_2021": "服用後，立即恢復 +{$1}精氣值。",
-			"prop_description_2022": "服用後，立即恢復 +{$1}精氣值。",
-			"prop_description_2023": "服用後，立即恢復 +{$1}精氣值。",
+			"prop_description_2014": "服用後，立即恢復 +{$1}生命值。",
+			"prop_description_2015": "服用後，立即恢復 +{$1}生命值。",
+			"prop_description_2016": "服用後，立即恢復 +{$1}生命值。",
+			"prop_description_2024": "服用後，立即恢復 +{$1}精氣值。",
+			"prop_description_2025": "服用後，立即恢復 +{$1}精氣值。",
+			"prop_description_2026": "服用後，立即恢復 +{$1}精氣值。",
 			"prop_description_2031": "食用後，立即恢復 +{$1}生命值。",
 			"prop_description_2032": "食用後，立即恢復 +{$1}生命值。",
 			"prop_description_2033": "食用後，立即恢復 +{$1}生命值。",
@@ -255,12 +255,12 @@
 			"prop_name_1131": "10級金幣大禮包",
 			"prop_name_1132": "30級金幣大禮包",
 			"prop_name_1133": "60級金幣大禮包",
-			"prop_name_2011": "（小）生命藥水",
-			"prop_name_2012": "（中）生命藥水",
-			"prop_name_2013": "（大）生命藥水",
-			"prop_name_2021": "（小）精氣補充劑",
-			"prop_name_2022": "（中）精氣補充劑",
-			"prop_name_2023": "（大）精氣補充劑",
+			"prop_name_2014": "（小）生命藥水",
+			"prop_name_2015": "（中）生命藥水",
+			"prop_name_2016": "（大）生命藥水",
+			"prop_name_2024": "（小）精氣補充劑",
+			"prop_name_2025": "（中）精氣補充劑",
+			"prop_name_2026": "（大）精氣補充劑",
 			"prop_name_2031": "辣椒",
 			"prop_name_2032": "荔枝",
 			"prop_name_2033": "蘋果",
@@ -351,12 +351,12 @@
 			"prop_description_1131": "Upon opening, receive {$1} gold coins.",
 			"prop_description_1132": "Upon opening, receive {$1} gold coins.",
 			"prop_description_1133": "Upon opening, receive {$1} gold coins.",
-			"prop_description_2011": "Upon consumption, immediately restores +{$1} HP.",
-			"prop_description_2012": "Upon consumption, immediately restores +{$1} HP.",
-			"prop_description_2013": "Upon consumption, immediately restores +{$1} HP.",
-			"prop_description_2021": "Upon consumption, immediately restores +{$1} MP.",
-			"prop_description_2022": "Upon consumption, immediately restores +{$1} MP.",
-			"prop_description_2023": "Upon consumption, immediately restores +{$1} MP.",
+			"prop_description_2014": "Upon consumption, immediately restores +{$1} HP.",
+			"prop_description_2015": "Upon consumption, immediately restores +{$1} HP.",
+			"prop_description_2016": "Upon consumption, immediately restores +{$1} HP.",
+			"prop_description_2024": "Upon consumption, immediately restores +{$1} MP.",
+			"prop_description_2025": "Upon consumption, immediately restores +{$1} MP.",
+			"prop_description_2026": "Upon consumption, immediately restores +{$1} MP.",
 			"prop_description_2031": "Upon consumption, immediately restores +{$1} HP.",
 			"prop_description_2032": "Upon consumption, immediately restores +{$1} HP.",
 			"prop_description_2033": "Upon consumption, immediately restores +{$1} HP.",
@@ -406,12 +406,12 @@
 			"prop_name_1131": "Level 10 Gold Gift Pack",
 			"prop_name_1132": "Level 30 Gold Gift Pack",
 			"prop_name_1133": "Level 60 Gold Gift Pack",
-			"prop_name_2011": "(Small) Life Potion",
-			"prop_name_2012": "(Medium) Life Potion",
-			"prop_name_2013": "(Large) Life Potion",
-			"prop_name_2021": "(Small) Spirit Elixir",
-			"prop_name_2022": "(Medium) Spirit Elixir",
-			"prop_name_2023": "(Large) Spirit Elixir",
+			"prop_name_2014": "(Small) Life Potion",
+			"prop_name_2015": "(Medium) Life Potion",
+			"prop_name_2016": "(Large) Life Potion",
+			"prop_name_2024": "(Small) Spirit Elixir",
+			"prop_name_2025": "(Medium) Spirit Elixir",
+			"prop_name_2026": "(Large) Spirit Elixir",
 			"prop_name_2031": "Chili",
 			"prop_name_2032": "Lychee",
 			"prop_name_2033": "Apple",
@@ -2337,7 +2337,7 @@
 			]
 		},
 		{
-			"id": 2011,
+			"id": 2014,
 			"name": {
 				"zn_CN": "（小）生命药水",
 				"zh_TW": "（小）生命藥水",
@@ -2350,7 +2350,7 @@
 				"zh_TW": "服用後，立即恢復 +50生命值。",
 				"en_US": "Upon consumption, immediately restores +50 HP."
 			},
-			"assets": "1_1",
+			"assets": "1_4",
 			"price": 4,
 			"effect": 1101,
 			"values": [
@@ -2358,7 +2358,7 @@
 			]
 		},
 		{
-			"id": 2012,
+			"id": 2015,
 			"name": {
 				"zn_CN": "（中）生命药水",
 				"zh_TW": "（中）生命藥水",
@@ -2371,7 +2371,7 @@
 				"zh_TW": "服用後，立即恢復 +150生命值。",
 				"en_US": "Upon consumption, immediately restores +150 HP."
 			},
-			"assets": "1_2",
+			"assets": "1_5",
 			"price": 10,
 			"effect": 1101,
 			"values": [
@@ -2379,7 +2379,7 @@
 			]
 		},
 		{
-			"id": 2013,
+			"id": 2016,
 			"name": {
 				"zn_CN": "（大）生命药水",
 				"zh_TW": "（大）生命藥水",
@@ -2392,7 +2392,7 @@
 				"zh_TW": "服用後，立即恢復 +375生命值。",
 				"en_US": "Upon consumption, immediately restores +375 HP."
 			},
-			"assets": "1_3",
+			"assets": "1_6",
 			"price": 25,
 			"effect": 1101,
 			"values": [
@@ -2400,7 +2400,7 @@
 			]
 		},
 		{
-			"id": 2021,
+			"id": 2024,
 			"name": {
 				"zn_CN": "（小）精气补充剂",
 				"zh_TW": "（小）精氣補充劑",
@@ -2413,7 +2413,7 @@
 				"zh_TW": "服用後，立即恢復 +25精氣值。",
 				"en_US": "Upon consumption, immediately restores +25 MP."
 			},
-			"assets": "2_1",
+			"assets": "2_4",
 			"price": 3,
 			"effect": 1201,
 			"values": [
@@ -2421,7 +2421,7 @@
 			]
 		},
 		{
-			"id": 2022,
+			"id": 2025,
 			"name": {
 				"zn_CN": "（中）精气补充剂",
 				"zh_TW": "（中）精氣補充劑",
@@ -2434,7 +2434,7 @@
 				"zh_TW": "服用後，立即恢復 +75精氣值。",
 				"en_US": "Upon consumption, immediately restores +75 MP."
 			},
-			"assets": "2_2",
+			"assets": "2_5",
 			"price": 8,
 			"effect": 1201,
 			"values": [
@@ -2442,7 +2442,7 @@
 			]
 		},
 		{
-			"id": 2023,
+			"id": 2026,
 			"name": {
 				"zn_CN": "（大）精气补充剂",
 				"zh_TW": "（大）精氣補充劑",
@@ -2455,7 +2455,7 @@
 				"zh_TW": "服用後，立即恢復 +175精氣值。",
 				"en_US": "Upon consumption, immediately restores +175 MP."
 			},
-			"assets": "2_3",
+			"assets": "2_6",
 			"price": 20,
 			"effect": 1201,
 			"values": [
