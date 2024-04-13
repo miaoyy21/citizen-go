@@ -25,19 +25,9 @@ func main() {
 	// 动作解析
 	//generate(srcAssets, dstAssets)
 
-	file, err := os.Create(filepath.Join(srcAssets, "proto.json"))
-	if err != nil {
-		log.Fatalf("%s", err.Error())
-	}
-	defer file.Close()
-
-	encode := json.NewEncoder(file)
-	encode.SetIndent("", "\t")
-	if err := encode.Encode(proto.New()); err != nil {
-		log.Fatalf("%s", err.Error())
-	}
-
-	tools.CopyFile(filepath.Join(srcAssets, "proto.json"), filepath.Join(dstAssets, "proto.json"))
+	// 加载配置模版
+	loadProto(srcAssets, dstAssets)
+	
 	log.Println("自动化任务执行完成 ...")
 }
 
@@ -73,4 +63,21 @@ func generate(srcAssets, dstAssets string) {
 	//if err := tools.ChangeDefinition(dstAssets); err != nil {
 	//	log.Fatalf("%s", err.Error())
 	//}
+}
+
+func loadProto(srcAssets, dstAssets string) {
+
+	file, err := os.Create(filepath.Join(srcAssets, "proto.json"))
+	if err != nil {
+		log.Fatalf("%s", err.Error())
+	}
+	defer file.Close()
+
+	encode := json.NewEncoder(file)
+	encode.SetIndent("", "\t")
+	if err := encode.Encode(proto.New()); err != nil {
+		log.Fatalf("%s", err.Error())
+	}
+
+	tools.CopyFile(filepath.Join(srcAssets, "proto.json"), filepath.Join(dstAssets, "proto.json"))
 }
