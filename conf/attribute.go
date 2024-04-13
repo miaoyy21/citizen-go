@@ -1,5 +1,7 @@
 package conf
 
+import "fmt"
+
 type Attribute int
 
 var (
@@ -31,6 +33,15 @@ var (
 	AttributeAccuracy/* 9 命中 12543 -> 125.43% */ Attribute      = 9
 	AttributeResistAccuracy/* 10 闪避 3404 -> 23.04% */ Attribute = 10
 )
+
+func (a Attribute) Text(value int) string {
+	if a == AttributeCritical || a == AttributeResistCritical ||
+		a == AttributeAccuracy || a == AttributeResistAccuracy {
+		return fmt.Sprintf("%3.2f%%", float64(value)/100.0)
+	}
+
+	return fmt.Sprintf("%d", value)
+}
 
 var Attributes = []Attribute{
 	AttributeHealth,

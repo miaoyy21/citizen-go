@@ -296,7 +296,8 @@ func NewProps(conf Configuration) []Prop {
 		prop.Name = conf.Language.Get(fmt.Sprintf("prop_name_%d", prop.Id))
 
 		args := sliceI2S(prop.Values)
-		if prop.Effect == PropEffectAttackPercent || prop.Effect == PropEffectArmorPercent ||
+		if prop.Effect == PropEffectHealthPercent || prop.Effect == PropEffectEnergyPercent ||
+			prop.Effect == PropEffectAttackPercent || prop.Effect == PropEffectArmorPercent ||
 			prop.Effect == PropEffectCriticalPercent || prop.Effect == PropEffectAccuracyPercent {
 			args = sliceP2S(prop.Values)
 		}

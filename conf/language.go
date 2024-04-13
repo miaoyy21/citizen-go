@@ -11,6 +11,24 @@ type Lang struct {
 	EnUS string `json:"en_US"`
 }
 
+func (l Lang) ReplaceText(seq int, text string) Lang {
+
+	return Lang{
+		ZhCN: strings.ReplaceAll(l.ZhCN, fmt.Sprintf("{$%d}", seq), text),
+		ZhTW: strings.ReplaceAll(l.ZhTW, fmt.Sprintf("{$%d}", seq), text),
+		EnUS: strings.ReplaceAll(l.EnUS, fmt.Sprintf("{$%d}", seq), text),
+	}
+}
+
+func (l Lang) ReplaceLang(seq int, text Lang) Lang {
+
+	return Lang{
+		ZhCN: strings.ReplaceAll(l.ZhCN, fmt.Sprintf("{$%d}", seq), text.ZhCN),
+		ZhTW: strings.ReplaceAll(l.ZhTW, fmt.Sprintf("{$%d}", seq), text.ZhTW),
+		EnUS: strings.ReplaceAll(l.EnUS, fmt.Sprintf("{$%d}", seq), text.EnUS),
+	}
+}
+
 type Language struct {
 	ZhCN map[string]string `json:"zn_CN"`
 	ZhTW map[string]string `json:"zh_TW"`
@@ -21,6 +39,9 @@ func NewLanguage() Language {
 	return Language{
 		ZhCN: map[string]string{
 			"equip_cape":            "披风",
+			"equip_name":            "Lv.{$1} {$2}",
+			"card_name":             "Lv.{$1} {$2}",
+			"card_description":      "镶嵌至装备后，增加 +{$1}{$2}",
 			"attribute_1":           "生命",
 			"attribute_2":           "精气",
 			"attribute_3":           "攻击",
@@ -172,6 +193,9 @@ func NewLanguage() Language {
 		},
 		ZhTW: map[string]string{
 			"equip_cape":            "披風",
+			"equip_name":            "Lv.{$1} {$2}",
+			"card_name":             "Lv.{$1} {$2}",
+			"card_description":      "鑲嵌至裝備後，增加 +{$1}{$2}",
 			"attribute_1":           "生命",
 			"attribute_2":           "精氣",
 			"attribute_3":           "攻擊",
@@ -324,6 +348,9 @@ func NewLanguage() Language {
 		/******************************************** 美国英语 ********************************************/
 		EnUS: map[string]string{
 			"equip_cape":            "Cloak",
+			"equip_name":            "Lv.{$1} {$2}",
+			"card_name":             "Lv.{$1} {$2}",
+			"card_description":      "After being inset into equipment, adds +{$1}{$2}",
 			"attribute_1":           "Health",
 			"attribute_2":           "Energy",
 			"attribute_3":           "Attack",
@@ -477,6 +504,21 @@ func NewLanguage() Language {
 }
 
 func (l Language) Get(name string, args ...string) Lang {
+	zhCN, zhTW, enUS := l.ZhCN[name], l.ZhTW[name], l.EnUS[name]
+	for index, arg := range args {
+		zhCN = strings.ReplaceAll(zhCN, fmt.Sprintf("{$%d}", index+1), arg)
+		zhTW = strings.ReplaceAll(zhTW, fmt.Sprintf("{$%d}", index+1), arg)
+		enUS = strings.ReplaceAll(enUS, fmt.Sprintf("{$%d}", index+1), arg)
+	}
+
+	return Lang{
+		ZhCN: zhCN,
+		ZhTW: zhTW,
+		EnUS: enUS,
+	}
+}
+
+func (l Language) GetLang(name string, args ...string) Lang {
 	zhCN, zhTW, enUS := l.ZhCN[name], l.ZhTW[name], l.EnUS[name]
 	for index, arg := range args {
 		zhCN = strings.ReplaceAll(zhCN, fmt.Sprintf("{$%d}", index+1), arg)

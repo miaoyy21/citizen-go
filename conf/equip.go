@@ -1,5 +1,7 @@
 package conf
 
+import "fmt"
+
 type Equip struct {
 	Id         int               `json:"id"`         // 模版ID
 	Name       Lang              `json:"name"`       // 装备名称【多语言】
@@ -44,7 +46,6 @@ func NewEquips(conf Configuration) []Equip {
 
 		equip := Equip{
 			Id:             1000 + int(level),
-			Name:           conf.Language.Get("equip_cape"),
 			Level:          level,
 			Attributes:     attributes,
 			Price:          CoefficientValues.EquipPrice[level],
@@ -52,6 +53,11 @@ func NewEquips(conf Configuration) []Equip {
 			QualityRate:    float2int(kvQfs),
 			NaturalQtyRate: float2int(kvNfs),
 		}
+
+		// 装备名称
+		name := conf.Language.Get("equip_name")
+		name = name.ReplaceText(1, fmt.Sprintf("%d", level))
+		equip.Name = name.ReplaceLang(2, conf.Language.Get("equip_cape"))
 
 		// 是否赠送玩家
 		if level == EquipLevel1 {
