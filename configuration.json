@@ -3786,7 +3786,7 @@
 				"zh_TW": "鐵礦石",
 				"en_US": "Iron Ore"
 			},
-			"category": 11,
+			"category": 1,
 			"is_colorful_mineral": false,
 			"description": {
 				"zn_CN": "一种用于装备加工的常见原矿。",
@@ -3809,7 +3809,7 @@
 				"zh_TW": "玄鐵",
 				"en_US": "Mysterious Iron"
 			},
-			"category": 12,
+			"category": 2,
 			"is_colorful_mineral": false,
 			"description": {
 				"zn_CN": "常用于装备加工的半成品矿，可由5个铁矿石合成。",
@@ -3832,7 +3832,7 @@
 				"zh_TW": "寒鐵",
 				"en_US": "Frigid Iron"
 			},
-			"category": 13,
+			"category": 3,
 			"is_colorful_mineral": false,
 			"description": {
 				"zn_CN": "常用于装备加工或打孔的成品矿，可由3个玄铁合成。",
@@ -3849,7 +3849,7 @@
 				"zh_TW": "銅礦石",
 				"en_US": "Copper Ore"
 			},
-			"category": 11,
+			"category": 1,
 			"is_colorful_mineral": false,
 			"description": {
 				"zn_CN": "一种用于装备加工的普通原矿。",
@@ -3872,7 +3872,7 @@
 				"zh_TW": "赤銅",
 				"en_US": "Red Copper"
 			},
-			"category": 12,
+			"category": 2,
 			"is_colorful_mineral": false,
 			"description": {
 				"zn_CN": "常用于装备加工的半成品矿，可由5个铜矿石合成。",
@@ -3895,7 +3895,7 @@
 				"zh_TW": "火銅",
 				"en_US": "Fire Copper"
 			},
-			"category": 13,
+			"category": 3,
 			"is_colorful_mineral": false,
 			"description": {
 				"zn_CN": "常用于装备加工或打孔的成品矿，可由3个赤铜合成。",
@@ -3912,7 +3912,7 @@
 				"zh_TW": "銀礦石",
 				"en_US": "Silver Ore"
 			},
-			"category": 11,
+			"category": 1,
 			"is_colorful_mineral": false,
 			"description": {
 				"zn_CN": "一种用于装备加工的稀有原矿。",
@@ -3935,7 +3935,7 @@
 				"zh_TW": "白銀",
 				"en_US": "Silver"
 			},
-			"category": 12,
+			"category": 2,
 			"is_colorful_mineral": false,
 			"description": {
 				"zn_CN": "常用于装备加工的半成品矿，可由5个银矿石合成。",
@@ -3958,7 +3958,7 @@
 				"zh_TW": "秘銀",
 				"en_US": "Mithril"
 			},
-			"category": 13,
+			"category": 3,
 			"is_colorful_mineral": false,
 			"description": {
 				"zn_CN": "常用于装备加工或打孔的成品矿，可由3个白银合成。",
@@ -3975,7 +3975,7 @@
 				"zh_TW": "金礦石",
 				"en_US": "Gold Ore"
 			},
-			"category": 11,
+			"category": 1,
 			"is_colorful_mineral": false,
 			"description": {
 				"zn_CN": "一种用于装备加工的珍贵原矿。",
@@ -3998,7 +3998,7 @@
 				"zh_TW": "精金礦",
 				"en_US": "Refined Gold"
 			},
-			"category": 12,
+			"category": 2,
 			"is_colorful_mineral": false,
 			"description": {
 				"zn_CN": "常用于装备加工的半成品矿，可由5个金矿石合成。",
@@ -4021,7 +4021,7 @@
 				"zh_TW": "金髓礦",
 				"en_US": "Gold Essence"
 			},
-			"category": 13,
+			"category": 3,
 			"is_colorful_mineral": false,
 			"description": {
 				"zn_CN": "常用于装备加工或打孔的成品矿，可由3个精金矿合成。",
@@ -4038,7 +4038,7 @@
 				"zh_TW": "天外異石碎片",
 				"en_US": "Exotic Stone Fragments"
 			},
-			"category": 11,
+			"category": 1,
 			"is_colorful_mineral": false,
 			"description": {
 				"zn_CN": "极其稀有的天外异石碎片，闪烁着紫色的光芒，一种用于装备加工或打孔的。",
@@ -4061,7 +4061,7 @@
 				"zh_TW": "天外神石",
 				"en_US": "Exotic Divine Stone"
 			},
-			"category": 13,
+			"category": 3,
 			"is_colorful_mineral": true,
 			"description": {
 				"zn_CN": "在装备加工或打孔时，即使不幸失败，也不会损坏原有装备。此等神物极难获取，可由30个天外异石碎片合成。",
