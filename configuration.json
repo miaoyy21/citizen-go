@@ -23,7 +23,7 @@
 			"mate_description_3003": "常用于装备加工或打孔的成品矿，可由{$1}个白银合成。",
 			"mate_description_4001": "一种用于装备加工的珍贵原矿。",
 			"mate_description_4002": "常用于装备加工的半成品矿，可由{$1}个金矿石合成。",
-			"mate_description_4003": "常用于装备加工或打孔的成品矿，可由{$1}个精金矿石合成。",
+			"mate_description_4003": "常用于装备加工或打孔的成品矿，可由{$1}个精金矿合成。",
 			"mate_description_9001": "极其稀有的天外异石碎片，闪烁着紫色的光芒，一种用于装备加工或打孔的。",
 			"mate_description_9002": "在装备加工或打孔时，即使不幸失败，也不会损坏原有装备。此等神物极难获取，可由{$1}个天外异石碎片合成。",
 			"mate_name_1001": "铁矿石",
@@ -36,8 +36,8 @@
 			"mate_name_3002": "白银",
 			"mate_name_3003": "秘银",
 			"mate_name_4001": "金矿石",
-			"mate_name_4002": "精金矿石",
-			"mate_name_4003": "金髓矿石",
+			"mate_name_4002": "精金矿",
+			"mate_name_4003": "金髓矿",
 			"mate_name_9001": "天外异石碎片",
 			"mate_name_9002": "天外神石",
 			"prop_description_1011": "服用后，立即恢复 +{$1}生命值。",
@@ -174,7 +174,7 @@
 			"mate_description_3003": "常用於裝備加工或打孔的成品礦，可由{$1}個白銀合成。",
 			"mate_description_4001": "一種用於裝備加工的珍貴原礦。",
 			"mate_description_4002": "常用於裝備加工的半成品礦，可由{$1}個金礦石合成。",
-			"mate_description_4003": "常用於裝備加工或打孔的成品礦，可由{$1}個精金礦石合成。",
+			"mate_description_4003": "常用於裝備加工或打孔的成品礦，可由{$1}個精金礦合成。",
 			"mate_description_9001": "極其稀有的天外異石碎片，閃爍著紫色的光芒，一種用於裝備加工或打孔的。",
 			"mate_description_9002": "在裝備加工或打孔時，即使不幸失敗，也不會損壞原有裝備。此等神物極難獲取，可由{$1}個天外異石碎片合成。",
 			"mate_name_1001": "鐵礦石",
@@ -187,8 +187,8 @@
 			"mate_name_3002": "白銀",
 			"mate_name_3003": "秘銀",
 			"mate_name_4001": "金礦石",
-			"mate_name_4002": "精金礦石",
-			"mate_name_4003": "金髓礦石",
+			"mate_name_4002": "精金礦",
+			"mate_name_4003": "金髓礦",
 			"mate_name_9001": "天外異石碎片",
 			"mate_name_9002": "天外神石",
 			"prop_description_1011": "服用後，立即恢復 +{$1}生命值。",
@@ -338,8 +338,8 @@
 			"mate_name_3002": "Silver",
 			"mate_name_3003": "Mithril",
 			"mate_name_4001": "Gold Ore",
-			"mate_name_4002": "Refined Gold Ore",
-			"mate_name_4003": "Gold Essence Ore",
+			"mate_name_4002": "Refined Gold",
+			"mate_name_4003": "Gold Essence",
 			"mate_name_9001": "Exotic Stone Fragments",
 			"mate_name_9002": "Exotic Divine Stone",
 			"prop_description_1011": "Upon consumption, immediately restores +{$1} HP.",
@@ -3535,9 +3535,9 @@
 		{
 			"id": 4002,
 			"name": {
-				"zn_CN": "精金矿石",
-				"zh_TW": "精金礦石",
-				"en_US": "Refined Gold Ore"
+				"zn_CN": "精金矿",
+				"zh_TW": "精金礦",
+				"en_US": "Refined Gold"
 			},
 			"category": 12,
 			"is_colorful_mineral": false,
@@ -3558,15 +3558,15 @@
 		{
 			"id": 4003,
 			"name": {
-				"zn_CN": "金髓矿石",
-				"zh_TW": "金髓礦石",
-				"en_US": "Gold Essence Ore"
+				"zn_CN": "金髓矿",
+				"zh_TW": "金髓礦",
+				"en_US": "Gold Essence"
 			},
 			"category": 13,
 			"is_colorful_mineral": false,
 			"description": {
-				"zn_CN": "常用于装备加工或打孔的成品矿，可由3个精金矿石合成。",
-				"zh_TW": "常用於裝備加工或打孔的成品礦，可由3個精金礦石合成。",
+				"zn_CN": "常用于装备加工或打孔的成品矿，可由3个精金矿合成。",
+				"zh_TW": "常用於裝備加工或打孔的成品礦，可由3個精金礦合成。",
 				"en_US": "A finished ore commonly used for equipment crafting or perforation, can be synthesized from 3 Refined Gold Ores."
 			},
 			"assets": "4_3",
