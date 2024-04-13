@@ -1,4 +1,4 @@
-package conf
+package proto
 
 type BirthEquip struct {
 	Id         int              `json:"id"`         // 装备模版ID
@@ -34,7 +34,7 @@ type Player struct {
 	Mates  []BirthMate           `json:"Mates"`  // 赠送的材料
 }
 
-func NewPlayer(conf Configuration) Player {
+func NewPlayer(conf Proto) Player {
 
 	// 赠送的装备
 	equips := make([]BirthEquip, 0)

@@ -1,4 +1,4 @@
-package conf
+package proto
 
 import (
 	"fmt"
@@ -19,7 +19,7 @@ type Card struct {
 	birthQty int // 赠送玩家的数量
 }
 
-func NewCards(conf Configuration) []Card {
+func NewCards(conf Proto) []Card {
 	cards := make([]Card, 0)
 
 	for _, level := range CardLevels {

@@ -1,4 +1,4 @@
-package conf
+package proto
 
 import (
 	"fmt"
@@ -6,7 +6,7 @@ import (
 )
 
 type Lang struct {
-	ZhCN string `json:"zn_CN"`
+	ZhCN string `json:"zh_CN"`
 	ZhTW string `json:"zh_TW"`
 	EnUS string `json:"en_US"`
 }
@@ -30,7 +30,7 @@ func (l Lang) ReplaceLang(seq int, text Lang) Lang {
 }
 
 type Language struct {
-	ZhCN map[string]string `json:"zn_CN"`
+	ZhCN map[string]string `json:"zh_CN"`
 	ZhTW map[string]string `json:"zh_TW"`
 	EnUS map[string]string `json:"en_US"`
 }

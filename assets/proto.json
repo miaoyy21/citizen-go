@@ -1,6 +1,6 @@
 {
 	"language": {
-		"zn_CN": {
+		"zh_CN": {
 			"attribute_1": "生命",
 			"attribute_10": "闪避",
 			"attribute_2": "精气",
@@ -656,7 +656,7 @@
 		{
 			"id": 1001,
 			"name": {
-				"zn_CN": "Lv.1 披风",
+				"zh_CN": "Lv.1 披风",
 				"zh_TW": "Lv.1 披風",
 				"en_US": "Lv.1 Cloak"
 			},
@@ -703,7 +703,7 @@
 		{
 			"id": 1010,
 			"name": {
-				"zn_CN": "Lv.10 披风",
+				"zh_CN": "Lv.10 披风",
 				"zh_TW": "Lv.10 披風",
 				"en_US": "Lv.10 Cloak"
 			},
@@ -750,7 +750,7 @@
 		{
 			"id": 1020,
 			"name": {
-				"zn_CN": "Lv.20 披风",
+				"zh_CN": "Lv.20 披风",
 				"zh_TW": "Lv.20 披風",
 				"en_US": "Lv.20 Cloak"
 			},
@@ -797,7 +797,7 @@
 		{
 			"id": 1030,
 			"name": {
-				"zn_CN": "Lv.30 披风",
+				"zh_CN": "Lv.30 披风",
 				"zh_TW": "Lv.30 披風",
 				"en_US": "Lv.30 Cloak"
 			},
@@ -844,7 +844,7 @@
 		{
 			"id": 1040,
 			"name": {
-				"zn_CN": "Lv.40 披风",
+				"zh_CN": "Lv.40 披风",
 				"zh_TW": "Lv.40 披風",
 				"en_US": "Lv.40 Cloak"
 			},
@@ -891,7 +891,7 @@
 		{
 			"id": 1050,
 			"name": {
-				"zn_CN": "Lv.50 披风",
+				"zh_CN": "Lv.50 披风",
 				"zh_TW": "Lv.50 披風",
 				"en_US": "Lv.50 Cloak"
 			},
@@ -938,7 +938,7 @@
 		{
 			"id": 1060,
 			"name": {
-				"zn_CN": "Lv.60 披风",
+				"zh_CN": "Lv.60 披风",
 				"zh_TW": "Lv.60 披風",
 				"en_US": "Lv.60 Cloak"
 			},
@@ -987,13 +987,13 @@
 		{
 			"id": 1001,
 			"name": {
-				"zn_CN": "Lv.1 生命",
+				"zh_CN": "Lv.1 生命",
 				"zh_TW": "Lv.1 生命",
 				"en_US": "Lv.1 Health"
 			},
 			"level": 1,
 			"description": {
-				"zn_CN": "镶嵌至装备后，增加 +39生命",
+				"zh_CN": "镶嵌至装备后，增加 +39生命",
 				"zh_TW": "鑲嵌至裝備後，增加 +39生命",
 				"en_US": "After being inset into equipment, adds +39Health"
 			},
@@ -1005,13 +1005,13 @@
 		{
 			"id": 1002,
 			"name": {
-				"zn_CN": "Lv.1 精气",
+				"zh_CN": "Lv.1 精气",
 				"zh_TW": "Lv.1 精氣",
 				"en_US": "Lv.1 Energy"
 			},
 			"level": 1,
 			"description": {
-				"zn_CN": "镶嵌至装备后，增加 +9精气",
+				"zh_CN": "镶嵌至装备后，增加 +9精气",
 				"zh_TW": "鑲嵌至裝備後，增加 +9精氣",
 				"en_US": "After being inset into equipment, adds +9Energy"
 			},
@@ -1023,13 +1023,13 @@
 		{
 			"id": 1003,
 			"name": {
-				"zn_CN": "Lv.1 攻击",
+				"zh_CN": "Lv.1 攻击",
 				"zh_TW": "Lv.1 攻擊",
 				"en_US": "Lv.1 Attack"
 			},
 			"level": 1,
 			"description": {
-				"zn_CN": "镶嵌至装备后，增加 +7攻击",
+				"zh_CN": "镶嵌至装备后，增加 +7攻击",
 				"zh_TW": "鑲嵌至裝備後，增加 +7攻擊",
 				"en_US": "After being inset into equipment, adds +7Attack"
 			},
@@ -1041,13 +1041,13 @@
 		{
 			"id": 1004,
 			"name": {
-				"zn_CN": "Lv.1 防御",
+				"zh_CN": "Lv.1 防御",
 				"zh_TW": "Lv.1 防禦",
 				"en_US": "Lv.1 Defense"
 			},
 			"level": 1,
 			"description": {
-				"zn_CN": "镶嵌至装备后，增加 +3防御",
+				"zh_CN": "镶嵌至装备后，增加 +3防御",
 				"zh_TW": "鑲嵌至裝備後，增加 +3防禦",
 				"en_US": "After being inset into equipment, adds +3Defense"
 			},
@@ -1059,13 +1059,13 @@
 		{
 			"id": 1005,
 			"name": {
-				"zn_CN": "Lv.1 破甲",
+				"zh_CN": "Lv.1 破甲",
 				"zh_TW": "Lv.1 破甲",
 				"en_US": "Lv.1 Penetration"
 			},
 			"level": 1,
 			"description": {
-				"zn_CN": "镶嵌至装备后，增加 +3破甲",
+				"zh_CN": "镶嵌至装备后，增加 +3破甲",
 				"zh_TW": "鑲嵌至裝備後，增加 +3破甲",
 				"en_US": "After being inset into equipment, adds +3Penetration"
 			},
@@ -1077,13 +1077,13 @@
 		{
 			"id": 1006,
 			"name": {
-				"zn_CN": "Lv.1 护甲",
+				"zh_CN": "Lv.1 护甲",
 				"zh_TW": "Lv.1 護甲",
 				"en_US": "Lv.1 Armor"
 			},
 			"level": 1,
 			"description": {
-				"zn_CN": "镶嵌至装备后，增加 +1护甲",
+				"zh_CN": "镶嵌至装备后，增加 +1护甲",
 				"zh_TW": "鑲嵌至裝備後，增加 +1護甲",
 				"en_US": "After being inset into equipment, adds +1Armor"
 			},
@@ -1095,13 +1095,13 @@
 		{
 			"id": 1007,
 			"name": {
-				"zn_CN": "Lv.1 暴击",
+				"zh_CN": "Lv.1 暴击",
 				"zh_TW": "Lv.1 暴擊",
 				"en_US": "Lv.1 Critical Hit"
 			},
 			"level": 1,
 			"description": {
-				"zn_CN": "镶嵌至装备后，增加 +1.49%暴击",
+				"zh_CN": "镶嵌至装备后，增加 +1.49%暴击",
 				"zh_TW": "鑲嵌至裝備後，增加 +1.49%暴擊",
 				"en_US": "After being inset into equipment, adds +1.49%Critical Hit"
 			},
@@ -1113,13 +1113,13 @@
 		{
 			"id": 1008,
 			"name": {
-				"zn_CN": "Lv.1 抗暴",
+				"zh_CN": "Lv.1 抗暴",
 				"zh_TW": "Lv.1 抗暴",
 				"en_US": "Lv.1 Critical Resistance"
 			},
 			"level": 1,
 			"description": {
-				"zn_CN": "镶嵌至装备后，增加 +0.69%抗暴",
+				"zh_CN": "镶嵌至装备后，增加 +0.69%抗暴",
 				"zh_TW": "鑲嵌至裝備後，增加 +0.69%抗暴",
 				"en_US": "After being inset into equipment, adds +0.69%Critical Resistance"
 			},
@@ -1131,13 +1131,13 @@
 		{
 			"id": 1009,
 			"name": {
-				"zn_CN": "Lv.1 命中",
+				"zh_CN": "Lv.1 命中",
 				"zh_TW": "Lv.1 命中",
 				"en_US": "Lv.1 Accuracy"
 			},
 			"level": 1,
 			"description": {
-				"zn_CN": "镶嵌至装备后，增加 +1.99%命中",
+				"zh_CN": "镶嵌至装备后，增加 +1.99%命中",
 				"zh_TW": "鑲嵌至裝備後，增加 +1.99%命中",
 				"en_US": "After being inset into equipment, adds +1.99%Accuracy"
 			},
@@ -1149,13 +1149,13 @@
 		{
 			"id": 1010,
 			"name": {
-				"zn_CN": "Lv.1 闪避",
+				"zh_CN": "Lv.1 闪避",
 				"zh_TW": "Lv.1 閃避",
 				"en_US": "Lv.1 Evasion"
 			},
 			"level": 1,
 			"description": {
-				"zn_CN": "镶嵌至装备后，增加 +0.99%闪避",
+				"zh_CN": "镶嵌至装备后，增加 +0.99%闪避",
 				"zh_TW": "鑲嵌至裝備後，增加 +0.99%閃避",
 				"en_US": "After being inset into equipment, adds +0.99%Evasion"
 			},
@@ -1167,13 +1167,13 @@
 		{
 			"id": 2001,
 			"name": {
-				"zn_CN": "Lv.2 生命",
+				"zh_CN": "Lv.2 生命",
 				"zh_TW": "Lv.2 生命",
 				"en_US": "Lv.2 Health"
 			},
 			"level": 2,
 			"description": {
-				"zn_CN": "镶嵌至装备后，增加 +80生命",
+				"zh_CN": "镶嵌至装备后，增加 +80生命",
 				"zh_TW": "鑲嵌至裝備後，增加 +80生命",
 				"en_US": "After being inset into equipment, adds +80Health"
 			},
@@ -1185,13 +1185,13 @@
 		{
 			"id": 2002,
 			"name": {
-				"zn_CN": "Lv.2 精气",
+				"zh_CN": "Lv.2 精气",
 				"zh_TW": "Lv.2 精氣",
 				"en_US": "Lv.2 Energy"
 			},
 			"level": 2,
 			"description": {
-				"zn_CN": "镶嵌至装备后，增加 +20精气",
+				"zh_CN": "镶嵌至装备后，增加 +20精气",
 				"zh_TW": "鑲嵌至裝備後，增加 +20精氣",
 				"en_US": "After being inset into equipment, adds +20Energy"
 			},
@@ -1203,13 +1203,13 @@
 		{
 			"id": 2003,
 			"name": {
-				"zn_CN": "Lv.2 攻击",
+				"zh_CN": "Lv.2 攻击",
 				"zh_TW": "Lv.2 攻擊",
 				"en_US": "Lv.2 Attack"
 			},
 			"level": 2,
 			"description": {
-				"zn_CN": "镶嵌至装备后，增加 +15攻击",
+				"zh_CN": "镶嵌至装备后，增加 +15攻击",
 				"zh_TW": "鑲嵌至裝備後，增加 +15攻擊",
 				"en_US": "After being inset into equipment, adds +15Attack"
 			},
@@ -1221,13 +1221,13 @@
 		{
 			"id": 2004,
 			"name": {
-				"zn_CN": "Lv.2 防御",
+				"zh_CN": "Lv.2 防御",
 				"zh_TW": "Lv.2 防禦",
 				"en_US": "Lv.2 Defense"
 			},
 			"level": 2,
 			"description": {
-				"zn_CN": "镶嵌至装备后，增加 +7防御",
+				"zh_CN": "镶嵌至装备后，增加 +7防御",
 				"zh_TW": "鑲嵌至裝備後，增加 +7防禦",
 				"en_US": "After being inset into equipment, adds +7Defense"
 			},
@@ -1239,13 +1239,13 @@
 		{
 			"id": 2005,
 			"name": {
-				"zn_CN": "Lv.2 破甲",
+				"zh_CN": "Lv.2 破甲",
 				"zh_TW": "Lv.2 破甲",
 				"en_US": "Lv.2 Penetration"
 			},
 			"level": 2,
 			"description": {
-				"zn_CN": "镶嵌至装备后，增加 +7破甲",
+				"zh_CN": "镶嵌至装备后，增加 +7破甲",
 				"zh_TW": "鑲嵌至裝備後，增加 +7破甲",
 				"en_US": "After being inset into equipment, adds +7Penetration"
 			},
@@ -1257,13 +1257,13 @@
 		{
 			"id": 2006,
 			"name": {
-				"zn_CN": "Lv.2 护甲",
+				"zh_CN": "Lv.2 护甲",
 				"zh_TW": "Lv.2 護甲",
 				"en_US": "Lv.2 Armor"
 			},
 			"level": 2,
 			"description": {
-				"zn_CN": "镶嵌至装备后，增加 +3护甲",
+				"zh_CN": "镶嵌至装备后，增加 +3护甲",
 				"zh_TW": "鑲嵌至裝備後，增加 +3護甲",
 				"en_US": "After being inset into equipment, adds +3Armor"
 			},
@@ -1275,13 +1275,13 @@
 		{
 			"id": 2007,
 			"name": {
-				"zn_CN": "Lv.2 暴击",
+				"zh_CN": "Lv.2 暴击",
 				"zh_TW": "Lv.2 暴擊",
 				"en_US": "Lv.2 Critical Hit"
 			},
 			"level": 2,
 			"description": {
-				"zn_CN": "镶嵌至装备后，增加 +3.00%暴击",
+				"zh_CN": "镶嵌至装备后，增加 +3.00%暴击",
 				"zh_TW": "鑲嵌至裝備後，增加 +3.00%暴擊",
 				"en_US": "After being inset into equipment, adds +3.00%Critical Hit"
 			},
@@ -1293,13 +1293,13 @@
 		{
 			"id": 2008,
 			"name": {
-				"zn_CN": "Lv.2 抗暴",
+				"zh_CN": "Lv.2 抗暴",
 				"zh_TW": "Lv.2 抗暴",
 				"en_US": "Lv.2 Critical Resistance"
 			},
 			"level": 2,
 			"description": {
-				"zn_CN": "镶嵌至装备后，增加 +1.40%抗暴",
+				"zh_CN": "镶嵌至装备后，增加 +1.40%抗暴",
 				"zh_TW": "鑲嵌至裝備後，增加 +1.40%抗暴",
 				"en_US": "After being inset into equipment, adds +1.40%Critical Resistance"
 			},
@@ -1311,13 +1311,13 @@
 		{
 			"id": 2009,
 			"name": {
-				"zn_CN": "Lv.2 命中",
+				"zh_CN": "Lv.2 命中",
 				"zh_TW": "Lv.2 命中",
 				"en_US": "Lv.2 Accuracy"
 			},
 			"level": 2,
 			"description": {
-				"zn_CN": "镶嵌至装备后，增加 +3.99%命中",
+				"zh_CN": "镶嵌至装备后，增加 +3.99%命中",
 				"zh_TW": "鑲嵌至裝備後，增加 +3.99%命中",
 				"en_US": "After being inset into equipment, adds +3.99%Accuracy"
 			},
@@ -1329,13 +1329,13 @@
 		{
 			"id": 2010,
 			"name": {
-				"zn_CN": "Lv.2 闪避",
+				"zh_CN": "Lv.2 闪避",
 				"zh_TW": "Lv.2 閃避",
 				"en_US": "Lv.2 Evasion"
 			},
 			"level": 2,
 			"description": {
-				"zn_CN": "镶嵌至装备后，增加 +1.99%闪避",
+				"zh_CN": "镶嵌至装备后，增加 +1.99%闪避",
 				"zh_TW": "鑲嵌至裝備後，增加 +1.99%閃避",
 				"en_US": "After being inset into equipment, adds +1.99%Evasion"
 			},
@@ -1347,13 +1347,13 @@
 		{
 			"id": 3001,
 			"name": {
-				"zn_CN": "Lv.3 生命",
+				"zh_CN": "Lv.3 生命",
 				"zh_TW": "Lv.3 生命",
 				"en_US": "Lv.3 Health"
 			},
 			"level": 3,
 			"description": {
-				"zn_CN": "镶嵌至装备后，增加 +120生命",
+				"zh_CN": "镶嵌至装备后，增加 +120生命",
 				"zh_TW": "鑲嵌至裝備後，增加 +120生命",
 				"en_US": "After being inset into equipment, adds +120Health"
 			},
@@ -1365,13 +1365,13 @@
 		{
 			"id": 3002,
 			"name": {
-				"zn_CN": "Lv.3 精气",
+				"zh_CN": "Lv.3 精气",
 				"zh_TW": "Lv.3 精氣",
 				"en_US": "Lv.3 Energy"
 			},
 			"level": 3,
 			"description": {
-				"zn_CN": "镶嵌至装备后，增加 +30精气",
+				"zh_CN": "镶嵌至装备后，增加 +30精气",
 				"zh_TW": "鑲嵌至裝備後，增加 +30精氣",
 				"en_US": "After being inset into equipment, adds +30Energy"
 			},
@@ -1383,13 +1383,13 @@
 		{
 			"id": 3003,
 			"name": {
-				"zn_CN": "Lv.3 攻击",
+				"zh_CN": "Lv.3 攻击",
 				"zh_TW": "Lv.3 攻擊",
 				"en_US": "Lv.3 Attack"
 			},
 			"level": 3,
 			"description": {
-				"zn_CN": "镶嵌至装备后，增加 +24攻击",
+				"zh_CN": "镶嵌至装备后，增加 +24攻击",
 				"zh_TW": "鑲嵌至裝備後，增加 +24攻擊",
 				"en_US": "After being inset into equipment, adds +24Attack"
 			},
@@ -1401,13 +1401,13 @@
 		{
 			"id": 3004,
 			"name": {
-				"zn_CN": "Lv.3 防御",
+				"zh_CN": "Lv.3 防御",
 				"zh_TW": "Lv.3 防禦",
 				"en_US": "Lv.3 Defense"
 			},
 			"level": 3,
 			"description": {
-				"zn_CN": "镶嵌至装备后，增加 +12防御",
+				"zh_CN": "镶嵌至装备后，增加 +12防御",
 				"zh_TW": "鑲嵌至裝備後，增加 +12防禦",
 				"en_US": "After being inset into equipment, adds +12Defense"
 			},
@@ -1419,13 +1419,13 @@
 		{
 			"id": 3005,
 			"name": {
-				"zn_CN": "Lv.3 破甲",
+				"zh_CN": "Lv.3 破甲",
 				"zh_TW": "Lv.3 破甲",
 				"en_US": "Lv.3 Penetration"
 			},
 			"level": 3,
 			"description": {
-				"zn_CN": "镶嵌至装备后，增加 +12破甲",
+				"zh_CN": "镶嵌至装备后，增加 +12破甲",
 				"zh_TW": "鑲嵌至裝備後，增加 +12破甲",
 				"en_US": "After being inset into equipment, adds +12Penetration"
 			},
@@ -1437,13 +1437,13 @@
 		{
 			"id": 3006,
 			"name": {
-				"zn_CN": "Lv.3 护甲",
+				"zh_CN": "Lv.3 护甲",
 				"zh_TW": "Lv.3 護甲",
 				"en_US": "Lv.3 Armor"
 			},
 			"level": 3,
 			"description": {
-				"zn_CN": "镶嵌至装备后，增加 +6护甲",
+				"zh_CN": "镶嵌至装备后，增加 +6护甲",
 				"zh_TW": "鑲嵌至裝備後，增加 +6護甲",
 				"en_US": "After being inset into equipment, adds +6Armor"
 			},
@@ -1455,13 +1455,13 @@
 		{
 			"id": 3007,
 			"name": {
-				"zn_CN": "Lv.3 暴击",
+				"zh_CN": "Lv.3 暴击",
 				"zh_TW": "Lv.3 暴擊",
 				"en_US": "Lv.3 Critical Hit"
 			},
 			"level": 3,
 			"description": {
-				"zn_CN": "镶嵌至装备后，增加 +4.50%暴击",
+				"zh_CN": "镶嵌至装备后，增加 +4.50%暴击",
 				"zh_TW": "鑲嵌至裝備後，增加 +4.50%暴擊",
 				"en_US": "After being inset into equipment, adds +4.50%Critical Hit"
 			},
@@ -1473,13 +1473,13 @@
 		{
 			"id": 3008,
 			"name": {
-				"zn_CN": "Lv.3 抗暴",
+				"zh_CN": "Lv.3 抗暴",
 				"zh_TW": "Lv.3 抗暴",
 				"en_US": "Lv.3 Critical Resistance"
 			},
 			"level": 3,
 			"description": {
-				"zn_CN": "镶嵌至装备后，增加 +2.10%抗暴",
+				"zh_CN": "镶嵌至装备后，增加 +2.10%抗暴",
 				"zh_TW": "鑲嵌至裝備後，增加 +2.10%抗暴",
 				"en_US": "After being inset into equipment, adds +2.10%Critical Resistance"
 			},
@@ -1491,13 +1491,13 @@
 		{
 			"id": 3009,
 			"name": {
-				"zn_CN": "Lv.3 命中",
+				"zh_CN": "Lv.3 命中",
 				"zh_TW": "Lv.3 命中",
 				"en_US": "Lv.3 Accuracy"
 			},
 			"level": 3,
 			"description": {
-				"zn_CN": "镶嵌至装备后，增加 +6.00%命中",
+				"zh_CN": "镶嵌至装备后，增加 +6.00%命中",
 				"zh_TW": "鑲嵌至裝備後，增加 +6.00%命中",
 				"en_US": "After being inset into equipment, adds +6.00%Accuracy"
 			},
@@ -1509,13 +1509,13 @@
 		{
 			"id": 3010,
 			"name": {
-				"zn_CN": "Lv.3 闪避",
+				"zh_CN": "Lv.3 闪避",
 				"zh_TW": "Lv.3 閃避",
 				"en_US": "Lv.3 Evasion"
 			},
 			"level": 3,
 			"description": {
-				"zn_CN": "镶嵌至装备后，增加 +3.00%闪避",
+				"zh_CN": "镶嵌至装备后，增加 +3.00%闪避",
 				"zh_TW": "鑲嵌至裝備後，增加 +3.00%閃避",
 				"en_US": "After being inset into equipment, adds +3.00%Evasion"
 			},
@@ -1527,13 +1527,13 @@
 		{
 			"id": 4001,
 			"name": {
-				"zn_CN": "Lv.4 生命",
+				"zh_CN": "Lv.4 生命",
 				"zh_TW": "Lv.4 生命",
 				"en_US": "Lv.4 Health"
 			},
 			"level": 4,
 			"description": {
-				"zn_CN": "镶嵌至装备后，增加 +160生命",
+				"zh_CN": "镶嵌至装备后，增加 +160生命",
 				"zh_TW": "鑲嵌至裝備後，增加 +160生命",
 				"en_US": "After being inset into equipment, adds +160Health"
 			},
@@ -1545,13 +1545,13 @@
 		{
 			"id": 4002,
 			"name": {
-				"zn_CN": "Lv.4 精气",
+				"zh_CN": "Lv.4 精气",
 				"zh_TW": "Lv.4 精氣",
 				"en_US": "Lv.4 Energy"
 			},
 			"level": 4,
 			"description": {
-				"zn_CN": "镶嵌至装备后，增加 +40精气",
+				"zh_CN": "镶嵌至装备后，增加 +40精气",
 				"zh_TW": "鑲嵌至裝備後，增加 +40精氣",
 				"en_US": "After being inset into equipment, adds +40Energy"
 			},
@@ -1563,13 +1563,13 @@
 		{
 			"id": 4003,
 			"name": {
-				"zn_CN": "Lv.4 攻击",
+				"zh_CN": "Lv.4 攻击",
 				"zh_TW": "Lv.4 攻擊",
 				"en_US": "Lv.4 Attack"
 			},
 			"level": 4,
 			"description": {
-				"zn_CN": "镶嵌至装备后，增加 +32攻击",
+				"zh_CN": "镶嵌至装备后，增加 +32攻击",
 				"zh_TW": "鑲嵌至裝備後，增加 +32攻擊",
 				"en_US": "After being inset into equipment, adds +32Attack"
 			},
@@ -1581,13 +1581,13 @@
 		{
 			"id": 4004,
 			"name": {
-				"zn_CN": "Lv.4 防御",
+				"zh_CN": "Lv.4 防御",
 				"zh_TW": "Lv.4 防禦",
 				"en_US": "Lv.4 Defense"
 			},
 			"level": 4,
 			"description": {
-				"zn_CN": "镶嵌至装备后，增加 +16防御",
+				"zh_CN": "镶嵌至装备后，增加 +16防御",
 				"zh_TW": "鑲嵌至裝備後，增加 +16防禦",
 				"en_US": "After being inset into equipment, adds +16Defense"
 			},
@@ -1599,13 +1599,13 @@
 		{
 			"id": 4005,
 			"name": {
-				"zn_CN": "Lv.4 破甲",
+				"zh_CN": "Lv.4 破甲",
 				"zh_TW": "Lv.4 破甲",
 				"en_US": "Lv.4 Penetration"
 			},
 			"level": 4,
 			"description": {
-				"zn_CN": "镶嵌至装备后，增加 +16破甲",
+				"zh_CN": "镶嵌至装备后，增加 +16破甲",
 				"zh_TW": "鑲嵌至裝備後，增加 +16破甲",
 				"en_US": "After being inset into equipment, adds +16Penetration"
 			},
@@ -1617,13 +1617,13 @@
 		{
 			"id": 4006,
 			"name": {
-				"zn_CN": "Lv.4 护甲",
+				"zh_CN": "Lv.4 护甲",
 				"zh_TW": "Lv.4 護甲",
 				"en_US": "Lv.4 Armor"
 			},
 			"level": 4,
 			"description": {
-				"zn_CN": "镶嵌至装备后，增加 +8护甲",
+				"zh_CN": "镶嵌至装备后，增加 +8护甲",
 				"zh_TW": "鑲嵌至裝備後，增加 +8護甲",
 				"en_US": "After being inset into equipment, adds +8Armor"
 			},
@@ -1635,13 +1635,13 @@
 		{
 			"id": 4007,
 			"name": {
-				"zn_CN": "Lv.4 暴击",
+				"zh_CN": "Lv.4 暴击",
 				"zh_TW": "Lv.4 暴擊",
 				"en_US": "Lv.4 Critical Hit"
 			},
 			"level": 4,
 			"description": {
-				"zn_CN": "镶嵌至装备后，增加 +6.00%暴击",
+				"zh_CN": "镶嵌至装备后，增加 +6.00%暴击",
 				"zh_TW": "鑲嵌至裝備後，增加 +6.00%暴擊",
 				"en_US": "After being inset into equipment, adds +6.00%Critical Hit"
 			},
@@ -1653,13 +1653,13 @@
 		{
 			"id": 4008,
 			"name": {
-				"zn_CN": "Lv.4 抗暴",
+				"zh_CN": "Lv.4 抗暴",
 				"zh_TW": "Lv.4 抗暴",
 				"en_US": "Lv.4 Critical Resistance"
 			},
 			"level": 4,
 			"description": {
-				"zn_CN": "镶嵌至装备后，增加 +2.80%抗暴",
+				"zh_CN": "镶嵌至装备后，增加 +2.80%抗暴",
 				"zh_TW": "鑲嵌至裝備後，增加 +2.80%抗暴",
 				"en_US": "After being inset into equipment, adds +2.80%Critical Resistance"
 			},
@@ -1671,13 +1671,13 @@
 		{
 			"id": 4009,
 			"name": {
-				"zn_CN": "Lv.4 命中",
+				"zh_CN": "Lv.4 命中",
 				"zh_TW": "Lv.4 命中",
 				"en_US": "Lv.4 Accuracy"
 			},
 			"level": 4,
 			"description": {
-				"zn_CN": "镶嵌至装备后，增加 +8.00%命中",
+				"zh_CN": "镶嵌至装备后，增加 +8.00%命中",
 				"zh_TW": "鑲嵌至裝備後，增加 +8.00%命中",
 				"en_US": "After being inset into equipment, adds +8.00%Accuracy"
 			},
@@ -1689,13 +1689,13 @@
 		{
 			"id": 4010,
 			"name": {
-				"zn_CN": "Lv.4 闪避",
+				"zh_CN": "Lv.4 闪避",
 				"zh_TW": "Lv.4 閃避",
 				"en_US": "Lv.4 Evasion"
 			},
 			"level": 4,
 			"description": {
-				"zn_CN": "镶嵌至装备后，增加 +4.00%闪避",
+				"zh_CN": "镶嵌至装备后，增加 +4.00%闪避",
 				"zh_TW": "鑲嵌至裝備後，增加 +4.00%閃避",
 				"en_US": "After being inset into equipment, adds +4.00%Evasion"
 			},
@@ -1707,13 +1707,13 @@
 		{
 			"id": 5001,
 			"name": {
-				"zn_CN": "Lv.5 生命",
+				"zh_CN": "Lv.5 生命",
 				"zh_TW": "Lv.5 生命",
 				"en_US": "Lv.5 Health"
 			},
 			"level": 5,
 			"description": {
-				"zn_CN": "镶嵌至装备后，增加 +200生命",
+				"zh_CN": "镶嵌至装备后，增加 +200生命",
 				"zh_TW": "鑲嵌至裝備後，增加 +200生命",
 				"en_US": "After being inset into equipment, adds +200Health"
 			},
@@ -1725,13 +1725,13 @@
 		{
 			"id": 5002,
 			"name": {
-				"zn_CN": "Lv.5 精气",
+				"zh_CN": "Lv.5 精气",
 				"zh_TW": "Lv.5 精氣",
 				"en_US": "Lv.5 Energy"
 			},
 			"level": 5,
 			"description": {
-				"zn_CN": "镶嵌至装备后，增加 +50精气",
+				"zh_CN": "镶嵌至装备后，增加 +50精气",
 				"zh_TW": "鑲嵌至裝備後，增加 +50精氣",
 				"en_US": "After being inset into equipment, adds +50Energy"
 			},
@@ -1743,13 +1743,13 @@
 		{
 			"id": 5003,
 			"name": {
-				"zn_CN": "Lv.5 攻击",
+				"zh_CN": "Lv.5 攻击",
 				"zh_TW": "Lv.5 攻擊",
 				"en_US": "Lv.5 Attack"
 			},
 			"level": 5,
 			"description": {
-				"zn_CN": "镶嵌至装备后，增加 +40攻击",
+				"zh_CN": "镶嵌至装备后，增加 +40攻击",
 				"zh_TW": "鑲嵌至裝備後，增加 +40攻擊",
 				"en_US": "After being inset into equipment, adds +40Attack"
 			},
@@ -1761,13 +1761,13 @@
 		{
 			"id": 5004,
 			"name": {
-				"zn_CN": "Lv.5 防御",
+				"zh_CN": "Lv.5 防御",
 				"zh_TW": "Lv.5 防禦",
 				"en_US": "Lv.5 Defense"
 			},
 			"level": 5,
 			"description": {
-				"zn_CN": "镶嵌至装备后，增加 +20防御",
+				"zh_CN": "镶嵌至装备后，增加 +20防御",
 				"zh_TW": "鑲嵌至裝備後，增加 +20防禦",
 				"en_US": "After being inset into equipment, adds +20Defense"
 			},
@@ -1779,13 +1779,13 @@
 		{
 			"id": 5005,
 			"name": {
-				"zn_CN": "Lv.5 破甲",
+				"zh_CN": "Lv.5 破甲",
 				"zh_TW": "Lv.5 破甲",
 				"en_US": "Lv.5 Penetration"
 			},
 			"level": 5,
 			"description": {
-				"zn_CN": "镶嵌至装备后，增加 +20破甲",
+				"zh_CN": "镶嵌至装备后，增加 +20破甲",
 				"zh_TW": "鑲嵌至裝備後，增加 +20破甲",
 				"en_US": "After being inset into equipment, adds +20Penetration"
 			},
@@ -1797,13 +1797,13 @@
 		{
 			"id": 5006,
 			"name": {
-				"zn_CN": "Lv.5 护甲",
+				"zh_CN": "Lv.5 护甲",
 				"zh_TW": "Lv.5 護甲",
 				"en_US": "Lv.5 Armor"
 			},
 			"level": 5,
 			"description": {
-				"zn_CN": "镶嵌至装备后，增加 +10护甲",
+				"zh_CN": "镶嵌至装备后，增加 +10护甲",
 				"zh_TW": "鑲嵌至裝備後，增加 +10護甲",
 				"en_US": "After being inset into equipment, adds +10Armor"
 			},
@@ -1815,13 +1815,13 @@
 		{
 			"id": 5007,
 			"name": {
-				"zn_CN": "Lv.5 暴击",
+				"zh_CN": "Lv.5 暴击",
 				"zh_TW": "Lv.5 暴擊",
 				"en_US": "Lv.5 Critical Hit"
 			},
 			"level": 5,
 			"description": {
-				"zn_CN": "镶嵌至装备后，增加 +7.50%暴击",
+				"zh_CN": "镶嵌至装备后，增加 +7.50%暴击",
 				"zh_TW": "鑲嵌至裝備後，增加 +7.50%暴擊",
 				"en_US": "After being inset into equipment, adds +7.50%Critical Hit"
 			},
@@ -1833,13 +1833,13 @@
 		{
 			"id": 5008,
 			"name": {
-				"zn_CN": "Lv.5 抗暴",
+				"zh_CN": "Lv.5 抗暴",
 				"zh_TW": "Lv.5 抗暴",
 				"en_US": "Lv.5 Critical Resistance"
 			},
 			"level": 5,
 			"description": {
-				"zn_CN": "镶嵌至装备后，增加 +3.50%抗暴",
+				"zh_CN": "镶嵌至装备后，增加 +3.50%抗暴",
 				"zh_TW": "鑲嵌至裝備後，增加 +3.50%抗暴",
 				"en_US": "After being inset into equipment, adds +3.50%Critical Resistance"
 			},
@@ -1851,13 +1851,13 @@
 		{
 			"id": 5009,
 			"name": {
-				"zn_CN": "Lv.5 命中",
+				"zh_CN": "Lv.5 命中",
 				"zh_TW": "Lv.5 命中",
 				"en_US": "Lv.5 Accuracy"
 			},
 			"level": 5,
 			"description": {
-				"zn_CN": "镶嵌至装备后，增加 +10.00%命中",
+				"zh_CN": "镶嵌至装备后，增加 +10.00%命中",
 				"zh_TW": "鑲嵌至裝備後，增加 +10.00%命中",
 				"en_US": "After being inset into equipment, adds +10.00%Accuracy"
 			},
@@ -1869,13 +1869,13 @@
 		{
 			"id": 5010,
 			"name": {
-				"zn_CN": "Lv.5 闪避",
+				"zh_CN": "Lv.5 闪避",
 				"zh_TW": "Lv.5 閃避",
 				"en_US": "Lv.5 Evasion"
 			},
 			"level": 5,
 			"description": {
-				"zn_CN": "镶嵌至装备后，增加 +5.00%闪避",
+				"zh_CN": "镶嵌至装备后，增加 +5.00%闪避",
 				"zh_TW": "鑲嵌至裝備後，增加 +5.00%閃避",
 				"en_US": "After being inset into equipment, adds +5.00%Evasion"
 			},
@@ -1887,13 +1887,13 @@
 		{
 			"id": 6001,
 			"name": {
-				"zn_CN": "Lv.6 生命",
+				"zh_CN": "Lv.6 生命",
 				"zh_TW": "Lv.6 生命",
 				"en_US": "Lv.6 Health"
 			},
 			"level": 6,
 			"description": {
-				"zn_CN": "镶嵌至装备后，增加 +240生命",
+				"zh_CN": "镶嵌至装备后，增加 +240生命",
 				"zh_TW": "鑲嵌至裝備後，增加 +240生命",
 				"en_US": "After being inset into equipment, adds +240Health"
 			},
@@ -1905,13 +1905,13 @@
 		{
 			"id": 6002,
 			"name": {
-				"zn_CN": "Lv.6 精气",
+				"zh_CN": "Lv.6 精气",
 				"zh_TW": "Lv.6 精氣",
 				"en_US": "Lv.6 Energy"
 			},
 			"level": 6,
 			"description": {
-				"zn_CN": "镶嵌至装备后，增加 +60精气",
+				"zh_CN": "镶嵌至装备后，增加 +60精气",
 				"zh_TW": "鑲嵌至裝備後，增加 +60精氣",
 				"en_US": "After being inset into equipment, adds +60Energy"
 			},
@@ -1923,13 +1923,13 @@
 		{
 			"id": 6003,
 			"name": {
-				"zn_CN": "Lv.6 攻击",
+				"zh_CN": "Lv.6 攻击",
 				"zh_TW": "Lv.6 攻擊",
 				"en_US": "Lv.6 Attack"
 			},
 			"level": 6,
 			"description": {
-				"zn_CN": "镶嵌至装备后，增加 +48攻击",
+				"zh_CN": "镶嵌至装备后，增加 +48攻击",
 				"zh_TW": "鑲嵌至裝備後，增加 +48攻擊",
 				"en_US": "After being inset into equipment, adds +48Attack"
 			},
@@ -1941,13 +1941,13 @@
 		{
 			"id": 6004,
 			"name": {
-				"zn_CN": "Lv.6 防御",
+				"zh_CN": "Lv.6 防御",
 				"zh_TW": "Lv.6 防禦",
 				"en_US": "Lv.6 Defense"
 			},
 			"level": 6,
 			"description": {
-				"zn_CN": "镶嵌至装备后，增加 +24防御",
+				"zh_CN": "镶嵌至装备后，增加 +24防御",
 				"zh_TW": "鑲嵌至裝備後，增加 +24防禦",
 				"en_US": "After being inset into equipment, adds +24Defense"
 			},
@@ -1959,13 +1959,13 @@
 		{
 			"id": 6005,
 			"name": {
-				"zn_CN": "Lv.6 破甲",
+				"zh_CN": "Lv.6 破甲",
 				"zh_TW": "Lv.6 破甲",
 				"en_US": "Lv.6 Penetration"
 			},
 			"level": 6,
 			"description": {
-				"zn_CN": "镶嵌至装备后，增加 +24破甲",
+				"zh_CN": "镶嵌至装备后，增加 +24破甲",
 				"zh_TW": "鑲嵌至裝備後，增加 +24破甲",
 				"en_US": "After being inset into equipment, adds +24Penetration"
 			},
@@ -1977,13 +1977,13 @@
 		{
 			"id": 6006,
 			"name": {
-				"zn_CN": "Lv.6 护甲",
+				"zh_CN": "Lv.6 护甲",
 				"zh_TW": "Lv.6 護甲",
 				"en_US": "Lv.6 Armor"
 			},
 			"level": 6,
 			"description": {
-				"zn_CN": "镶嵌至装备后，增加 +12护甲",
+				"zh_CN": "镶嵌至装备后，增加 +12护甲",
 				"zh_TW": "鑲嵌至裝備後，增加 +12護甲",
 				"en_US": "After being inset into equipment, adds +12Armor"
 			},
@@ -1995,13 +1995,13 @@
 		{
 			"id": 6007,
 			"name": {
-				"zn_CN": "Lv.6 暴击",
+				"zh_CN": "Lv.6 暴击",
 				"zh_TW": "Lv.6 暴擊",
 				"en_US": "Lv.6 Critical Hit"
 			},
 			"level": 6,
 			"description": {
-				"zn_CN": "镶嵌至装备后，增加 +9.00%暴击",
+				"zh_CN": "镶嵌至装备后，增加 +9.00%暴击",
 				"zh_TW": "鑲嵌至裝備後，增加 +9.00%暴擊",
 				"en_US": "After being inset into equipment, adds +9.00%Critical Hit"
 			},
@@ -2013,13 +2013,13 @@
 		{
 			"id": 6008,
 			"name": {
-				"zn_CN": "Lv.6 抗暴",
+				"zh_CN": "Lv.6 抗暴",
 				"zh_TW": "Lv.6 抗暴",
 				"en_US": "Lv.6 Critical Resistance"
 			},
 			"level": 6,
 			"description": {
-				"zn_CN": "镶嵌至装备后，增加 +4.20%抗暴",
+				"zh_CN": "镶嵌至装备后，增加 +4.20%抗暴",
 				"zh_TW": "鑲嵌至裝備後，增加 +4.20%抗暴",
 				"en_US": "After being inset into equipment, adds +4.20%Critical Resistance"
 			},
@@ -2031,13 +2031,13 @@
 		{
 			"id": 6009,
 			"name": {
-				"zn_CN": "Lv.6 命中",
+				"zh_CN": "Lv.6 命中",
 				"zh_TW": "Lv.6 命中",
 				"en_US": "Lv.6 Accuracy"
 			},
 			"level": 6,
 			"description": {
-				"zn_CN": "镶嵌至装备后，增加 +12.00%命中",
+				"zh_CN": "镶嵌至装备后，增加 +12.00%命中",
 				"zh_TW": "鑲嵌至裝備後，增加 +12.00%命中",
 				"en_US": "After being inset into equipment, adds +12.00%Accuracy"
 			},
@@ -2049,13 +2049,13 @@
 		{
 			"id": 6010,
 			"name": {
-				"zn_CN": "Lv.6 闪避",
+				"zh_CN": "Lv.6 闪避",
 				"zh_TW": "Lv.6 閃避",
 				"en_US": "Lv.6 Evasion"
 			},
 			"level": 6,
 			"description": {
-				"zn_CN": "镶嵌至装备后，增加 +6.00%闪避",
+				"zh_CN": "镶嵌至装备后，增加 +6.00%闪避",
 				"zh_TW": "鑲嵌至裝備後，增加 +6.00%閃避",
 				"en_US": "After being inset into equipment, adds +6.00%Evasion"
 			},
@@ -2067,13 +2067,13 @@
 		{
 			"id": 7001,
 			"name": {
-				"zn_CN": "Lv.7 生命",
+				"zh_CN": "Lv.7 生命",
 				"zh_TW": "Lv.7 生命",
 				"en_US": "Lv.7 Health"
 			},
 			"level": 7,
 			"description": {
-				"zn_CN": "镶嵌至装备后，增加 +280生命",
+				"zh_CN": "镶嵌至装备后，增加 +280生命",
 				"zh_TW": "鑲嵌至裝備後，增加 +280生命",
 				"en_US": "After being inset into equipment, adds +280Health"
 			},
@@ -2085,13 +2085,13 @@
 		{
 			"id": 7002,
 			"name": {
-				"zn_CN": "Lv.7 精气",
+				"zh_CN": "Lv.7 精气",
 				"zh_TW": "Lv.7 精氣",
 				"en_US": "Lv.7 Energy"
 			},
 			"level": 7,
 			"description": {
-				"zn_CN": "镶嵌至装备后，增加 +70精气",
+				"zh_CN": "镶嵌至装备后，增加 +70精气",
 				"zh_TW": "鑲嵌至裝備後，增加 +70精氣",
 				"en_US": "After being inset into equipment, adds +70Energy"
 			},
@@ -2103,13 +2103,13 @@
 		{
 			"id": 7003,
 			"name": {
-				"zn_CN": "Lv.7 攻击",
+				"zh_CN": "Lv.7 攻击",
 				"zh_TW": "Lv.7 攻擊",
 				"en_US": "Lv.7 Attack"
 			},
 			"level": 7,
 			"description": {
-				"zn_CN": "镶嵌至装备后，增加 +56攻击",
+				"zh_CN": "镶嵌至装备后，增加 +56攻击",
 				"zh_TW": "鑲嵌至裝備後，增加 +56攻擊",
 				"en_US": "After being inset into equipment, adds +56Attack"
 			},
@@ -2121,13 +2121,13 @@
 		{
 			"id": 7004,
 			"name": {
-				"zn_CN": "Lv.7 防御",
+				"zh_CN": "Lv.7 防御",
 				"zh_TW": "Lv.7 防禦",
 				"en_US": "Lv.7 Defense"
 			},
 			"level": 7,
 			"description": {
-				"zn_CN": "镶嵌至装备后，增加 +28防御",
+				"zh_CN": "镶嵌至装备后，增加 +28防御",
 				"zh_TW": "鑲嵌至裝備後，增加 +28防禦",
 				"en_US": "After being inset into equipment, adds +28Defense"
 			},
@@ -2139,13 +2139,13 @@
 		{
 			"id": 7005,
 			"name": {
-				"zn_CN": "Lv.7 破甲",
+				"zh_CN": "Lv.7 破甲",
 				"zh_TW": "Lv.7 破甲",
 				"en_US": "Lv.7 Penetration"
 			},
 			"level": 7,
 			"description": {
-				"zn_CN": "镶嵌至装备后，增加 +28破甲",
+				"zh_CN": "镶嵌至装备后，增加 +28破甲",
 				"zh_TW": "鑲嵌至裝備後，增加 +28破甲",
 				"en_US": "After being inset into equipment, adds +28Penetration"
 			},
@@ -2157,13 +2157,13 @@
 		{
 			"id": 7006,
 			"name": {
-				"zn_CN": "Lv.7 护甲",
+				"zh_CN": "Lv.7 护甲",
 				"zh_TW": "Lv.7 護甲",
 				"en_US": "Lv.7 Armor"
 			},
 			"level": 7,
 			"description": {
-				"zn_CN": "镶嵌至装备后，增加 +14护甲",
+				"zh_CN": "镶嵌至装备后，增加 +14护甲",
 				"zh_TW": "鑲嵌至裝備後，增加 +14護甲",
 				"en_US": "After being inset into equipment, adds +14Armor"
 			},
@@ -2175,13 +2175,13 @@
 		{
 			"id": 7007,
 			"name": {
-				"zn_CN": "Lv.7 暴击",
+				"zh_CN": "Lv.7 暴击",
 				"zh_TW": "Lv.7 暴擊",
 				"en_US": "Lv.7 Critical Hit"
 			},
 			"level": 7,
 			"description": {
-				"zn_CN": "镶嵌至装备后，增加 +10.50%暴击",
+				"zh_CN": "镶嵌至装备后，增加 +10.50%暴击",
 				"zh_TW": "鑲嵌至裝備後，增加 +10.50%暴擊",
 				"en_US": "After being inset into equipment, adds +10.50%Critical Hit"
 			},
@@ -2193,13 +2193,13 @@
 		{
 			"id": 7008,
 			"name": {
-				"zn_CN": "Lv.7 抗暴",
+				"zh_CN": "Lv.7 抗暴",
 				"zh_TW": "Lv.7 抗暴",
 				"en_US": "Lv.7 Critical Resistance"
 			},
 			"level": 7,
 			"description": {
-				"zn_CN": "镶嵌至装备后，增加 +4.90%抗暴",
+				"zh_CN": "镶嵌至装备后，增加 +4.90%抗暴",
 				"zh_TW": "鑲嵌至裝備後，增加 +4.90%抗暴",
 				"en_US": "After being inset into equipment, adds +4.90%Critical Resistance"
 			},
@@ -2211,13 +2211,13 @@
 		{
 			"id": 7009,
 			"name": {
-				"zn_CN": "Lv.7 命中",
+				"zh_CN": "Lv.7 命中",
 				"zh_TW": "Lv.7 命中",
 				"en_US": "Lv.7 Accuracy"
 			},
 			"level": 7,
 			"description": {
-				"zn_CN": "镶嵌至装备后，增加 +14.00%命中",
+				"zh_CN": "镶嵌至装备后，增加 +14.00%命中",
 				"zh_TW": "鑲嵌至裝備後，增加 +14.00%命中",
 				"en_US": "After being inset into equipment, adds +14.00%Accuracy"
 			},
@@ -2229,13 +2229,13 @@
 		{
 			"id": 7010,
 			"name": {
-				"zn_CN": "Lv.7 闪避",
+				"zh_CN": "Lv.7 闪避",
 				"zh_TW": "Lv.7 閃避",
 				"en_US": "Lv.7 Evasion"
 			},
 			"level": 7,
 			"description": {
-				"zn_CN": "镶嵌至装备后，增加 +7.00%闪避",
+				"zh_CN": "镶嵌至装备后，增加 +7.00%闪避",
 				"zh_TW": "鑲嵌至裝備後，增加 +7.00%閃避",
 				"en_US": "After being inset into equipment, adds +7.00%Evasion"
 			},
@@ -2247,13 +2247,13 @@
 		{
 			"id": 8001,
 			"name": {
-				"zn_CN": "Lv.8 生命",
+				"zh_CN": "Lv.8 生命",
 				"zh_TW": "Lv.8 生命",
 				"en_US": "Lv.8 Health"
 			},
 			"level": 8,
 			"description": {
-				"zn_CN": "镶嵌至装备后，增加 +320生命",
+				"zh_CN": "镶嵌至装备后，增加 +320生命",
 				"zh_TW": "鑲嵌至裝備後，增加 +320生命",
 				"en_US": "After being inset into equipment, adds +320Health"
 			},
@@ -2265,13 +2265,13 @@
 		{
 			"id": 8002,
 			"name": {
-				"zn_CN": "Lv.8 精气",
+				"zh_CN": "Lv.8 精气",
 				"zh_TW": "Lv.8 精氣",
 				"en_US": "Lv.8 Energy"
 			},
 			"level": 8,
 			"description": {
-				"zn_CN": "镶嵌至装备后，增加 +80精气",
+				"zh_CN": "镶嵌至装备后，增加 +80精气",
 				"zh_TW": "鑲嵌至裝備後，增加 +80精氣",
 				"en_US": "After being inset into equipment, adds +80Energy"
 			},
@@ -2283,13 +2283,13 @@
 		{
 			"id": 8003,
 			"name": {
-				"zn_CN": "Lv.8 攻击",
+				"zh_CN": "Lv.8 攻击",
 				"zh_TW": "Lv.8 攻擊",
 				"en_US": "Lv.8 Attack"
 			},
 			"level": 8,
 			"description": {
-				"zn_CN": "镶嵌至装备后，增加 +64攻击",
+				"zh_CN": "镶嵌至装备后，增加 +64攻击",
 				"zh_TW": "鑲嵌至裝備後，增加 +64攻擊",
 				"en_US": "After being inset into equipment, adds +64Attack"
 			},
@@ -2301,13 +2301,13 @@
 		{
 			"id": 8004,
 			"name": {
-				"zn_CN": "Lv.8 防御",
+				"zh_CN": "Lv.8 防御",
 				"zh_TW": "Lv.8 防禦",
 				"en_US": "Lv.8 Defense"
 			},
 			"level": 8,
 			"description": {
-				"zn_CN": "镶嵌至装备后，增加 +32防御",
+				"zh_CN": "镶嵌至装备后，增加 +32防御",
 				"zh_TW": "鑲嵌至裝備後，增加 +32防禦",
 				"en_US": "After being inset into equipment, adds +32Defense"
 			},
@@ -2319,13 +2319,13 @@
 		{
 			"id": 8005,
 			"name": {
-				"zn_CN": "Lv.8 破甲",
+				"zh_CN": "Lv.8 破甲",
 				"zh_TW": "Lv.8 破甲",
 				"en_US": "Lv.8 Penetration"
 			},
 			"level": 8,
 			"description": {
-				"zn_CN": "镶嵌至装备后，增加 +32破甲",
+				"zh_CN": "镶嵌至装备后，增加 +32破甲",
 				"zh_TW": "鑲嵌至裝備後，增加 +32破甲",
 				"en_US": "After being inset into equipment, adds +32Penetration"
 			},
@@ -2337,13 +2337,13 @@
 		{
 			"id": 8006,
 			"name": {
-				"zn_CN": "Lv.8 护甲",
+				"zh_CN": "Lv.8 护甲",
 				"zh_TW": "Lv.8 護甲",
 				"en_US": "Lv.8 Armor"
 			},
 			"level": 8,
 			"description": {
-				"zn_CN": "镶嵌至装备后，增加 +16护甲",
+				"zh_CN": "镶嵌至装备后，增加 +16护甲",
 				"zh_TW": "鑲嵌至裝備後，增加 +16護甲",
 				"en_US": "After being inset into equipment, adds +16Armor"
 			},
@@ -2355,13 +2355,13 @@
 		{
 			"id": 8007,
 			"name": {
-				"zn_CN": "Lv.8 暴击",
+				"zh_CN": "Lv.8 暴击",
 				"zh_TW": "Lv.8 暴擊",
 				"en_US": "Lv.8 Critical Hit"
 			},
 			"level": 8,
 			"description": {
-				"zn_CN": "镶嵌至装备后，增加 +12.00%暴击",
+				"zh_CN": "镶嵌至装备后，增加 +12.00%暴击",
 				"zh_TW": "鑲嵌至裝備後，增加 +12.00%暴擊",
 				"en_US": "After being inset into equipment, adds +12.00%Critical Hit"
 			},
@@ -2373,13 +2373,13 @@
 		{
 			"id": 8008,
 			"name": {
-				"zn_CN": "Lv.8 抗暴",
+				"zh_CN": "Lv.8 抗暴",
 				"zh_TW": "Lv.8 抗暴",
 				"en_US": "Lv.8 Critical Resistance"
 			},
 			"level": 8,
 			"description": {
-				"zn_CN": "镶嵌至装备后，增加 +5.60%抗暴",
+				"zh_CN": "镶嵌至装备后，增加 +5.60%抗暴",
 				"zh_TW": "鑲嵌至裝備後，增加 +5.60%抗暴",
 				"en_US": "After being inset into equipment, adds +5.60%Critical Resistance"
 			},
@@ -2391,13 +2391,13 @@
 		{
 			"id": 8009,
 			"name": {
-				"zn_CN": "Lv.8 命中",
+				"zh_CN": "Lv.8 命中",
 				"zh_TW": "Lv.8 命中",
 				"en_US": "Lv.8 Accuracy"
 			},
 			"level": 8,
 			"description": {
-				"zn_CN": "镶嵌至装备后，增加 +16.00%命中",
+				"zh_CN": "镶嵌至装备后，增加 +16.00%命中",
 				"zh_TW": "鑲嵌至裝備後，增加 +16.00%命中",
 				"en_US": "After being inset into equipment, adds +16.00%Accuracy"
 			},
@@ -2409,13 +2409,13 @@
 		{
 			"id": 8010,
 			"name": {
-				"zn_CN": "Lv.8 闪避",
+				"zh_CN": "Lv.8 闪避",
 				"zh_TW": "Lv.8 閃避",
 				"en_US": "Lv.8 Evasion"
 			},
 			"level": 8,
 			"description": {
-				"zn_CN": "镶嵌至装备后，增加 +8.00%闪避",
+				"zh_CN": "镶嵌至装备后，增加 +8.00%闪避",
 				"zh_TW": "鑲嵌至裝備後，增加 +8.00%閃避",
 				"en_US": "After being inset into equipment, adds +8.00%Evasion"
 			},
@@ -2427,13 +2427,13 @@
 		{
 			"id": 9001,
 			"name": {
-				"zn_CN": "Lv.9 生命",
+				"zh_CN": "Lv.9 生命",
 				"zh_TW": "Lv.9 生命",
 				"en_US": "Lv.9 Health"
 			},
 			"level": 9,
 			"description": {
-				"zn_CN": "镶嵌至装备后，增加 +360生命",
+				"zh_CN": "镶嵌至装备后，增加 +360生命",
 				"zh_TW": "鑲嵌至裝備後，增加 +360生命",
 				"en_US": "After being inset into equipment, adds +360Health"
 			},
@@ -2445,13 +2445,13 @@
 		{
 			"id": 9002,
 			"name": {
-				"zn_CN": "Lv.9 精气",
+				"zh_CN": "Lv.9 精气",
 				"zh_TW": "Lv.9 精氣",
 				"en_US": "Lv.9 Energy"
 			},
 			"level": 9,
 			"description": {
-				"zn_CN": "镶嵌至装备后，增加 +90精气",
+				"zh_CN": "镶嵌至装备后，增加 +90精气",
 				"zh_TW": "鑲嵌至裝備後，增加 +90精氣",
 				"en_US": "After being inset into equipment, adds +90Energy"
 			},
@@ -2463,13 +2463,13 @@
 		{
 			"id": 9003,
 			"name": {
-				"zn_CN": "Lv.9 攻击",
+				"zh_CN": "Lv.9 攻击",
 				"zh_TW": "Lv.9 攻擊",
 				"en_US": "Lv.9 Attack"
 			},
 			"level": 9,
 			"description": {
-				"zn_CN": "镶嵌至装备后，增加 +72攻击",
+				"zh_CN": "镶嵌至装备后，增加 +72攻击",
 				"zh_TW": "鑲嵌至裝備後，增加 +72攻擊",
 				"en_US": "After being inset into equipment, adds +72Attack"
 			},
@@ -2481,13 +2481,13 @@
 		{
 			"id": 9004,
 			"name": {
-				"zn_CN": "Lv.9 防御",
+				"zh_CN": "Lv.9 防御",
 				"zh_TW": "Lv.9 防禦",
 				"en_US": "Lv.9 Defense"
 			},
 			"level": 9,
 			"description": {
-				"zn_CN": "镶嵌至装备后，增加 +36防御",
+				"zh_CN": "镶嵌至装备后，增加 +36防御",
 				"zh_TW": "鑲嵌至裝備後，增加 +36防禦",
 				"en_US": "After being inset into equipment, adds +36Defense"
 			},
@@ -2499,13 +2499,13 @@
 		{
 			"id": 9005,
 			"name": {
-				"zn_CN": "Lv.9 破甲",
+				"zh_CN": "Lv.9 破甲",
 				"zh_TW": "Lv.9 破甲",
 				"en_US": "Lv.9 Penetration"
 			},
 			"level": 9,
 			"description": {
-				"zn_CN": "镶嵌至装备后，增加 +36破甲",
+				"zh_CN": "镶嵌至装备后，增加 +36破甲",
 				"zh_TW": "鑲嵌至裝備後，增加 +36破甲",
 				"en_US": "After being inset into equipment, adds +36Penetration"
 			},
@@ -2517,13 +2517,13 @@
 		{
 			"id": 9006,
 			"name": {
-				"zn_CN": "Lv.9 护甲",
+				"zh_CN": "Lv.9 护甲",
 				"zh_TW": "Lv.9 護甲",
 				"en_US": "Lv.9 Armor"
 			},
 			"level": 9,
 			"description": {
-				"zn_CN": "镶嵌至装备后，增加 +18护甲",
+				"zh_CN": "镶嵌至装备后，增加 +18护甲",
 				"zh_TW": "鑲嵌至裝備後，增加 +18護甲",
 				"en_US": "After being inset into equipment, adds +18Armor"
 			},
@@ -2535,13 +2535,13 @@
 		{
 			"id": 9007,
 			"name": {
-				"zn_CN": "Lv.9 暴击",
+				"zh_CN": "Lv.9 暴击",
 				"zh_TW": "Lv.9 暴擊",
 				"en_US": "Lv.9 Critical Hit"
 			},
 			"level": 9,
 			"description": {
-				"zn_CN": "镶嵌至装备后，增加 +13.50%暴击",
+				"zh_CN": "镶嵌至装备后，增加 +13.50%暴击",
 				"zh_TW": "鑲嵌至裝備後，增加 +13.50%暴擊",
 				"en_US": "After being inset into equipment, adds +13.50%Critical Hit"
 			},
@@ -2553,13 +2553,13 @@
 		{
 			"id": 9008,
 			"name": {
-				"zn_CN": "Lv.9 抗暴",
+				"zh_CN": "Lv.9 抗暴",
 				"zh_TW": "Lv.9 抗暴",
 				"en_US": "Lv.9 Critical Resistance"
 			},
 			"level": 9,
 			"description": {
-				"zn_CN": "镶嵌至装备后，增加 +6.30%抗暴",
+				"zh_CN": "镶嵌至装备后，增加 +6.30%抗暴",
 				"zh_TW": "鑲嵌至裝備後，增加 +6.30%抗暴",
 				"en_US": "After being inset into equipment, adds +6.30%Critical Resistance"
 			},
@@ -2571,13 +2571,13 @@
 		{
 			"id": 9009,
 			"name": {
-				"zn_CN": "Lv.9 命中",
+				"zh_CN": "Lv.9 命中",
 				"zh_TW": "Lv.9 命中",
 				"en_US": "Lv.9 Accuracy"
 			},
 			"level": 9,
 			"description": {
-				"zn_CN": "镶嵌至装备后，增加 +18.00%命中",
+				"zh_CN": "镶嵌至装备后，增加 +18.00%命中",
 				"zh_TW": "鑲嵌至裝備後，增加 +18.00%命中",
 				"en_US": "After being inset into equipment, adds +18.00%Accuracy"
 			},
@@ -2589,13 +2589,13 @@
 		{
 			"id": 9010,
 			"name": {
-				"zn_CN": "Lv.9 闪避",
+				"zh_CN": "Lv.9 闪避",
 				"zh_TW": "Lv.9 閃避",
 				"en_US": "Lv.9 Evasion"
 			},
 			"level": 9,
 			"description": {
-				"zn_CN": "镶嵌至装备后，增加 +9.00%闪避",
+				"zh_CN": "镶嵌至装备后，增加 +9.00%闪避",
 				"zh_TW": "鑲嵌至裝備後，增加 +9.00%閃避",
 				"en_US": "After being inset into equipment, adds +9.00%Evasion"
 			},
@@ -2609,14 +2609,14 @@
 		{
 			"id": 1011,
 			"name": {
-				"zn_CN": "（小）强力生命药水",
+				"zh_CN": "（小）强力生命药水",
 				"zh_TW": "（小）強力生命藥水",
 				"en_US": "(Small) Strong Life Potion"
 			},
 			"saleable": false,
 			"level": 1,
 			"description": {
-				"zn_CN": "服用后，立即恢复 +100生命值。",
+				"zh_CN": "服用后，立即恢复 +100生命值。",
 				"zh_TW": "服用後，立即恢復 +100生命值。",
 				"en_US": "Upon consumption, immediately restores +100 HP."
 			},
@@ -2630,14 +2630,14 @@
 		{
 			"id": 1012,
 			"name": {
-				"zn_CN": "（中）强力生命药水",
+				"zh_CN": "（中）强力生命药水",
 				"zh_TW": "（中）強力生命藥水",
 				"en_US": "(Medium) Strong Life Potion"
 			},
 			"saleable": false,
 			"level": 10,
 			"description": {
-				"zn_CN": "服用后，立即恢复 +500生命值。",
+				"zh_CN": "服用后，立即恢复 +500生命值。",
 				"zh_TW": "服用後，立即恢復 +500生命值。",
 				"en_US": "Upon consumption, immediately restores +500 HP."
 			},
@@ -2651,14 +2651,14 @@
 		{
 			"id": 1013,
 			"name": {
-				"zn_CN": "（大）强力生命药水",
+				"zh_CN": "（大）强力生命药水",
 				"zh_TW": "（大）強力生命藥水",
 				"en_US": "(Large) Strong Life Potion"
 			},
 			"saleable": false,
 			"level": 20,
 			"description": {
-				"zn_CN": "服用后，立即恢复 +1250生命值。",
+				"zh_CN": "服用后，立即恢复 +1250生命值。",
 				"zh_TW": "服用後，立即恢復 +1250生命值。",
 				"en_US": "Upon consumption, immediately restores +1250 HP."
 			},
@@ -2672,14 +2672,14 @@
 		{
 			"id": 1021,
 			"name": {
-				"zn_CN": "（小）强力精气补充剂",
+				"zh_CN": "（小）强力精气补充剂",
 				"zh_TW": "（小）強力精氣補充劑",
 				"en_US": "(Small) Strong Spirit Elixir"
 			},
 			"saleable": false,
 			"level": 1,
 			"description": {
-				"zn_CN": "服用后，立即恢复 +50精气值。",
+				"zh_CN": "服用后，立即恢复 +50精气值。",
 				"zh_TW": "服用後，立即恢復 +50精氣值。",
 				"en_US": "Upon consumption, immediately restores +50 MP."
 			},
@@ -2693,14 +2693,14 @@
 		{
 			"id": 1022,
 			"name": {
-				"zn_CN": "（中）强力精气补充剂",
+				"zh_CN": "（中）强力精气补充剂",
 				"zh_TW": "（中）強力精氣補充劑",
 				"en_US": "(Medium) Strong Spirit Elixir"
 			},
 			"saleable": false,
 			"level": 10,
 			"description": {
-				"zn_CN": "服用后，立即恢复 +250精气值。",
+				"zh_CN": "服用后，立即恢复 +250精气值。",
 				"zh_TW": "服用後，立即恢復 +250精氣值。",
 				"en_US": "Upon consumption, immediately restores +250 MP."
 			},
@@ -2714,14 +2714,14 @@
 		{
 			"id": 1023,
 			"name": {
-				"zn_CN": "（大）强力精气补充剂",
+				"zh_CN": "（大）强力精气补充剂",
 				"zh_TW": "（大）強力精氣補充劑",
 				"en_US": "(Large) Strong Spirit Elixir"
 			},
 			"saleable": false,
 			"level": 20,
 			"description": {
-				"zn_CN": "服用后，立即恢复 +750精气值。",
+				"zh_CN": "服用后，立即恢复 +750精气值。",
 				"zh_TW": "服用後，立即恢復 +750精氣值。",
 				"en_US": "Upon consumption, immediately restores +750 MP."
 			},
@@ -2735,14 +2735,14 @@
 		{
 			"id": 1131,
 			"name": {
-				"zn_CN": "10级金币大礼包",
+				"zh_CN": "10级金币大礼包",
 				"zh_TW": "10級金幣大禮包",
 				"en_US": "Level 10 Gold Gift Pack"
 			},
 			"saleable": false,
 			"level": 10,
 			"description": {
-				"zn_CN": "打开后，可获得10000金币。",
+				"zh_CN": "打开后，可获得10000金币。",
 				"zh_TW": "打開後，可獲得10000金幣。",
 				"en_US": "Upon opening, receive 10000 gold coins."
 			},
@@ -2756,14 +2756,14 @@
 		{
 			"id": 1132,
 			"name": {
-				"zn_CN": "30级金币大礼包",
+				"zh_CN": "30级金币大礼包",
 				"zh_TW": "30級金幣大禮包",
 				"en_US": "Level 30 Gold Gift Pack"
 			},
 			"saleable": false,
 			"level": 30,
 			"description": {
-				"zn_CN": "打开后，可获得50000金币。",
+				"zh_CN": "打开后，可获得50000金币。",
 				"zh_TW": "打開後，可獲得50000金幣。",
 				"en_US": "Upon opening, receive 50000 gold coins."
 			},
@@ -2777,14 +2777,14 @@
 		{
 			"id": 1133,
 			"name": {
-				"zn_CN": "60级金币大礼包",
+				"zh_CN": "60级金币大礼包",
 				"zh_TW": "60級金幣大禮包",
 				"en_US": "Level 60 Gold Gift Pack"
 			},
 			"saleable": false,
 			"level": 60,
 			"description": {
-				"zn_CN": "打开后，可获得250000金币。",
+				"zh_CN": "打开后，可获得250000金币。",
 				"zh_TW": "打開後，可獲得250000金幣。",
 				"en_US": "Upon opening, receive 250000 gold coins."
 			},
@@ -2798,14 +2798,14 @@
 		{
 			"id": 2014,
 			"name": {
-				"zn_CN": "（小）生命药水",
+				"zh_CN": "（小）生命药水",
 				"zh_TW": "（小）生命藥水",
 				"en_US": "(Small) Life Potion"
 			},
 			"saleable": true,
 			"level": 1,
 			"description": {
-				"zn_CN": "服用后，立即恢复 +50生命值。",
+				"zh_CN": "服用后，立即恢复 +50生命值。",
 				"zh_TW": "服用後，立即恢復 +50生命值。",
 				"en_US": "Upon consumption, immediately restores +50 HP."
 			},
@@ -2819,14 +2819,14 @@
 		{
 			"id": 2015,
 			"name": {
-				"zn_CN": "（中）生命药水",
+				"zh_CN": "（中）生命药水",
 				"zh_TW": "（中）生命藥水",
 				"en_US": "(Medium) Life Potion"
 			},
 			"saleable": true,
 			"level": 1,
 			"description": {
-				"zn_CN": "服用后，立即恢复 +150生命值。",
+				"zh_CN": "服用后，立即恢复 +150生命值。",
 				"zh_TW": "服用後，立即恢復 +150生命值。",
 				"en_US": "Upon consumption, immediately restores +150 HP."
 			},
@@ -2840,14 +2840,14 @@
 		{
 			"id": 2016,
 			"name": {
-				"zn_CN": "（大）生命药水",
+				"zh_CN": "（大）生命药水",
 				"zh_TW": "（大）生命藥水",
 				"en_US": "(Large) Life Potion"
 			},
 			"saleable": true,
 			"level": 1,
 			"description": {
-				"zn_CN": "服用后，立即恢复 +375生命值。",
+				"zh_CN": "服用后，立即恢复 +375生命值。",
 				"zh_TW": "服用後，立即恢復 +375生命值。",
 				"en_US": "Upon consumption, immediately restores +375 HP."
 			},
@@ -2861,14 +2861,14 @@
 		{
 			"id": 2024,
 			"name": {
-				"zn_CN": "（小）精气补充剂",
+				"zh_CN": "（小）精气补充剂",
 				"zh_TW": "（小）精氣補充劑",
 				"en_US": "(Small) Spirit Elixir"
 			},
 			"saleable": true,
 			"level": 1,
 			"description": {
-				"zn_CN": "服用后，立即恢复 +25精气值。",
+				"zh_CN": "服用后，立即恢复 +25精气值。",
 				"zh_TW": "服用後，立即恢復 +25精氣值。",
 				"en_US": "Upon consumption, immediately restores +25 MP."
 			},
@@ -2882,14 +2882,14 @@
 		{
 			"id": 2025,
 			"name": {
-				"zn_CN": "（中）精气补充剂",
+				"zh_CN": "（中）精气补充剂",
 				"zh_TW": "（中）精氣補充劑",
 				"en_US": "(Medium) Spirit Elixir"
 			},
 			"saleable": true,
 			"level": 1,
 			"description": {
-				"zn_CN": "服用后，立即恢复 +75精气值。",
+				"zh_CN": "服用后，立即恢复 +75精气值。",
 				"zh_TW": "服用後，立即恢復 +75精氣值。",
 				"en_US": "Upon consumption, immediately restores +75 MP."
 			},
@@ -2903,14 +2903,14 @@
 		{
 			"id": 2026,
 			"name": {
-				"zn_CN": "（大）精气补充剂",
+				"zh_CN": "（大）精气补充剂",
 				"zh_TW": "（大）精氣補充劑",
 				"en_US": "(Large) Spirit Elixir"
 			},
 			"saleable": true,
 			"level": 1,
 			"description": {
-				"zn_CN": "服用后，立即恢复 +175精气值。",
+				"zh_CN": "服用后，立即恢复 +175精气值。",
 				"zh_TW": "服用後，立即恢復 +175精氣值。",
 				"en_US": "Upon consumption, immediately restores +175 MP."
 			},
@@ -2924,14 +2924,14 @@
 		{
 			"id": 2031,
 			"name": {
-				"zn_CN": "辣椒",
+				"zh_CN": "辣椒",
 				"zh_TW": "辣椒",
 				"en_US": "Chili"
 			},
 			"saleable": true,
 			"level": 1,
 			"description": {
-				"zn_CN": "食用后，立即恢复 +80生命值。",
+				"zh_CN": "食用后，立即恢复 +80生命值。",
 				"zh_TW": "食用後，立即恢復 +80生命值。",
 				"en_US": "Upon consumption, immediately restores +80 HP."
 			},
@@ -2945,14 +2945,14 @@
 		{
 			"id": 2032,
 			"name": {
-				"zn_CN": "荔枝",
+				"zh_CN": "荔枝",
 				"zh_TW": "荔枝",
 				"en_US": "Lychee"
 			},
 			"saleable": true,
 			"level": 1,
 			"description": {
-				"zn_CN": "食用后，立即恢复 +200生命值。",
+				"zh_CN": "食用后，立即恢复 +200生命值。",
 				"zh_TW": "食用後，立即恢復 +200生命值。",
 				"en_US": "Upon consumption, immediately restores +200 HP."
 			},
@@ -2966,14 +2966,14 @@
 		{
 			"id": 2033,
 			"name": {
-				"zn_CN": "苹果",
+				"zh_CN": "苹果",
 				"zh_TW": "蘋果",
 				"en_US": "Apple"
 			},
 			"saleable": true,
 			"level": 1,
 			"description": {
-				"zn_CN": "食用后，立即恢复 +450生命值。",
+				"zh_CN": "食用后，立即恢复 +450生命值。",
 				"zh_TW": "食用後，立即恢復 +450生命值。",
 				"en_US": "Upon consumption, immediately restores +450 HP."
 			},
@@ -2987,14 +2987,14 @@
 		{
 			"id": 2034,
 			"name": {
-				"zn_CN": "西红柿",
+				"zh_CN": "西红柿",
 				"zh_TW": "西紅柿",
 				"en_US": "Tomato"
 			},
 			"saleable": true,
 			"level": 1,
 			"description": {
-				"zn_CN": "食用后，立即恢复 +1000生命值。",
+				"zh_CN": "食用后，立即恢复 +1000生命值。",
 				"zh_TW": "食用後，立即恢復 +1000生命值。",
 				"en_US": "Upon consumption, immediately restores +1000 HP."
 			},
@@ -3008,14 +3008,14 @@
 		{
 			"id": 2035,
 			"name": {
-				"zn_CN": "草莓",
+				"zh_CN": "草莓",
 				"zh_TW": "草莓",
 				"en_US": "Strawberry"
 			},
 			"saleable": true,
 			"level": 1,
 			"description": {
-				"zn_CN": "食用后，立即恢复 +2500生命值。",
+				"zh_CN": "食用后，立即恢复 +2500生命值。",
 				"zh_TW": "食用後，立即恢復 +2500生命值。",
 				"en_US": "Upon consumption, immediately restores +2500 HP."
 			},
@@ -3029,14 +3029,14 @@
 		{
 			"id": 2041,
 			"name": {
-				"zn_CN": "奥尔良烤鸡腿",
+				"zh_CN": "奥尔良烤鸡腿",
 				"zh_TW": "奧爾良烤雞腿",
 				"en_US": "Orleans Grilled Chicken Leg"
 			},
 			"saleable": true,
 			"level": 1,
 			"description": {
-				"zn_CN": "食用后，立即恢复生命上限的25.00%。",
+				"zh_CN": "食用后，立即恢复生命上限的25.00%。",
 				"zh_TW": "食用後，立即恢復生命上限的25.00%。",
 				"en_US": "Upon consumption, immediately restores 25.00% of max HP."
 			},
@@ -3050,14 +3050,14 @@
 		{
 			"id": 2042,
 			"name": {
-				"zn_CN": "德国烤猪肘",
+				"zh_CN": "德国烤猪肘",
 				"zh_TW": "德國烤豬肘",
 				"en_US": "German Roast Pork Knuckle"
 			},
 			"saleable": true,
 			"level": 1,
 			"description": {
-				"zn_CN": "食用后，立即恢复生命上限的50.00%。",
+				"zh_CN": "食用后，立即恢复生命上限的50.00%。",
 				"zh_TW": "食用後，立即恢復生命上限的50.00%。",
 				"en_US": "Upon consumption, immediately restores 50.00% of max HP."
 			},
@@ -3071,14 +3071,14 @@
 		{
 			"id": 2043,
 			"name": {
-				"zn_CN": "A5级和牛肉",
+				"zh_CN": "A5级和牛肉",
 				"zh_TW": "A5級和牛肉",
 				"en_US": "A5 Wagyu Beef"
 			},
 			"saleable": true,
 			"level": 1,
 			"description": {
-				"zn_CN": "食用后，立即恢复生命上限的75.00%。",
+				"zh_CN": "食用后，立即恢复生命上限的75.00%。",
 				"zh_TW": "食用後，立即恢復生命上限的75.00%。",
 				"en_US": "Upon consumption, immediately restores 75.00% of max HP."
 			},
@@ -3092,14 +3092,14 @@
 		{
 			"id": 2044,
 			"name": {
-				"zn_CN": "北京烤鸭",
+				"zh_CN": "北京烤鸭",
 				"zh_TW": "北京烤鴨",
 				"en_US": "Beijing Roast Duck"
 			},
 			"saleable": true,
 			"level": 1,
 			"description": {
-				"zn_CN": "食用后，立即恢复生命上限的100.00%。",
+				"zh_CN": "食用后，立即恢复生命上限的100.00%。",
 				"zh_TW": "食用後，立即恢復生命上限的100.00%。",
 				"en_US": "Upon consumption, immediately restores 100.00% of max HP."
 			},
@@ -3113,14 +3113,14 @@
 		{
 			"id": 2051,
 			"name": {
-				"zn_CN": "大蒜",
+				"zh_CN": "大蒜",
 				"zh_TW": "大蒜",
 				"en_US": "Garlic"
 			},
 			"saleable": true,
 			"level": 1,
 			"description": {
-				"zn_CN": "食用后，立即恢复 +40精气值。",
+				"zh_CN": "食用后，立即恢复 +40精气值。",
 				"zh_TW": "食用後，立即恢復 +40精氣值。",
 				"en_US": "Upon consumption, immediately restores +40 MP."
 			},
@@ -3134,14 +3134,14 @@
 		{
 			"id": 2052,
 			"name": {
-				"zn_CN": "胡萝卜",
+				"zh_CN": "胡萝卜",
 				"zh_TW": "胡蘿蔔",
 				"en_US": "Carrot"
 			},
 			"saleable": true,
 			"level": 1,
 			"description": {
-				"zn_CN": "食用后，立即恢复 +100精气值。",
+				"zh_CN": "食用后，立即恢复 +100精气值。",
 				"zh_TW": "食用後，立即恢復 +100精氣值。",
 				"en_US": "Upon consumption, immediately restores +100 MP."
 			},
@@ -3155,14 +3155,14 @@
 		{
 			"id": 2053,
 			"name": {
-				"zn_CN": "南瓜",
+				"zh_CN": "南瓜",
 				"zh_TW": "南瓜",
 				"en_US": "Pumpkin"
 			},
 			"saleable": true,
 			"level": 1,
 			"description": {
-				"zn_CN": "食用后，立即恢复 +225精气值。",
+				"zh_CN": "食用后，立即恢复 +225精气值。",
 				"zh_TW": "食用後，立即恢復 +225精氣值。",
 				"en_US": "Upon consumption, immediately restores +225 MP."
 			},
@@ -3176,14 +3176,14 @@
 		{
 			"id": 2054,
 			"name": {
-				"zn_CN": "香蕉",
+				"zh_CN": "香蕉",
 				"zh_TW": "香蕉",
 				"en_US": "Banana"
 			},
 			"saleable": true,
 			"level": 1,
 			"description": {
-				"zn_CN": "食用后，立即恢复 +500精气值。",
+				"zh_CN": "食用后，立即恢复 +500精气值。",
 				"zh_TW": "食用後，立即恢復 +500精氣值。",
 				"en_US": "Upon consumption, immediately restores +500 MP."
 			},
@@ -3197,14 +3197,14 @@
 		{
 			"id": 2055,
 			"name": {
-				"zn_CN": "橘子",
+				"zh_CN": "橘子",
 				"zh_TW": "橘子",
 				"en_US": "Orange"
 			},
 			"saleable": true,
 			"level": 1,
 			"description": {
-				"zn_CN": "食用后，立即恢复 +1250精气值。",
+				"zh_CN": "食用后，立即恢复 +1250精气值。",
 				"zh_TW": "食用後，立即恢復 +1250精氣值。",
 				"en_US": "Upon consumption, immediately restores +1250 MP."
 			},
@@ -3218,14 +3218,14 @@
 		{
 			"id": 2061,
 			"name": {
-				"zn_CN": "辛辣的大葱",
+				"zh_CN": "辛辣的大葱",
 				"zh_TW": "辛辣的大蔥",
 				"en_US": "Spicy Spring Onion"
 			},
 			"saleable": true,
 			"level": 1,
 			"description": {
-				"zn_CN": "食用后，立即恢复精气上限的25.00%。",
+				"zh_CN": "食用后，立即恢复精气上限的25.00%。",
 				"zh_TW": "食用後，立即恢復精氣上限的25.00%。",
 				"en_US": "Upon consumption, immediately restores 25.00% of max MP."
 			},
@@ -3239,14 +3239,14 @@
 		{
 			"id": 2062,
 			"name": {
-				"zn_CN": "脆嫩的西兰花",
+				"zh_CN": "脆嫩的西兰花",
 				"zh_TW": "脆嫩的西蘭花",
 				"en_US": "Crisp Broccoli"
 			},
 			"saleable": true,
 			"level": 1,
 			"description": {
-				"zn_CN": "食用后，立即恢复精气上限的50.00%。",
+				"zh_CN": "食用后，立即恢复精气上限的50.00%。",
 				"zh_TW": "食用後，立即恢復精氣上限的50.00%。",
 				"en_US": "Upon consumption, immediately restores 50.00% of max MP."
 			},
@@ -3260,14 +3260,14 @@
 		{
 			"id": 2063,
 			"name": {
-				"zn_CN": "鲜嫩的黄瓜",
+				"zh_CN": "鲜嫩的黄瓜",
 				"zh_TW": "鮮嫩的黃瓜",
 				"en_US": "Fresh Cucumber"
 			},
 			"saleable": true,
 			"level": 1,
 			"description": {
-				"zn_CN": "食用后，立即恢复精气上限的75.00%。",
+				"zh_CN": "食用后，立即恢复精气上限的75.00%。",
 				"zh_TW": "食用後，立即恢復精氣上限的75.00%。",
 				"en_US": "Upon consumption, immediately restores 75.00% of max MP."
 			},
@@ -3281,14 +3281,14 @@
 		{
 			"id": 2064,
 			"name": {
-				"zn_CN": "香甜的玉米",
+				"zh_CN": "香甜的玉米",
 				"zh_TW": "香甜的玉米",
 				"en_US": "Sweet Corn"
 			},
 			"saleable": true,
 			"level": 1,
 			"description": {
-				"zn_CN": "食用后，立即恢复精气上限的100.00%。",
+				"zh_CN": "食用后，立即恢复精气上限的100.00%。",
 				"zh_TW": "食用後，立即恢復精氣上限的100.00%。",
 				"en_US": "Upon consumption, immediately restores 100.00% of max MP."
 			},
@@ -3302,14 +3302,14 @@
 		{
 			"id": 2071,
 			"name": {
-				"zn_CN": "糖果",
+				"zh_CN": "糖果",
 				"zh_TW": "糖果",
 				"en_US": "Candy"
 			},
 			"saleable": true,
 			"level": 1,
 			"description": {
-				"zn_CN": "食用后，增加 +50攻击力，持续60秒。",
+				"zh_CN": "食用后，增加 +50攻击力，持续60秒。",
 				"zh_TW": "食用後，增加 +50攻擊力，持續60秒。",
 				"en_US": "Upon consumption, increases +50 Attack Power for 60 seconds."
 			},
@@ -3324,14 +3324,14 @@
 		{
 			"id": 2072,
 			"name": {
-				"zn_CN": "棒棒糖",
+				"zh_CN": "棒棒糖",
 				"zh_TW": "棒棒糖",
 				"en_US": "Lollipop"
 			},
 			"saleable": true,
 			"level": 1,
 			"description": {
-				"zn_CN": "食用后，增加 +80攻击力，持续60秒。",
+				"zh_CN": "食用后，增加 +80攻击力，持续60秒。",
 				"zh_TW": "食用後，增加 +80攻擊力，持續60秒。",
 				"en_US": "Upon consumption, increases +80 Attack Power for 60 seconds."
 			},
@@ -3346,14 +3346,14 @@
 		{
 			"id": 2073,
 			"name": {
-				"zn_CN": "雪糕",
+				"zh_CN": "雪糕",
 				"zh_TW": "雪糕",
 				"en_US": "Ice Cream"
 			},
 			"saleable": true,
 			"level": 1,
 			"description": {
-				"zn_CN": "食用后，增加 +150攻击力，持续60秒。",
+				"zh_CN": "食用后，增加 +150攻击力，持续60秒。",
 				"zh_TW": "食用後，增加 +150攻擊力，持續60秒。",
 				"en_US": "Upon consumption, increases +150 Attack Power for 60 seconds."
 			},
@@ -3368,14 +3368,14 @@
 		{
 			"id": 2074,
 			"name": {
-				"zn_CN": "冰激淋",
+				"zh_CN": "冰激淋",
 				"zh_TW": "冰淇淋",
 				"en_US": "Ice Cream"
 			},
 			"saleable": true,
 			"level": 1,
 			"description": {
-				"zn_CN": "食用后，增加 +250攻击力，持续60秒。",
+				"zh_CN": "食用后，增加 +250攻击力，持续60秒。",
 				"zh_TW": "食用後，增加 +250攻擊力，持續60秒。",
 				"en_US": "Upon consumption, increases +250 Attack Power for 60 seconds."
 			},
@@ -3390,14 +3390,14 @@
 		{
 			"id": 2081,
 			"name": {
-				"zn_CN": "香浓的咖啡",
+				"zh_CN": "香浓的咖啡",
 				"zh_TW": "香濃的咖啡",
 				"en_US": "Rich Coffee"
 			},
 			"saleable": true,
 			"level": 1,
 			"description": {
-				"zn_CN": "饮用后，增加攻击力的50.00%，持续($2}秒。",
+				"zh_CN": "饮用后，增加攻击力的50.00%，持续($2}秒。",
 				"zh_TW": "飲用後，增加攻擊力的50.00%，持續($2}秒。",
 				"en_US": "Upon consumption, increases Attack Power by 50.00% for 90 seconds."
 			},
@@ -3412,14 +3412,14 @@
 		{
 			"id": 2082,
 			"name": {
-				"zn_CN": "凉爽的冰沙",
+				"zh_CN": "凉爽的冰沙",
 				"zh_TW": "涼爽的冰沙",
 				"en_US": "Cool Ice Smoothie"
 			},
 			"saleable": true,
 			"level": 1,
 			"description": {
-				"zn_CN": "饮用后，增加攻击力的100.00%，持续90秒。",
+				"zh_CN": "饮用后，增加攻击力的100.00%，持续90秒。",
 				"zh_TW": "飲用後，增加攻擊力的100.00%，持續90秒。",
 				"en_US": "Upon consumption, increases Attack Power by 100.00% for 90 seconds."
 			},
@@ -3434,14 +3434,14 @@
 		{
 			"id": 2083,
 			"name": {
-				"zn_CN": "酸甜的果汁",
+				"zh_CN": "酸甜的果汁",
 				"zh_TW": "酸甜的果汁",
 				"en_US": "Sweet and Sour Juice"
 			},
 			"saleable": true,
 			"level": 1,
 			"description": {
-				"zn_CN": "饮用后，增加攻击力的200.00%，持续90秒。",
+				"zh_CN": "饮用后，增加攻击力的200.00%，持续90秒。",
 				"zh_TW": "飲用後，增加攻擊力的200.00%，持續90秒。",
 				"en_US": "Upon consumption, increases Attack Power by 200.00% for 90 seconds."
 			},
@@ -3456,14 +3456,14 @@
 		{
 			"id": 2084,
 			"name": {
-				"zn_CN": "热柠檬红茶",
+				"zh_CN": "热柠檬红茶",
 				"zh_TW": "熱檸檬紅茶",
 				"en_US": "Hot Lemon Red Tea"
 			},
 			"saleable": true,
 			"level": 1,
 			"description": {
-				"zn_CN": "饮用后，增加攻击力的300.00%，持续90秒。",
+				"zh_CN": "饮用后，增加攻击力的300.00%，持续90秒。",
 				"zh_TW": "飲用後，增加攻擊力的300.00%，持續90秒。",
 				"en_US": "Upon consumption, increases Attack Power by 300.00% for 90 seconds."
 			},
@@ -3478,14 +3478,14 @@
 		{
 			"id": 2091,
 			"name": {
-				"zn_CN": "【白】蘑菇",
+				"zh_CN": "【白】蘑菇",
 				"zh_TW": "【白】蘑菇",
 				"en_US": "[White] Mushroom"
 			},
 			"saleable": true,
 			"level": 1,
 			"description": {
-				"zn_CN": "食用后，提升吸收受到伤害至25.00%，持续30秒。",
+				"zh_CN": "食用后，提升吸收受到伤害至25.00%，持续30秒。",
 				"zh_TW": "食用後，提升吸收受到傷害至25.00%，持續30秒。",
 				"en_US": "Upon consumption, increases damage absorption to 25.00% for 30 seconds."
 			},
@@ -3500,14 +3500,14 @@
 		{
 			"id": 2092,
 			"name": {
-				"zn_CN": "【褐】蘑菇",
+				"zh_CN": "【褐】蘑菇",
 				"zh_TW": "【褐】蘑菇",
 				"en_US": "[Brown] Mushroom"
 			},
 			"saleable": true,
 			"level": 1,
 			"description": {
-				"zn_CN": "食用后，提升吸收受到伤害至50.00%，持续30秒。",
+				"zh_CN": "食用后，提升吸收受到伤害至50.00%，持续30秒。",
 				"zh_TW": "食用後，提升吸收受到傷害至50.00%，持續30秒。",
 				"en_US": "Upon consumption, increases damage absorption to 50.00% for 30 seconds."
 			},
@@ -3522,14 +3522,14 @@
 		{
 			"id": 2093,
 			"name": {
-				"zn_CN": "【红】蘑菇",
+				"zh_CN": "【红】蘑菇",
 				"zh_TW": "【紅】蘑菇",
 				"en_US": "[Red] Mushroom"
 			},
 			"saleable": true,
 			"level": 1,
 			"description": {
-				"zn_CN": "食用后，提升吸收受到伤害至75.00%，持续30秒。",
+				"zh_CN": "食用后，提升吸收受到伤害至75.00%，持续30秒。",
 				"zh_TW": "食用後，提升吸收受到傷害至75.00%，持續30秒。",
 				"en_US": "Upon consumption, increases damage absorption to 75.00% for 30 seconds."
 			},
@@ -3544,14 +3544,14 @@
 		{
 			"id": 2094,
 			"name": {
-				"zn_CN": "【紫】蘑菇",
+				"zh_CN": "【紫】蘑菇",
 				"zh_TW": "【紫】蘑菇",
 				"en_US": "[Purple] Mushroom"
 			},
 			"saleable": true,
 			"level": 1,
 			"description": {
-				"zn_CN": "食用后，提升吸收受到伤害至100.00%，持续30秒。",
+				"zh_CN": "食用后，提升吸收受到伤害至100.00%，持续30秒。",
 				"zh_TW": "食用後，提升吸收受到傷害至100.00%，持續30秒。",
 				"en_US": "Upon consumption, increases damage absorption to 100.00% for 30 seconds."
 			},
@@ -3566,14 +3566,14 @@
 		{
 			"id": 2101,
 			"name": {
-				"zn_CN": "蓝鳍金枪鱼",
+				"zh_CN": "蓝鳍金枪鱼",
 				"zh_TW": "藍鰭金槍魚",
 				"en_US": "Bluefin Tuna"
 			},
 			"saleable": true,
 			"level": 1,
 			"description": {
-				"zn_CN": "食用后，提升暴击率至25.00%，持续45秒。",
+				"zh_CN": "食用后，提升暴击率至25.00%，持续45秒。",
 				"zh_TW": "食用後，提升暴擊率至25.00%，持續45秒。",
 				"en_US": "Upon consumption, increases critical hit rate to 25.00% for 45 seconds."
 			},
@@ -3588,14 +3588,14 @@
 		{
 			"id": 2102,
 			"name": {
-				"zn_CN": "红鲷鱼",
+				"zh_CN": "红鲷鱼",
 				"zh_TW": "紅鯛魚",
 				"en_US": "Red Snapper"
 			},
 			"saleable": true,
 			"level": 1,
 			"description": {
-				"zn_CN": "食用后，提升暴击率至50.00%，持续45秒。",
+				"zh_CN": "食用后，提升暴击率至50.00%，持续45秒。",
 				"zh_TW": "食用後，提升暴擊率至50.00%，持續45秒。",
 				"en_US": "Upon consumption, increases critical hit rate to 50.00% for 45 seconds."
 			},
@@ -3610,14 +3610,14 @@
 		{
 			"id": 2103,
 			"name": {
-				"zn_CN": "棕鳕鱼",
+				"zh_CN": "棕鳕鱼",
 				"zh_TW": "棕鱈魚",
 				"en_US": "Brown Cod"
 			},
 			"saleable": true,
 			"level": 1,
 			"description": {
-				"zn_CN": "食用后，提升暴击率至75.00%，持续45秒。",
+				"zh_CN": "食用后，提升暴击率至75.00%，持续45秒。",
 				"zh_TW": "食用後，提升暴擊率至75.00%，持續45秒。",
 				"en_US": "Upon consumption, increases critical hit rate to 75.00% for 45 seconds."
 			},
@@ -3632,14 +3632,14 @@
 		{
 			"id": 2104,
 			"name": {
-				"zn_CN": "紫鳍鲷",
+				"zh_CN": "紫鳍鲷",
 				"zh_TW": "紫鰭鯛",
 				"en_US": "Purple Fin Damsel"
 			},
 			"saleable": true,
 			"level": 1,
 			"description": {
-				"zn_CN": "食用后，提升暴击率至100.00%，持续45秒。",
+				"zh_CN": "食用后，提升暴击率至100.00%，持续45秒。",
 				"zh_TW": "食用後，提升暴擊率至100.00%，持續45秒。",
 				"en_US": "Upon consumption, increases critical hit rate to 100.00% for 45 seconds."
 			},
@@ -3654,14 +3654,14 @@
 		{
 			"id": 2111,
 			"name": {
-				"zn_CN": "【褐】甜甜圈",
+				"zh_CN": "【褐】甜甜圈",
 				"zh_TW": "【褐】甜甜圈",
 				"en_US": "[Brown] Donut"
 			},
 			"saleable": true,
 			"level": 1,
 			"description": {
-				"zn_CN": "食用后，增加 +25.00%命中率，持续75秒。",
+				"zh_CN": "食用后，增加 +25.00%命中率，持续75秒。",
 				"zh_TW": "食用後，增加 +25.00%命中率，持續75秒。",
 				"en_US": "Upon consumption, increases +25.00% Accuracy Rate for 75 seconds."
 			},
@@ -3676,14 +3676,14 @@
 		{
 			"id": 2112,
 			"name": {
-				"zn_CN": "【粉】甜甜圈",
+				"zh_CN": "【粉】甜甜圈",
 				"zh_TW": "【粉】甜甜圈",
 				"en_US": "[Pink] Donut"
 			},
 			"saleable": true,
 			"level": 1,
 			"description": {
-				"zn_CN": "食用后，增加 +50.00%命中率，持续75秒。",
+				"zh_CN": "食用后，增加 +50.00%命中率，持续75秒。",
 				"zh_TW": "食用後，增加 +50.00%命中率，持續75秒。",
 				"en_US": "Upon consumption, increases +50.00% Accuracy Rate for 75 seconds."
 			},
@@ -3698,14 +3698,14 @@
 		{
 			"id": 2113,
 			"name": {
-				"zn_CN": "【褐】奶油蛋糕",
+				"zh_CN": "【褐】奶油蛋糕",
 				"zh_TW": "【褐】奶油蛋糕",
 				"en_US": "[Brown] Cream Cake"
 			},
 			"saleable": true,
 			"level": 1,
 			"description": {
-				"zn_CN": "食用后，增加 +75.00%命中率，持续75秒。",
+				"zh_CN": "食用后，增加 +75.00%命中率，持续75秒。",
 				"zh_TW": "食用後，增加 +75.00%命中率，持續75秒。",
 				"en_US": "Upon consumption, increases +75.00% Accuracy Rate for 75 seconds."
 			},
@@ -3720,14 +3720,14 @@
 		{
 			"id": 2114,
 			"name": {
-				"zn_CN": "【粉】奶油蛋糕",
+				"zh_CN": "【粉】奶油蛋糕",
 				"zh_TW": "【粉】奶油蛋糕",
 				"en_US": "[Pink] Cream Cake"
 			},
 			"saleable": true,
 			"level": 1,
 			"description": {
-				"zn_CN": "食用后，增加 +100.00%命中率，持续75秒。",
+				"zh_CN": "食用后，增加 +100.00%命中率，持续75秒。",
 				"zh_TW": "食用後，增加 +100.00%命中率，持續75秒。",
 				"en_US": "Upon consumption, increases +100.00% Accuracy Rate for 75 seconds."
 			},
@@ -3742,14 +3742,14 @@
 		{
 			"id": 2121,
 			"name": {
-				"zn_CN": "改名笔",
+				"zh_CN": "改名笔",
 				"zh_TW": "改名筆",
 				"en_US": "Name Change Pen"
 			},
 			"saleable": true,
 			"level": 1,
 			"description": {
-				"zn_CN": "使用后，可修改玩家角色名称",
+				"zh_CN": "使用后，可修改玩家角色名称",
 				"zh_TW": "使用後，可修改玩家角色名稱",
 				"en_US": "Upon use, allows modification of player character name."
 			},
@@ -3761,14 +3761,14 @@
 		{
 			"id": 2122,
 			"name": {
-				"zn_CN": "七彩笔",
+				"zh_CN": "七彩笔",
 				"zh_TW": "七彩筆",
 				"en_US": "Rainbow Pen"
 			},
 			"saleable": true,
 			"level": 1,
 			"description": {
-				"zn_CN": "使用后，可重新选择玩家角色颜色",
+				"zh_CN": "使用后，可重新选择玩家角色颜色",
 				"zh_TW": "使用後，可重新選擇玩家角色顏色",
 				"en_US": "Upon use, allows re-selection of player character color."
 			},
@@ -3782,14 +3782,14 @@
 		{
 			"id": 1001,
 			"name": {
-				"zn_CN": "铁矿石",
+				"zh_CN": "铁矿石",
 				"zh_TW": "鐵礦石",
 				"en_US": "Iron Ore"
 			},
 			"category": 1,
 			"is_colorful_mineral": false,
 			"description": {
-				"zn_CN": "一种用于装备加工的常见原矿。",
+				"zh_CN": "一种用于装备加工的常见原矿。",
 				"zh_TW": "一種用於裝備加工的常見原礦。",
 				"en_US": "A common raw material used for equipment crafting."
 			},
@@ -3805,14 +3805,14 @@
 		{
 			"id": 1002,
 			"name": {
-				"zn_CN": "玄铁",
+				"zh_CN": "玄铁",
 				"zh_TW": "玄鐵",
 				"en_US": "Mysterious Iron"
 			},
 			"category": 2,
 			"is_colorful_mineral": false,
 			"description": {
-				"zn_CN": "常用于装备加工的半成品矿，可由5个铁矿石合成。",
+				"zh_CN": "常用于装备加工的半成品矿，可由5个铁矿石合成。",
 				"zh_TW": "常用於裝備加工的半成品礦，可由5個鐵礦石合成。",
 				"en_US": "A semi-finished ore commonly used for equipment crafting, can be synthesized from 5 Iron Ores."
 			},
@@ -3828,14 +3828,14 @@
 		{
 			"id": 1003,
 			"name": {
-				"zn_CN": "寒铁",
+				"zh_CN": "寒铁",
 				"zh_TW": "寒鐵",
 				"en_US": "Frigid Iron"
 			},
 			"category": 3,
 			"is_colorful_mineral": false,
 			"description": {
-				"zn_CN": "常用于装备加工或打孔的成品矿，可由3个玄铁合成。",
+				"zh_CN": "常用于装备加工或打孔的成品矿，可由3个玄铁合成。",
 				"zh_TW": "常用於裝備加工或打孔的成品礦，可由3個玄鐵合成。",
 				"en_US": "A finished ore commonly used for equipment crafting or perforation, can be synthesized from 3 Mysterious Irons."
 			},
@@ -3845,14 +3845,14 @@
 		{
 			"id": 2001,
 			"name": {
-				"zn_CN": "铜矿石",
+				"zh_CN": "铜矿石",
 				"zh_TW": "銅礦石",
 				"en_US": "Copper Ore"
 			},
 			"category": 1,
 			"is_colorful_mineral": false,
 			"description": {
-				"zn_CN": "一种用于装备加工的普通原矿。",
+				"zh_CN": "一种用于装备加工的普通原矿。",
 				"zh_TW": "一種用於裝備加工的普通原礦。",
 				"en_US": "A common raw material used for equipment crafting."
 			},
@@ -3868,14 +3868,14 @@
 		{
 			"id": 2002,
 			"name": {
-				"zn_CN": "赤铜",
+				"zh_CN": "赤铜",
 				"zh_TW": "赤銅",
 				"en_US": "Red Copper"
 			},
 			"category": 2,
 			"is_colorful_mineral": false,
 			"description": {
-				"zn_CN": "常用于装备加工的半成品矿，可由5个铜矿石合成。",
+				"zh_CN": "常用于装备加工的半成品矿，可由5个铜矿石合成。",
 				"zh_TW": "常用於裝備加工的半成品礦，可由5個銅礦石合成。",
 				"en_US": "A semi-finished ore commonly used for equipment crafting, can be synthesized from 5 Copper Ores."
 			},
@@ -3891,14 +3891,14 @@
 		{
 			"id": 2003,
 			"name": {
-				"zn_CN": "火铜",
+				"zh_CN": "火铜",
 				"zh_TW": "火銅",
 				"en_US": "Fire Copper"
 			},
 			"category": 3,
 			"is_colorful_mineral": false,
 			"description": {
-				"zn_CN": "常用于装备加工或打孔的成品矿，可由3个赤铜合成。",
+				"zh_CN": "常用于装备加工或打孔的成品矿，可由3个赤铜合成。",
 				"zh_TW": "常用於裝備加工或打孔的成品礦，可由3個赤銅合成。",
 				"en_US": "A finished ore commonly used for equipment crafting or perforation, can be synthesized from 3 Red Coppers."
 			},
@@ -3908,14 +3908,14 @@
 		{
 			"id": 3001,
 			"name": {
-				"zn_CN": "银矿石",
+				"zh_CN": "银矿石",
 				"zh_TW": "銀礦石",
 				"en_US": "Silver Ore"
 			},
 			"category": 1,
 			"is_colorful_mineral": false,
 			"description": {
-				"zn_CN": "一种用于装备加工的稀有原矿。",
+				"zh_CN": "一种用于装备加工的稀有原矿。",
 				"zh_TW": "一種用於裝備加工的稀有原礦。",
 				"en_US": "A rare raw material used for equipment crafting."
 			},
@@ -3931,14 +3931,14 @@
 		{
 			"id": 3002,
 			"name": {
-				"zn_CN": "白银",
+				"zh_CN": "白银",
 				"zh_TW": "白銀",
 				"en_US": "Silver"
 			},
 			"category": 2,
 			"is_colorful_mineral": false,
 			"description": {
-				"zn_CN": "常用于装备加工的半成品矿，可由5个银矿石合成。",
+				"zh_CN": "常用于装备加工的半成品矿，可由5个银矿石合成。",
 				"zh_TW": "常用於裝備加工的半成品礦，可由5個銀礦石合成。",
 				"en_US": "A semi-finished ore commonly used for equipment crafting, can be synthesized from 5 Silver Ores."
 			},
@@ -3954,14 +3954,14 @@
 		{
 			"id": 3003,
 			"name": {
-				"zn_CN": "秘银",
+				"zh_CN": "秘银",
 				"zh_TW": "秘銀",
 				"en_US": "Mithril"
 			},
 			"category": 3,
 			"is_colorful_mineral": false,
 			"description": {
-				"zn_CN": "常用于装备加工或打孔的成品矿，可由3个白银合成。",
+				"zh_CN": "常用于装备加工或打孔的成品矿，可由3个白银合成。",
 				"zh_TW": "常用於裝備加工或打孔的成品礦，可由3個白銀合成。",
 				"en_US": "A finished ore commonly used for equipment crafting or perforation, can be synthesized from 3 Silvers."
 			},
@@ -3971,14 +3971,14 @@
 		{
 			"id": 4001,
 			"name": {
-				"zn_CN": "金矿石",
+				"zh_CN": "金矿石",
 				"zh_TW": "金礦石",
 				"en_US": "Gold Ore"
 			},
 			"category": 1,
 			"is_colorful_mineral": false,
 			"description": {
-				"zn_CN": "一种用于装备加工的珍贵原矿。",
+				"zh_CN": "一种用于装备加工的珍贵原矿。",
 				"zh_TW": "一種用於裝備加工的珍貴原礦。",
 				"en_US": "A precious raw material used for equipment crafting."
 			},
@@ -3994,14 +3994,14 @@
 		{
 			"id": 4002,
 			"name": {
-				"zn_CN": "精金矿",
+				"zh_CN": "精金矿",
 				"zh_TW": "精金礦",
 				"en_US": "Refined Gold"
 			},
 			"category": 2,
 			"is_colorful_mineral": false,
 			"description": {
-				"zn_CN": "常用于装备加工的半成品矿，可由5个金矿石合成。",
+				"zh_CN": "常用于装备加工的半成品矿，可由5个金矿石合成。",
 				"zh_TW": "常用於裝備加工的半成品礦，可由5個金礦石合成。",
 				"en_US": "A semi-finished ore commonly used for equipment crafting, can be synthesized from 5 Gold Ores."
 			},
@@ -4017,14 +4017,14 @@
 		{
 			"id": 4003,
 			"name": {
-				"zn_CN": "金髓矿",
+				"zh_CN": "金髓矿",
 				"zh_TW": "金髓礦",
 				"en_US": "Gold Essence"
 			},
 			"category": 3,
 			"is_colorful_mineral": false,
 			"description": {
-				"zn_CN": "常用于装备加工或打孔的成品矿，可由3个精金矿合成。",
+				"zh_CN": "常用于装备加工或打孔的成品矿，可由3个精金矿合成。",
 				"zh_TW": "常用於裝備加工或打孔的成品礦，可由3個精金礦合成。",
 				"en_US": "A finished ore commonly used for equipment crafting or perforation, can be synthesized from 3 Refined Gold Ores."
 			},
@@ -4034,14 +4034,14 @@
 		{
 			"id": 9001,
 			"name": {
-				"zn_CN": "天外异石碎片",
+				"zh_CN": "天外异石碎片",
 				"zh_TW": "天外異石碎片",
 				"en_US": "Exotic Stone Fragments"
 			},
 			"category": 1,
 			"is_colorful_mineral": false,
 			"description": {
-				"zn_CN": "极其稀有的天外异石碎片，闪烁着紫色的光芒，一种用于装备加工或打孔的。",
+				"zh_CN": "极其稀有的天外异石碎片，闪烁着紫色的光芒，一种用于装备加工或打孔的。",
 				"zh_TW": "極其稀有的天外異石碎片，閃爍著紫色的光芒，一種用於裝備加工或打孔的。",
 				"en_US": "Extremely rare exotic stone fragments that shimmer with a purple light, used for equipment crafting or perforation."
 			},
@@ -4057,14 +4057,14 @@
 		{
 			"id": 9002,
 			"name": {
-				"zn_CN": "天外神石",
+				"zh_CN": "天外神石",
 				"zh_TW": "天外神石",
 				"en_US": "Exotic Divine Stone"
 			},
 			"category": 3,
 			"is_colorful_mineral": true,
 			"description": {
-				"zn_CN": "在装备加工或打孔时，即使不幸失败，也不会损坏原有装备。此等神物极难获取，可由30个天外异石碎片合成。",
+				"zh_CN": "在装备加工或打孔时，即使不幸失败，也不会损坏原有装备。此等神物极难获取，可由30个天外异石碎片合成。",
 				"zh_TW": "在裝備加工或打孔時，即使不幸失敗，也不會損壞原有裝備。此等神物極難獲取，可由30個天外異石碎片合成。",
 				"en_US": "Even in the unfortunate event of failure during equipment crafting or perforation, the original equipment will not be damaged. Such divine artifacts are extremely difficult to obtain and can be synthesized from 30 exotic stone fragments."
 			},

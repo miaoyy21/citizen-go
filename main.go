@@ -1,7 +1,7 @@
 package main
 
 import (
-	"citizen/conf"
+	"citizen/proto"
 	"citizen/tools"
 	"encoding/json"
 	"log"
@@ -25,9 +25,7 @@ func main() {
 	// 动作解析
 	//generate(srcAssets, dstAssets)
 
-	configuration := conf.New()
-
-	file, err := os.Create("configuration.json")
+	file, err := os.Create(filepath.Join(srcAssets, "proto.json"))
 	if err != nil {
 		log.Fatalf("%s", err.Error())
 	}
@@ -35,11 +33,11 @@ func main() {
 
 	encode := json.NewEncoder(file)
 	encode.SetIndent("", "\t")
-	if err := encode.Encode(configuration); err != nil {
+	if err := encode.Encode(proto.New()); err != nil {
 		log.Fatalf("%s", err.Error())
 	}
 
-	_, _ = srcAssets, dstAssets
+	tools.CopyFile(filepath.Join(srcAssets, "proto.json"), filepath.Join(dstAssets, "proto.json"))
 	log.Println("自动化任务执行完成 ...")
 }
 

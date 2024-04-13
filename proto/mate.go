@@ -1,4 +1,4 @@
-package conf
+package proto
 
 import (
 	"fmt"
@@ -26,7 +26,7 @@ type Mate struct {
 	birthQty int // 赠送玩家的数量
 }
 
-func NewMates(conf Configuration) []Mate {
+func NewMates(conf Proto) []Mate {
 	mates := make([]Mate, 0)
 
 	/****************************** 矿石 ******************************/

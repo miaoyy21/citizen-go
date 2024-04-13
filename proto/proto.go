@@ -1,6 +1,6 @@
-package conf
+package proto
 
-type Configuration struct {
+type Proto struct {
 	Language    Language              `json:"language"`
 	EquipAssets map[EquipColor]string `json:"equip_assets"`
 
@@ -11,8 +11,8 @@ type Configuration struct {
 	Mates  []Mate  `json:"mates"`
 }
 
-func New() Configuration {
-	conf := Configuration{
+func New() Proto {
+	conf := Proto{
 		Language: NewLanguage(),
 		EquipAssets: map[EquipColor]string{
 			EquipColorRed:    "1_1",

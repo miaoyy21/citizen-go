@@ -1,4 +1,4 @@
-package conf
+package proto
 
 type MateCategory int
 

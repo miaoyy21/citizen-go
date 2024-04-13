@@ -1,4 +1,4 @@
-package conf
+package proto
 
 import (
 	"fmt"
@@ -19,7 +19,7 @@ type Prop struct {
 	birthQty int // 赠送玩家的数量
 }
 
-func NewProps(conf Configuration) []Prop {
+func NewProps(conf Proto) []Prop {
 	props := make([]Prop, 0)
 
 	/****************************** 不可交易的道具 ******************************/

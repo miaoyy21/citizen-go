@@ -1,4 +1,4 @@
-package conf
+package proto
 
 import "fmt"
 
@@ -16,7 +16,7 @@ type Equip struct {
 	birthQty int // 赠送玩家数量
 }
 
-func NewEquips(conf Configuration) []Equip {
+func NewEquips(conf Proto) []Equip {
 	equips := make([]Equip, 0, len(EquipLevels))
 
 	for _, level := range EquipLevels {
