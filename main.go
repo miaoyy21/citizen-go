@@ -68,5 +68,4 @@ func loadProto(srcAssets, dstAssets string) {
 	if err := proto.Load(srcAssets, dstAssets); err != nil {
 		log.Fatalf("%s", err.Error())
 	}
-
 }
